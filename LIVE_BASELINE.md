@@ -8,7 +8,7 @@ This repository is the engineering definition and integration test vault for MDS
 - Installed Bootstrap 0.1.0 runtime under .obsidian/plugins/mdse-bootstrap, **disabled** pending an actual Base Vault release lock and controlled first-open acceptance. Do not enable it in an unprepared vault.
 - Enable Workbench in community-plugins.json. Obsidian still requires explicit user trust of community plugins.
 - Existing last-check notes and ledgers preserved in place; all are draft/proposal material until reviewed.
-- The mdse_v2_cleanup engineering model has not yet been copied here. Transfer must preserve UIDs, IDs, source notes, relationships, and original audit evidence; do not merge blindly with last-check.
+- The 65-file foundational portion of mdse_v2_cleanup/modeling/MDSE_Toolset (needs, use cases, behaviors, architecture, verification and baselines) was copied without editing source bytes. The remaining 1,406 files in the cleanup engineering model (70_Rule_References through 74_Semantic_Review) remain pending. Preserve UIDs, IDs and original evidence, and reconcile rather than blindly merge with last-check.
 - Workbench bundled JS is the compiled artifact in MDSE_v2 main. The recently committed all-connections panel change in source must be rebuilt and validated before it will appear in this installed runtime.
 
 ## Baseline sources
@@ -19,7 +19,7 @@ This repository is the engineering definition and integration test vault for MDS
 
 ## Completion gates
 
-1. Import the entire cleanup self-model without renumbering or losing relationships; reconcile, do not overwrite, last-check.
+1. Complete transfer of the cleanup model's 70–74 rule-reference/analysis/derived-test/semantic-review folders without renumbering or losing relationships; reconcile, do not overwrite, last-check.
 2. Establish approved top-level navigation and Base Vault managed configuration.
 3. Generate locked Bootstrap release metadata from the tool source and pass its startup/restart tests.
 4. Rebuild Workbench, sync current source, and verify canvas all-relationships depth control in Obsidian.
