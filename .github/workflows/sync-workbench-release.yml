@@ -1,0 +1,40 @@
+name: Sync Workbench release into live vault
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-workbench-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: spencerskelly/MDSE_v2
+          ref: 9dff350a2ea082418848616d44b1389e03885ae1
+          path: _tool_release
+          persist-credentials: false
+      - name: Sync exact built plugin without editing any model note
+        run: |
+          set -euo pipefail
+          source="_tool_release/tools/workbench/dist/plugin"
+          destination=".obsidian/plugins/mdse-workbench"
+          for filename in main.js manifest.json styles.css; do
+            test -s "$source/$filename"
+            cp "$source/$filename" "$destination/$filename"
+            cmp "$source/$filename" "$destination/$filename"
+          done
+          test "$(find modeling/MDSE_Toolset -type f | wc -l | xargs)" -eq 1471
+          test "$(find last-check/notes -name '*.md' | wc -l | xargs)" -eq 90
+      - name: Commit synchronized runtime to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .obsidian/plugins/mdse-workbench
+          if ! git diff --cached --quiet; then
+            git commit -m 'Sync Workbench built release 9dff350a to live vault'
+            git push origin HEAD:main
+          fi
