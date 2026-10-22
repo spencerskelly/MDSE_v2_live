@@ -1,0 +1,42 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Engineering_Data,.DS_Store,6148,NOTE,OS junk file committed to Git,,none
+Engineering_Data,Archived/.DS_Store,6148,NOTE,OS junk file committed to Git,,none
+Engineering_Data,Archived/EA_2026_10_15_endgame_mini.qeax,77541376,EVIDENCE,"Private EA model snapshot (SQLite, binary). Not opened; its extract manifest was read. Keep out of public repos (DAT-001, DAT-002)",,none
+Engineering_Data,Archived/EA_CSV/diagram_index.csv,189084,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/diagram_type_summary.csv,129,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/extract_manifest.json,416,NOTE,Source integrity report and extract manifest read in full (aggregate counts only),REQ-98057,read
+Engineering_Data,Archived/EA_CSV/orphan_req_placements.csv,66153,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_connector.csv,1454963,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_diagram.csv,186641,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_diagramobjects.csv,276621,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_object.csv,1968818,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_objectproperties.csv,2014729,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_objectproperties_all.csv,2256878,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/t_package.csv,95883,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,Archived/EA_CSV/tagvalue_summary.csv,2212,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,BOMs/09190-301-CEC B Redlined DVS 400 BOM Coughlin 5-5-26.xlsx,128806,EVIDENCE,"Private BOM workbook. Sheet names, sizes and header rows read; layouts match the two layouts v2 reads (flat and redline, BOM-015). No part data copied",,partial
+Engineering_Data,BOMs/5913436 D Redlined MVS800 Power Server CE BOM 06-16-26 (1).xlsx,119143,EVIDENCE,"Private BOM workbook. Sheet names, sizes and header rows read; layouts match the two layouts v2 reads (flat and redline, BOM-015). No part data copied",,partial
+Engineering_Data,BOMs/5913495 C Redlined Power Station CE BOM 5-5-26.xlsx,77355,EVIDENCE,"Private BOM workbook. Sheet names, sizes and header rows read; layouts match the two layouts v2 reads (flat and redline, BOM-015). No part data copied",,partial
+Engineering_Data,BOMs/5914557_C Redlined DVS330 IP55 BOM 5-5-26.xlsx,463250,EVIDENCE,"Private BOM workbook. Sheet names, sizes and header rows read; layouts match the two layouts v2 reads (flat and redline, BOM-015). No part data copied",,partial
+Engineering_Data,BOMs/Ampure_all_BoMs.xlsx,48126408,EVIDENCE,"Private BOM workbook. Sheet names, sizes and header rows read; layouts match the two layouts v2 reads (flat and redline, BOM-015). No part data copied",,partial
+Engineering_Data,BOMs/BOM_MDSE_Vault_Implementation_Plan.md,46486,CARRIED,Byte-identical to Test_Vault_ 100_Archive/V1/14_Workbench/docs/bom/a01-a14/BOM_MDSE_Vault_Implementation_Plan.md; that file: BOM-001 to BOM-017 and the BOM-005 variantOf proposal carry the A-series contracts; A-10 comparison and the A-12 reachability rule are not carried,,headings
+Engineering_Data,EA_2026_10_20_sampleset.qeax,99528704,EVIDENCE,"Private EA model snapshot (SQLite, binary). Not opened; its extract manifest was read. Keep out of public repos (DAT-001, DAT-002)",,none
+Engineering_Data,EA_2026_10_20_sampleset_export/connector_summary.csv,652,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/diagram_index.csv,214713,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/diagram_type_summary.csv,127,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/element_summary.csv,1483,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/extract_manifest.json,629,NOTE,Source integrity report and extract manifest read in full (aggregate counts only),REQ-98057,read
+Engineering_Data,EA_2026_10_20_sampleset_export/integrity_report.csv,595,NOTE,Source integrity report and extract manifest read in full (aggregate counts only),REQ-98057,read
+Engineering_Data,EA_2026_10_20_sampleset_export/package_path.csv,181333,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/part_resolution.csv,391206,NOTE,"Header, row count and resolution-type counts read; no row content copied",REQ-98057,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/port_summary.csv,430099,NOTE,"Header, row count and resolution-type counts read; no row content copied",REQ-98057,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_connector.csv,2065598,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_connectortag.csv,259047,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_diagram.csv,211672,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_diagramobjects.csv,398878,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_object.csv,3939417,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_objectproperties.csv,2345547,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_operation.csv,1822,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_package.csv,86638,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/t_xref.csv,14203533,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial
+Engineering_Data,EA_2026_10_20_sampleset_export/table_inventory.csv,1788,EVIDENCE,Table extract of a private EA model. Header and row count read; no row content copied,,partial

@@ -1,0 +1,34 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,20_Base Vault/PLUGIN_RELEASE_VERIFICATION_2026-10-18.md,2591,EVIDENCE,"Verification steps for pinning a community plugin (manifest id, version, SHA-256, license, load test, rollback); v2 does this with plugin lock (BOO-005) and tools/base-vault/vendor",,read
+Test_Vault_,20_Base Vault/Public Sample Vault/10_Model/Sample Instrument.md,2031,CARRIED,Byte-identical to v2 testing/fixtures/sample-instrument,,read
+Test_Vault_,20_Base Vault/Public Sample Vault/README.md,1168,EVIDENCE,Staging README of the public synthetic vault; v2 testing/README states fixtures are synthetic (DAT-002),,read
+Test_Vault_,20_Base Vault/README.md,2449,EVIDENCE,"V1/V2 base scaffold status; plugin stack decisions are BAS-003, BAS-012, BOO-001; superseded by tools/base-vault/README.md",,read
+Test_Vault_,20_Base Vault/Runtime/Plugins/advanced-canvas/main.js,381093,CARRIED,"Advanced Canvas is in the v2 stack (BAS-012) at 7.1.0; this is 7.0.0, superseded",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/advanced-canvas/manifest.json,364,CARRIED,"Advanced Canvas is in the v2 stack (BAS-012) at 7.1.0; this is 7.0.0, superseded",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/advanced-canvas/styles.css,20762,CARRIED,"Advanced Canvas is in the v2 stack (BAS-012) at 7.1.0; this is 7.0.0, superseded",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/breadcrumbs/main.js,0,REFUSED,Breadcrumbs payload; not in the BAS-012 pinned stack (README marks it provisional),,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/breadcrumbs/manifest.json,479,REFUSED,Breadcrumbs payload; not in the BAS-012 pinned stack (README marks it provisional),,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/breadcrumbs/styles.css,6192,REFUSED,Breadcrumbs payload; not in the BAS-012 pinned stack (README marks it provisional),,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/fileclass/main.js,295851,REFUSED,"Fileclass plugin payload; fileclasses refused (GOV-017, BOO-001)",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/fileclass/manifest.json,425,REFUSED,"Fileclass plugin payload; fileclasses refused (GOV-017, BOO-001)",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/fileclass/styles.css,61754,REFUSED,"Fileclass plugin payload; fileclasses refused (GOV-017, BOO-001)",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/mdse-bootstrap/main.js,19772,REFUSED,"V1 Bootstrap 0.3.1; v2 rewrote Bootstrap (tools/bootstrap) with the same duties (lock check, author prompt)",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/mdse-bootstrap/manifest.json,300,REFUSED,"V1 Bootstrap 0.3.1; v2 rewrote Bootstrap (tools/bootstrap) with the same duties (lock check, author prompt)",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/mdse-bootstrap/styles.css,647,REFUSED,"V1 Bootstrap 0.3.1; v2 rewrote Bootstrap (tools/bootstrap) with the same duties (lock check, author prompt)",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/mdse-workbench/main.js,773154,REFUSED,"V1 Workbench 0.1.18 (popup/modal design, Phase 0 spike); v2 builds a new right-sidebar Workbench",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/mdse-workbench/manifest.json,246,REFUSED,"V1 Workbench 0.1.18 (popup/modal design, Phase 0 spike); v2 builds a new right-sidebar Workbench",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/mdse-workbench/styles.css,5059,REFUSED,"V1 Workbench 0.1.18 (popup/modal design, Phase 0 spike); v2 builds a new right-sidebar Workbench",,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/obsidian-git/main.js,732445,CARRIED,Obsidian Git 2.40.0 is pinned in BAS-012; same version,,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/obsidian-git/manifest.json,325,CARRIED,Obsidian Git 2.40.0 is pinned in BAS-012; same version,,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/obsidian-git/styles.css,18303,CARRIED,Obsidian Git 2.40.0 is pinned in BAS-012; same version,,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/templater-obsidian/main.js,453404,CARRIED,Templater 2.25.0 is pinned in BAS-012; same version,,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/templater-obsidian/manifest.json,756,CARRIED,Templater 2.25.0 is pinned in BAS-012; same version,,title
+Test_Vault_,20_Base Vault/Runtime/Plugins/templater-obsidian/styles.css,4089,CARRIED,Templater 2.25.0 is pinned in BAS-012; same version,,title
+Test_Vault_,20_Base Vault/Testing/V2_IMPORT_KIT_RELEASE_READINESS_2026-10-17.md,4341,EVIDENCE,"Dated blocker list for the integrated import kit (single-file importer, base, Workbench popup, Bootstrap, release manifest); the targets are IMP-065, BAS-008, GOV-011; the popup and Python check script are refused",,read
+Test_Vault_,20_Base Vault/build_v2_plugin_lock.py,1640,REFUSED,"Python base builder, plugin lock or staging script; v2 base-vault is built in JS (D-0001, GOV-002)",,read
+Test_Vault_,20_Base Vault/build_v2_test_base.py,3395,REFUSED,"Python base builder, plugin lock or staging script; v2 base-vault is built in JS (D-0001, GOV-002)",,read
+Test_Vault_,20_Base Vault/stage_v1_verified_plugins_for_v2.py,2553,REFUSED,"Python base builder, plugin lock or staging script; v2 base-vault is built in JS (D-0001, GOV-002)",,read
+Test_Vault_,20_Base Vault/stage_v2_import_base.py,1760,REFUSED,"Python base builder, plugin lock or staging script; v2 base-vault is built in JS (D-0001, GOV-002)",,read
+Test_Vault_,20_Base Vault/stage_v2_locked_plugins.py,2990,REFUSED,"Python base builder, plugin lock or staging script; v2 base-vault is built in JS (D-0001, GOV-002)",,read
+Test_Vault_,20_Base Vault/v2_base_release_manifest.json,2148,CARRIED,"Managed-files and settings-ownership policy (managed defaults, bootstrap approval for community-plugins.json, user-owned workspace/hotkeys, preserve plugin data.json) matches GOV-011, MOD-119 and Bootstrap merge into data.json",,read
+Test_Vault_,20_Base Vault/verify_v2_staged_runtime.py,1788,REFUSED,"Python base builder, plugin lock or staging script; v2 base-vault is built in JS (D-0001, GOV-002)",,read

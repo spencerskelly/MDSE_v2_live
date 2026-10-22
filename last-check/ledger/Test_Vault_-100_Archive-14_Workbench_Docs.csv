@@ -1,0 +1,28 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Architecture/MDSE Runtime Architecture.md,20414,CARRIED,Runtime architecture is carried by WKB-002 to WKB-004; the cache measurement is a note,REQ-98047,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/BASE_local_MDSE Workbench.base,136,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Definition/01 - Workbench Product Definition.md,26796,NOTE,"Product definition, build outline and architecture; most is carried or retired; gaps are notes",REQ-98046;REQ-98051,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Definition/02 - Workbench Decision Log.md,108184,NOTE,Decision log WB-001 to WB-128: most are carried by WKB-001 to WKB-023; Local Model decisions (WB-105 to WB-128) are retired; gaps are notes,REQ-98045;REQ-98046,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Definition/03 - Build Outline and Roadmap.md,25491,NOTE,"Product definition, build outline and architecture; most is carried or retired; gaps are notes",REQ-98046;REQ-98051,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Definition/04 - Architecture and Model Boundary.md,18918,NOTE,"Product definition, build outline and architecture; most is carried or retired; gaps are notes",REQ-98046;REQ-98051,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/INDEX.md,662,EVIDENCE,"Index, guide and archived CI probe files",,partial
+Test_Vault_,100_Archive/V1/14_Workbench/docs/README.md,8092,EVIDENCE,"Index, guide and archived CI probe files",,partial
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/05 - Reference Plugin Findings.md,4520,EVIDENCE,Reference plugin findings; v2 does not depend on community plugins for correctness (BAS-*),,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_BOM_A14_BASELINE_CHECK.yml,388,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_PROBE_RUNTIME_ARCHITECTURE.md,142,EVIDENCE,"Index, guide and archived CI probe files",,partial
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/README.md,3372,EVIDENCE,"Index, guide and archived CI probe files",,partial
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/bom-a14-source-step15.yml,6543,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/wb128-gate3-representative-views.yml,2264,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/wb128-gate4-disposable-edits.yml,2325,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/wb128-gate5-release-alignment.yml,1438,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/wb128-real-vault-acceptance.yml,2914,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/wb129-real-qeax-local-model-05.yml,6121,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/wb129-rehearsal.yml,3716,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_CI_RETIRE_2026-10-10/workbench-subtree-stage.yml,5109,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_RTA2_CI_PROBE.md,160,EVIDENCE,"Index, guide and archived CI probe files",,partial
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_WB106_BUILD_SHA256.txt,231,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Reference/ARCHIVE_WB106_RUNTIME_BUILD.yml,881,EVIDENCE,"Index, guide and archived CI probe files",,title
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Testing/06 - Test Sheet.md,8694,NOTE,"Test sheets; the edit-diff check is a note, the rest is V1 specific",REQ-98050,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Testing/RTA Startup Acceptance.md,7019,NOTE,"Test sheets; the edit-diff check is a note, the rest is V1 specific",REQ-98050,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/Testing/RTA Startup and Semantic Cache Test Sheet.md,6844,NOTE,"Test sheets; the edit-diff check is a note, the rest is V1 specific",REQ-98050,read
+Test_Vault_,100_Archive/V1/14_Workbench/docs/User Guide/MDSE Workbench User Guide.md,15830,EVIDENCE,"Index, guide and archived CI probe files",,headings

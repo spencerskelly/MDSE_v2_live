@@ -1,0 +1,15 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,100_Archive/V1/14_Workbench/.devcontainer/devcontainer.json,209,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/.gitattributes,66,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/.gitignore,65,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/README.md,22808,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",REQ-98047,read
+Test_Vault_,100_Archive/V1/14_Workbench/RELEASE_NOTES.md,7878,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,read
+Test_Vault_,100_Archive/V1/14_Workbench/WB106_IMPLEMENTATION_CONTRACT.md,15785,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,read
+Test_Vault_,100_Archive/V1/14_Workbench/artifact-sha256.txt,231,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/esbuild.config.mjs,691,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/manifest.json,246,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/package-lock.json,36062,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/package.json,1280,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/styles.css,5059,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/tsconfig.json,420,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title
+Test_Vault_,100_Archive/V1/14_Workbench/versions.json,471,EVIDENCE,"Workbench README, release notes and WB-106 contract; WB-106 is retired with the Local Model",,title

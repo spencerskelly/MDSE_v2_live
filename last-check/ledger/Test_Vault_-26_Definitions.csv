@@ -1,0 +1,122 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,26_Definitions/ADR_V2_06_NOTE_FORMAT_2026-10-18.md,7217,CARRIED,"Note layout (user zone on top, one SysML v2 block at the bottom, who may change what) is D-0003, MOD-121, IMP-096 and the format oracle; Q1 is OD-03 and REG-265",,read
+Test_Vault_,26_Definitions/ADR_V2_07_HTML_ONLY_IMPORTER_2026-10-18.md,4999,CARRIED,"HTML importer, add-onto merge table and parser-check report are IMP-070, IMP-061 and tools/importer/SPEC.md",,read
+Test_Vault_,26_Definitions/ADR_V2_08_BOM_LATEST_REVISION_SCOPE_2026-10-19.md,1746,CARRIED,Latest-revision BOM scope is in RULESET BOM rows and DECISIONS,,read
+Test_Vault_,26_Definitions/APPROVED_V2_TRANSLATION_BASELINE_AND_TEST_HANDOFF_2026-10-18.md,7424,CARRIED,"Ten frozen contracts are MOD-121, IMP-060, IMP-064, DAT-001 and neighbours (V2-nn citations)",,read
+Test_Vault_,26_Definitions/Architecture Decisions.md,1862,CARRIED,Adopted v2 direction matches MOD-119 and DECISIONS,,read
+Test_Vault_,26_Definitions/BOM Integration.md,3000,CARRIED,BOM-ALT-001 alternates are BOM-003; parent-owned usages are BOM-001/BOM-002,,read
+Test_Vault_,26_Definitions/MDSE_V2_0_INTEGRATED_ENGINEERING_PILOT_PLAN_2026-10-18.md,7483,NOTE,Stop-ship defect list rewritten as a requirement; the 13 steps are a plan (evidence),REQ-98026,read
+Test_Vault_,26_Definitions/MDSE_V2_0_SHARED_NOTE_AND_RELEASE_CONTRACT_2026-10-18.md,3045,CARRIED,"Update authority, note ownership, write plan categories and release gates are IMP-070 and TST-008",,read
+Test_Vault_,26_Definitions/MDSE_V2_RECOVERY_HANDOFF_2026-10-18.md,6563,CARRIED,"Owner-approved requirements and the binary acceptance list are in RULESET (IMP-064, TST-004/TST-006, MOD-133); the failure narrative is evidence",,read
+Test_Vault_,26_Definitions/MOC_Catalogs/archive_1.md,19602,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/archive_2.md,21700,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/archive_3.md,23254,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/archive_4.md,14113,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/archive_5.md,2312,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/legacy_system_1.md,4981,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,headings
+Test_Vault_,26_Definitions/MOC_Catalogs/other_1.md,5069,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,headings
+Test_Vault_,26_Definitions/MOC_Catalogs/sysml_decisions_1.md,5980,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,headings
+Test_Vault_,26_Definitions/MOC_Catalogs/translator_history_1.md,17185,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/translator_history_2.md,2287,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/workbench_1.md,16449,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/workbench_2.md,2202,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_Catalogs/workspace_1.md,9776,EVIDENCE,"Generated findability catalog of the 2026-10-18 note census; entries are links, not content (indexed_only)",,title
+Test_Vault_,26_Definitions/MOC_REPOSITORY_NOTE_CENSUS_2026-10-18.md,4867,EVIDENCE,Census index of 917 notes at 5eea630; the one duplicate pair is used in REQ-98029,REQ-98029,read
+Test_Vault_,26_Definitions/Mapping and Conformance.md,1203,CARRIED,OMG-first mapping and conformance rules are in the IMP/MOD rows,,read
+Test_Vault_,26_Definitions/README.md,1847,CARRIED,Index and rules of the 26_Definitions workspace; rules restated in RULESET and DECISIONS,,read
+Test_Vault_,26_Definitions/STEP_00_APPROVED_MODEL_HANDLING_CLARIFICATIONS_2026-10-18.md,7167,CARRIED,"Owner's 11 clarifications (copy consolidation, Boundary note, packages as folders, sequences, ports, attachments, flagLink, untyped usages, graph staleness, source availability) are in RULESET IMP-060/IMP-090/MOD-133 and DECISIONS",,read
+Test_Vault_,26_Definitions/STEP_02A_EA_DIAGRAM_DEFERRED_2026-10-18.md,6239,CARRIED,"EA diagrams deferred (ADR-V2-05): RULESET IMP-072, DAT rules, EA_TO_V2_PATHS; the scope lock json carries the same",,read
+Test_Vault_,26_Definitions/STEP_02B_APPROVED_FAMILY_RESOLVER_AND_LOCAL_GROUP_CHECK_2026-10-18.md,4497,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02C_PHASE8_PHASE9_APPROVED_POLICY_INTEGRATION_2026-10-18.md,3400,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02D_APPROVED_PHASE8_GATE_AND_SOURCE_REVIEW_2026-10-18.md,7144,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02E_REAL_SOURCE_LEDGER_PARITY_AND_OUTLIERS_2026-10-18.md,8177,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02F_SEMANTIC_OUTLIER_DISPOSITION_AND_REAL_SOURCE_GATE_2026-10-18.md,6998,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02G_FLAG_FALLBACK_ADAPTER_2026-10-18.md,1828,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02H_OBSIDIAN_FLAG_NOTE_OVERLAY_2026-10-18.md,1468,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02I_SYNTHETIC_END_TO_END_IMPORT_2026-10-18.md,1775,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02J_FIRST_REDUCED_QEAX_NOTE_STAGING_2026-10-18.md,1807,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02K_REGISTRY_DRIVEN_STAGE_2026-10-18.md,1943,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02L_REDUCED_QEAX_REGISTRY_STAGE_2026-10-18.md,2513,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02N_FULL_GOVERNED_SOURCE_STAGE_2026-10-18.md,1735,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02O_PERSISTENT_UID_PLACEMENT_PLAN_2026-10-18.md,1466,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02P_APPLIED_GOVERNED_PLACEMENT_2026-10-18.md,1586,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02Q_OPERATIONAL_SUPPORT_OVERLAY_2026-10-18.md,1733,NOTE,"Flags must sit on a note or node, not only in an index; folded into the attachment ownership requirement",REQ-98027,read
+Test_Vault_,26_Definitions/STEP_02R_CONTROLLED_VAULT_INTEGRATION_2026-10-18.md,1516,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02S_RUNTIME_REIMPORT_PREFLIGHT_2026-10-18.md,1249,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02T_SAFE_REIMPORT_WORKBENCH_CONTRACT_2026-10-18.md,2250,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02U_INTEGRATED_SAFE_REIMPORT_2026-10-18.md,1509,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02V_WORKBENCH_GRAPH_ADAPTER_2026-10-18.md,1610,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02X_WORKBENCH_VIEWER_PROTOTYPE_2026-10-18.md,1166,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_02Y_EXISTING_WORKBENCH_GRAPH_INTEGRATION_2026-10-18.md,1806,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03A_GRAPH_FLAG_ACCEPTANCE_GAP_2026-10-18.md,1427,NOTE,"Flags must sit on a note or node, not only in an index; folded into the attachment ownership requirement",REQ-98027,read
+Test_Vault_,26_Definitions/STEP_03B_GRAPH_FLAG_PARITY_GATE_2026-10-18.md,2587,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03C_ATTACHMENT_FLAG_STAGING_2026-10-18.md,2520,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03D_SOURCE_IDENTITY_BASELINE_2026-10-18.md,2235,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03F_CROSSWALK_INTEGRATION_2026-10-18.md,2662,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03I_SOURCE_GRAPH_EXPORT_INTEGRATION_2026-10-18.md,1904,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03J_APPROVED_FAMILY_GRAPH_ANNOTATION_2026-10-18.md,2472,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03K_FULL_SOURCE_FAMILY_COVERAGE_2026-10-18.md,3091,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03L_REVIEW_FLAG_PARITY_GAP_2026-10-18.md,2205,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03M_EXPLICIT_FLAG_PARITY_2026-10-18.md,931,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03N_ATTACHMENT_IDENTITY_INVENTORY_2026-10-18.md,1633,NOTE,"Attachment owner evidence and categories (parent, connector, unassigned) not in RULESET; rewritten as a requirement",REQ-98027,read
+Test_Vault_,26_Definitions/STEP_03O_ATTACHMENT_OWNERSHIP_EVIDENCE_2026-10-18.md,1987,NOTE,"Attachment owner evidence and categories (parent, connector, unassigned) not in RULESET; rewritten as a requirement",REQ-98027,read
+Test_Vault_,26_Definitions/STEP_03P_ATTACHMENT_OWNER_CANDIDATES_2026-10-18.md,2142,NOTE,"Attachment owner evidence and categories (parent, connector, unassigned) not in RULESET; rewritten as a requirement",REQ-98027,read
+Test_Vault_,26_Definitions/STEP_03Q_CONNECTOR_OWNER_EVIDENCE_2026-10-18.md,1959,NOTE,"Attachment owner evidence and categories (parent, connector, unassigned) not in RULESET; rewritten as a requirement",REQ-98027,read
+Test_Vault_,26_Definitions/STEP_03R_FIRST_FUNCTIONAL_VAULT_2026-10-18.md,2167,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03S_GENERATOR_INTEGRATION_2026-10-18.md,1955,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03T_APPROVED_FAMILY_PLACEMENT_MANIFEST_2026-10-18.md,1811,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03U_IDENTITY_CROSSWALK_2026-10-18.md,1003,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03V_UID_ALLOCATION_2026-10-18.md,2862,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03W_IDENTITY_RESERVATION_AUDIT_2026-10-18.md,2812,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03X_BASE_STAGE_INTEGRATION_2026-10-18.md,2360,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03Y_STAGED_RUNTIME_INTEGRITY_2026-10-18.md,1607,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_03Z_LOCKED_V2_PLUGIN_PACKAGING_2026-10-18.md,1696,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_04B_QEAX_ADAPTER_LOCAL_AUDIT_2026-10-18.md,2423,EVIDENCE,"Dated step log of tool development (synthetic tests, local runs, next step); not a rule",,read
+Test_Vault_,26_Definitions/STEP_04_QEAX_NO_LOSS_LEDGER_IMPLEMENTATION_2026-10-18.md,3959,EVIDENCE,No-loss ledger gate (one row per source object and connector): carried as IMP-059 and IMP-064; this file is the first synthetic implementation log,,read
+Test_Vault_,26_Definitions/Structural Mapping Contract.md,5257,CARRIED,"Definition, usage, ownership, port and connector rules are MOD/IMP rows and the language notes",,read
+Test_Vault_,26_Definitions/Structural Translation Matrix - First Pass.md,7025,CARRIED,STR-001 to STR-014 are superseded by the approved 60+26 family mapping (ea-family-mapping.json); the open questions were answered in the 2026-10-17 approvals,,read
+Test_Vault_,26_Definitions/SysML Source Ownership and Note Storage.md,7376,REFUSED,"Mid-note SysML storage proposal (Gate A) superseded by the bottom-of-note ## SysML v2 section, D-0003",,read
+Test_Vault_,26_Definitions/SysML_v2_Occurrence_Definitions_and_Usages.md,4848,CARRIED,"Occurrence definition, usage, event occurrence, time slice and snapshot are language notes under governance/language/sysml-v2; EXC-09",,read
+Test_Vault_,26_Definitions/SysML_v2_Use_Case_Definitions_and_Usages.md,4884,CARRIED,"Use case definition/usage, include and extend are language notes; EXC-08",,read
+Test_Vault_,26_Definitions/V1_ARCHIVE_VALUE_RECOVERY_GAPS_2026-10-18.md,6414,EVIDENCE,"List of V1 archive recovery candidates; each is checked at the 100_Archive step (Importer Operating Contract, WB106, Plugin Stack, Author Registration, BOM A01-A14, Step18)",,read
+Test_Vault_,26_Definitions/V1_V2_DEEP_TECHNICAL_RECOVERY_AND_PLATFORM_ARCHITECTURE_2026-10-18.md,16095,NOTE,"DEF-01 to DEF-04 are code defects in the old runtime (evidence); the attachment conservation and 27,000-note planner scale dimensions are rewritten",REQ-98027;REQ-98028,read
+Test_Vault_,26_Definitions/V1_V2_REUSE_LEDGER_INDEX.md,15885,NOTE,28 reuse candidates (R01-R28); R03 planner scale and R04 attachment conservation rewritten; the rest are algorithm or test references checked at the 100_Archive step,REQ-98027;REQ-98028,read
+Test_Vault_,26_Definitions/V2 Delivery Plan.md,2125,EVIDENCE,Gated roadmap of 2026-10-15; governance/ROADMAP.md replaces it,,read
+Test_Vault_,26_Definitions/V2 Functional Parity and Public Test Vault.md,8918,CARRIED,Synthetic-only public vault is DAT-002; coverage targets are MOD-144; change handling is MOD-136; Sample Instrument fixture came across (DECISIONS),,read
+Test_Vault_,26_Definitions/V2_APPROVED_EXCEPTION_HANDLING_AUDIT_2026-10-18.md,11314,CARRIED,"EXC-01 to EXC-12 are the cited approvals (IMP-060 to IMP-115, language notes); EXC-06 conflict is flagged in REQ-98023",REQ-98023,read
+Test_Vault_,26_Definitions/V2_CONNECTOR_DEFINITIONS_INDEX.md,6006,EVIDENCE,Navigation index to the 2026-10-17 approvals; the approvals are the 109 language notes and IMP rows,,read
+Test_Vault_,26_Definitions/V2_DATA_RETENTION_APPROVAL_HOLDS_2026-10-18.md,5179,REFUSED,Retention holds superseded by STEP-00 (no second source archive); zero-silent-loss acceptance is IMP-064,,read
+Test_Vault_,26_Definitions/V2_EXECUTABLE_CANDIDATE_GAP_REVIEW_2026-10-18.md,1816,EVIDENCE,Gap review of the old provisional selector registry against the approved families; v2 starts from the approved families,,read
+Test_Vault_,26_Definitions/V2_FILE_ORGANIZATION_PROPOSAL_2026-10-18.md,7433,CARRIED,"SharePoint limits (400 characters, invalid names, W-382 report) are in RULESET and OPEN_DECISIONS; Rovo and system-of-record questions are open decisions; folder reshuffle phases are moot in a new repository",,read
+Test_Vault_,26_Definitions/V2_FOLDER_MIGRATION_MANIFEST_2026-10-18.json,238614,REFUSED,"1,414 path moves of the blocked V1-to-V2 folder separation (GOV-016)",,headings
+Test_Vault_,26_Definitions/V2_FOLDER_MIGRATION_REFERENCE_AUDIT_2026-10-18.json,33671,REFUSED,120 stale references of the blocked folder separation (GOV-016),,headings
+Test_Vault_,26_Definitions/V2_FULL_PROGRAM_RECOVERY_AND_ALIGNMENT_2026-10-18.md,9910,EVIDENCE,Program index and questions Q1-Q6 answered by the 2026-10-18 release decisions; strategic gaps G1-G12 are planning,,read
+Test_Vault_,26_Definitions/V2_GOLDEN_IMPORT_FLAG_AND_CONTINUE_POLICY_2026-10-18.md,5514,CARRIED,"Flag-and-continue, failure levels and acceptance gate are in RULESET (grep: flag and continue) and TST-006",,read
+Test_Vault_,26_Definitions/V2_IMPLEMENTATION_TRACEABILITY_AUDIT_2026-10-18.md,7633,EVIDENCE,Path inventory V2-01 to V2-14 of the old toolchain; evidence level path_inventory_unverified,,read
+Test_Vault_,26_Definitions/V2_MIGRATION_MERGE_GATES_2026-10-18.md,2743,REFUSED,Blocked folder-move staging branch (GOV-016); v2 is a new repository,,read
+Test_Vault_,26_Definitions/V2_NEXT_STEP_TITLES_2026-10-18.md,4914,EVIDENCE,Stable step titles and completion estimates of the old program,,read
+Test_Vault_,26_Definitions/V2_NOTE_MAPPING_MATRIX.md,16189,CARRIED,"Generated join of ea-element-mapping, family resolver and field/tag dispositions; v2 holds them in governance/schemas/ea-*.json",,read
+Test_Vault_,26_Definitions/V2_PRIOR_WORK_RECOVERY_AUDIT_2026-10-18.md,4102,EVIDENCE,"Pointer list to the 2,267 aggregation approvals and Phase 8/9 code",,read
+Test_Vault_,26_Definitions/V2_PROGRAM_GOALS_AND_COMPLETION_2026-10-18.md,9209,EVIDENCE,"Planning percentages G01-G12 of the old program, not measured",,read
+Test_Vault_,26_Definitions/V2_PROGRAM_HOME.md,5666,EVIDENCE,Navigation page,,read
+Test_Vault_,26_Definitions/V2_RELEASE_ARCHITECTURE_DECISIONS_2026-10-18.md,3942,CARRIED,"ADR-V2-01 to ADR-V2-05 are MOD-119, MOD-121 and the diagram deferral rows",,read
+Test_Vault_,26_Definitions/V2_REPOSITORY_STABILITY_AND_CONSOLIDATION_2026-10-18.md,7042,NOTE,Reference-safe cleanup policy (list inbound references before merging or retiring) is not in v2,REQ-98029,read
+Test_Vault_,26_Definitions/V2_STEP_INDEX.md,7432,EVIDENCE,Generated index of the STEP notes,,read
+Test_Vault_,26_Definitions/tools/audit_note_backlinks.py,3107,NOTE,"Read-only inbound-reference check before a merge; behavior rewritten as a requirement (the Python tool itself is refused, D-0001)",REQ-98029,read
+Test_Vault_,26_Definitions/tools/audit_v2_legacy_references.py,2622,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,read
+Test_Vault_,26_Definitions/tools/audit_v2_markdown_links.py,1744,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,read
+Test_Vault_,26_Definitions/tools/build_v2_mapping_matrix.py,9087,REFUSED,Generator for V2_NOTE_MAPPING_MATRIX.md from the ea-*.yaml mappings; v2 holds the mappings as governance/schemas/ea-*.json and EA_TO_V2_PATHS.md (D-0001),,partial
+Test_Vault_,26_Definitions/tools/build_v2_step_index.py,2740,REFUSED,"Generator for the STEP index, a process log (D-0001)",,partial
+Test_Vault_,26_Definitions/tools/check_v2_archive_runtime_boundary.py,1790,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,read
+Test_Vault_,26_Definitions/tools/check_v2_migration_manifest.py,2246,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,read
+Test_Vault_,26_Definitions/tools/migrate_v1_plugin_payload_once.py,1796,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,partial
+Test_Vault_,26_Definitions/tools/reconcile_v2_registry_pins.py,2125,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,read
+Test_Vault_,26_Definitions/tools/repair_v2_moved_registry_paths.py,2226,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,partial
+Test_Vault_,26_Definitions/tools/repair_v2_workflow_paths.py,2812,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,partial
+Test_Vault_,26_Definitions/tools/stage_v2_archive_migration.py,3530,REFUSED,Python-era tool for the V1-to-V2 folder move or registry pins (D-0001); v2 has its own tools/ and oracles,,partial
+Test_Vault_,26_Definitions/v1_to_v2_reuse_ledger.v0.1.json,22046,NOTE,Machine form of the 28 reuse records; see V1_V2_REUSE_LEDGER_INDEX,REQ-98027;REQ-98028,headings
+Test_Vault_,26_Definitions/v2_approved_runtime_divergences.v0.1.json,4070,EVIDENCE,Four code-versus-policy defects (DEF-01 to DEF-04) of the old runtime,,headings
+Test_Vault_,26_Definitions/v2_ea_diagram_scope_lock.v0.1.json,1084,CARRIED,"EA diagram deferral (ADR-V2-05); allowed tables t_object, t_connector, t_package are ea-source-profile.json",,headings
+Test_Vault_,26_Definitions/v2_executable_candidate_crosswalk.v0.1.json,54107,EVIDENCE,60+26 crosswalk of the old provisional selectors,,headings
+Test_Vault_,26_Definitions/v2_mapping_family_recovery.v0.1.json,38349,CARRIED,60 element and 26 relationship families are ea-family-mapping.json,,headings
+Test_Vault_,26_Definitions/v2_recovery_traceability.v0.1.json,5671,EVIDENCE,V2-nn path inventory of the old toolchain,,headings

@@ -1,0 +1,7 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,README.md,3322,EVIDENCE,Navigation of the V1/V2 numbered folders and the 2026-10-15 move-audit warning; superseded by MDSE_v2 README,,read
+Test_Vault_,AGENTS.md,956,CARRIED,"v2 governance/ai/AI_INSTRUCTIONS.md carries the same rules (template-stamped uid/id, leave status, never delete, never reuse id, never invent source facts)",,read
+Test_Vault_,MOC_MDSE_V2.md,15046,NOTE,"Master map; 70 'Known missing coverage' table is this audit's task. Maintenance contract item 2 (approved, implemented, tested, accepted and released tracked separately) added to REQ-98034",REQ-98034,read
+Test_Vault_,.gitattributes,223,NOTE,Plugin folders marked -text so hash locks survive checkout (W-322); not in v2 .gitattributes or generated vaults,REQ-98039,read
+Test_Vault_,.gitignore,347,CARRIED,"Workspace, plugin data.json, author-code.txt, bytecode and real-evidence folders ignored; v2 root .gitignore and base_vault.ts carry the same set",,read
+Test_Vault_,.vault.yaml,198,CARRIED,"UNINITIALIZED vault_uid rule and 'do not copy a real vault_uid': BAS-006, BAS-007",,read

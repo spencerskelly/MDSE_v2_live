@@ -1,0 +1,96 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,99_System/03_Schemas/00 - Folder Contents.base,102,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/03_Schemas/00 - Folder Map.canvas,24,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/03_Schemas/00 - Views and Bases.md,56,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/03_Schemas/authors.yaml,1299,CARRIED,governance/schemas/authors.yaml,,read
+Test_Vault_,99_System/03_Schemas/ea-connector-mapping.yaml,14478,CARRIED,ea-family-mapping.json,,read
+Test_Vault_,99_System/03_Schemas/ea-element-mapping.yaml,17945,CARRIED,tools/importer/src/ea_mapping.ts and ea-family-mapping.json,,read
+Test_Vault_,99_System/03_Schemas/ea-field-dispositions.yaml,67198,CARRIED,governance/schemas/ea-field-dispositions.json,,read
+Test_Vault_,99_System/03_Schemas/ea-package-rules.yaml,1262,CARRIED,"classify() in ea_mapping.ts (REQ-98014, REQ-98015 record the three differences)",,read
+Test_Vault_,99_System/03_Schemas/ea-tag-dispositions.yaml,30439,CARRIED,governance/schemas/ea-tag-dispositions.json,,read
+Test_Vault_,99_System/03_Schemas/element-types.yaml,2739,CARRIED,governance/schemas/element-types.yaml,,read
+Test_Vault_,99_System/03_Schemas/local-model.yaml,10040,REFUSED,Local Model replaced by SysML v2 usages (D-0003),,read
+Test_Vault_,99_System/03_Schemas/relationships.yaml,6653,CARRIED,governance/schemas/relationships.yaml,,read
+Test_Vault_,99_System/03_Schemas/Proposals/BOM A14 Schema Reconciliation Step16.md,8935,CARRIED,"BOM-001, BOM-005; quantity and unit rules in BOM-001",,read
+Test_Vault_,99_System/03_Schemas/Proposals/bom-local-model-06-readonly.yaml,2456,CARRIED,"BOM-001, BOM-005 (proposal only)",,read
+Test_Vault_,99_System/03_Schemas/Proposals/bom-variantof-oneway.yaml,2027,CARRIED,BOM-005 (proposal only),,read
+Test_Vault_,99_System/05_Templates/00 - Folder Contents.base,104,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/05_Templates/00 - Folder Map.canvas,24,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/05_Templates/00 - Views and Bases.md,58,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/05_Templates/Actor.md,222,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Artifact.md,239,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Behavior.md,253,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Condition.md,254,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Diagram.md,230,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Document.md,225,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Failure Mode.md,241,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Freestyle.md,22,EVIDENCE,modelCheck and Freestyle templates; v2 base vault templates do not include them; modelCheck is replaced by flag callouts (R-5.1),,read
+Test_Vault_,99_System/05_Templates/Functional Flow.md,232,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Info.md,235,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Issue.md,251,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Item Flow.md,251,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Object.md,233,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Person.md,260,CARRIED,MOD-010; v2 importer writes the person note (IMP-099),,read
+Test_Vault_,99_System/05_Templates/Plan.md,221,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Procedure.md,230,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Property Definition.md,351,EVIDENCE,Template for documenting a frontmatter property; no property notes use it and v2 has no property notes,,read
+Test_Vault_,99_System/05_Templates/Requirement.md,238,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Result.md,223,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Setup.md,222,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Use Case.md,246,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/Verification.md,246,CARRIED,Class template; MOD-031 section order. v2 base_vault.ts generates its own templates (REQ-98013 notes the blank id/uid difference),REQ-98013,read
+Test_Vault_,99_System/05_Templates/modelCheck.md,200,EVIDENCE,modelCheck and Freestyle templates; v2 base vault templates do not include them; modelCheck is replaced by flag callouts (R-5.1),,read
+Test_Vault_,99_System/01_Admin/00 - Folder Contents.base,100,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/01_Admin/00 - Folder Map.canvas,24,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/01_Admin/00 - Views and Bases.md,54,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/08_Scripts/00 - Folder Contents.base,102,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/08_Scripts/00 - Folder Map.canvas,24,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/08_Scripts/00 - Views and Bases.md,56,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/08_Scripts/02_Snippets/Snippet - id.md,1522,CARRIED,Templater id and uid snippets; REQ-98013 records the v2 difference,REQ-98013,read
+Test_Vault_,99_System/08_Scripts/02_Snippets/Snippet - uid.md,1744,CARRIED,Templater id and uid snippets; REQ-98013 records the v2 difference,REQ-98013,read
+Test_Vault_,99_System/06_Fileclasses/Actor.md,2456,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Artifact.md,2654,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Behavior.md,3066,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Condition.md,3602,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Diagram.md,2794,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Document.md,2829,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Failure Mode.md,2676,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Functional Flow.md,2516,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Info.md,2630,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Issue.md,2822,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Item Flow.md,2678,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/MDSE Link Targets.base,6897,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Object.md,3630,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Plan.md,2450,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Procedure.md,2814,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Requirement.md,3466,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Result.md,2462,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Setup.md,2456,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Use Case.md,3441,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/Verification.md,2898,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/06_Fileclasses/modelCheck.md,2953,REFUSED,Generated Metadata Menu form from relationships.yaml (W-322). Fileclass is provisional (BOO-001) and not shipped (D-0027 area); relationship fields are SysML text (D-0003),,read
+Test_Vault_,99_System/02_AI/00 - Folder Contents.base,97,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/02_AI/00 - Folder Map.canvas,24,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/02_AI/00 - Views and Bases.md,51,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/02_AI/AI_INSTRUCTIONS.md,8809,CARRIED,governance/ai/AI_INSTRUCTIONS.md; Local Model and fileclass sections refused (D-0003); curated layout rule gap in REQ-98021,REQ-98021,read
+Test_Vault_,99_System/02_AI/processes/AI_Process_Changelog_Review.md,3036,CARRIED,governance/ai/processes/AI-CR-01_Changelog_Review.md (identical except one status line),,read
+Test_Vault_,99_System/archive/README_archive.md,720,EVIDENCE,Archive index,,read
+Test_Vault_,99_System/archive/08_Scripts retired/next-id.js,594,REFUSED,Replaced by the id snippet and MOD-011,,read
+Test_Vault_,99_System/archive/03_Schemas retired/vault-registry.yaml,520,REFUSED,Cross-vault registry; one vault in phase 1 (GOV-017),,read
+Test_Vault_,99_System/04_People/Benjamin Brass.md,238,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Chesca Legaspi.md,255,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Florian Koerfer.md,259,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Gavin Nishioka.md,241,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Herman Montano.md,255,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Jesse Rivera.md,239,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Karin Follmann.md,240,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Ray Virzi.md,228,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Silke Kirchner.md,240,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/04_People/Spencer Skelly.md,254,NOTE,"Person note: author code, EA names. MOD-010 carries the rule; the EA name to code table is a gap",REQ-98020,read
+Test_Vault_,99_System/10_Docs/00 - Folder Contents.base,99,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/10_Docs/00 - Folder Map.canvas,24,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/10_Docs/00 - Views and Bases.md,53,EVIDENCE,"Generated folder navigation stub (folder base, canvas, one-line note); no content",,read
+Test_Vault_,99_System/10_Docs/MDSE Modeling Ruleset 1.23.md,19718,CARRIED,RULESET.md cites its sections; section 8 roles are a gap (REQ-98022); sections 15.1 to 16.3 in REQ-98018,REQ-98018;REQ-98022,read
+Test_Vault_,99_System/10_Docs/MDSE Rules Register.csv,110819,CARRIED,governance/register/rules-register.csv and RULESET.md; all 346 REG ids present in v2 (19 are in OPEN_DECISIONS.md),,id-crosscheck
+Test_Vault_,99_System/10_Docs/MDSE Rules Register.md,102537,CARRIED,governance/register/rules-register.csv and RULESET.md; all 346 REG ids present in v2 (19 are in OPEN_DECISIONS.md),,id-crosscheck
+Test_Vault_,99_System/10_Docs/MDSE Ruleset 2.0 DRAFT.md,19001,CARRIED,Migrated into RULESET.md on 2026-10-19; the C-8 Translator Definition citation is still unresolved,,read

@@ -1,0 +1,12 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,.obsidian/app.json,95,CARRIED,v2 base_vault.ts writes alwaysUpdateLinks true and newLinkFormat shortest,,read
+Test_Vault_,.obsidian/appearance.json,2,EVIDENCE,Empty object,,read
+Test_Vault_,.obsidian/community-plugins.json,183,REFUSED,"Lists 10 plugins incl. fileclass, breadcrumbs, nodian, quickadd, table-exporter; v2 stack is BAS-012 (five plugins)",,read
+Test_Vault_,.obsidian/core-plugins.json,703,CARRIED,v2 CORE_PLUGINS in base_vault.ts is the same set,,read
+Test_Vault_,.obsidian/templates.json,40,EVIDENCE,"Points at 99_System/05_Templates for the core Templates plugin, which is disabled in core-plugins.json; v2 uses Templater",,read
+Test_Vault_,.obsidian/plugin-lock.yaml,4574,REFUSED,"V1 lock (Bootstrap 0.3.1, Workbench 0.1.18 and others); v2 has its own lock and pins (BOO-005)",,partial
+Test_Vault_,.obsidian/types.json,2644,REFUSED,"Property type table for V1 relationship fields (hasState, stateOf, copyOf, ...) and FMEA numbers; relationships are SysML text in v2 (D-0003)",,read
+Test_Vault_,.obsidian/plugins/obsidian-git/main.js,732463,CARRIED,Git 2.40.0 is the BAS-012 pin; v2 tools/base-vault/vendor,,title
+Test_Vault_,.obsidian/plugins/obsidian-git/manifest.json,325,CARRIED,Same version as the v2 vendor copy,,read
+Test_Vault_,.obsidian/plugins/obsidian-git/styles.css,18303,CARRIED,Same plugin release,,title
+Test_Vault_,.obsidian/plugins/obsidian-git/obsidian_askpass.sh,402,CARRIED,Part of the Git plugin release,,read

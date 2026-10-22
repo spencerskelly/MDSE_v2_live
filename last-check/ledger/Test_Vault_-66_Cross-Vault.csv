@@ -1,0 +1,5 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,66_Cross-Vault/README.md,544,CARRIED,"Cross-vault resolution is deferred; v2 has the same stance (cross-vault registry refused, GOV-017; BOO-002 archives cross-vault plugins). ModelRef compatibility remark is not a v2 rule",,read
+Test_Vault_,66_Cross-Vault/History/Archived Plugins/Archived Plugins.md,2984,EVIDENCE,Records why Ampure Cross-Vault Resolver and Multi-Vault Navigator were removed (single vault); the uid:<30> link form [[uid:...|Title]] is the only design detail and is not used by v2,,read
+Test_Vault_,66_Cross-Vault/History/Archived Plugins/ampure-cross-vault-resolver/main.js,7226,REFUSED,"Archived plugin (scans sibling vaults, indexes uid, inserts [[uid:...]] links); cross-vault refused",,partial
+Test_Vault_,66_Cross-Vault/History/Archived Plugins/ampure-cross-vault-resolver/manifest.json,324,REFUSED,Archived plugin manifest 0.1.1,,read

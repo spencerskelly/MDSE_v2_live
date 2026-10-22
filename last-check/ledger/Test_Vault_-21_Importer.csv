@@ -1,0 +1,25 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,21_Importer/Definition/SysML v2 Single File Importers UID and Diagnostics Contract 2026-10-17.md,7926,CARRIED,"One HTML importer IMP-065; BOM UID epoch MOD-140; UID collision and ledger IMP-059/064/076 and identity.ts; failure levels IMP-063; error codes with meaning and repair in TRANSLATION.md. Dry-run default and local-only debug mode are not stated in v2 SPEC (minor, no note)",,read
+Test_Vault_,21_Importer/README.md,1045,EVIDENCE,V1 folder index; superseded by tools/importer/README.md,,read
+Test_Vault_,21_Importer/build_importer_html.mjs,1640,CARRIED,v2 tools/importer/build.mjs (same build and --check gate),,read
+Test_Vault_,21_Importer/inspect_v2_source_endpoint_types.py,1965,EVIDENCE,Endpoint type pair census; same data feeds the ENDPOINT_KIND gates,,read
+Test_Vault_,21_Importer/mdse_note_format.py,12294,CARRIED,v2 testing/oracles/mdse_note_format.py,,partial
+Test_Vault_,21_Importer/mdse_v2_importer.html,40467,REFUSED,Built output; v2 builds its own dist/mdse_importer.html,,title
+Test_Vault_,21_Importer/project_v2_element_candidates.py,2590,REFUSED,Projects onto v0.2 selector registry (retired); v2 uses ea-family-mapping.json,,read
+Test_Vault_,21_Importer/project_v2_relationship_candidates.py,3681,CARRIED,A named stereotype with no exact family rule stays unmatched; only an empty stereotype falls back to the plain type: family lookup in ea_mapping.ts,,read
+Test_Vault_,21_Importer/qeax_v2_preflight.py,1989,REFUSED,"Hard-coded profile EA_2026_10_15_endgame_mini (11,447/14,688/1,389); profile-by-name rule kept as REQ-98032",REQ-98032,read
+Test_Vault_,21_Importer/review_approved_qeax_mapping.py,3637,EVIDENCE,Aggregate family census over QEAX; v2 preflight and run.ts report the same counts,,read
+Test_Vault_,21_Importer/review_v2_qeax_slice.py,2270,REFUSED,Slice selection script for the Python prototype,,read
+Test_Vault_,21_Importer/src/classes.json,2104,CARRIED,v2 tools/core/src/classes.json is identical except one added modelCheck subtype Review,,read
+Test_Vault_,21_Importer/src/importer.template.html,8807,CARRIED,v2 tools/importer/src/importer.template.html (rebuilt),,partial
+Test_Vault_,21_Importer/src/mdse_core.js,13300,CARRIED,v2 tools/core (TypeScript); core cross-check oracle compares both,,partial
+Test_Vault_,21_Importer/src/qeax_reader.js,16977,CARRIED,v2 tools/importer/src/qeax_reader.js; oracle test_qeax_reader.py,,partial
+Test_Vault_,21_Importer/v2_approved_family_resolver.py,4331,CARRIED,Resolver over 60 element and 26 connector families; v2 ea-family-mapping.json and ea_mapping.ts; outlier rows go to review in both,,read
+Test_Vault_,21_Importer/v2_connector_end_evidence.py,3283,CARRIED,"End role, cardinality, containment, aggregation flag and port classifier presence; TRANSLATION.md Aggregation row uses the same evidence",,read
+Test_Vault_,21_Importer/v2_step03s_generate_notes.py,6255,EVIDENCE,Interim EA-<id>.md note generator with 90_Review/Attachment_Ownership; superseded by the ADR-V2-06 layout; attachment ownership rule is REQ-98027,REQ-98027,read
+Test_Vault_,21_Importer/v2_step03t_placement_manifest.py,3479,REFUSED,"Placement groups 01-06,99 proposal; v2 places by EA package path",,read
+Test_Vault_,21_Importer/v2_step03u_identity_crosswalk.py,1895,REFUSED,Interim EA-id to uid crosswalk with migration status; v2 allocates uid at generation (identity.ts),,read
+Test_Vault_,21_Importer/v2_step03v_uid_allocator.py,3830,CARRIED,identity.ts allocates uid from CreatedDate and author with 1 ms bump; same author-code padding (MOD-002/003/014),,read
+Test_Vault_,21_Importer/v2_step03w_identity_reservation_audit.py,3545,CARRIED,"Reserved uid tokens include part-/ep-/conn-/flow- tokens and existing file names: MOD-012, MOD-158, MOD-111",,read
+Test_Vault_,21_Importer/v2_typed_relationship_gates.py,2610,CARRIED,"Endpoint-kind gates for deriveReqt, satisfy, verify, port and aggregation are the *_ENDPOINT_KIND codes in TRANSLATION.md",,read
+Test_Vault_,21_Importer/v2_validate_connector_evidence.py,2626,CARRIED,"Multiplicity validity (2..1, 01, 1..x invalid) is parseMultiplicity in sysml.ts and MULTIPLICITY_UNPARSED",,read

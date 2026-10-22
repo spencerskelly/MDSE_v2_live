@@ -1,0 +1,406 @@
+repo,path,decision,date,title,disposition,basis,note_ids,review_depth
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-01,2026-09-28,Vault strategy,CARRIED,Active: GOV-017,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-02,2026-09-28,Nomenclature,CARRIED,Active: MOD-055,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-03,2026-09-28,EA traceability,CARRIED,Active: MOD-026,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-04,2026-09-28,"Legacy scaffolding removed, `99_System` kept",CARRIED,Active: GOV-018,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-05,2026-09-28,Plugin stack,CARRIED,Unreviewed rule: BOO-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-06,2026-09-28,Templates and identity,NOTE,"Active: MOD-001 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-07,2026-09-28,Working agreement,CARRIED,Active: GOV-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-08,2026-09-28,Property definitions,CARRIED,Active: MOD-032,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-09,2026-09-28,uid from EA history and name entry,NOTE,"Active: MOD-013 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-10,2026-09-28,Author code rule,NOTE,"Active: MOD-002 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-11,2026-09-28,Author registry,CARRIED,Active: MOD-003,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-12,2026-09-28,Unknown EA authors,CARRIED,Active: MOD-014,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-13,2026-09-28,uid time is local time,NOTE,"Active: MOD-004 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-14,2026-09-28,id numbering for translated notes,CARRIED,Active: MOD-015 ; Unreviewed: MOD-069,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-15,2026-09-28,id format,CARRIED,Active: MOD-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-16,2026-09-28,External documents,CARRIED,"Unreviewed rule: IMP-001, IMP-027",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-17,2026-09-28,External requirement ids,CARRIED,Active: MOD-017,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-18,2026-09-28,"Retire, don't delete",CARRIED,Active: MOD-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-19,2026-09-28,Property definitions location,CARRIED,Active: MOD-033,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-20,2026-09-28,How uid and id are stamped,NOTE,"Active: MOD-007 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-21,2026-09-28,AI authorship,NOTE,"Superseded by W-22 (AI author code standard) | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-22,2026-09-28,AI code standard (supersedes the ChatGPT code in W-21),NOTE,"Active: MOD-009 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-23,2026-09-28,AI instructions,NOTE,"Active: GOV-007 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-24,2026-09-28,Author registration and changing a code,NOTE,"Unreviewed rule: BOO-003 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-25,2026-09-28,One note per person,CARRIED,Active: MOD-010,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-26,2026-09-28,Sequence-style EA ids are dropped; clause identity comes from the element data,CARRIED,Unreviewed rule: IMP-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-27,2026-09-28,"What an `id` is, and where other identifiers go",REFUSED,Retired REG-066: Owner 2026-10-19: id is always PREFIX-NNNNN (D-0009).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-28,2026-09-28,Layout of EA values in the note body,CARRIED,"Active: MOD-034, IMP-094",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-29,2026-09-28,Tags with no real value are dropped,CARRIED,"Active: IMP-093 ; Unreviewed: IMP-003, IMP-033",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-30,2026-09-28,The import runs in two stages,CARRIED,Unreviewed rule: IMP-040,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-31,2026-09-28,Temporary `eaType` property,CARRIED,Unreviewed rule: MOD-035,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-32,2026-09-28,Element mapping worklist,CARRIED,Unreviewed rule: IMP-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-33,2026-09-28,Field dispositions,CARRIED,Active: IMP-093 ; Unreviewed: IMP-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-34,2026-09-28,Source reference,REFUSED,Retired REG-361: Superseded by W-35,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-35,2026-09-28,"Source reference is a ledger, not a copy of values",CARRIED,Unreviewed rule: IMP-041,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-36,2026-09-28,Fix by changing the tool and starting fresh,CARRIED,Unreviewed rule: IMP-071,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-37,2026-09-28,The import and review loop,CARRIED,Unreviewed rule: IMP-071,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-38,2026-09-28,Recording review changes,CARRIED,Unreviewed rule: IMP-073,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-39,2026-09-28,Administrative element fields,CARRIED,Unreviewed rule: IMP-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-40,2026-09-28,Element fields with no data are dropped,CARRIED,Unreviewed rule: IMP-007,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-41,2026-09-28,"Presentation, code-generation and display-style element fields",CARRIED,Unreviewed rule: IMP-008,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-42,2026-09-28,"Note, Alias and Multiplicity on elements",CARRIED,Unreviewed rule: IMP-009,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-43,2026-09-28,Part quantities go on the assembly; unlinked Parts become Object notes,CARRIED,"Unreviewed rule: IMP-009, IMP-010",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-44,2026-09-28,The block a Part represents comes from `PDATA1`,CARRIED,Active: IMP-105 ; Unreviewed: IMP-011,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-45,2026-09-28,"`PDATA2`, `PDATA3`, `PDATA4` and `NType` are `archive`",CARRIED,Unreviewed rule: IMP-012,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-46,2026-09-28,"`Object_ID`, `ParentID` and `Package_ID` are `structure`",CARRIED,Unreviewed rule: IMP-013,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-47,2026-09-28,`Object_Type` and `Stereotype` are `property`,CARRIED,Unreviewed rule: IMP-014,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-48,2026-09-28,`Name` is `structure`,CARRIED,Unreviewed rule: IMP-015,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-49,2026-09-28,Connector fields with no data are dropped,CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-50,2026-09-28,Connector fields with one value on every row are dropped,CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-51,2026-09-28,Connector `Direction` and `DestIsAggregate` are `structure`,CARRIED,Unreviewed rule: IMP-017,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-52,2026-09-28,"`SourceStyle`, `DestStyle` and `DestIsNavigable` are `archive`",CARRIED,Unreviewed rule: IMP-018,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-53,2026-09-28,The six connector label fields are `archive`,CARRIED,Unreviewed rule: IMP-018,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-54,2026-09-28,"Connector `SourceCard` is `body`, `DestCard` is `archive`",CARRIED,Unreviewed rule: IMP-019,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-55,2026-09-28,Connectors are imported where they were drawn; block-level flow connectors are flagged and fixed after import,CARRIED,Unreviewed rule: IMP-020,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-56,2026-09-28,"Connector `Name`, `Notes` and `SourceRole`",CARRIED,Unreviewed rule: IMP-021,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-57,2026-09-28,Connector identity and structure fields are `structure`,CARRIED,Unreviewed rule: IMP-013,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-58,2026-09-28,Correction: the connector worklist was missing 13 export columns,EVIDENCE,Retired REG-359: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-59,2026-09-28,Connector layout and style fields,CARRIED,Unreviewed rule: IMP-022,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-60,2026-09-28,"`SourceElement`, `DestElement`, `PDATA4` and `SubType`",CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-61,2026-09-28,Sequence and state-flow connector fields; connector fields are settled,CARRIED,Unreviewed rule: IMP-023,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-62,2026-09-28,Diagrams-only merge run (exception to W-36 and W-37),CARRIED,Unreviewed rule: IMP-071,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-63,2026-09-28,Package fields with no data are dropped,CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-64,2026-09-28,Administrative package fields are dropped,CARRIED,Unreviewed rule: IMP-024,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-65,2026-09-28,Package identity and hierarchy fields are `structure`,CARRIED,Unreviewed rule: IMP-013,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-66,2026-09-28,"Package `Notes`, `CreatedDate` and `TPos`; package fields are settled",CARRIED,Unreviewed rule: IMP-024,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-67,2026-09-28,Diagram fields added to the worklist,CARRIED,Unreviewed rule: IMP-024,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-68,2026-09-28,Diagram fields that carry nothing are dropped,CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-69,2026-09-28,Diagram display-setting fields are `archive`,CARRIED,Unreviewed rule: IMP-018,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-70,2026-09-28,Diagram identity and placement fields are `structure`,CARRIED,Unreviewed rule: IMP-013,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-71,2026-09-28,"Diagram `Name`, `Author`, `CreatedDate`, `ModifiedDate` and `Notes`; `tDiagram` is settled",CARRIED,Unreviewed rule: IMP-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-72,2026-09-28,Diagram key fields are `structure`,CARRIED,Unreviewed rule: IMP-013,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-73,2026-09-28,Diagram output format: a canvas file plus a companion note; diagram-table fields settled,CARRIED,Unreviewed rule: IMP-038,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-74,2026-09-28,Empty subordinate tables are dropped,CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-75,2026-09-28,"Linked documents, first part",NOTE,"Unreviewed rule: IMP-025 | Detail missing from v2, see note(s)",REQ-98016,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-76,2026-09-28,Linked documents come in as attachments; licensing is decided later,CARRIED,Unreviewed rule: IMP-025,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-77,2026-09-28,Attachment storage and naming,CARRIED,Unreviewed rule: IMP-025,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-78,2026-09-28,The 9 text documents are attached unchanged,CARRIED,Unreviewed rule: IMP-025,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-79,2026-09-28,"Cross-reference table, first part",CARRIED,Unreviewed rule: IMP-026,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-80,2026-09-28,Default diagram line in the element note,CARRIED,Unreviewed rule: MOD-054,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-81,2026-09-28,Every requirement is imported as its own note,CARRIED,Unreviewed rule: IMP-027,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-82,2026-09-28,Requirements that share a designator take internal ids,CARRIED,Active: MOD-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-83,2026-09-28,Relationship rows in `t_xref` (`MOFProps`),CARRIED,Unreviewed rule: IMP-026,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-84,2026-09-28,Remaining `CustomProperties` in `t_xref`; `t_xref` is settled,CARRIED,Unreviewed rule: IMP-026,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-85,2026-09-28,`t_connectortag` is dropped,CARRIED,Unreviewed rule: IMP-016,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-86,2026-09-28,The three small subordinate tables,NOTE,"Unreviewed rule: IMP-028 | Detail missing from v2, see note(s)",REQ-98016,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-87,2026-09-28,The Status and Object Type tags are dropped; a new analysis follows the import,CARRIED,Unreviewed rule: IMP-029,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-88,2026-09-28,Properties every note carries,CARRIED,Unreviewed rule: MOD-036,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-89,2026-09-28,Applicability and priority tags,CARRIED,Unreviewed rule: IMP-029,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-90,2026-09-28,"Abstraction Layer, Domain, Origin and direction",CARRIED,Unreviewed rule: IMP-029,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-91,2026-09-28,Comment and knowledge tags,CARRIED,Unreviewed rule: IMP-030,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-92,2026-09-28,Part identity and procurement tags,CARRIED,Unreviewed rule: IMP-030,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-93,2026-09-28,Body lines use the EA tag name until after the import,CARRIED,Unreviewed rule: IMP-031,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-94,2026-09-28,Electrical rating and signal tags,CARRIED,Unreviewed rule: IMP-030,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-95,2026-09-28,The last five tags; all 121 tags are decided,CARRIED,Unreviewed rule: IMP-030,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-96,2026-09-28,Review of fields and tags; three element fields set aside,CARRIED,Unreviewed rule: IMP-032,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-97,2026-09-28,Property order and multi-value rule,CARRIED,Unreviewed rule: MOD-036,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-98,2026-09-28,Body values reviewed before the element mapping,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-99,2026-09-28,Name line and spacing in the body,CARRIED,Unreviewed rule: MOD-038,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-100,2026-09-28,No mapping,CARRIED,Unreviewed rule: MOD-056,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-101,2026-09-28,Order of body lines in the `Source: EA` section,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-102,2026-09-28,The `text` and `SysML1.4::text` tags are kept as normal text below the Note,CARRIED,"Unreviewed rule: IMP-003, IMP-033",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-103,2026-09-28,Note and `text` together,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-104,2026-09-28,Four comment values become normal text; the rest are inline tag lines,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-105,2026-09-28,Labels on the four comment texts; tag lines stay below the EA GUID,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-106,2026-09-28,"Multi-line `Priority` values, and the comment template",CARRIED,Active: IMP-093 ; Unreviewed: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-107,2026-09-28,Note layout written down,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-108,2026-09-28,Vault sweep of fields and tags,NOTE,"Retired REG-362: Historical | Detail missing from v2, see note(s)",REQ-98016,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-109,2026-09-28,Four tags stay dropped,CARRIED,Unreviewed rule: IMP-029,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-110,2026-09-28,Aliases go directly below the user section,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-111,2026-09-28,`formerIds` goes directly below the aliases,CARRIED,Unreviewed rule: MOD-037,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-112,2026-09-28,"The property set and order applied to templates, schemas, snippets and instructions",CARRIED,Unreviewed rule: MOD-036,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-113,2026-09-29,The Interface class is removed and a Port class is added,CARRIED,"Active: IMP-104, IMP-105",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-114,2026-09-29,Rule for merging a Part's or Object's Ports into the object's Port,CARRIED,"Active: IMP-106, IMP-120 ; Unreviewed: MOD-154",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-115,2026-09-29,"Requirement subtype rule, a new `engineering` subtype, and Regulatory InformationItems become standard requirements",NOTE,"Unreviewed rule: MOD-057 | Detail missing from v2, see note(s)",REQ-98014,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-116,2026-09-29,Engineering Requirements are all `engineering`; the stereotype override does not apply there,NOTE,"Unreviewed rule: MOD-057 | Detail missing from v2, see note(s)",REQ-98014,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-117,2026-09-29,The folder tree starts at the ten packages under `IPC !`,CARRIED,Unreviewed rule: MOD-096,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-118,2026-09-29,`00 Product Abstract` is a folder only,CARRIED,Unreviewed rule: MOD-096,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-119,2026-09-29,Back to deciding by element type; Requirements are skipped,CARRIED,Unreviewed rule: MOD-096,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-120,2026-09-29,"The interface Classes become Port notes, and the typing link becomes `subtypeOf`",CARRIED,Active: IMP-104,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-121,2026-09-29,Differences on a merged instance Port are kept as lines on the block Port note,REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-122,2026-09-29,"A Port's redefinition link (`PDATA2`) becomes `subtypeOf`, with the odd ones flagged",REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-123,2026-09-29,`hasPort` and `portOf`: the owner link of a Port,REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-124,2026-09-29,`copyOf` and `hasCopy`: a general link from a copy to its original,CARRIED,Unreviewed rule: MOD-077,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-125,2026-09-29,"A temporary property pair, `hasClassifier` and `classifierOf`, keeps the Port `Classifier` link during the import",REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-126,2026-09-29,"Relationship fields sit in the properties after `tags`, and may hold lists",CARRIED,Active: MOD-028 ; Unreviewed: MOD-036,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-127,2026-09-29,The 104 Port typing links that do not reach a Port note,REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-128,2026-09-29,Port stereotypes become the subtypes `proxy` and `full`,REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-129,2026-09-29,`isConjugated` is kept as a line in the source section of Port notes,REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-130,2026-09-29,Four fixed review lines for Port cases,CARRIED,Active: IMP-106,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-131,2026-09-29,Signal elements become Item Flow notes,CARRIED,Unreviewed rule: MOD-058,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-132,2026-09-29,Each FlowProperty becomes its own Item Flow note,CARRIED,Unreviewed rule: MOD-059,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-133,2026-09-29,`hasFlow` and `flowOf`: a Port note points at its pin notes,CARRIED,Unreviewed rule: MOD-059,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-134,2026-09-29,Names of Port notes and pin notes,REFUSED,Retired REG-357: Superseded by W-384 (Port is no longer a note class; ports are Local Model endpoint occurrences),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-135,2026-09-29,Each EA Object becomes its own Object note,CARRIED,Active: IMP-111 ; Unreviewed: MOD-060,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-136,2026-09-29,"Parts that represent a Class fold into the assembly as a `hasPart` entry, and keep their own data as a line",CARRIED,Active: IMP-119 ; Unreviewed: IMP-010,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-137,2026-09-29,"Parts that point at an Activity, a State or a Signal become `hasPart` entries on their owner",CARRIED,"Active: IMP-107 ; Unreviewed: MOD-069, MOD-070, IMP-010",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-138,2026-09-29,"Parts with no usable blueprint become Object notes with subtype `part`, named with a counter",REFUSED,"Retired REG-347: Superseded in part by the Local Model (W-313, W-396, W-397)",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-139,2026-09-29,"Class becomes Object, mechanically",CARRIED,Unreviewed rule: MOD-061,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-140,2026-09-29,"UseCase becomes Use Case, with the subtype taken from the folder; `who` is added",NOTE,"Unreviewed rule: MOD-062 | Detail missing from v2, see note(s)",REQ-98015,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-141,2026-09-29,"Activity becomes Function, or Verification for a test case",REFUSED,Retired REG-348: Superseded in part by W-384 (Function class replaced by Behavior),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-142,2026-09-29,"State: in the Design package it becomes Design, elsewhere State",NOTE,"Retired REG-349: Superseded by W-384 (State and Design classes replaced by Condition and Behavior) | Detail missing from v2, see note(s)",REQ-98015,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-143,2026-09-29,Artifact stays Artifact; the stereotype gives the subtype,CARRIED,Unreviewed rule: MOD-063,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-144,2026-09-29,"Issue, Actor and StateMachine map straight to their MDSE classes",CARRIED,Unreviewed rule: MOD-064,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-145,2026-09-29,"Note, Text, Constraint and the other InformationItems become Info notes; one rule names every unnamed element",CARRIED,Unreviewed rule: MOD-065,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-146,2026-09-29,"Thirteen small element types become `modelCheck` notes, with the EA type as the subtype",CARRIED,Unreviewed rule: MOD-066,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-147,2026-09-29,A package is a folder; only a package with a description also gets a note,CARRIED,Unreviewed rule: MOD-066,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-148,2026-09-29,Dry run of the element mapping,EVIDENCE,Retired REG-363: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-149,2026-09-29,`hasPart`/`partOf` is for Objects only; a generic `hasChild`/`childOf` carries every other nesting,CARRIED,Unreviewed rule: MOD-078,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-150,2026-09-29,Vault review before the change of chat,EVIDENCE,Retired REG-363: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-151,2026-09-29,Nesting connectors add no notes or links of their own; requirement nesting is bidirectional,CARRIED,Unreviewed rule: MOD-078,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-152,2026-09-29,Generalization connectors become `subtypeOf`/`supertypeOf`; the Nesting GUID moves into the review line,CARRIED,Unreviewed rule: MOD-079,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-153,2026-09-29,Connector vocabulary: `interfaces` and a temporary `equals`; `equals` is updated after the import,CARRIED,Unreviewed rule: MOD-080,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-154,2026-09-29,One link per pair of notes for Connector-type connectors; every distinct name is kept,CARRIED,Unreviewed rule: MOD-080,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-155,2026-09-29,Connector type: no assembly context line; block-level ends keep the W-55 flag; every connector is an interface,CARRIED,"Unreviewed rule: MOD-080, IMP-020",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-156,2026-09-29,Every review item must be resolvable from the vault alone; the tool writes review tables keyed by GUID,CARRIED,Unreviewed rule: IMP-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-157,2026-09-29,"Audit of the review lines against W-156: three get a review table and a GUID, four pass",CARRIED,Unreviewed rule: IMP-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-158,2026-09-29,One Name line format for connectors of every type,CARRIED,Unreviewed rule: IMP-034,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-159,2026-09-29,"Aggregation: composite Object pairs are `hasPart`, everything else `hasChild`; an existing link wins",CARRIED,Unreviewed rule: MOD-081,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-160,2026-09-29,"Realisation: a requirement applies to an Object, a Function realizes a Use Case, everything else keeps realization with a model check flag; only a Function or a Design satisfies a requirement",CARRIED,Unreviewed rule: MOD-081,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-161,2026-09-29,NoteLink: a note linked to one element is written into that element's body; a note linked to several stays an Info note with `describes`,CARRIED,Unreviewed rule: IMP-035,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-162,2026-09-29,Where folded EA notes go in the body,CARRIED,Unreviewed rule: IMP-035,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-163,2026-09-29,Dependency `satisfy`: a Function or Design satisfies a requirement; everything else keeps `satisfies` with a model check flag,CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-164,2026-09-29,Dependency `deriveReqt`: `derivedFrom` between requirements; everything else keeps it with a model check flag,CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-165,2026-09-29,"Dependency `refine`: `refines` between requirements, a Use Case `drives` a requirement, Info and Artifact `describes`; a new `drives`/`drivenBy` pair",CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-166,2026-09-29,"Dependency `trace`: `describes`, `affects` and `appliesTo` by endpoint, regardless of drawn direction where the meaning is clear; Requirement to Requirement pending",CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-167,2026-09-29,Requirement to Requirement trace becomes `references`; Realisation from a Requirement to an Object becomes `appliesTo`,CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-168,2026-09-29,"Dependency `verify`, `RecoveryRequirement` and `ASILDecompose`",CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-169,2026-09-29,Dependency with no stereotype; Dependency is settled,CARRIED,Unreviewed rule: MOD-082,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-170,2026-09-29,Abstraction: an Object performs a Function and has a Design; the rest by earlier rules; Abstraction is settled,CARRIED,Unreviewed rule: MOD-083,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-171,2026-09-29,"UseCase connectors: `extend` is `optionOf`, `include` is `hasChild`",CARRIED,Unreviewed rule: MOD-083,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-172,2026-09-29,"Association: participation is written only on the Use Case; Issue `affects`, Info `describes`, everything else `tracesTo` with a model check flag",CARRIED,Unreviewed rule: MOD-083,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-173,2026-09-29,Usage: a Function or a Design realizes a Use Case; requirements depend on requirements,CARRIED,Unreviewed rule: MOD-083,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-174,2026-09-29,ControlFlow becomes `precedes`/`follows`; the flow elements stay `modelCheck` notes,CARRIED,Active: IMP-116 ; Unreviewed: MOD-084,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-175,2026-09-29,"StateFlow becomes `precedes`/`follows`, with trigger, guard and effect lines",CARRIED,Active: IMP-116 ; Unreviewed: MOD-084,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-176,2026-09-29,"Sequence messages are an ordered list on the diagram's companion note, not relationships",CARRIED,Unreviewed rule: IMP-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-177,2026-09-29,"`transmits`, `receives` and `exchanges` say what data a Port carries; InformationFlow and FlowProperty pins use them",REFUSED,Retired REG-350: Superseded in part by W-384 (Port class removed),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-178,2026-09-29,"Consistency pass over the connector rules; a placement that repeats a generalization is not written, and a Port that both transmits and receives an item exchanges it",NOTE,"Retired REG-363: Historical | Detail missing from v2, see note(s)",REQ-98019,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-179,2026-09-29,`applies` stays generated; long inverse lists are judged after the import,CARRIED,Unreviewed rule: MOD-085,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-180,2026-09-29,"`Classifier`, `Classifier_guid` and `PDATA1` on the other element types; the fields set aside in W-96 are settled",CARRIED,Unreviewed rule: IMP-032,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-181,2026-09-29,`modelCheck` is a class with the prefix `MC` and one plain template,CARRIED,Unreviewed rule: MOD-066,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-182,2026-09-29,Templates list only the few relationship fields a class nearly always has,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-183,2026-09-29,Vault review before the change of chat,EVIDENCE,Retired REG-363: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-184,2026-09-29,"Three unused relationship pairs are removed: `carries`/`flowsOn`, `instanceOf`/`hasInstance`, `connects`/`connectedBy`",CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-185,2026-09-29,"Three State Machine pairs are removed: `hasStateMachine`/`stateMachineOf`, `hasState`/`stateOf`, `hasTransition`/`transitionOf`",CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-186,2026-09-29,`startState`/`startStateOf` and `endState`/`endStateOf` are removed; `initialState` and `finalState` stay one-way,CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-187,2026-09-29,`operatingState`/`operatingStateOf` is removed,CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-188,2026-09-29,"`hasBehavior`/`behaviorOf`, `subject`/`subjectOf` and `hasContext`/`contextOf` are removed",CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-189,2026-09-29,`hasParticipant`/`participatesIn` is removed; a Context uses the one-way `participants`,CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-190,2026-09-29,The 28 verification and failure fields are removed,CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-191,2026-09-29,`supersedes`/`supersededBy` is kept and defined,CARRIED,Active: MOD-074,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-192,2026-09-29,`conflictsWith` is kept; the relationship review (W-184 to W-192) is finished,CARRIED,Unreviewed rule: MOD-086,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-193,2026-09-29,Work order: the blockers to the import come before the templates,EVIDENCE,Retired REG-364: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-194,2026-09-29,The 4 unmapped `t_xref` kinds (12 rows) are body lines on both ends,CARRIED,Unreviewed rule: IMP-036,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-195,2026-09-29,"State action lines: no merge rule, keep the formats as defined",CARRIED,Unreviewed rule: IMP-036,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-196,2026-09-29,"Which characters count as unsafe in names (W-48, W-65)",CARRIED,Unreviewed rule: MOD-097,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-197,2026-09-29,Replacement of unsafe characters in note and folder names,CARRIED,Unreviewed rule: MOD-097,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-198,2026-09-29,Duplicate names: the note's `id` is the suffix,CARRIED,Unreviewed rule: MOD-100,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-199,2026-09-29,"Every note in a duplicate-name group gets its id, the oldest too",CARRIED,Unreviewed rule: MOD-100,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-200,2026-09-29,Correction to W-198 and W-199: not every `id` is `<prefix>-<5 digits>`,REFUSED,Retired REG-369: Superseded by W-318 (Ruleset 1.23 section 16.3: ~2 and ~a markers),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-201,2026-09-29,"Designator parse rule for Regulatory and Webasto Requirements (W-17, W-81, W-82)",REFUSED,Retired REG-354: Superseded by W-203,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-202,2026-09-29,A designator keeps `/` in the `id`,REFUSED,Retired REG-354: Superseded by W-203,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-203,2026-09-29,Standard requirements take an internal `STD-#####` id; no designator parsing,CARRIED,Active: MOD-017,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-204,2026-09-29,Stakeholder requirements take `STK-#####`,CARRIED,Active: MOD-017,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-205,2026-09-29,"`[`, `]`, `#` and `^` are also replaced in file names",CARRIED,"Unreviewed rule: MOD-097, MOD-098, IMP-015",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-206,2026-09-29,The user section is an empty `## Notes` heading,CARRIED,Unreviewed rule: MOD-040,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-207,2026-09-29,Format of aliases and `formerIds`,CARRIED,Unreviewed rule: MOD-040,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-208,2026-09-29,Order of the lines in `Source: EA`,CARRIED,Unreviewed rule: MOD-041,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-209,2026-09-29,Definitions of the kept body lines: one table in `Definitions/EA Source Section.md`,CARRIED,Unreviewed rule: MOD-041,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-210,2026-09-29,"Attachment counter: on every file, in RTF order",CARRIED,Unreviewed rule: MOD-099,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-211,2026-09-29,Line format for values kept on a merged Port (W-121),REFUSED,Retired REG-360: Superseded by W-384 (Port merge removed),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-212,2026-09-29,A new class `Diagram` (prefix `DIA`) for the diagram companion note,CARRIED,Unreviewed rule: MOD-072,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-213,2026-09-29,Body of the diagram companion note: a `Canvas:` link line,CARRIED,Unreviewed rule: MOD-072,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-214,2026-09-29,Canvas text card for a folded EA note: the note's text,CARRIED,Unreviewed rule: MOD-072,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-215,2026-09-29,Layout of the ledger and the run manifest (W-35),CARRIED,Unreviewed rule: IMP-043,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-216,2026-09-29,"Review tables: final names, read-only, shared first columns",CARRIED,Unreviewed rule: IMP-044,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-217,2026-09-29,Columns of `Review - Block-Level Flow Connectors.csv`,CARRIED,Unreviewed rule: IMP-044,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-218,2026-09-29,Columns of `Review - Added Ports.csv`,CARRIED,Unreviewed rule: IMP-044,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-219,2026-09-29,Columns of `Review - Nesting Direction.csv`,CARRIED,Unreviewed rule: IMP-044,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-220,2026-09-29,Columns of `Review - Equals Direction.csv`,CARRIED,Unreviewed rule: IMP-044,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-221,2026-09-29,Open-list clean-up before the change of chat,EVIDENCE,Retired REG-365: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-222,2026-09-30,The Requirement template lists no relationship fields,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-223,2026-09-30,The Object template lists no relationship fields,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-224,2026-09-30,The Port template lists `subtypeOf` and `interfaces`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-225,2026-09-30,The Item Flow template lists `subtypeOf`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-226,2026-09-30,The Use Case template lists `participants`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-227,2026-09-30,The Function template lists `subtypeOf` and `satisfies`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-228,2026-09-30,The Design template lists `subtypeOf` and `satisfies`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-229,2026-09-30,The Verification template lists `verifies`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-230,2026-09-30,The Info template lists `describes`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-231,2026-09-30,The Artifact template lists `describes`,CARRIED,Unreviewed rule: MOD-039,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-232,2026-09-30,The Issue template lists `affects`,CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-233,2026-09-30,The State template lists no relationship fields,CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-234,2026-09-30,The Actor template lists no relationship fields,CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-235,2026-09-30,The State Machine template lists `hasChild`,CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-236,2026-09-30,"The Transition template lists `source`, `target` and `trigger`",CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-237,2026-09-30,Subtype lists cut; the Context and Transition classes are removed,CARRIED,"Unreviewed rule: MOD-042, MOD-067",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-238,2026-09-30,Function has no subtypes; Requirement subtypes stay and come from the package,NOTE,"Unreviewed rule: MOD-067 | Detail missing from v2, see note(s)",REQ-98014,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-239,2026-09-30,A Physical Context stays an Object block with its parts,CARRIED,Unreviewed rule: MOD-068,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-240,2026-09-30,The Failure Mode template lists `affects`,CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-241,2026-09-30,Nine templates list no relationship fields; the W-182 class-by-class list is finished,CARRIED,Unreviewed rule: MOD-042,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-242,2026-09-30,The legacy `folder` values are removed from `element-types.yaml`,CARRIED,Active: MOD-029,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-243,2026-09-30,Notes in `99_System` carry no `type` or `subtype`,CARRIED,"Active: MOD-024, MOD-030",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-244,2026-09-30,"System notes keep `id`, `uid` and `status`",CARRIED,Active: MOD-030,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-245,2026-09-30,Full review of the workspace for clashes and old material,EVIDENCE,Retired REG-365: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-246,2026-09-30,"A clean Translator Definition file is written and the old material is cleared, one step at a time",CARRIED,Active: GOV-008,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-247,2026-09-30,The import reads the `.qeax`; the Translator Definition file is written and kept current,CARRIED,Active: GOV-008,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-248,2026-09-30,The import goes into a fresh vault with MDSE Bootstrap and the plugins installed; that vault is set up for testing once the tool works,CARRIED,Unreviewed rule: BOO-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-249,2026-09-30,"The path to a testable vault: a script builds a base vault, the tool fills a copy of it, the first runs use a slice of packages",CARRIED,Unreviewed rule: BOO-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-250,2026-09-30,The contents of the base vault are approved,CARRIED,Unreviewed rule: BOO-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-251,2026-09-30,No package filter: every test run is a full run,REFUSED,Retired REG-366: Superseded by W-252,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-252,2026-09-30,The tool takes a package filter and numbers from the whole model; W-251 is replaced,CARRIED,Unreviewed rule: IMP-045,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-253,2026-09-30,Links that leave a slice are written as in a full run,CARRIED,Unreviewed rule: IMP-045,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-254,2026-09-30,"In a slice, a fold follows the note that receives it",CARRIED,Unreviewed rule: IMP-045,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-255,2026-09-30,Packages are selected by path,CARRIED,Unreviewed rule: IMP-045,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-256,2026-09-30,Checks 2 to 5 of the Translator Definition are approved,CARRIED,Unreviewed rule: IMP-058,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-257,2026-09-30,Check 5 compares whole-model source counts and applies to every run,CARRIED,Unreviewed rule: IMP-046,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-258,2026-09-30,"The mapping files match W-237 to W-239 (step 3, fix a of W-246)",EVIDENCE,Retired REG-372: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-259,2026-09-30,"The id snippet and the AI instructions count earlier ids (step 3, fix b of W-246)",NOTE,"Active: MOD-011 | Detail missing from v2, see note(s)",REQ-98013,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-260,2026-09-30,"Ruleset 1.22 is issued (step 3, fix c of W-246)",EVIDENCE,Retired REG-372: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-261,2026-09-30,"README, setup note and stale governance documents (step 3, fix d of W-246)",EVIDENCE,Retired REG-372: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-262,2026-09-30,"The `Definitions` notes carry no `type` or `subtype`; the Property Dictionary filters on the folder (step 3, fix e, first part)",CARRIED,Unreviewed rule: MOD-043,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-263,2026-09-30,"Definition notes for the common properties and the forward relationship fields (step 3, fix e, second part)",CARRIED,Unreviewed rule: MOD-043,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-264,2026-09-30,The old translator folder is archived and Rulesets 1.19 to 1.21 are removed (step 4 of W-246),EVIDENCE,Retired REG-372: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-265,2026-09-30,"Quick fixes: `## Aliases` and `## Former ids` in the templates, and the `id` definition (W-207, W-203)",CARRIED,Active: MOD-031,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-266,2026-09-30,Package paths use `>` and EA names,CARRIED,Unreviewed rule: IMP-047,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-267,2026-09-30,The first test slice is `02 Product Context`,EVIDENCE,Retired REG-374: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-268,2026-09-30,Any count difference fails check 5 and discards the run,CARRIED,Unreviewed rule: IMP-046,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-269,2026-09-30,The base vault gets a fresh `.vault.yaml`,EVIDENCE,Retired REG-371: Historical (base ZIP mechanism superseded by 20_Base Vault and Bootstrap),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-270,2026-09-30,The base vault is passed as a ZIP for now,EVIDENCE,Retired REG-371: Historical (base ZIP mechanism superseded by 20_Base Vault and Bootstrap),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-271,2026-09-30,The native importer is a developer-only local HTML tool; v0.1 is the read-only QEAX preflight,REFUSED,"Retired REG-353: Superseded in part by ADR-V2-07 (importer is now a user tool, one HTML file, no installs)",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-272,2026-09-30,"Relationship endpoint rules live in `relationships.yaml`, on each relationship",CARRIED,Active: MOD-075 ; Unreviewed: MOD-088,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-273,2026-09-30,The actual QEAX is the verified Stage-1 source baseline; the 255-character values are source truncation; native importer v0.2 adds read-only whole-model planning,REFUSED,Retired REG-375: Active evidence,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-274,2026-09-30,Native importer v0.2 whole-model planning passed on the actual QEAX and is the accepted planning baseline,REFUSED,Retired REG-375: Active evidence,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-275,2026-09-30,"Inverse relationship fields are written by the translator and Workbench, not Nodian (trial)",CARRIED,Active: MOD-076 ; Unreviewed: MOD-089,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-276,2026-09-30,Canonical identity for a W-114 added-Port group is the earliest-created source Port,REFUSED,Retired REG-355: Superseded by W-384 (Port merge removed),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-277,2026-09-30,"Endpoint rules: principle, format and family 1 (structure); new pair `includes`/`includedIn` for shared aggregation",CARRIED,Unreviewed rule: MOD-088,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-278,2026-09-30,EA Use Case include stays `hasChild`; both `hasChild` and `includes` are allowed between Use Cases until the post-import review,REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-279,2026-09-30,"Endpoint rules, family 2 (requirements)",REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-280,2026-09-30,"Endpoint rules, family 3 (behavior and allocation)",REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-281,2026-09-30,"Endpoint rules, family 4 (interfaces and flows); new pair `exposes`/`exposedBy`",REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-282,2026-09-30,New pair `triggeredBy`/`triggers`; the one-way field `trigger` is removed; guards stay as text,REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-283,2026-09-30,"Endpoint rules, family 5 (description and issues); `drives` widened to any to any; format key `importOnly`",REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-284,2026-09-30,"A Use Case may `affect`; a Document may `describe`; `affects` means impact, good or bad",REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-285,2026-09-30,"Endpoint rules, family 6: `source`, `target` and `sequence` are removed; `initialState` and `finalState` are kept, State Machine to State",REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-286,2026-09-30,The definition-note key `appliesTo` is renamed `usedOn`,REFUSED,Retired REG-023: Owner 2026-10-19: use SysML v2 relationships (D-0003).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-287,2026-09-30,Native importer v0.4 and the base-vault snapshot are synchronized to relationship schema 1.32,EVIDENCE,Retired REG-367: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-288,2026-09-30,"`tracesTo` is the provisional relationship: anyone may create it, and every link is a Review finding until replaced",CARRIED,"Active: IMP-115, IMP-122 ; Unreviewed: MOD-088",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-289,2026-09-30,Import filenames are human-oriented; v0.5 adds a fresh-vault whole-model assessment mode,NOTE,"Unreviewed rule: MOD-100 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-290,2026-09-30,v0.5.1 resets stale browser state and rejects the translator workspace as an import target,CARRIED,Unreviewed rule: IMP-048,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-291,2026-10-01,`hasState`/`stateOf` is restored (endpoints amended by W-292),CARRIED,"Unreviewed rule: MOD-086, MOD-090",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-292,2026-10-01,"An Object `hasState` a State or State Machine, never `hasChild`",CARRIED,Unreviewed rule: MOD-090,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-293,2026-10-01,Reusable Object uses are represented as local part occurrences when contextual identity matters,CARRIED,Unreviewed rule: MOD-149,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-294,2026-10-01,"Local endpoints, connections and flows are contextual addressable records; the connection owns its local flows",CARRIED,Unreviewed rule: MOD-149,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-295,2026-10-01,The occurrence model is validated through the real native importer; v0.6/v0.6.1 are experimental implementations,EVIDENCE,Retired REG-368: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-296,2026-10-01,Cross-repository audit sets the merge-forward baseline: v0.5.2/schema 1.35 is authoritative; occurrence work must be merged onto it,EVIDENCE,Retired REG-368: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-297,2026-10-01,The approved full-import usability/governance amendments from the 20260930 review are adopted into the authoritative workspace,NOTE,"Active: MOD-095 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-298,2026-10-01,Local Model content is a distinct governed note region and receives a separate Workbench interface surface,CARRIED,Unreviewed rule: MOD-150,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-299,2026-10-01,Native importer and clean base-vault releases are a matched pair and share one release version,CARRIED,Active: BAS-001,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-300,2026-10-01,v0.8.0 is a complete model-and-attachment import; diagrams are deliberately deferred to a selectable post-import pass,CARRIED,"Unreviewed rule: MOD-072, IMP-071, IMP-072",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-301,2026-10-01,Deferred diagram import is selected by native EA diagram type,CARRIED,"Unreviewed rule: IMP-071, IMP-072",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-302,2026-10-01,v0.8.0 Local Model uses explicit managed-region markers,CARRIED,Unreviewed rule: MOD-151,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-303,2026-10-01,Local Model records use type-prefixed stable local IDs independent of visible engineering names,CARRIED,Unreviewed rule: MOD-151,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-304,2026-10-01,v0.8.0 freezes the canonical Local Model record pattern and keeps EA provenance out of engineering notes,CARRIED,Unreviewed rule: MOD-151,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-305,2026-10-01,Reusable interface members are inherited implicitly and materialized locally only when context requires independent identity,CARRIED,Unreviewed rule: MOD-151,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-306,2026-10-01,"MDSE uses an Obsidian-native-first representation policy, and Local Model records use native block IDs as their persisted navigation anchors",CARRIED,Active: GOV-009,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-307,2026-10-01,v0.8.0 must eliminate the 88 known over-260-character paths in the Industrial connector structure before a global hard path limit is chosen,REFUSED,Retired REG-370: Superseded by W-324 and W-382 (no length-driven shortening),,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-308,2026-10-01,Connector-folder remediation removes repeated parent wording and redundant model numbers before any deeper structural change,NOTE,"Retired REG-370: Superseded by W-324 and W-382 (no length-driven shortening) | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-309,2026-10-01,Regulatory folders that duplicate the directly contained element title collapse to the regulatory section number,NOTE,"Unreviewed rule: MOD-101 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-310,2026-10-01,Local part multiplicity groups only genuinely indistinguishable contextual copies; independently addressable copies are separate occurrences,CARRIED,Unreviewed rule: MOD-151,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-311,2026-10-01,Assemblies own the connections below their boundary; boundary exposure is distinct from connection,CARRIED,Unreviewed rule: MOD-151,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-312,2026-10-01,Persisted Local Model references use native Obsidian links rather than bare local-ID strings,CARRIED,Unreviewed rule: MOD-152,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-313,2026-10-01,Local Model schema 0.1 is machine-readable vault configuration shared by importer and Workbench,CARRIED,Unreviewed rule: MOD-152,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-314,2026-10-01,"Local Model contextual usage, specialization families and configuration resolution",NOTE,"Unreviewed rule: MOD-153, MOD-157 | Detail missing from v2, see note(s)",REQ-98017,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-315,2026-10-02,One global 30-character identity-token namespace spans notes and Local Model reference points,CARRIED,Active: MOD-012,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-316,2026-10-02,EA8647 first-import identity allocation and source lineage are settled,CARRIED,Active: MOD-018,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-317,2026-10-02,Source Map is authoritative for rerun identity and importer field ownership is explicit,CARRIED,Unreviewed rule: IMP-049,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-318,2026-10-02,"v0.8 naming, folder normalization and path limit are final",NOTE,"Unreviewed rule: MOD-100, MOD-102, MOD-103 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-319,2026-10-02,Local Model 0.2 and element schema 1.17 implement W-314; attachment/diagram/evidence disposition is settled,NOTE,"Unreviewed rule: MOD-153, MOD-157 | Detail missing from v2, see note(s)",REQ-98017,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-320,2026-10-02,"Documentation authority registry, release manifest, status banners and archive conventions",REFUSED,"V1 documentation registry (Current State, mdse-release.yaml); superseded by governance/README.md and D-0001",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-321,2026-10-02,"One release contract builds a lean runtime base and mechanically aligns importer, base and Workbench",CARRIED,Unreviewed rule: BAS-011,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-322,2026-10-02,Controlled plugin release: plugins ship inside the base; MDSE Bootstrap rebuilt as release check and author registration,CARRIED,Unreviewed rule: BOO-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-323,2026-10-02,Linked-document payload decoding and the decode-only attachment check (importer v0.8.5),CARRIED,Unreviewed rule: IMP-050,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-324,2026-10-02,"No length-driven shortening; hard stop 400; links go to the file name; ""Shorten paths"" becomes a post-import task (importer v0.8.6)",NOTE,"Unreviewed rule: MOD-102, MOD-103, MOD-104 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-325,2026-10-03,"Release chain aligned before the next importer run: importer v0.8.6, Workbench 0.1.16, Bootstrap 0.3.0, base rebuilt",CARRIED,Unreviewed rule: BOO-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-326,2026-10-03,"Documentation clean-up, archive moves and the plan to a golden model",REFUSED,Retired REG-038: Owner 2026-10-19: no value as a rule.,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-327,2026-10-03,State and State Machine do not satisfy Requirements; Requirement applicability carries state scope,CARRIED,Unreviewed rule: MOD-091,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-328,2026-10-03,Tool authority is explicit; Test_Vault_ governs every MDSE tool except the standalone Workbench implementation repository,REFUSED,Retired REG-039: Owner 2026-10-19: superseded; MDSE_v2 is the single home for rules and tools (D-0001).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-329,2026-10-03,"Test_Vault_ is organized as an intentional tool-development workspace, with each long-lived tool owning its top-level area or repository",REFUSED,Retired REG-039: Owner 2026-10-19: superseded; MDSE_v2 is the single home for rules and tools (D-0001).,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-330,2026-10-03,"Bootstrap uses safe activation repair (option B), while packaged files and governed settings remain release-controlled",CARRIED,Unreviewed rule: BOO-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-331,2026-10-03,Governed plugin configuration is part of the controlled runtime hash contract,CARRIED,Unreviewed rule: BOO-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-332,2026-10-03,The EA importer is external to the operational engineering vault,CARRIED,Unreviewed rule: BAS-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-333,2026-10-03,Bootstrap safe activation repair may only load an intact locked community plugin,CARRIED,Unreviewed rule: BOO-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-334,2026-10-03,Distinguish the clean Base Vault build artifact from an operational model repository,CARRIED,Unreviewed rule: BAS-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-335,2026-10-03,Release validation distinguishes candidate tooling from pinned runtime and scopes freshness checks to the owning authority,CARRIED,Unreviewed rule: BAS-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-336,2026-10-03,Base initialization scripts are release-validated for host-shell syntax,CARRIED,Unreviewed rule: BAS-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-337,2026-10-03,Pause creation of the next integration vault until Workbench and importer are aligned,EVIDENCE,Retired REG-373: Historical,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-338,2026-10-03,OS metadata is never governed Base Vault content,CARRIED,Unreviewed rule: BAS-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-339,2026-10-03,WB-106 expands from the completed read/navigation gate into the structured Workbench editor before the next integration vault,CARRIED,Unreviewed rule: WKB-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-340,2026-10-03,Internal Structure is a Workbench presentation of one Local Model context; curated Canvas geometry is never model semantics,CARRIED,Unreviewed rule: WKB-005,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-341,2026-10-03,A controlled Workbench user guide ships in every generated engineering Base Vault and is cross-repository checked,CARRIED,Unreviewed rule: WKB-001,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-342,2026-10-03,Release validation distinguishes the standalone Workbench candidate from the pinned Base Vault runtime,CARRIED,Active: BAS-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-343,2026-10-03,"MDSE runtime stability is governed by a persistent, disposable semantic-cache architecture rather than repeated whole-vault startup scans",CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-344,2026-10-03,"Workbench semantic-cache safety uses bounded A/B commit slots, vault/schema binding and conservative reconciliation",CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-345,2026-10-03,Semantic-cache v2 retains authored relationship-link evidence so path add/delete/rename events can reconcile safely without rereading unchanged model notes,CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-346,2026-10-03,"Expensive Workbench assurance is revision-scoped and demand-driven, not recomputed on every UI refresh or metadata event",CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-347,2026-10-03,Bootstrap startup integrity verification is staged so first-use setup and Obsidian startup are not blocked by a whole-plugin hash scan,CARRIED,"Unreviewed rule: MOD-114, BOO-005",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-348,2026-10-03,"Warm-cache change detection uses Obsidian file ctime + mtime + size, not mtime + size alone",CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-349,2026-10-03,"Whole-model assurance is a shared revision-scoped service, not separate scans owned by Review, diagnostics, or future views",CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-350,2026-10-03,Candidate runtime tools require repository-level automated test/typecheck/build gates before their artifacts are installed into an integration vault,CARRIED,Unreviewed rule: WKB-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-351,2026-10-03,The persistent semantic cache uses stable path-hash buckets rather than sequential sorted shards,CARRIED,"Unreviewed rule: WKB-002, WKB-003",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-352,2026-10-03,Core semantic readiness is separated from Local Model body hydration on a cold/full rebuild,CARRIED,"Unreviewed rule: WKB-002, WKB-003",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-353,2026-10-03,"Open-vault add/delete/rename events trigger metadata-settled authored-link re-resolution, not stale resolved edges or immediate body rereads",CARRIED,"Unreviewed rule: WKB-002, WKB-004",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-354,2026-10-03,Controlled runtime dependencies require explicit engineering value and acceptance coverage,CARRIED,Active: BOO-001 ; Unreviewed: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-355,2026-10-03,"Workbench records a bounded local runtime history so architecture changes are judged by measured user experience, not anecdotes",CARRIED,"Unreviewed rule: WKB-002, WKB-004",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-356,2026-10-03,A Local Model body read failure is a scoped assurance finding and cannot poison a previously valid semantic cache,CARRIED,"Unreviewed rule: WKB-002, WKB-004",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-351,2026-10-03,Workbench exposes one lightweight runtime-health surface that never triggers expensive model work,CARRIED,"Unreviewed rule: WKB-002, WKB-003",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-352,2026-10-03,Live Workbench indexing coalesces rapid editor/metadata events by path before reparsing semantics,CARRIED,"Unreviewed rule: WKB-002, WKB-003",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-353,2026-10-03,Warm semantic-cache restoration uses bounded parallel shard reads rather than fully serial or unbounded I/O,CARRIED,"Unreviewed rule: WKB-002, WKB-004",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-354,2026-10-03,"MDSE uses staged capability readiness: core model service first, occurrence-aware capabilities later",CARRIED,Active: BOO-001 ; Unreviewed: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-355,2026-10-03,Heavy MDSE startup work is intentionally staggered into non-overlapping lanes,CARRIED,"Unreviewed rule: WKB-002, WKB-004",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-356,2026-10-03,"Long Workbench loops yield by elapsed UI work budget, not a fixed number of notes",CARRIED,"Unreviewed rule: WKB-002, WKB-004",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-357,2026-10-03,Deferred MDSE background work is activity-aware and must not steal responsiveness from active engineering work,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-358,2026-10-03,MDSE runtime subsystems fail independently,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-359,2026-10-03,Runtime health tracks faults by subsystem rather than overloading one generic error channel,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-360,2026-10-03,Runtime acceptance measures time to usable core separately from deferred capability completion,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-361,2026-10-03,"The controlled plugin stack is reviewed as an architectural dependency surface, not treated as permanently fixed",CARRIED,Active: BAS-003,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-362,2026-10-03,Background occurrence hydration is preemptible by resumed foreground activity and promotable by explicit user demand,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-363,2026-10-03,Automatic Bootstrap full verification prefers a quiet activity window but has a bounded maximum deferral,CARRIED,Unreviewed rule: BOO-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-364,2026-10-03,Background/cache waits must never promote deferred occurrence work into foreground-priority work,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-365,2026-10-03,Disposable cache persistence is single-flight,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-366,2026-10-03,Delayed Bootstrap work is lifecycle-safe and full release verification is single-flight,CARRIED,Unreviewed rule: BOO-006,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-367,2026-10-03,Cache persistence waits behind deferred capability completion and never initiates occurrence hydration,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-368,2026-10-03,"Workbench candidate CI includes a representative 60,000-note semantic-cache scale smoke before artifact build",CARRIED,Active: TST-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-369,2026-10-03,"Workbench view capability dependencies are declared on the view profile, not inferred from the view name",CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-364,2026-10-03,Startup safety gate: Workbench performs no model/schema I/O in Obsidian's immediate layout-ready callback or before the first-start metadata/quiet gate,CARRIED,Unreviewed rule: WKB-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-370,2026-10-04,Dataview is removed from the controlled MDSE runtime after replacement/dependency and startup-cost gates both passed,CARRIED,Active: BAS-003 ; Unreviewed: BOO-002,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-371,2026-10-05,Import writes use a persistent transaction state; a partial vault is never authoritative,CARRIED,Unreviewed rule: IMP-051,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-372,2026-10-05,Import status is multi-dimensional; no single PASS may imply semantic or release acceptance,CARRIED,Unreviewed rule: IMP-052,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-373,2026-10-05,WAL-mode EA snapshots are blocked for native import,CARRIED,Unreviewed rule: IMP-053,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-374,2026-10-05,Semantic import requires an initialized destination vault identity,CARRIED,Unreviewed rule: BAS-007,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-375,2026-10-05,Every viable QEAX source is cryptographically fingerprinted before planning,CARRIED,Unreviewed rule: IMP-054,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-376,2026-10-05,Reviewed or endpoint-invalid relationships are evidence-only until their MDSE meaning is accepted,CARRIED,Unreviewed rule: MOD-087,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-377,2026-10-05,A contextual Local Model endpoint may exist without a reusable Port definition; this semantic change is introduced only through Local Model schema 0.3,CARRIED,Unreviewed rule: MOD-154,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-378,2026-10-05,Importer v0.8.13 implements the W-377 contextual-endpoint boundary without synthesizing reusable Ports,CARRIED,Unreviewed rule: MOD-154,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-379,2026-10-05,"A pre-release integration base may pin the declared Workbench candidate, but an issued release may not",CARRIED,Active: BAS-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-380,2026-10-05,Review evidence for definitionless contextual endpoints must remain machine-resolvable through the connector boundary,CARRIED,Unreviewed rule: MOD-154,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-381,2026-10-05,A generated base with `vault_uid: UNINITIALIZED` is a valid fresh-base state and must not be reported as schema/runtime-incompatible,CARRIED,Unreviewed rule: BAS-007,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-382,2026-10-05,Remove importer-defined total path/file-count limits and make generated note names globally unique,NOTE,"Unreviewed rule: MOD-104, MOD-111, MOD-112 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-383,2026-10-05,Preserve source package placement and prevent URL/machine-noise filenames,NOTE,"Unreviewed rule: MOD-105 | Detail missing from v2, see note(s)",REQ-98018,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-384,2026-10-05,"Replace first-class Port/Function/State/Design/Step classes with interface occurrences plus Behavior/Condition taxonomy, and version the heading change as Local Model 0.4",NOTE,"Unreviewed rule: MOD-042, MOD-059, MOD-064, MOD-067, MOD-069 | Detail missing from v2, see note(s)",REQ-98015,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-385,2026-10-05,Local Model connection exposure is connection-to-boundary-interface semantics,CARRIED,Unreviewed rule: MOD-155,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-386,2026-10-05,Workbench 0.1.18 is the first WB-106-capable controlled release and the Local Model 0.4 runtime pin,CARRIED,Active: BAS-004,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-387,2026-10-05,"Import transaction failure acceptance is an automated production-path gate, and Import State must be strict JSON",CARRIED,Unreviewed rule: IMP-055,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-388,2026-10-05,Review-only and off-rule relationships are evidence-only; real-output acceptance must prove the written canonical YAML boundary,CARRIED,Unreviewed rule: MOD-087,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-389,2026-10-05,"Import transaction completion is a mechanical state, never semantic/model acceptance",CARRIED,Unreviewed rule: IMP-055,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-390,2026-10-05,"SQLite WAL mode is a blocking source-integrity failure, not a warning",CARRIED,Unreviewed rule: IMP-053,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-391,2026-10-05,A generated Base remains safely uninitialized until the importer performs explicit vault-identity initialization,CARRIED,Unreviewed rule: BAS-007,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-392,2026-10-05,Exact EA source identity is a strong SHA-256 contract copied consistently into all importer evidence,CARRIED,Unreviewed rule: IMP-054,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-393,2026-10-05,"EA source-shape acceptance is governed by a versioned machine-readable source profile, not compiled importer constants",CARRIED,Unreviewed rule: IMP-056,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-394,2026-10-05,Every discovered QEAX table has an executable source-profile disposition before planning,CARRIED,Unreviewed rule: IMP-056,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-395,2026-10-06,Generated importer Markdown uses canonical LF line endings before filesystem write,CARRIED,Unreviewed rule: IMP-057,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-396,2026-10-06,EA Part carrier rows inherit the semantic ownership of their resolved target; only Object definitions become Local Model structural Parts,CARRIED,Unreviewed rule: MOD-070,,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-397,2026-10-06,Port-owned Signal carrier Parts that are exact copies of reusable FlowProperty definitions fold to the FlowProperty Item Flow; reusable Interface definitions own FlowProperties through `hasChild/childOf`,CARRIED,"Unreviewed rule: MOD-059, MOD-071",,read
+Test_Vault_,55_Workspace/Workspace Decision Log.md,W-398,2026-10-06,"Same-context EA BindingConnectors are canonical Local Model equality/binding, not delegation or synthetic connection; promote `equals` under Local Model 0.5",CARRIED,"Unreviewed rule: MOD-080, MOD-156, MOD-161, IMP-044",,read

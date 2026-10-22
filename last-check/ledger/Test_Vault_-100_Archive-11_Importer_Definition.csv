@@ -1,0 +1,6 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,100_Archive/V1/11_Importer/Definition/Importer Issue Register.md,20939,NOTE,IMP-014 and IMP-017 (review grouping by root cause and owner),REQ-98040,read
+Test_Vault_,100_Archive/V1/11_Importer/Definition/Importer Operating Contract.md,20551,CARRIED,Operating contract phases map to IMP-051 to IMP-064; the Translator Definition section 10 answers open question C-8,,read
+Test_Vault_,100_Archive/V1/11_Importer/Definition/Source Profiles/EA8647-2026-09-06-v1.json,6601,EVIDENCE,Source profile of one real model (names and counts); v2 holds the rule in schemas/ea-source-profile.json and keeps the real values private (DAT-002),,headings
+Test_Vault_,100_Archive/V1/11_Importer/Definition/Translator Definition.md,57321,CARRIED,Operating contract phases map to IMP-051 to IMP-064; the Translator Definition section 10 answers open question C-8,,read
+Test_Vault_,100_Archive/V1/11_Importer/README.md,1903,EVIDENCE,"V1 folder guide (candidate v0.8.13, folder intent); superseded by v2 tools/importer",,read

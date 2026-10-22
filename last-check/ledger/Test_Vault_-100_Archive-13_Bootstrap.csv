@@ -1,0 +1,29 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+Test_Vault_,100_Archive/V1/13_Bootstrap/Definition/Author Registration Spec.md,3028,CARRIED,"Author registration, first-open acceptance and candidate repository preparation are carried by BOO-* and MOD-002",,read
+Test_Vault_,100_Archive/V1/13_Bootstrap/Definition/BASE_local_Bootstrap.base,159,CARRIED,"Author registration, first-open acceptance and candidate repository preparation are carried by BOO-* and MOD-002",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Definition/README.md,6671,CARRIED,"Author registration, first-open acceptance and candidate repository preparation are carried by BOO-* and MOD-002",,read
+Test_Vault_,100_Archive/V1/13_Bootstrap/README.md,993,CARRIED,"Author registration, first-open acceptance and candidate repository preparation are carried by BOO-* and MOD-002",,read
+Test_Vault_,100_Archive/V1/13_Bootstrap/Testing/Base First-Open Test Sheet.md,4049,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,partial
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/.gitignore,22,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,partial
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/esbuild.config.mjs,342,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/manifest.json,300,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/package-lock.json,35560,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/package.json,575,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/src/core.ts,8879,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/src/main.ts,11471,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/styles.css,647,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,partial
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/test/core.test.ts,4562,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.0/tsconfig.json,320,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/.gitignore,22,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,partial
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/artifact/artifact-sha256.txt,231,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/artifact/manifest.json,300,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/artifact/styles.css,647,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,partial
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/esbuild.config.mjs,342,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/manifest.json,300,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/package-lock.json,35401,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/package.json,572,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/src/core.ts,10156,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/src/main.ts,18080,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/styles.css,647,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,partial
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/test/core.test.ts,6690,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title
+Test_Vault_,100_Archive/V1/13_Bootstrap/Tools/v0.3.1/tsconfig.json,320,EVIDENCE,"V1 bootstrap source, artifacts and tests; superseded by tools/bootstrap",,title

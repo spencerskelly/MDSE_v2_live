@@ -1,0 +1,241 @@
+repo,path,bytes,disposition,basis,note_ids,review_depth
+v2_test,.ampure_vault.yaml,102,EVIDENCE,Vault configuration of the prototype test vault; ignores personal Obsidian UI state and third-party plugin folders,,read
+v2_test,.gitattributes,66,EVIDENCE,Vault configuration of the prototype test vault; ignores personal Obsidian UI state and third-party plugin folders,,read
+v2_test,.github/workflows/v2-vault-smoke.yml,361,EVIDENCE,Node preflight smoke job; v2 ci.yml replaces it,,read
+v2_test,.gitignore,1007,EVIDENCE,Vault configuration of the prototype test vault; ignores personal Obsidian UI state and third-party plugin folders,,read
+v2_test,.obsidian/community-plugins.json,49,EVIDENCE,Plugin enable list of the prototype vault; v2 uses plugin-lock (BOO-005),,headings
+v2_test,.obsidian/plugins/mdse-v2-bootstrap/main.js,10594,REFUSED,Prototype JavaScript plugin (Bootstrap 0.3.1 / Workbench 0.6.1); replaced by tools/bootstrap and tools/workbench,,title
+v2_test,.obsidian/plugins/mdse-v2-bootstrap/manifest.json,259,REFUSED,Prototype JavaScript plugin (Bootstrap 0.3.1 / Workbench 0.6.1); replaced by tools/bootstrap and tools/workbench,,title
+v2_test,.obsidian/plugins/mdse-v2-workbench/main.js,48912,REFUSED,Prototype JavaScript plugin (Bootstrap 0.3.1 / Workbench 0.6.1); replaced by tools/bootstrap and tools/workbench,,title
+v2_test,.obsidian/plugins/mdse-v2-workbench/manifest.json,279,REFUSED,Prototype JavaScript plugin (Bootstrap 0.3.1 / Workbench 0.6.1); replaced by tools/bootstrap and tools/workbench,,title
+v2_test,.obsidian/plugins/mdse-v2-workbench/styles.css,1086,REFUSED,Prototype JavaScript plugin (Bootstrap 0.3.1 / Workbench 0.6.1); replaced by tools/bootstrap and tools/workbench,,title
+v2_test,.vault.yaml,139,EVIDENCE,Vault configuration of the prototype test vault; ignores personal Obsidian UI state and third-party plugin folders,,read
+v2_test,00_Home/BASE_all_00_Home.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,00_Home/BASE_local_00_Home.base,170,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,00_Home/CANVAS_00_Home.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,00_Home/Home.md,2051,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,00_Home/README_00_Home.md,389,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,10_Structure/Archive Recorder.md,1891,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/BASE_all_10_Structure.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,10_Structure/BASE_local_10_Structure.base,175,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,10_Structure/BOM Example.md,1272,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Backup Sensor.md,505,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/CANVAS_10_Structure.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,10_Structure/Complex Instrument.md,1165,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Control Unit.md,2190,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Data Gateway.md,2375,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Fictional Cable Set.md,1333,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Indicator Assembly.md,776,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Network Node.md,227,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Operator Panel.md,2082,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Power Unit.md,663,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/README_10_Structure.md,394,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Reusable Indicator.md,721,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Sample Instrument.md,1697,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Sample Instrument.sysml,702,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,10_Structure/Sensor Unit.md,521,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,10_Structure/Variant Instrument.md,721,EVIDENCE,Invented sample assembly note with SysML block; nested internal structure fixture is part of the fixture note,REQ-98055,title
+v2_test,20_Use Cases/Acquire Sample.md,717,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,20_Use Cases/BASE_all_20_Use_Cases.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,20_Use Cases/BASE_local_20_Use_Cases.base,175,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,20_Use Cases/CANVAS_20_Use_Cases.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,20_Use Cases/Calibrate Instrument.md,740,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,20_Use Cases/Fictional Operator.md,669,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,20_Use Cases/README_20_Use_Cases.md,394,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/BASE_all_30_Requirements.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,30_Requirements/BASE_local_30_Requirements.base,178,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,30_Requirements/CANVAS_30_Requirements.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,30_Requirements/Fictional Cable Requirement.md,596,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Fictional Status Requirement.md,703,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Fictional Trace Requirement.md,533,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Gateway Trace Requirement.md,649,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Measurement Requirement.md,768,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Network Continuity Requirement.md,287,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Network Satisfaction Example.md,360,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/README_30_Requirements.md,397,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Redundancy Requirement.md,629,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Safety Constraint.md,734,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,30_Requirements/Sample Requirement.md,621,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/Acquire Signal.md,725,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/BASE_all_40_Functions.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,40_Functions/BASE_local_40_Functions.base,175,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,40_Functions/CANVAS_40_Functions.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,40_Functions/Control Logic.md,722,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/Gateway Communications State Machine.md,3556,NOTE,Synthetic state machine with triggers and guards; v2 fixtures have none,REQ-98055,headings
+v2_test,40_Functions/Idle State.md,681,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/Instrument Operation State Machine.md,3520,NOTE,Synthetic state machine with triggers and guards; v2 fixtures have none,REQ-98055,read
+v2_test,40_Functions/Measurement State.md,694,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/Network Monitoring Function.md,275,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/README_40_Functions.md,394,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,40_Functions/Show State.md,671,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,50_Interfaces/BASE_all_50_Interfaces.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,50_Interfaces/BASE_local_50_Interfaces.base,176,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,50_Interfaces/CANVAS_50_Interfaces.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,50_Interfaces/Power Interface.md,712,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,50_Interfaces/README_50_Interfaces.md,395,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,50_Interfaces/Signal Link.md,715,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,50_Interfaces/Signal Port.md,707,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,50_Interfaces/Status Flow.md,687,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/BASE_all_60_Verification.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,60_Verification/BASE_local_60_Verification.base,178,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,60_Verification/CANVAS_60_Verification.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,60_Verification/Cable Length Verification.md,654,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Calibration Verification.md,721,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Gateway Trace Verification.md,653,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Network Verification.md,337,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/README_60_Verification.md,397,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Redundancy Verification.md,635,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Sample Verification.md,579,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Status Display Verification.md,656,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Synthetic Test Result.md,743,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,60_Verification/Trace Link Verification.md,525,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,70_Documents/BASE_all_70_Documents.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,70_Documents/BASE_local_70_Documents.base,175,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,70_Documents/CANVAS_70_Documents.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,70_Documents/Engineering Assumption.md,726,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,70_Documents/Fictional Specification.md,716,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,70_Documents/README_70_Documents.md,394,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,70_Documents/Software Element.md,705,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,80_Reviews/BASE_all_80_Reviews.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,80_Reviews/BASE_local_80_Reviews.base,173,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,80_Reviews/CANVAS_80_Reviews.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,80_Reviews/Change Proposal.md,700,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,80_Reviews/Engineering Decision.md,720,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,80_Reviews/FMEA - Fictional Cable Routing.md,2286,NOTE,Synthetic FMEA examples that carry both RPN and AP views,REQ-98053,title
+v2_test,80_Reviews/FMEA - Fictional Display Lag.md,1642,NOTE,Synthetic FMEA examples that carry both RPN and AP views,REQ-98053,title
+v2_test,80_Reviews/FMEA Cable Mitigation.md,344,NOTE,Synthetic FMEA examples that carry both RPN and AP views,REQ-98053,title
+v2_test,80_Reviews/FMEA Display Mitigation.md,280,NOTE,Synthetic FMEA examples that carry both RPN and AP views,REQ-98053,title
+v2_test,80_Reviews/Mitigation Action.md,697,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,80_Reviews/README_80_Reviews.md,392,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,80_Reviews/Synthetic Issue.md,711,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,80_Reviews/Synthetic Risk.md,794,EVIDENCE,Invented sample note of the public synthetic vault; no real data,,title
+v2_test,90_Views/BASE_all_90_Views.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,90_Views/BASE_local_90_Views.base,171,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,90_Views/CANVAS_90_Views.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,90_Views/Model Relationships.canvas,1922,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,90_Views/README_90_Views.md,390,EVIDENCE,Folder README of the synthetic vault,,title
+v2_test,90_Views/System Overview.canvas,1916,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,99_System/BASE_all_99_System.base,167,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,99_System/BASE_local_99_System.base,172,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,99_System/CANVAS_99_System.canvas,33,EVIDENCE,Generated Obsidian view companion of a synthetic folder; no model content,,title
+v2_test,99_System/CI Stabilization Baseline 2026-10-16.md,1599,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Cable Quantities and UOM.md,943,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Canvas Regeneration and Versioning.md,1785,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Canvas Spacing and Relationship Acceptance.md,1370,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Canvas View Lifecycle.md,1451,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Community Plugin Compatibility Run.md,3493,CARRIED,"Plugin update approval (test, record hashes, lock, keep previous) and startup contract are carried by BOO-001 to BOO-008, BAS-* and the plugin lock",,read
+v2_test,99_System/Coverage Register.md,3009,NOTE,Fixture coverage and the list of negative fixtures still required,REQ-98055,read
+v2_test,99_System/EA Design Concept and SysML v2 Mapping Decision.md,6887,NOTE,Classification of an EA Design from evidence; v2 removed Design as a class (MOD-067) and has no rule for this,REQ-98054,read
+v2_test,99_System/EA Excel Importer Pass 01 Inventory.md,5801,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,headings
+v2_test,99_System/EA Excel Importer Pass 02 Contracts.md,8050,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,read
+v2_test,99_System/EA Excel Importer Pass 03 Pipeline Audit.md,5388,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,read
+v2_test,99_System/EA Excel Importer Pass 04 Evidence Prototype.md,2120,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,headings
+v2_test,99_System/EA Excel Importer Pass 05 Source Adapters.md,2894,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,headings
+v2_test,99_System/EA Excel Importer Pass 06 Local File Profiling.md,3080,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,headings
+v2_test,99_System/EA Importer Pass 08 Real Mapping Coverage.md,3509,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,read
+v2_test,99_System/EA Importer Pass 09 Context Audit.md,2174,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,read
+v2_test,99_System/Element Types and Relationships.md,1874,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Expanded Visualization Test.md,1683,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/FMEA Scoring Contract.md,1137,NOTE,AP versus RPN scoring; v2 has no scoring rule,REQ-98053,read
+v2_test,99_System/First Open Acceptance.md,3886,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Incremental Update Scenarios.md,1110,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Internal Interface View v0.6.1.md,1379,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Internal Interface View.md,1414,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/MDSE v2 Capability Matrix and Baseline.md,6859,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/MDSE v2 Design Decision Register.md,6578,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/MDSE v2 Visualization and Authority Reference.md,6117,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Model Indexing and Integrity.md,2367,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Obsidian Local Settings.md,678,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Plugin Compatibility.md,2091,CARRIED,"Plugin update approval (test, record hashes, lock, keep previous) and startup contract are carried by BOO-001 to BOO-008, BAS-* and the plugin lock",,read
+v2_test,99_System/Plugin Update Approval Policy.md,1165,CARRIED,"Plugin update approval (test, record hashes, lock, keep previous) and startup contract are carried by BOO-001 to BOO-008, BAS-* and the plugin lock",,read
+v2_test,99_System/README_99_System.md,391,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Startup Contract.md,2064,CARRIED,"Plugin update approval (test, record hashes, lock, keep previous) and startup contract are carried by BOO-001 to BOO-008, BAS-* and the plugin lock",,read
+v2_test,99_System/State Machine Syntax and Visualization Contract.md,4524,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Step 12 State Machine Guard Visualization.md,1644,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Step 15 Documentation Consistency Audit.md,2862,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Step 17 Acceptance and EA Excel Import Handoff.md,6540,EVIDENCE,Importer inventory and audit passes of 2026-10-16; the rules they led to are IMP-051 to IMP-127 and the BOM rules BOM-001 to BOM-017,,read
+v2_test,99_System/Syntax Library/01 Structure/attribute-A.sysml,119,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/attribute-B.sysml,119,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/item-A.sysml,89,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/item-B.sysml,89,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/package-A.sysml,94,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/package-B.sysml,93,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/part-definition-A.sysml,89,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/part-definition-B.sysml,89,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/part-usage-A.sysml,133,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/part-usage-B.sysml,137,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/specialization-A.sysml,117,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/01 Structure/specialization-B.sysml,117,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/connection-A.sysml,169,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/connection-B.sysml,169,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/flow-A.sysml,165,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/flow-B.sysml,165,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/interface-A.sysml,96,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/interface-B.sysml,96,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/port-definition-A.sysml,87,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/port-definition-B.sysml,87,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/port-usage-A.sysml,127,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/02 Interfaces/port-usage-B.sysml,126,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/action-A.sysml,92,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/action-B.sysml,92,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/perform-A.sysml,152,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/perform-B.sysml,149,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/state-A.sysml,88,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/state-B.sysml,90,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/succession-A.sysml,150,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/succession-B.sysml,156,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/transition-A.sysml,146,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/03 Behavior/transition-B.sysml,154,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/constraint-A.sysml,94,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/constraint-B.sysml,94,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/requirement-definition-A.sysml,139,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/requirement-definition-B.sysml,143,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/requirement-usage-A.sysml,141,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/requirement-usage-B.sysml,139,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/satisfaction-A.sysml,169,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/04 Intent/satisfaction-B.sysml,169,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/actor-A.sysml,153,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/actor-B.sysml,157,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/analysis-A.sysml,95,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/analysis-B.sysml,95,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/use-case-A.sysml,94,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/use-case-B.sysml,94,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/verification-definition-A.sysml,162,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/05 Cases/verification-definition-B.sysml,162,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/allocation-A.sysml,97,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/allocation-B.sysml,97,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/import-A.sysml,148,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/import-B.sysml,148,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/metadata-A.sysml,90,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/metadata-B.sysml,90,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/redefinition-A.sysml,147,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/redefinition-B.sysml,147,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/reference-A.sysml,133,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/reference-B.sysml,133,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/subsetting-A.sysml,122,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/06 Semantics/subsetting-B.sysml,122,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/Syntax Library/README.md,3513,EVIDENCE,Small synthetic SysML snippets marked provisional and not parser-validated; v2 builds its language notes from catalog.json (MOD-165),,title
+v2_test,99_System/SysML v2 Native Mapping Review Queue.md,15728,CARRIED,"Approved aggregation (composite owned part, shared ref part, nested state/action), FullPort part and ProxyPort port decisions are in IMP-092, MOD-126, IMP-121 and ea-family-mapping.json",,read
+v2_test,99_System/Toolbar and Custom View Management.md,1464,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/V2 Structure Behavior and Documentation Workplan.md,9964,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,read
+v2_test,99_System/Visualization Selector.md,927,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/Workbench Generated Canvas.md,1183,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/YAML Attributes and Formal Relationships.md,2079,EVIDENCE,"Prototype status, contracts and acceptance records of the 17-step plan; the authority rule is D-0003, quantities are BOM-016 and WKB-021, and the saved-view and canvas rules are WKB-* and TST-003",,headings
+v2_test,99_System/import-evidence-tests.cjs,1668,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/import-evidence-v01.cjs,2722,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/import-file-profile-tests.py,2242,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/import-file-profile-v01.py,4795,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/import-source-adapters-tests.cjs,1861,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/import-source-adapters-v01.cjs,3391,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/install-community-plugins.py,4342,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/internal-views-tests.cjs,1455,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/model-index-tests.cjs,5082,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/obsidian-test-mock.cjs,492,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/plugin-startup.json,1223,REFUSED,Prototype plugin inventory; replaced by plugin-lock,,headings
+v2_test,99_System/preflight.cjs,991,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/smoke-test.cjs,3754,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/startup-tests.cjs,1965,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/state-machine-index-tests.cjs,2935,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,99_System/view-lifecycle-tests.cjs,3187,REFUSED,"Prototype Node/Python test or helper; v2 uses TypeScript tests (GOV-002, TST-001)",,title
+v2_test,README.md,2815,EVIDENCE,Prototype vault guide (v0.2.1 index milestone); IP boundary rule is DAT-001 and DAT-002,,read
+v2_test,v2-workbench.html,8273,REFUSED,Prototype single-file Workbench page; replaced by tools/workbench,,title
