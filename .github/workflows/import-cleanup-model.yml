@@ -1,0 +1,54 @@
+name: Complete MDSE self-model baseline
+on:
+  push:
+    paths:
+      - '.github/workflows/import-cleanup-model.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out live vault
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Check out approved cleanup source
+        uses: actions/checkout@v4
+        with:
+          repository: spencerskelly/MDSE_v2
+          ref: mdse_v2_cleanup
+          path: _source_mdse
+          persist-credentials: false
+      - name: Copy unchanged remaining model definitions
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_dir="_source_mdse/modeling/MDSE_Toolset"
+          target_dir="modeling/MDSE_Toolset"
+          for folder in 70_Rule_References 71_Rule_Analysis 72_Derived_Requirements 73_Derived_Verification 74_Semantic_Review; do
+            test -d "$source_dir/$folder"
+            test ! -e "$target_dir/$folder" || { echo "Target already exists: $folder"; exit 1; }
+            cp -a "$source_dir/$folder" "$target_dir/$folder"
+          done
+          expected="$(find "$source_dir" -type f | wc -l | xargs)"
+          actual="$(find "$target_dir" -type f | wc -l | xargs)"
+          echo "Source model files: $expected; live model files: $actual"
+          test "$expected" -eq 1471
+          test "$expected" -eq "$actual"
+          diff -qr "$source_dir" "$target_dir"
+          test "$(find last-check/notes -name '*.md' | wc -l | xargs)" -eq 90
+          test -f .obsidian/plugins/mdse-workbench/main.js
+          test -f .obsidian/plugins/mdse-bootstrap/main.js
+      - name: Commit verified model transfer directly to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modeling/MDSE_Toolset
+          if ! git diff --cached --quiet; then
+            git commit -m "Complete cleanup model transfer: rules, analysis, requirements and verification"
+            git push origin HEAD:main
+          fi
