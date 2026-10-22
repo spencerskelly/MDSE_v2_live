@@ -179,6 +179,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "mdse-workbench:Open MDSE Workbench": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -189,5 +190,42 @@
     }
   },
   "active": "48e659fc367cbfe8",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "modeling/MDSE_Toolset/TRACE_PROPOSALS.csv",
+    "modeling/MDSE_Toolset/SEMANTIC_REVIEW_FINDINGS.md",
+    "modeling/MDSE_Toolset/README.md",
+    "modeling/MDSE_Toolset/NEEDS_REGISTER.csv",
+    "modeling/MDSE_Toolset/NEEDS_BASELINE.md",
+    "modeling/MDSE_Toolset/AS_BUILT_USE_CASE_EVIDENCE.csv",
+    "modeling/MDSE_Toolset/AS_BUILT_CAPABILITY_BASELINE.md",
+    "modeling/MDSE_Toolset/74_Semantic_Review/G01_GOV_DAT_REVIEW.md",
+    "modeling/MDSE_Toolset/74_Semantic_Review",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31152 - WKB-023 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31151 - WKB-022 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31150 - WKB-021 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31149 - WKB-020 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31148 - WKB-019 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31147 - WKB-018 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31146 - WKB-017 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31145 - WKB-016 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31144 - WKB-015 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31143 - WKB-014 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31142 - WKB-013 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31141 - WKB-012 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/README.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31140 - WKB-011 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31139 - WKB-010 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31138 - WKB-009 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31137 - WKB-008 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/README.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/TST/VER-31141_31160/VER-31159 - TST-003 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/TST/VER-31141_31160/VER-31158 - TST-002 Rule Verification.md",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160",
+    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140",
+    "modeling/MDSE_Toolset/73_Derived_Verification/TST/VER-31141_31160",
+    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31061_31080",
+    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31041_31060",
+    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31021_31040",
+    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31001_31020"
+  ]
 }

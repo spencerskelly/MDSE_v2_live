@@ -1,0 +1,22 @@
+# MDSE vault: files that stay on each user's machine and are not committed.
+# Obsidian per-user state (open tabs, layout, appearance, hotkeys, graph filters)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/graph.json
+.obsidian/cache
+# Per-user plugin settings and caches. Controlled settings live in plugin-lock.yaml, never in data.json.
+.obsidian/plugins/*/data.json
+# Temporary Workbench views (one scratch canvas). Saved views in 99_System/23_Saved_Views ARE committed.
+99_System/22_Views/*
+!99_System/22_Views/README.md
+# OS, editor and sync leftovers
+.DS_Store
+Thumbs.db
+desktop.ini
+.trash/
+*.swp
+*~
+*.sync-conflict-*
