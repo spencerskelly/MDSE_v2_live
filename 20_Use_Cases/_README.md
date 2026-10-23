@@ -69,4 +69,4 @@ Current source and tests provide partial evidence for some existing Workbench fu
 
 ## Saved relationship canvas
 
-[Open the Knowledge Base dependency Canvas](MDSE%20Knowledge%20Base%20-%20Modeled%20Dependencies.canvas). It shows all 24 stakeholder needs: twelve with explicitly modeled links to the 16 use cases and six functions, and twelve as visibly unconnected modeling gaps rather than given artificial connections. Native SysML `dependency` is modeled in each owning use case; views carry no model authority.
+[Open the Knowledge Base dependency Canvas](MDSE%20Knowledge%20Base%20-%20Modeled%20Dependencies.canvas). It shows all 24 stakeholder needs: eight linked through native refinements or justified supporting dependencies, and sixteen shown as unconnected modeling gaps. The use-case/function lines are typed owned action usages; this Canvas is not the source of their meaning. Native SysML `dependency` is modeled in each owning use case; views carry no model authority.
