@@ -24,6 +24,18 @@ primarySymbol: MDSE_STK_00007::StakeholderNeed07
 
 These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
+## Actual modeled use-case coverage
+
+The following use-case definitions contain draft native SysML v2 `dependency` statements referencing this stakeholder requirement. They represent **traceable reliance**, not satisfaction, complete implementation, or acceptance evidence:
+
+- [[Explore Element Relationships]]
+- [[Visualize Relationships by Viewpoint]]
+- [[Display Linked Elements in Document Viewpoints]]
+- [[Explore Multiple Relationship Hops]]
+- [[Compare Shared Connections Across Elements]]
+
+View the edges in [[MDSE Knowledge Base - Modeled Dependencies]]. The authoritative dependency statements reside in the owning **use-case notes**; they are not duplicated in this reusable requirement definition. The model remains Draft and parser verification is outstanding.
+
 ## SysML v2
 
 > Draft definition, not yet parser-certified. Keep this SysML section last.

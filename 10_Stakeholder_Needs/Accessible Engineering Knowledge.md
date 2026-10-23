@@ -22,6 +22,16 @@ stereotype: Stakeholder Need
 
 These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
+## Actual modeled use-case coverage
+
+The following use-case definitions contain draft native SysML v2 `dependency` statements referencing this stakeholder requirement. They represent **traceable reliance**, not satisfaction, complete implementation, or acceptance evidence:
+
+- [[Search for a Part, Function or Design]]
+- [[View and Export Engineering Information]]
+- [[Search SysML Syntax and Model Properties]]
+
+View the edges in [[MDSE Knowledge Base - Modeled Dependencies]]. The authoritative dependency statements reside in the owning **use-case notes**; they are not duplicated in this reusable requirement definition. The model remains Draft and parser verification is outstanding.
+
 ## SysML v2
 
 > Draft definition, not yet parser-certified. Keep this SysML section last.

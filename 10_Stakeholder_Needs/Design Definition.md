@@ -44,6 +44,14 @@ Design and state translation decisions exist; design authoring/approval workflow
 - Which outputs or decisions are in scope, and which are not?
 - What existing functions, rules, implementations and tests should be reused?
 
+## Actual modeled use-case coverage
+
+The following use-case definitions contain draft native SysML v2 `dependency` statements referencing this stakeholder requirement. They represent **traceable reliance**, not satisfaction, complete implementation, or acceptance evidence:
+
+- [[Add Engineering Knowledge]]
+
+View the edges in [[MDSE Knowledge Base - Modeled Dependencies]]. The authoritative dependency statements reside in the owning **use-case notes**; they are not duplicated in this reusable requirement definition. The model remains Draft and parser verification is outstanding.
+
 ## SysML v2
 
 > Draft SysML definition, not parser-certified. Formal cross-element relationships will be added after native syntax/endpoint review; this note is not a release requirement.

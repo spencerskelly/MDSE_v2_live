@@ -85,6 +85,29 @@ Users can locate engineering elements, navigate explicit relationships, review r
 6. Derive reusable functions, testable requirements, allocations and verification cases from these eight use cases.
 7. Validate native SysML relationship syntax and execute model integrity checks before treating these traces as formal.
 
+## Actual modeled use-case coverage
+
+The following use-case definitions contain draft native SysML v2 `dependency` statements referencing this stakeholder requirement. They represent **traceable reliance**, not satisfaction, complete implementation, or acceptance evidence:
+
+- [[Import an Engineering Model]]
+- [[Search for a Part, Function or Design]]
+- [[Explore Element Relationships]]
+- [[Review Requirements for a Design]]
+- [[Explore Complete Product Context]]
+- [[View and Export Engineering Information]]
+- [[Add Engineering Knowledge]]
+- [[Correct or Complete Knowledge]]
+- [[Review and Resolve Flagged Model Items]]
+- [[Visualize Relationships by Viewpoint]]
+- [[Display Linked Elements in Document Viewpoints]]
+- [[Explore Multiple Relationship Hops]]
+- [[Compare Shared Connections Across Elements]]
+- [[Search SysML Syntax and Model Properties]]
+- [[Compose Documentation from Embedded Notes]]
+- [[Display Flagged Model Data]]
+
+View the edges in [[MDSE Knowledge Base - Modeled Dependencies]]. The authoritative dependency statements reside in the owning **use-case notes**; they are not duplicated in this reusable requirement definition. The model remains Draft and parser verification is outstanding.
+
 ## SysML v2
 
 > Draft definition; no independent parser certification for this self-model yet.
