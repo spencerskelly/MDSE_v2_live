@@ -70,7 +70,8 @@ for (const [uc, ids] of Object.entries(ucEdges)) for (const id of ids) {
   hasEdge(uc, 'dependsOn', 'REQ-' + id); checks++;
 }
 for (const group of Object.values(clauses)) for (const id of group.ids) {
-  hasEdge('REQ-' + id, 'allocatedTo', 'OBJ-00003');
+  const responsibleTool = group === clauses['IMP-075'] || group === clauses['IMP-076'] ? 'OBJ-00001' : 'OBJ-00003';
+  hasEdge('REQ-' + id, 'allocatedTo', responsibleTool);
   hasEdge(group.verification, 'verifies', 'REQ-' + id);
   checks += 2;
 }
