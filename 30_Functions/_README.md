@@ -53,6 +53,10 @@ The [function/use-case matrix](FUNCTION_USECASE_MATRIX.csv) contains **34 propos
 | BEH-00006 | Native Obsidian embeds; Workbench export | Composition workflow unverified |
 | BEH-00007 | `tools/workbench/src/edit.ts`, `tools/importer/src/merge.ts` | Merge semantics still conflicting across core/importer |
 
+## Native modeled connections — draft
+
+Each of the 16 existing use cases has native `dependency` statements to the logical functions represented in [FUNCTION_USECASE_MATRIX.csv](FUNCTION_USECASE_MATRIX.csv) (34 total) and to the Engineering Knowledge Base stakeholder need (16 total). The BEH-00002 definition has an owned BEH-00001 action usage. Typed importer/Workbench software roles contain five `perform action` usages. See [[MDSE Toolset Composition]] and the [model trace review](../74_Semantic_Review/MODELED_RELATIONSHIP_TRACE_REVIEW.md). Independent parser and runtime graph acceptance are still open.
+
 ## Next review
 
 Approve the functional boundaries and missing subfunctions. Then derive testable requirements, map existing governance rules as their authoritative origin, assign component responsibilities, and create verification cases. Formal relations must be expressed in native SysML and accepted by the pinned parser. The CSV and Markdown links are provisional review views only.

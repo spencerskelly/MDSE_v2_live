@@ -10,6 +10,13 @@ Start with [As-built Capability Baseline](AS_BUILT_CAPABILITY_BASELINE.md), then
 - [[MDSE Base Vault]] — controlled vault and release/plugin payload
 - [[MDSE Bootstrap]] — startup repair, author registration and plugin verification
 
+## Native software model and allocation context
+
+- [[MDSE Toolset Composition]] — tool-owned usages, candidate responsibility allocations and verification objectives.
+- [[Source Reconciliation Engine]] — importer source reconciliation role.
+- [[Model Discovery Index]], [[Relationship Query Engine]], [[Viewpoint Projection Engine]], [[Model Editing Service]] — Workbench typed software parts with native `perform action` links.
+- [Rule-linked native relationship review](../74_Semantic_Review/MODELED_RELATIONSHIP_TRACE_REVIEW.md) — modeled relationships and outstanding acceptance.
+
 ### Evidence standards
 
 Code exists ≠ a particular requirement is completely implemented. A test case exists ≠ its suite was run. Synthetic tests passed ≠ real Obsidian, private QEAX/BOM, or parser-backed acceptance. This inventory is a basis for traceability; current `RULESET.md` and `DECISIONS.md` remain normative.

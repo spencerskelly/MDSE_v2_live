@@ -55,6 +55,10 @@ Review [the six reusable function definitions and the 16-use-case trace matrix](
 
 All products can be modeled at variable depth. Complete CAD remains in PDM/PLM, and work tracking remains in Jira, with links as appropriate. PDFs/documents/images may be imported as evidence or interpreted through future controlled adapters; they are not automatically equivalent to structured SysML input.
 
+## Native modeled dependencies — draft
+
+The 16 individual use-case definitions now contain 34 standard `dependency` statements to existing function definitions and 16 to the Engineering Knowledge Base need. This is general SysML dependency, not a custom `requiresFunction` or `motivates` relationship. See [model trace review](../74_Semantic_Review/MODELED_RELATIONSHIP_TRACE_REVIEW.md). These links remain Draft until the compiled SysML model and Workbench runtime are checked.
+
 ## Coverage and certification
 
 Current source and tests provide partial evidence for some existing Workbench functions and QEAX/Excel import. Newly defined multi-selection, comprehensive field search, document composition and heterogeneous document/image interpretation **must not be presented as verified implementations**. Native SysML relationships, derived requirements and test cases for these user interactions remain to be developed and parser-checked.
