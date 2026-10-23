@@ -20,7 +20,7 @@ The original-rule references below are provenance for **Draft requirement candid
 
 | Original authoritative rule | Existing requirement | Responsible software usage | Candidate verification |
 |---|---|---|---|
-| [[IMP-075]] — change log per import | [[REQ-31137 - IMP-075 Statement 1]] | importer ([[MDSE Importer]]) | [[VER-31071 - IMP-075 Rule Verification]] (not modeled in an objective here yet) |
+| [[IMP-075]] — change log per import | [[REQ-31137 - IMP-075 Statement 1]] | importer ([[MDSE Importer]]) | [[VER-31071 - IMP-075 Rule Verification]] |
 | [[IMP-076]] — repeated import idempotence | [[REQ-31139 - IMP-076 Statement 1]] | importer ([[MDSE Importer]]) | [[VER-31072 - IMP-076 Rule Verification]] |
 | [[WKB-008]] — eligible model edit targets | [[REQ-31279 - WKB-008 Statement 2]] | workbench ([[MDSE Workbench]]) | [[VER-31137 - WKB-008 Rule Verification]] |
 | Early self-model pilot (not equated to a particular rule) | [[Account for Every Source Row]] | importer | [[Source Row Disposition Test]] |
@@ -62,6 +62,11 @@ package MDSE_OBJ_00006 {
         verification sourceDispositionCheck : MDSE_VER_00001::SourceDispositionTest {
             objective sourceDispositionObjective {
                 verify sourceRowDisposition;
+            }
+        }
+        verification importChangeLogCheck : MDSE_VER_31071::TestVER31071 {
+            objective importChangeLogObjective {
+                verify importChangeLog;
             }
         }
         verification repeatedImportCheck : MDSE_VER_31072::TestVER31072 {
