@@ -55,7 +55,7 @@ Workbench indexes notes and some model fields; comprehensive SysML/property sear
 
 - [[Discover and Resolve Model Elements]]
 
-These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
+The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
 
 ## Modeled dependencies — draft
 
@@ -71,6 +71,7 @@ package MDSE_UC_00014 {
         doc /* Search within SysML v2 textual model definitions, YAML properties and other searchable note fields. */
         dependency from SearchModelTextAndProperties to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from SearchModelTextAndProperties to MDSE_BEH_00003::DiscoverModelElements;
+        dependency from SearchModelTextAndProperties to MDSE_STK_00001::StakeholderNeed01;
     }
 }
 ```
