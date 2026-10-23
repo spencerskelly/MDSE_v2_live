@@ -50,7 +50,7 @@ package MDSE_OBJ_00001 {
         part sourceReconciliation : MDSE_OBJ_00007::SourceReconciliationEngine {
             perform action ingest : MDSE_BEH_00002::IngestEngineeringSources;
         }
-        part managedVaultUpdate;
+        part managedVaultUpdate : MDSE_OBJ_00019::ManagedVaultUpdate;
     }
 }
 ```

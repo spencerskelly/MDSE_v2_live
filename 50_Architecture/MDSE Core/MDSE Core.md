@@ -51,8 +51,8 @@ Original sources: [[GOV-012]], [[MOD-018]]. These are native part usages and can
 package MDSE_OBJ_00002 {
     part def MDSECore {
         doc /* Shared note and SysML block parsing, note validation, serialization helpers and model identity lookups. */
-        part noteAndSysmlCodec;
-        part modelIdentityLookup;
+        part noteAndSysmlCodec : MDSE_OBJ_00012::NoteAndSysmlCodec;
+        part modelIdentityLookup : MDSE_OBJ_00013::ModelIdentityLookup;
     }
 }
 ```

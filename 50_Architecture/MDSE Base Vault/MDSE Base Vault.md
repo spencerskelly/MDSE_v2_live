@@ -51,8 +51,8 @@ Original sources: [[GOV-012]], [[BAS-001]], [[BOO-001]]. These are native part u
 package MDSE_OBJ_00004 {
     part def MDSEBaseVault {
         doc /* Deterministic assembly of a preconfigured Obsidian vault, released schemas/templates and pinned plugin payload. */
-        part governedConfiguration;
-        part pinnedPluginPayload;
+        part governedConfiguration : MDSE_OBJ_00014::GovernedConfiguration;
+        part pinnedPluginPayload : MDSE_OBJ_00015::PinnedPluginPayload;
     }
 }
 ```

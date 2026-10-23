@@ -48,9 +48,9 @@ Original sources: [[GOV-012]], [[BOO-001]]. These are native part usages and can
 package MDSE_OBJ_00005 {
     part def MDSEBootstrap {
         doc /* Obsidian startup and repair plugin for plugin integrity, governed settings, core plugin activation and author registration. */
-        part runtimeIntegrityCheck;
-        part activationRepair;
-        part authorRegistration;
+        part runtimeIntegrityCheck : MDSE_OBJ_00016::RuntimeIntegrityCheck;
+        part activationRepair : MDSE_OBJ_00017::ActivationRepair;
+        part authorRegistration : MDSE_OBJ_00018::AuthorRegistration;
     }
 }
 ```
