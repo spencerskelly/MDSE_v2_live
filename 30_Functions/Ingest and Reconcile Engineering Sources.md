@@ -56,6 +56,12 @@ Partial: tools/importer/src/run.ts, ea_source.ts, bom.ts and merge.ts; importer/
 - Derived system requirements, component allocations, verification cases and run results: pending
 - No native SysML relationship has yet been parser-certified for this trace.
 
+## Modeled software decomposition — draft
+
+A nested `action reconcileSourceRecords` usage reuses the existing BEH-00001 definition. This is real behavioral decomposition within BEH-00002 rather than another function definition.
+
+Original sources: [[IMP-074]], [[IMP-075]], [[IMP-076]]. These are native part usages and candidate performed-action allocations, **not** evidence of completed testing. Where a child role lacks a reusable definition, it is an untyped initial software usage pending further decomposition.
+
 ## SysML v2
 
 > Draft standalone action definition; parser acceptance and typed relationship declarations remain to be verified.
@@ -64,6 +70,7 @@ Partial: tools/importer/src/run.ts, ea_source.ts, bom.ts and merge.ts; importer/
 package MDSE_BEH_00002 {
     action def IngestEngineeringSources {
         doc /* Import external source data and evidence into MDSE using appropriate adapters, source identity, managed files, approved reconciliation, and recorded dispositions. */
+        action reconcileSourceRecords : MDSE_BEH_00001::ReconcileSourceRecords;
     }
 }
 ```

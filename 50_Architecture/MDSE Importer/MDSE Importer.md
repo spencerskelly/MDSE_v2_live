@@ -33,6 +33,12 @@ Ability to update an existing vault with the latest version of [[MDSE Bootstrap]
 
 **No new normative allocation is approved by this note.**
 
+## Modeled software decomposition — draft
+
+The source-reconciliation engine and managed-vault updater are separable importer software roles. The former owns a usage of the shared ingestion function; the latter is a release/update responsibility requiring later detailed functional modeling.
+
+Original sources: [[GOV-012]], [[IMP-074]], [[IMP-075]], [[IMP-076]]. These are native part usages and candidate performed-action allocations, **not** evidence of completed testing. Where a child role lacks a reusable definition, it is an untyped initial software usage pending further decomposition.
+
 ## SysML v2
 
 
@@ -41,6 +47,10 @@ Ability to update an existing vault with the latest version of [[MDSE Bootstrap]
 package MDSE_OBJ_00001 {
     part def MDSEImporter {
         doc /* Software adapter that reads engineering sources and produces reconciled MDSE notes and evidence. */
+        part sourceReconciliation : MDSE_OBJ_00007::SourceReconciliationEngine {
+            perform action ingest : MDSE_BEH_00002::IngestEngineeringSources;
+        }
+        part managedVaultUpdate;
     }
 }
 ```

@@ -37,6 +37,12 @@ The currently retained core mergeNote refreshes existing SysML/source fields wit
 
 Code and test definitions were inspected in GitHub. Dedicated suites were not executed for this baseline; runtime/engineering acceptance and native SysML connections remain unverified.
 
+## Modeled software decomposition — draft
+
+The shared Core separates parsing/serialization from identity resolution. Both are supporting services; no duplicate BEH function is claimed until ownership of those activities is reviewed.
+
+Original sources: [[GOV-012]], [[MOD-018]]. These are native part usages and candidate performed-action allocations, **not** evidence of completed testing. Where a child role lacks a reusable definition, it is an untyped initial software usage pending further decomposition.
+
 ## SysML v2
 
 > Draft model definition only; independent parser and semantic trace checking have not been run.
@@ -45,6 +51,8 @@ Code and test definitions were inspected in GitHub. Dedicated suites were not ex
 package MDSE_OBJ_00002 {
     part def MDSECore {
         doc /* Shared note and SysML block parsing, note validation, serialization helpers and model identity lookups. */
+        part noteAndSysmlCodec;
+        part modelIdentityLookup;
     }
 }
 ```

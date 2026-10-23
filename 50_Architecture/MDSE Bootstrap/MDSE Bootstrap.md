@@ -34,6 +34,12 @@ Bootstrap is JavaScript despite TypeScript governance; simulated tests exist, bu
 
 Code and test definitions were inspected in GitHub. Dedicated suites were not executed for this baseline; runtime/engineering acceptance and native SysML connections remain unverified.
 
+## Modeled software decomposition — draft
+
+Bootstrap's integrity verification, repair and author-registration responsibilities are separate software parts. No knowledge-base function is incorrectly assigned as a substitute for these release/startup functions.
+
+Original sources: [[GOV-012]], [[BOO-001]]. These are native part usages and candidate performed-action allocations, **not** evidence of completed testing. Where a child role lacks a reusable definition, it is an untyped initial software usage pending further decomposition.
+
 ## SysML v2
 
 > Draft model definition only; independent parser and semantic trace checking have not been run.
@@ -42,6 +48,9 @@ Code and test definitions were inspected in GitHub. Dedicated suites were not ex
 package MDSE_OBJ_00005 {
     part def MDSEBootstrap {
         doc /* Obsidian startup and repair plugin for plugin integrity, governed settings, core plugin activation and author registration. */
+        part runtimeIntegrityCheck;
+        part activationRepair;
+        part authorRegistration;
     }
 }
 ```

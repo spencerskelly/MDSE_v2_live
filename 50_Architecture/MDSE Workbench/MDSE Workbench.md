@@ -42,6 +42,12 @@ Primary search does not index aliases or scoped SysML text; no confirmed multi-s
 
 Code and test definitions were inspected in GitHub. Dedicated suites were not executed for this baseline; runtime/engineering acceptance and native SysML connections remain unverified.
 
+## Modeled software decomposition — draft
+
+The Workbench owns four typed software parts for discovery, typed relationship traversal, viewpoint projection, and model editing. Each part usage **performs** an existing logical action definition; the definitions remain in `30_Functions`.
+
+Original sources: [[GOV-012]], [[WKB-008]], [[WKB-012]], [[WKB-016]], [[WKB-020]]. These are native part usages and candidate performed-action allocations, **not** evidence of completed testing. Where a child role lacks a reusable definition, it is an untyped initial software usage pending further decomposition.
+
 ## SysML v2
 
 > Draft model definition only; independent parser and semantic trace checking have not been run.
@@ -50,6 +56,18 @@ Code and test definitions were inspected in GitHub. Dedicated suites were not ex
 package MDSE_OBJ_00003 {
     part def MDSEWorkbench {
         doc /* Engineer-facing Obsidian plugin and offline viewer with model indexing, relationship views, review queue, canvases and selected editing actions. */
+        part modelDiscovery : MDSE_OBJ_00008::ModelDiscoveryIndex {
+            perform action discover : MDSE_BEH_00003::DiscoverModelElements;
+        }
+        part relationshipTraversal : MDSE_OBJ_00009::RelationshipQueryEngine {
+            perform action traverse : MDSE_BEH_00004::TraverseModelRelationships;
+        }
+        part viewpointProjection : MDSE_OBJ_00010::ViewpointProjectionEngine {
+            perform action generate : MDSE_BEH_00005::GenerateModelViewpoints;
+        }
+        part modelEditing : MDSE_OBJ_00011::ModelEditingService {
+            perform action maintain : MDSE_BEH_00007::MaintainModelKnowledge;
+        }
     }
 }
 ```
