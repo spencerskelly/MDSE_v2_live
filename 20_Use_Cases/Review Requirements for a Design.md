@@ -67,9 +67,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00004 {
     use case def ReviewDesignRequirements {
         doc /* Check which requirements are identified for a design. */
+        dependency from ReviewDesignRequirements to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ReviewDesignRequirements to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from ReviewDesignRequirements to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from ReviewDesignRequirements to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ReviewDesignRequirements to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from ReviewDesignRequirements to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

@@ -70,9 +70,9 @@ package MDSE_UC_00007 {
         dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00015::RequirementsManagement; // refines
         dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00005::StakeholderNeed05; // refines
         dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00020::ValidationDefinition; // refines
+        dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from AddEngineeringKnowledge to MDSE_BEH_00003::DiscoverModelElements;
+        dependency from AddEngineeringKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
     }
-    dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from AddEngineeringKnowledge to MDSE_BEH_00003::DiscoverModelElements;
-    dependency from AddEngineeringKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```

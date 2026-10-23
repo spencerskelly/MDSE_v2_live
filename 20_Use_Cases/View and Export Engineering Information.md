@@ -75,9 +75,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00006 {
     use case def ViewAndExportInformation {
         doc /* View model data and export it for communication to others. */
+        dependency from ViewAndExportInformation to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ViewAndExportInformation to MDSE_BEH_00005::GenerateModelViewpoints;
+        dependency from ViewAndExportInformation to MDSE_BEH_00006::ComposeEngineeringKnowledge;
     }
-    dependency from ViewAndExportInformation to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ViewAndExportInformation to MDSE_BEH_00005::GenerateModelViewpoints;
-    dependency from ViewAndExportInformation to MDSE_BEH_00006::ComposeEngineeringKnowledge;
 }
 ```

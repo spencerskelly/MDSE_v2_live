@@ -76,9 +76,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00003 {
     use case def ExploreElementLinks {
         doc /* View how an element is linked to other elements. */
+        dependency from ExploreElementLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ExploreElementLinks to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from ExploreElementLinks to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from ExploreElementLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ExploreElementLinks to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from ExploreElementLinks to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

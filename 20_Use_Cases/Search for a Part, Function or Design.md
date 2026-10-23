@@ -77,9 +77,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00002 {
     use case def FindEngineeringElement {
         doc /* Search for a part, function, or design. */
+        dependency from FindEngineeringElement to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from FindEngineeringElement to MDSE_BEH_00003::DiscoverModelElements;
+        dependency from FindEngineeringElement to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from FindEngineeringElement to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from FindEngineeringElement to MDSE_BEH_00003::DiscoverModelElements;
-    dependency from FindEngineeringElement to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

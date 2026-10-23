@@ -67,9 +67,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00008 {
     use case def CorrectOrCompleteKnowledge {
         doc /* Modify information to make the knowledge base correct or complete. */
+        dependency from CorrectOrCompleteKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from CorrectOrCompleteKnowledge to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from CorrectOrCompleteKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
     }
-    dependency from CorrectOrCompleteKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from CorrectOrCompleteKnowledge to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from CorrectOrCompleteKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```

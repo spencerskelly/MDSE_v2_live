@@ -67,9 +67,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00005 {
     use case def ExploreProductContext {
         doc /* View all aspects of a product and its context including external systems and actors. */
+        dependency from ExploreProductContext to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ExploreProductContext to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from ExploreProductContext to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from ExploreProductContext to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ExploreProductContext to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from ExploreProductContext to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

@@ -84,9 +84,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00001 {
     use case def ImportEngineeringModel {
         doc /* A user imports engineering knowledge from multiple source formats, retaining provenance and reviewable disposition of every processed source record. */
+        dependency from ImportEngineeringModel to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ImportEngineeringModel to MDSE_BEH_00002::IngestEngineeringSources;
+        dependency from ImportEngineeringModel to MDSE_BEH_00007::MaintainModelKnowledge;
     }
-    dependency from ImportEngineeringModel to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ImportEngineeringModel to MDSE_BEH_00002::IngestEngineeringSources;
-    dependency from ImportEngineeringModel to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```
