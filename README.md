@@ -12,6 +12,7 @@ Markdown Systems Engineering vault (release 0.9.0). SysML v2 text in the last `#
 - New import-change and edit-eligibility traces: [requirement linking pass 2](74_Semantic_Review/REQUIREMENT_LINKING_PASS_02_2026-10-23.md).
 - Full WKB-008 three-clause model trace: [requirement linking pass 3](74_Semantic_Review/REQUIREMENT_LINKING_PASS_03_2026-10-23.md).
 - Relationship editing and scanner/deduplication traces: [requirement linking pass 4](74_Semantic_Review/REQUIREMENT_LINKING_PASS_04_2026-10-23.md).
+- Validated live-vault Workbench graph (with open parser/UI gates): [relationship validation evidence](74_Semantic_Review/LIVE_RELATIONSHIP_VALIDATION_2026-10-23.md).
 
 ## Open modeled relationships in Obsidian Canvas
 
