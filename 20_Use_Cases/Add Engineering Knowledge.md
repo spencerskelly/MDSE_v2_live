@@ -52,6 +52,10 @@ Create elements; reuse definitions; add contextual relationships; record provena
 
 These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
 
+## Modeled dependencies — draft
+
+The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+
 ## SysML v2
 
 > **Authoritative SysML v2 text.** Write your notes above this section. Change the model through Workbench, or edit this block and re-run the parser check.
@@ -67,5 +71,8 @@ package MDSE_UC_00007 {
         dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00005::StakeholderNeed05; // refines
         dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00020::ValidationDefinition; // refines
     }
+    dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
+    dependency from AddEngineeringKnowledge to MDSE_BEH_00003::DiscoverModelElements;
+    dependency from AddEngineeringKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```

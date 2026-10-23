@@ -72,6 +72,10 @@ Knowledge from multiple engineering sources is available in the connected model,
 
 These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
 
+## Modeled dependencies — draft
+
+The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+
 ## SysML v2
 
 > Draft definition, not yet parser-certified. Keep this SysML section last.
@@ -81,5 +85,8 @@ package MDSE_UC_00001 {
     use case def ImportEngineeringModel {
         doc /* A user imports engineering knowledge from multiple source formats, retaining provenance and reviewable disposition of every processed source record. */
     }
+    dependency from ImportEngineeringModel to MDSE_STK_00013::EngineeringKnowledgeBase;
+    dependency from ImportEngineeringModel to MDSE_BEH_00002::IngestEngineeringSources;
+    dependency from ImportEngineeringModel to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```

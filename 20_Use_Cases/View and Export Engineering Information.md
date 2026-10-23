@@ -63,6 +63,10 @@ Exports are presentation artifacts derived from authoritative notes, and must no
 
 These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
 
+## Modeled dependencies — draft
+
+The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+
 ## SysML v2
 
 > Draft use-case definition only; do not treat Markdown navigation as certified native SysML relationship semantics.
@@ -72,5 +76,8 @@ package MDSE_UC_00006 {
     use case def ViewAndExportInformation {
         doc /* View model data and export it for communication to others. */
     }
+    dependency from ViewAndExportInformation to MDSE_STK_00013::EngineeringKnowledgeBase;
+    dependency from ViewAndExportInformation to MDSE_BEH_00005::GenerateModelViewpoints;
+    dependency from ViewAndExportInformation to MDSE_BEH_00006::ComposeEngineeringKnowledge;
 }
 ```
