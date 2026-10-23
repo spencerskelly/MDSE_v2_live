@@ -50,7 +50,7 @@ Create elements; reuse definitions; add contextual relationships; record provena
 - [[Discover and Resolve Model Elements]]
 - [[Maintain and Improve Model Knowledge]]
 
-These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
+The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
 
 ## Modeled dependencies — draft
 
@@ -73,6 +73,7 @@ package MDSE_UC_00007 {
         dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from AddEngineeringKnowledge to MDSE_BEH_00003::DiscoverModelElements;
         dependency from AddEngineeringKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
+
     }
 }
 ```

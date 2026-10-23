@@ -19,7 +19,7 @@ primarySymbol: MDSE_UC_00001::ImportEngineeringModel
 - Referenced from (motivates): [[Preserve Imported Knowledge]]
 - requiresFunction: [[Reconcile Source Records]]
 
-These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
+These are provisional navigational links. Native dependency declarations are present below. Their endpoint typing, semantics and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
 > [!note] Critical use case — expanded source formats requested by owner, 2026-10-21
 > Data import is a first-class capability of the Engineering Knowledge Base, not a minor supporting use case. Existing QEAX and Excel implementations are only part of the target.
@@ -70,7 +70,7 @@ Knowledge from multiple engineering sources is available in the connected model,
 - [[Ingest and Reconcile Engineering Sources]]
 - [[Maintain and Improve Model Knowledge]]
 
-These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
+The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
 
 ## Modeled dependencies — draft
 
@@ -87,6 +87,8 @@ package MDSE_UC_00001 {
         dependency from ImportEngineeringModel to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from ImportEngineeringModel to MDSE_BEH_00002::IngestEngineeringSources;
         dependency from ImportEngineeringModel to MDSE_BEH_00007::MaintainModelKnowledge;
+        dependency from ImportEngineeringModel to MDSE_STK_00003::StakeholderNeed03;
+        dependency from ImportEngineeringModel to MDSE_STK_00004::StakeholderNeed04;
     }
 }
 ```

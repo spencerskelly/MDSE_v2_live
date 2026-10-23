@@ -61,7 +61,7 @@ Exports are presentation artifacts derived from authoritative notes, and must no
 - [[Generate Engineering Model Viewpoints]]
 - [[Compose and Exchange Engineering Knowledge]]
 
-These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
+The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
 
 ## Modeled dependencies — draft
 
@@ -78,6 +78,7 @@ package MDSE_UC_00006 {
         dependency from ViewAndExportInformation to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from ViewAndExportInformation to MDSE_BEH_00005::GenerateModelViewpoints;
         dependency from ViewAndExportInformation to MDSE_BEH_00006::ComposeEngineeringKnowledge;
+        dependency from ViewAndExportInformation to MDSE_STK_00001::StakeholderNeed01;
     }
 }
 ```
