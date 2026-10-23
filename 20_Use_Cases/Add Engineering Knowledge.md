@@ -50,11 +50,15 @@ Create elements; reuse definitions; add contextual relationships; record provena
 - [[Discover and Resolve Model Elements]]
 - [[Maintain and Improve Model Knowledge]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The modeled relationships below now distinguish native actions, refinements, and supporting dependencies. Their endpoint semantics and independent parser acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 2 typed `action` usage(s) express actual functions in this user scenario; an `action` usage is not the software's `perform action` allocation.
+- 1 `#refinement dependency`(ies) elaborate the corresponding stakeholder requirement; this does not claim satisfaction.
+- 6 prior discipline links were withheld: ability to add engineering knowledge does not refine the discipline's architectural, design, FMEA, requirements or validation capability. Historical context remains in this note and the review ledger.
+
+Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
 ## SysML v2
 
@@ -64,16 +68,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00007 {
     use case def AddEngineeringKnowledge {
         doc /* Document additions to engineering knowledge from different vantage points. */
-        dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00019::ArchitectureDefinition; // refines
-        dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00018::DesignDefinition; // refines
-        dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00017::FailureModeAndEffectAnalysis; // refines
-        dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00015::RequirementsManagement; // refines
-        dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00005::StakeholderNeed05; // refines
-        dependency from MDSE_UC_00007::AddEngineeringKnowledge to MDSE_STK_00020::ValidationDefinition; // refines
-        dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from AddEngineeringKnowledge to MDSE_BEH_00003::DiscoverModelElements;
-        dependency from AddEngineeringKnowledge to MDSE_BEH_00007::MaintainModelKnowledge;
-
+        action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;
+        action maintainModelKnowledge : MDSE_BEH_00007::MaintainModelKnowledge;
+        #refinement dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
     }
 }
 ```

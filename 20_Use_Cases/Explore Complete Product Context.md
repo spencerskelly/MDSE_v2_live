@@ -53,11 +53,15 @@ Navigate hierarchy; inspect behavior/interfaces; present actors and external sys
 - [[Query and Traverse Model Relationships]]
 - [[Generate Engineering Model Viewpoints]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The modeled relationships below now distinguish native actions, refinements, and supporting dependencies. Their endpoint semantics and independent parser acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 2 typed `action` usage(s) express actual functions in this user scenario; an `action` usage is not the software's `perform action` allocation.
+- 1 `#refinement dependency`(ies) elaborate the corresponding stakeholder requirement; this does not claim satisfaction.
+- 1 generic `dependency` remains because this need is a supporting prerequisite, not a refinement of its intent.
+
+Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
 ## SysML v2
 
@@ -67,9 +71,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00005 {
     use case def ExploreProductContext {
         doc /* View all aspects of a product and its context including external systems and actors. */
-        dependency from ExploreProductContext to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from ExploreProductContext to MDSE_BEH_00004::TraverseModelRelationships;
-        dependency from ExploreProductContext to MDSE_BEH_00005::GenerateModelViewpoints;
+        action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;
+        action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;
+        #refinement dependency from ExploreProductContext to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from ExploreProductContext to MDSE_STK_00019::ArchitectureDefinition;
     }
 }

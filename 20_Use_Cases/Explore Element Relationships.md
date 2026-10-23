@@ -62,11 +62,14 @@ These are separate view/query capabilities over **one canonical model graph**, n
 - [[Query and Traverse Model Relationships]]
 - [[Generate Engineering Model Viewpoints]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The modeled relationships below now distinguish native actions, refinements, and supporting dependencies. Their endpoint semantics and independent parser acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 2 typed `action` usage(s) express actual functions in this user scenario; an `action` usage is not the software's `perform action` allocation.
+- 2 `#refinement dependency`(ies) elaborate the corresponding stakeholder requirement; this does not claim satisfaction.
+
+Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
 ## SysML v2
 
@@ -76,10 +79,10 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00003 {
     use case def ExploreElementLinks {
         doc /* View how an element is linked to other elements. */
-        dependency from ExploreElementLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from ExploreElementLinks to MDSE_BEH_00004::TraverseModelRelationships;
-        dependency from ExploreElementLinks to MDSE_BEH_00005::GenerateModelViewpoints;
-        dependency from ExploreElementLinks to MDSE_STK_00007::StakeholderNeed07;
+        action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;
+        action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;
+        #refinement dependency from ExploreElementLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
+        #refinement dependency from ExploreElementLinks to MDSE_STK_00007::StakeholderNeed07;
     }
 }
 ```

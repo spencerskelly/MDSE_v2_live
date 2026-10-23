@@ -17,7 +17,7 @@ primarySymbol: MDSE_UC_00001::ImportEngineeringModel
 ## Proposed trace links
 
 - Referenced from (motivates): [[Preserve Imported Knowledge]]
-- requiresFunction: [[Reconcile Source Records]]
+- Scenario function: [[Ingest and Reconcile Engineering Sources]], which owns the [[Reconcile Source Records]] action usage
 
 These are provisional navigational links. Native dependency declarations are present below. Their endpoint typing, semantics and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
@@ -70,11 +70,16 @@ Knowledge from multiple engineering sources is available in the connected model,
 - [[Ingest and Reconcile Engineering Sources]]
 - [[Maintain and Improve Model Knowledge]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The modeled relationships below now distinguish native actions, refinements, and supporting dependencies. Their endpoint semantics and independent parser acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 1 typed `action` usage(s) express actual functions in this user scenario; an `action` usage is not the software's `perform action` allocation.
+- 2 `#refinement dependency`(ies) elaborate the corresponding stakeholder requirement; this does not claim satisfaction.
+- 1 generic `dependency` remains because this need is a supporting prerequisite, not a refinement of its intent.
+- The prior BEH-00007 import link was removed: importing data and Workbench author editing have distinct responsibility under GOV-012.
+
+Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
 ## SysML v2
 
@@ -84,10 +89,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00001 {
     use case def ImportEngineeringModel {
         doc /* A user imports engineering knowledge from multiple source formats, retaining provenance and reviewable disposition of every processed source record. */
-        dependency from ImportEngineeringModel to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from ImportEngineeringModel to MDSE_BEH_00002::IngestEngineeringSources;
-        dependency from ImportEngineeringModel to MDSE_BEH_00007::MaintainModelKnowledge;
-        dependency from ImportEngineeringModel to MDSE_STK_00003::StakeholderNeed03;
+        action ingestEngineeringSources : MDSE_BEH_00002::IngestEngineeringSources;
+        #refinement dependency from ImportEngineeringModel to MDSE_STK_00013::EngineeringKnowledgeBase;
+        #refinement dependency from ImportEngineeringModel to MDSE_STK_00003::StakeholderNeed03;
         dependency from ImportEngineeringModel to MDSE_STK_00004::StakeholderNeed04;
     }
 }

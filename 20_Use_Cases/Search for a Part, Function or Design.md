@@ -63,11 +63,14 @@ Also see [[Search SysML Syntax and Model Properties]] for full text and field-sc
 - [[Discover and Resolve Model Elements]]
 - [[Generate Engineering Model Viewpoints]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The modeled relationships below now distinguish native actions, refinements, and supporting dependencies. Their endpoint semantics and independent parser acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 2 typed `action` usage(s) express actual functions in this user scenario; an `action` usage is not the software's `perform action` allocation.
+- 2 `#refinement dependency`(ies) elaborate the corresponding stakeholder requirement; this does not claim satisfaction.
+
+Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
 ## SysML v2
 
@@ -77,10 +80,10 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00002 {
     use case def FindEngineeringElement {
         doc /* Search for a part, function, or design. */
-        dependency from FindEngineeringElement to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from FindEngineeringElement to MDSE_BEH_00003::DiscoverModelElements;
-        dependency from FindEngineeringElement to MDSE_BEH_00005::GenerateModelViewpoints;
-        dependency from FindEngineeringElement to MDSE_STK_00001::StakeholderNeed01;
+        action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;
+        action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;
+        #refinement dependency from FindEngineeringElement to MDSE_STK_00013::EngineeringKnowledgeBase;
+        #refinement dependency from FindEngineeringElement to MDSE_STK_00001::StakeholderNeed01;
     }
 }
 ```
