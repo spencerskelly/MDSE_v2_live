@@ -26,7 +26,9 @@ These are provisional navigational links. Formal native SysML relationships, end
 
 ## Native inbound relationship review
 
-**Supporting dependency only:** [[Review and Resolve Flagged Model Items]]. Their use-case definitions retain generic `dependency`, because they rely on this concern without refining its required outcome.
+**Supporting use-case dependency:** [[Review and Resolve Flagged Model Items]]. The use-case retains generic `dependency`, because its flag disposition relies on this concern without refining all of its outcomes.
+
+**Draft requirement refinements:** [[REQ-31137 - IMP-075 Statement 1]] and [[REQ-31138 - IMP-075 Statement 2]] independently detail the import-change-record aspect. Their respective requirement definitions own the native `#refinement` statements. No assertion of approval, satisfaction, or test pass follows.
 
 Modeling authority is the source use-case SysML block; this note is the reusable stakeholder requirement definition. Review the [semantic disposition ledger](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]]. Parser acceptance and implemented coverage are not inferred.
 

@@ -56,6 +56,10 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Draft refinement of stakeholder change trace
+
+A reviewable import changelog entry must identify the changed file, describe the change, and flag conflicts. This requirement elaborates the same [[Understand Decisions and Changes]] need as IMP-075 clause 1, but remains a distinct candidate for clause-level verification.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
@@ -64,6 +68,7 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 package MDSE_REQ_31138 {
     requirement def RuleREQ31138 {
         doc /* Each entry links the changed file, describes the change, and flags any conflict. */
+        #refinement dependency from RuleREQ31138 to MDSE_STK_00010::StakeholderNeed10;
     }
 }
 ```

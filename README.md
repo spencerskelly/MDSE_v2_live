@@ -9,6 +9,7 @@ Markdown Systems Engineering vault (release 0.9.0). SysML v2 text in the last `#
 - Open language completeness and validation findings: [SysML v2 language coverage review](74_Semantic_Review/SYSML_V2_LANGUAGE_COVERAGE_REVIEW.md).
 - Software model composition: [MDSE Toolset Composition](50_Architecture/MDSE%20Toolset%20Composition.md).
 - Rule-backed modeled relationships: [trace review](74_Semantic_Review/MODELED_RELATIONSHIP_TRACE_REVIEW.md).
+- New import-change and edit-eligibility traces: [requirement linking pass 2](74_Semantic_Review/REQUIREMENT_LINKING_PASS_02_2026-10-23.md).
 
 ## Open modeled relationships in Obsidian Canvas
 

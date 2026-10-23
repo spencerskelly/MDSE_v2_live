@@ -64,6 +64,10 @@ The original rule is [[IMP-075]]. Its generated reference records exact source w
 
 See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obsidian Canvas. The reusable **definition** below is not duplicated or replaced; the context owns its relationships. Exact grammar validity and runtime Workbench edge resolution remain subject to acceptance testing.
 
+## Draft refinement of stakeholder change trace
+
+This source-backed import-changelog requirement elaborates the change-record aspect of [[Understand Decisions and Changes]] (STK-00010). Its native `#refinement` expresses increased specificity, not satisfaction, approval, or completed testing.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
@@ -72,6 +76,7 @@ See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obs
 package MDSE_REQ_31137 {
     requirement def RuleREQ31137 {
         doc /* Every change to an existing file is listed in one dated changelog per import run. */
+        #refinement dependency from RuleREQ31137 to MDSE_STK_00010::StakeholderNeed10;
     }
 }
 ```

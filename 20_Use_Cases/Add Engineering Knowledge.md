@@ -41,7 +41,7 @@ Create elements; reuse definitions; add contextual relationships; record provena
 ## Traceability
 
 - Stakeholder need: [[Engineering Knowledge Base]]
-- Engineering requirements: not yet derived
+- Engineering requirement candidate: [[REQ-31279 - WKB-008 Statement 2]] (eligibility of relationship kinds and targets; Draft)
 - Test case and executed evidence: not yet established
 - Formal SysML link to stakeholder need: pending independent parser validation
 
@@ -71,6 +71,7 @@ package MDSE_UC_00007 {
         action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;
         action maintainModelKnowledge : MDSE_BEH_00007::MaintainModelKnowledge;
         #refinement dependency from AddEngineeringKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from AddEngineeringKnowledge to MDSE_REQ_31279::RuleREQ31279;
     }
 }
 ```

@@ -60,6 +60,10 @@ The original rule is [[WKB-008]]. Its generated reference records exact source w
 
 See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obsidian Canvas. The reusable **definition** below is not duplicated or replaced; the context owns its relationships. Exact grammar validity and runtime Workbench edge resolution remain subject to acceptance testing.
 
+## Native incoming use-case traces — Draft
+
+[[Add Engineering Knowledge]] and [[Correct or Complete Knowledge]] now carry native scenario `dependency` references to this reusable requirement definition, based on their relationship-edit and target-selection steps. The owning use-case blocks contain the actual dependencies. The requirement remains `Draft` / `semanticReview: pending` and its existing [[VER-31137 - WKB-008 Rule Verification]] coverage has not been executed.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

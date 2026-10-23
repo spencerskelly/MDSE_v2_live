@@ -56,7 +56,7 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 
 ## Contextual native trace — Draft
 
-A typed verification usage named `importChangeLogCheck` is owned by [[MDSE Toolset Composition]]. Its native `objective { verify ...; }` connects this verification case to [[REQ-31137 - IMP-075 Statement 1]]. The case is unexecuted; no pass/fail verdict is inferred.
+A typed verification usage named `importChangeLogCheck` is owned by [[MDSE Toolset Composition]]. Its native `objective { verify ...; }` now connects the same verification case to **both** [[REQ-31137 - IMP-075 Statement 1]] and [[REQ-31138 - IMP-075 Statement 2]] through local requirement usages in [[MDSE Toolset Composition]]. Both clauses remain unexecuted; no pass/fail verdict is inferred.
 
 The original rule is [[IMP-075]]. Its generated reference records exact source wording/status/revision; the current normative authority remains MDSE_v2 governance.
 

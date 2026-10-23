@@ -61,7 +61,7 @@ Knowledge from multiple engineering sources is available in the connected model,
 - Primary capability: [[Engineering Knowledge Base]]
 - Supporting quality: [[Preserve Imported Knowledge]]
 - Existing candidate function: [[Reconcile Source Records]]
-- Existing candidate requirement: [[Account for Every Source Row]] — a draft native dependency now records the need for per-row disposition, not satisfaction.
+- Existing candidate requirements: [[Account for Every Source Row]], [[REQ-31137 - IMP-075 Statement 1]], [[REQ-31138 - IMP-075 Statement 2]], and [[REQ-31139 - IMP-076 Statement 1]]. The native scenario dependencies express draft required outcomes, not satisfaction or executed verification.
 - Existing candidate verification: [[Source Row Disposition Test]]
 - Actual QEAX/Excel implementations require independent acceptance; PDF/Docs/Images adapters are future implementation gaps until demonstrated.
 
@@ -94,6 +94,9 @@ package MDSE_UC_00001 {
         #refinement dependency from ImportEngineeringModel to MDSE_STK_00003::StakeholderNeed03;
         dependency from ImportEngineeringModel to MDSE_STK_00004::StakeholderNeed04;
         dependency from ImportEngineeringModel to MDSE_REQ_00001::RecordRowDisposition;
+        dependency from ImportEngineeringModel to MDSE_REQ_31137::RuleREQ31137;
+        dependency from ImportEngineeringModel to MDSE_REQ_31138::RuleREQ31138;
+        dependency from ImportEngineeringModel to MDSE_REQ_31139::RuleREQ31139;
     }
 }
 ```

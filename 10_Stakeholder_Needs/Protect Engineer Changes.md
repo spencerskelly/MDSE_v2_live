@@ -26,7 +26,9 @@ These are provisional navigational links. Formal native SysML relationships, end
 
 ## Native inbound relationship review
 
-**Supporting dependency only:** [[Import an Engineering Model]], [[Correct or Complete Knowledge]]. Their use-case definitions retain generic `dependency`, because they rely on this concern without refining its required outcome.
+**Supporting use-case dependencies:** [[Import an Engineering Model]], [[Correct or Complete Knowledge]]. Their use-case definitions retain generic dependencies because their scenarios rely on this concern without fully refining it.
+
+**Draft requirement refinement:** [[REQ-31139 - IMP-076 Statement 1]] addresses only the identical-input re-import case. Its requirement definition owns the native `#refinement` statement; acceptance for changed inputs and preservation of engineer edits remains unproven.
 
 Modeling authority is the source use-case SysML block; this note is the reusable stakeholder requirement definition. Review the [semantic disposition ledger](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]]. Parser acceptance and implemented coverage are not inferred.
 
