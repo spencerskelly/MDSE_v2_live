@@ -5,7 +5,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Accessible Engineering Knowledge.md",
       "x": 0,
-      "y": 0,
+      "y": 80,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -15,7 +15,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Preserve Imported Knowledge.md",
       "x": 0,
-      "y": 150,
+      "y": 635,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -25,7 +25,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Protect Engineer Changes.md",
       "x": 0,
-      "y": 300,
+      "y": 820,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -35,17 +35,17 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Trace Needs to Evidence.md",
       "x": 0,
-      "y": 450,
+      "y": 4230,
       "width": 310,
       "height": 108,
-      "color": "2"
+      "color": "1"
     },
     {
       "id": "n4",
       "type": "file",
       "file": "10_Stakeholder_Needs/Understand Model Impacts.md",
       "x": 0,
-      "y": 600,
+      "y": 1375,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -55,7 +55,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Understand Decisions and Changes.md",
       "x": 0,
-      "y": 750,
+      "y": 1190,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -65,7 +65,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Engineering Knowledge Base.md",
       "x": 0,
-      "y": 900,
+      "y": 450,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -75,7 +75,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Requirements Management.md",
       "x": 0,
-      "y": 1050,
+      "y": 1005,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -85,27 +85,27 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Failure Mode and Effect Analysis.md",
       "x": 0,
-      "y": 1200,
+      "y": 2990,
       "width": 310,
       "height": 108,
-      "color": "2"
+      "color": "1"
     },
     {
       "id": "n9",
       "type": "file",
       "file": "10_Stakeholder_Needs/Design Definition.md",
       "x": 0,
-      "y": 1350,
+      "y": 2680,
       "width": 310,
       "height": 108,
-      "color": "2"
+      "color": "1"
     },
     {
       "id": "n10",
       "type": "file",
       "file": "10_Stakeholder_Needs/Architecture Definition.md",
       "x": 0,
-      "y": 1500,
+      "y": 265,
       "width": 310,
       "height": 108,
       "color": "2"
@@ -115,16 +115,16 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Validation definition.md",
       "x": 0,
-      "y": 1650,
+      "y": 4385,
       "width": 310,
       "height": 108,
-      "color": "2"
+      "color": "1"
     },
     {
       "id": "n12",
       "type": "file",
       "file": "20_Use_Cases/Import an Engineering Model.md",
-      "x": 690,
+      "x": 700,
       "y": 0,
       "width": 310,
       "height": 108,
@@ -134,7 +134,7 @@
       "id": "n13",
       "type": "file",
       "file": "20_Use_Cases/Search for a Part, Function or Design.md",
-      "x": 690,
+      "x": 700,
       "y": 172,
       "width": 310,
       "height": 108,
@@ -144,7 +144,7 @@
       "id": "n14",
       "type": "file",
       "file": "20_Use_Cases/Explore Element Relationships.md",
-      "x": 690,
+      "x": 700,
       "y": 344,
       "width": 310,
       "height": 108,
@@ -154,7 +154,7 @@
       "id": "n15",
       "type": "file",
       "file": "20_Use_Cases/Review Requirements for a Design.md",
-      "x": 690,
+      "x": 700,
       "y": 516,
       "width": 310,
       "height": 108,
@@ -164,7 +164,7 @@
       "id": "n16",
       "type": "file",
       "file": "20_Use_Cases/Explore Complete Product Context.md",
-      "x": 690,
+      "x": 700,
       "y": 688,
       "width": 310,
       "height": 108,
@@ -174,7 +174,7 @@
       "id": "n17",
       "type": "file",
       "file": "20_Use_Cases/View and Export Engineering Information.md",
-      "x": 690,
+      "x": 700,
       "y": 860,
       "width": 310,
       "height": 108,
@@ -184,7 +184,7 @@
       "id": "n18",
       "type": "file",
       "file": "20_Use_Cases/Add Engineering Knowledge.md",
-      "x": 690,
+      "x": 700,
       "y": 1032,
       "width": 310,
       "height": 108,
@@ -194,7 +194,7 @@
       "id": "n19",
       "type": "file",
       "file": "20_Use_Cases/Correct or Complete Knowledge.md",
-      "x": 690,
+      "x": 700,
       "y": 1204,
       "width": 310,
       "height": 108,
@@ -204,7 +204,7 @@
       "id": "n20",
       "type": "file",
       "file": "20_Use_Cases/Review and Resolve Flagged Model Items.md",
-      "x": 690,
+      "x": 700,
       "y": 1376,
       "width": 310,
       "height": 108,
@@ -214,7 +214,7 @@
       "id": "n21",
       "type": "file",
       "file": "20_Use_Cases/Visualize Relationships by Viewpoint.md",
-      "x": 690,
+      "x": 700,
       "y": 1548,
       "width": 310,
       "height": 108,
@@ -224,7 +224,7 @@
       "id": "n22",
       "type": "file",
       "file": "20_Use_Cases/Display Linked Elements in Document Viewpoints.md",
-      "x": 690,
+      "x": 700,
       "y": 1720,
       "width": 310,
       "height": 108,
@@ -234,7 +234,7 @@
       "id": "n23",
       "type": "file",
       "file": "20_Use_Cases/Explore Multiple Relationship Hops.md",
-      "x": 690,
+      "x": 700,
       "y": 1892,
       "width": 310,
       "height": 108,
@@ -244,7 +244,7 @@
       "id": "n24",
       "type": "file",
       "file": "20_Use_Cases/Compare Shared Connections Across Elements.md",
-      "x": 690,
+      "x": 700,
       "y": 2064,
       "width": 310,
       "height": 108,
@@ -254,7 +254,7 @@
       "id": "n25",
       "type": "file",
       "file": "20_Use_Cases/Search SysML Syntax and Model Properties.md",
-      "x": 690,
+      "x": 700,
       "y": 2236,
       "width": 310,
       "height": 108,
@@ -264,7 +264,7 @@
       "id": "n26",
       "type": "file",
       "file": "20_Use_Cases/Compose Documentation from Embedded Notes.md",
-      "x": 690,
+      "x": 700,
       "y": 2408,
       "width": 310,
       "height": 108,
@@ -274,7 +274,7 @@
       "id": "n27",
       "type": "file",
       "file": "20_Use_Cases/Display Flagged Model Data.md",
-      "x": 690,
+      "x": 700,
       "y": 2580,
       "width": 310,
       "height": 108,
@@ -347,14 +347,14 @@
       "y": -410,
       "width": 1390,
       "height": 245,
-      "text": "# MDSE Knowledge Base — modeled dependencies\n\nEach line corresponds to a draft SysML v2 `dependency` in its owning use-case note. **Left:** stakeholder need, **center:** use case, **right:** logical function. The six earlier UC-00007 dependencies annotated `refines` are displayed as general dependencies pending semantic review. Model notes carry authority; this saved Canvas is a navigable projection, not an independent relationship store.\n\n**Twelve additional stakeholder needs are visible at the bottom of the first column as unconnected modeling gaps.**"
+      "text": "# MDSE Knowledge Base — native semantic relationships\n\nLeft: stakeholder requirements; middle: 16 user use cases; right: six reusable logical functions. **Refines** (26): use-case specification elaborates requirement intent. **hasAction** (32): scenario owns a typed action usage; the software performer is modeled separately. **dependsOn** (4): a supporting prerequisite, not refinement. 16 stakeholder needs remain unconnected pending an appropriate scenario. Every line is a derived view of a SysML v2 block; edit the owning note, not the canvas.\n\nEight previous over-broad edges have been omitted, with disposition recorded in the semantic review."
     },
     {
       "id": "n34",
       "type": "file",
       "file": "10_Stakeholder_Needs/One Trustworthy Model.md",
       "x": 0,
-      "y": 2350,
+      "y": 3300,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -364,7 +364,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Offline Accessible Operation.md",
       "x": 0,
-      "y": 2505,
+      "y": 3145,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -374,7 +374,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Protect Engineering Data.md",
       "x": 0,
-      "y": 2660,
+      "y": 3610,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -384,7 +384,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Deploy Consistent Toolsets.md",
       "x": 0,
-      "y": 2815,
+      "y": 2525,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -394,7 +394,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Engineer MDSE with MDSE.md",
       "x": 0,
-      "y": 2970,
+      "y": 2835,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -404,7 +404,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Prove Behavior Against Real Data.md",
       "x": 0,
-      "y": 3125,
+      "y": 3765,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -414,7 +414,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Product Discovery Aide.md",
       "x": 0,
-      "y": 3280,
+      "y": 3455,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -424,7 +424,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Concept Analysis.md",
       "x": 0,
-      "y": 3435,
+      "y": 2215,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -434,7 +434,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Customer Documentation Builder.md",
       "x": 0,
-      "y": 3590,
+      "y": 2370,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -444,7 +444,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Supplier Documentation Builder.md",
       "x": 0,
-      "y": 3745,
+      "y": 4075,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -454,7 +454,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Regulatory Impact Analysis.md",
       "x": 0,
-      "y": 3900,
+      "y": 3920,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -464,7 +464,7 @@
       "type": "file",
       "file": "10_Stakeholder_Needs/Change Management Tool.md",
       "x": 0,
-      "y": 4055,
+      "y": 2060,
       "width": 310,
       "height": 108,
       "color": "1"
@@ -473,10 +473,10 @@
       "id": "unlinked-needs-header",
       "type": "text",
       "x": 0,
-      "y": 1990,
+      "y": 1700,
       "width": 530,
       "height": 290,
-      "text": "## Open stakeholder-need modeling gaps\n\nThe 12 need notes below are present in MDSE, but none of the 16 current Knowledge Base use cases has a justified native dependency to them. They are shown **without invented edges**. Review each need and add a matching use case and function before modeling an implementation trace."
+      "text": "## Sixteen open stakeholder-need traces\n\nThese 16 requirements currently have no directly modeled use-case relationship that survived semantic review. Their file cards remain available for review, without invented edges. Four were previously connected only through unjustified broad discipline links."
     }
   ],
   "edges": [
@@ -487,7 +487,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e1",
@@ -496,7 +496,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e2",
@@ -505,7 +505,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "dependsOn · supporting"
     },
     {
       "id": "e3",
@@ -514,16 +514,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
-    },
-    {
-      "id": "e4",
-      "fromNode": "n12",
-      "toNode": "n33",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e5",
@@ -532,7 +523,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e6",
@@ -541,7 +532,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e7",
@@ -550,7 +541,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e8",
@@ -559,7 +550,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e9",
@@ -568,7 +559,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e10",
@@ -577,7 +568,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e11",
@@ -586,7 +577,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e12",
@@ -595,7 +586,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e13",
@@ -604,7 +595,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e14",
@@ -613,7 +604,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e15",
@@ -622,7 +613,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e16",
@@ -631,7 +622,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e17",
@@ -640,7 +631,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e18",
@@ -649,7 +640,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "dependsOn · supporting"
     },
     {
       "id": "e19",
@@ -658,7 +649,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e20",
@@ -667,7 +658,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e21",
@@ -676,7 +667,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e22",
@@ -685,7 +676,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e23",
@@ -694,7 +685,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e24",
@@ -703,7 +694,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e25",
@@ -712,61 +703,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
-    },
-    {
-      "id": "e26",
-      "fromNode": "n18",
-      "toNode": "n10",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · need"
-    },
-    {
-      "id": "e27",
-      "fromNode": "n18",
-      "toNode": "n9",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · need"
-    },
-    {
-      "id": "e28",
-      "fromNode": "n18",
-      "toNode": "n8",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · need"
-    },
-    {
-      "id": "e29",
-      "fromNode": "n18",
-      "toNode": "n7",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · need"
-    },
-    {
-      "id": "e30",
-      "fromNode": "n18",
-      "toNode": "n3",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · need"
-    },
-    {
-      "id": "e31",
-      "fromNode": "n18",
-      "toNode": "n11",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e32",
@@ -775,7 +712,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e33",
@@ -784,7 +721,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e34",
@@ -793,7 +730,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e35",
@@ -802,7 +739,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "dependsOn · supporting"
     },
     {
       "id": "e36",
@@ -811,7 +748,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e37",
@@ -820,7 +757,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e38",
@@ -829,7 +766,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e39",
@@ -838,7 +775,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "dependsOn · supporting"
     },
     {
       "id": "e40",
@@ -847,7 +784,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e41",
@@ -856,7 +793,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e42",
@@ -865,7 +802,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e43",
@@ -874,7 +811,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e44",
@@ -883,7 +820,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e45",
@@ -892,7 +829,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e46",
@@ -901,7 +838,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e47",
@@ -910,7 +847,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e48",
@@ -919,7 +856,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e49",
@@ -928,7 +865,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e50",
@@ -937,7 +874,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e51",
@@ -946,7 +883,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e52",
@@ -955,7 +892,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e53",
@@ -964,7 +901,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e54",
@@ -973,7 +910,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e55",
@@ -982,7 +919,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e56",
@@ -991,7 +928,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e57",
@@ -1000,7 +937,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e58",
@@ -1009,7 +946,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e59",
@@ -1018,7 +955,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e60",
@@ -1027,7 +964,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e61",
@@ -1036,7 +973,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e62",
@@ -1045,7 +982,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e63",
@@ -1054,7 +991,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e64",
@@ -1063,7 +1000,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e65",
@@ -1072,7 +1009,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e66",
@@ -1081,7 +1018,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · need"
+      "label": "refines · requirement"
     },
     {
       "id": "e67",
@@ -1090,7 +1027,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     },
     {
       "id": "e68",
@@ -1099,16 +1036,7 @@
       "fromSide": "right",
       "toSide": "left",
       "toEnd": "arrow",
-      "label": "dependency · function"
-    },
-    {
-      "id": "e69",
-      "fromNode": "n27",
-      "toNode": "n33",
-      "fromSide": "right",
-      "toSide": "left",
-      "toEnd": "arrow",
-      "label": "dependency · function"
+      "label": "hasAction · scenario usage"
     }
   ]
 }
