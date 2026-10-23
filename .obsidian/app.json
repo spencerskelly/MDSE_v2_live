@@ -3,5 +3,6 @@
   "newLinkFormat": "shortest",
   "useMarkdownLinks": false,
   "showFrontmatter": true,
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "visible",
+  "readableLineLength": false
 }

@@ -20,7 +20,7 @@ plugins:
     license: "MDSE project"
     settings: default
     sha256:
-      main.js: 54dbddaf81e76b09c11ce0d56b3685d7c9e2077f18ec7112c4c723b503c22f44
+      main.js: f0ba138e50091214e4ad90d70f093366df2311c90fc316961fb4a1124339eb7d
       manifest.json: 81e69d8c93dbee3e18a1421cd08c71b6c7948d841377ffc048b07f757953f5b8
       styles.css: 3aaed8af33e92bd306d5c9f5623319339f4b7e65b76bb26a8660b157b88fa979
   templater-obsidian:

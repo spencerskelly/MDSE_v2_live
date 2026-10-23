@@ -1,0 +1,22 @@
+views:
+  - type: table
+    name: View
+    filters:
+      and:
+        - file.inFolder("55_Language")
+    order:
+      - file.name
+      - usage
+      - kind
+      - keyword
+      - id
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: kind
+        direction: ASC
+    columnSize:
+      file.name: 233
+      note.usage: 161
+      note.kind: 152
+      note.keyword: 178

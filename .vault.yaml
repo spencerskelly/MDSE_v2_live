@@ -1,6 +1,6 @@
 # Vault identity. The importer fills vault_uid and vault_name on its first run.
 vault_uid: UNINITIALIZED
 vault_name: UNINITIALIZED
-author: UNINITIALIZED
+author: skellyspencer
 mdse_release: 0.9.0
 schema: mdse-vault/0.1

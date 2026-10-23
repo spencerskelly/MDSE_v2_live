@@ -1,7 +1,7 @@
 [
   "mdse-bootstrap",
-  "mdse-workbench",
-  "templater-obsidian",
   "obsidian-git",
-  "advanced-canvas"
+  "advanced-canvas",
+  "templater-obsidian",
+  "mdse-workbench"
 ]

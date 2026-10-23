@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "9c6d35e61ab70d01",
+        "id": "2e29d0e4d5e5345a",
         "type": "tabs",
         "children": [
           {
-            "id": "48e659fc367cbfe8",
+            "id": "0ab06a2d48078696",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "last-check/notes/A change names the claims it may invalidate and why.md",
+                "file": "20_Use_Cases/Add Engineering Knowledge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A change names the claims it may invalidate and why"
+              "title": "Add Engineering Knowledge"
+            }
+          },
+          {
+            "id": "8065a56c2bf28e62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20_Use_Cases/Add Engineering Knowledge.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Add Engineering Knowledge"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,10 +70,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "part definition",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -83,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 388.5608825683594
   },
   "right": {
     "id": "e0de02c0e7f15938",
@@ -161,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "last-check/notes/A change names the claims it may invalidate and why.md",
+                "file": "20_Use_Cases/Add Engineering Knowledge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,16 +184,28 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "7733e14fdbb024bb",
+            "type": "leaf",
+            "state": {
+              "type": "mdse-panel",
+              "state": {},
+              "icon": "network",
+              "title": "MDSE Workbench"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 278.95458984375
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
       "mdse-workbench:Open MDSE Workbench": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -189,43 +216,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "48e659fc367cbfe8",
+  "active": "8065a56c2bf28e62",
   "lastOpenFiles": [
-    "modeling/MDSE_Toolset/TRACE_PROPOSALS.csv",
-    "modeling/MDSE_Toolset/SEMANTIC_REVIEW_FINDINGS.md",
-    "modeling/MDSE_Toolset/README.md",
-    "modeling/MDSE_Toolset/NEEDS_REGISTER.csv",
-    "modeling/MDSE_Toolset/NEEDS_BASELINE.md",
-    "modeling/MDSE_Toolset/AS_BUILT_USE_CASE_EVIDENCE.csv",
-    "modeling/MDSE_Toolset/AS_BUILT_CAPABILITY_BASELINE.md",
-    "modeling/MDSE_Toolset/74_Semantic_Review/G01_GOV_DAT_REVIEW.md",
-    "modeling/MDSE_Toolset/74_Semantic_Review",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31152 - WKB-023 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31151 - WKB-022 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31150 - WKB-021 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31149 - WKB-020 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31148 - WKB-019 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31147 - WKB-018 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31146 - WKB-017 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31145 - WKB-016 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31144 - WKB-015 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31143 - WKB-014 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31142 - WKB-013 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/VER-31141 - WKB-012 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160/README.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31140 - WKB-011 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31139 - WKB-010 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31138 - WKB-009 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/VER-31137 - WKB-008 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140/README.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/TST/VER-31141_31160/VER-31159 - TST-003 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/TST/VER-31141_31160/VER-31158 - TST-002 Rule Verification.md",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31141_31160",
-    "modeling/MDSE_Toolset/73_Derived_Verification/WKB/VER-31121_31140",
-    "modeling/MDSE_Toolset/73_Derived_Verification/TST/VER-31141_31160",
-    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31061_31080",
-    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31041_31060",
-    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31021_31040",
-    "modeling/MDSE_Toolset/73_Derived_Verification/MOD/VER-31001_31020"
+    "10_Stakeholder_Needs/Trace Needs to Evidence.md",
+    "20_Use_Cases/Add Engineering Knowledge.md",
+    "10_Stakeholder_Needs/Architecture Definition.md",
+    "10_Stakeholder_Needs/Accessible Engineering Knowledge.md",
+    "10_Stakeholder_Needs/Product Discovery Aide.md",
+    "99_System/22_Views/Workbench Preview.canvas",
+    "10_Stakeholder_Needs/Validation definition.md",
+    "10_Stakeholder_Needs/Requirements Management.md",
+    "10_Stakeholder_Needs/Failure Mode and Effect Analysis.md",
+    "10_Stakeholder_Needs/Design Definition.md",
+    "10_Stakeholder_Needs/Engineering Knowledge Base.md",
+    "20_Use_Cases/Explore Complete Product Context.md",
+    "20_Use_Cases/Compare Shared Connections Across Elements.md",
+    "10_Stakeholder_Needs/_Stakeholder_Needs.base",
+    "55_Language/Untitled.base",
+    "99_System/11_Import/Vault Update 2026-10-22 23.44.md",
+    "99_System/04_Language/While, loop, for.md",
+    "99_System/04_Language/Visibility.md",
+    "99_System/04_Language/Viewpoint usage.md",
+    "99_System/04_Language/Viewpoint definition.md",
+    "99_System/04_Language/View usage.md",
+    "99_System/04_Language/View definition.md",
+    "99_System/04_Language/Verify.md",
+    "99_System/04_Language/Verification case usage.md",
+    "99_System/04_Language/Verification case definition.md",
+    "99_System/04_Language/Variation and variant.md",
+    "99_System/04_Language/Value binding.md",
+    "99_System/04_Language/Use case usage.md",
+    "99_System/04_Language/Use case definition.md",
+    "99_System/04_Language/Analysis case definition.md.crswap",
+    "99_System/04_Language",
+    "99_System/11_Import/Update 2026-10-22 23.44/Replaced",
+    "99_System/11_Import/Update 2026-10-22 23.44",
+    "55_Language/Usage",
+    "55_Language/Structure",
+    "55_Language/Statement",
+    "55_Language/Relationship"
   ]
 }
