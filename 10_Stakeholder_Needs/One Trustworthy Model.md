@@ -30,7 +30,9 @@ These are provisional navigational links. Formal native SysML relationships, end
 
 Source-note candidate context: No dedicated use-case definition has yet been established for this stakeholder need. The clause-3 requirement definition now owns a draft `#refinement dependency` to this need; a requirement-level refinement does not close the missing use-case or implementation trace.
 
-The correct follow-up is to review this need and create or reuse a suitable use-case definition and logical function before writing a native dependency or allocation. No connection has been fabricated solely to make a canvas visually complete. See [[MDSE Knowledge Base - Modeled Dependencies]] for relationships that are actually present.
+[[REQ-31306 - WKB-020 Statement 1]] now carries a Draft native `#refinement dependency` to this need: duplicate YAML/SysML representations must resolve to one semantic link. This is a narrower requirement-level refinement, not an approved solution or a directly refining use case.
+
+The correct follow-up is still to review this need and create or reuse a suitable use-case definition and logical function before claiming complete use-case coverage. No connection has been fabricated solely to make a canvas visually complete. See [[MDSE Knowledge Base - Modeled Dependencies]] for relationships that are actually present.
 
 ## SysML v2
 

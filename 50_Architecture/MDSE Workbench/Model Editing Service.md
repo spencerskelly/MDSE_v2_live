@@ -28,6 +28,10 @@ This is a **reusable software part definition**, not a separate application or d
 - [[WKB-011]] — governed source rule reference, with original status and normative ruleset link.
 - [[WKB-012]] — governed source rule reference, with original status and normative ruleset link.
 
+## Additional draft requirement responsibilities
+
+[[MDSE Toolset Composition]] allocates the existing WKB-012 requirement candidates [[REQ-31286 - WKB-012 Statement 1]], [[REQ-31287 - WKB-012 Statement 2]], [[REQ-31288 - WKB-012 Statement 3]], and the WKB-016 editing candidates [[REQ-31297 - WKB-016 Statement 2]] and [[REQ-31298 - WKB-016 Statement 3]] to the **Workbench tool usage**. Model Editing Service is a possible responsible internal role, but no lower-level allocation has been made or validated.
+
 ## Model ownership
 
 - Parent software tool: [[MDSE Workbench]].

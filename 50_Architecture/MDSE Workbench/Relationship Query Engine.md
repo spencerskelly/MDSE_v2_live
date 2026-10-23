@@ -26,6 +26,10 @@ This is a **reusable software part definition**, not a separate application or d
 - [[GOV-012]] — governed source rule reference, with original status and normative ruleset link.
 - [[WKB-016]] — governed source rule reference, with original status and normative ruleset link.
 
+## Additional draft requirement responsibilities
+
+[[MDSE Toolset Composition]] allocates [[REQ-31296 - WKB-016 Statement 1]] (port syntax scanning) and [[REQ-31306 - WKB-020 Statement 1]] (one semantic relationship despite dual YAML/SysML storage) to the **Workbench tool usage**. Relationship Query Engine may own aspects of deduplication, while port parsing could be shared with Model Discovery Index or Core; no unsupported sub-role assignment is implied.
+
 ## Model ownership
 
 - Parent software tool: [[MDSE Workbench]].
