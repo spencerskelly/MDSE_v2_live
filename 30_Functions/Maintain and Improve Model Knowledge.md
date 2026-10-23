@@ -61,7 +61,13 @@ Partial: tools/workbench/src/edit.ts and edit_rel.ts; tools/importer/src/merge.t
 
 - [[Engineering Knowledge Base]]
 - Derived system requirements, component allocations, verification cases and run results: pending
-- No native SysML relationship has yet been parser-certified for this trace.
+- Native relationship declarations exist in their owning notes; independent SysML parser certification and runtime canvas acceptance remain open.
+
+## Modeled incoming relationships
+
+[[Model Editing Service]] (within [[MDSE Workbench]]) carries the typed `perform action` usage. Import reconciliation also supports controlled changes, but an additional perform relationship is not asserted without defined responsibility.
+
+Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
 ## SysML v2
 

@@ -58,7 +58,13 @@ Partial: tools/workbench/src/index.ts and search/views; alias-first and scoped S
 
 - [[Engineering Knowledge Base]]
 - Derived system requirements, component allocations, verification cases and run results: pending
-- No native SysML relationship has yet been parser-certified for this trace.
+- Native relationship declarations exist in their owning notes; independent SysML parser certification and runtime canvas acceptance remain open.
+
+## Modeled incoming relationships
+
+[[Model Discovery Index]] (within [[MDSE Workbench]]) carries the typed `perform action` usage for this function. Relevant use cases own draft native `dependency` declarations to it.
+
+Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
 ## SysML v2
 

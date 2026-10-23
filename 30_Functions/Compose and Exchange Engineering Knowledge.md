@@ -57,7 +57,13 @@ Partial: native Obsidian embed support and Workbench table/CSV exports; full com
 
 - [[Engineering Knowledge Base]]
 - Derived system requirements, component allocations, verification cases and run results: pending
-- No native SysML relationship has yet been parser-certified for this trace.
+- Native relationship declarations exist in their owning notes; independent SysML parser certification and runtime canvas acceptance remain open.
+
+## Modeled incoming relationships
+
+Relevant use cases now own draft dependencies to this function. **No software-object `perform action` has yet been justified** for end-to-end publication; Obsidian transclusion is not equivalent to a complete publishing subsystem.
+
+Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
 ## SysML v2
 

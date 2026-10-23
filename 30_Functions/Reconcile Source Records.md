@@ -23,6 +23,12 @@ These are provisional navigational links. Formal native SysML relationships, end
 
 - [[Ingest and Reconcile Engineering Sources]] — proposed broader ingestion function; this note remains the prior narrower reconciliation concept.
 
+## Modeled incoming relationships
+
+The broader [[Ingest and Reconcile Engineering Sources]] function owns one nested `action reconcileSourceRecords` usage typed by this definition. The logic is not duplicated.
+
+Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
+
 ## SysML v2
 
 > Draft definition, not yet parser-certified. Keep this SysML section last.

@@ -54,13 +54,19 @@ Partial: tools/importer/src/run.ts, ea_source.ts, bom.ts and merge.ts; importer/
 
 - [[Engineering Knowledge Base]]
 - Derived system requirements, component allocations, verification cases and run results: pending
-- No native SysML relationship has yet been parser-certified for this trace.
+- Native relationship declarations exist in their owning notes; independent SysML parser certification and runtime canvas acceptance remain open.
 
 ## Modeled software decomposition — draft
 
 A nested `action reconcileSourceRecords` usage reuses the existing BEH-00001 definition. This is real behavioral decomposition within BEH-00002 rather than another function definition.
 
 Original sources: [[IMP-074]], [[IMP-075]], [[IMP-076]]. These are native part usages and candidate performed-action allocations, **not** evidence of completed testing. Where a child role lacks a reusable definition, it is an untyped initial software usage pending further decomposition.
+
+## Modeled incoming relationships
+
+[[Source Reconciliation Engine]] (within [[MDSE Importer]]) carries a native `perform action` usage typed by this definition. The existing [[Reconcile Source Records]] definition is its nested action.
+
+Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
 ## SysML v2
 

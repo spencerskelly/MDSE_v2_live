@@ -64,7 +64,13 @@ Partial: tools/workbench/src/index.ts, views.ts and workbench.test.ts; shared-co
 
 - [[Engineering Knowledge Base]]
 - Derived system requirements, component allocations, verification cases and run results: pending
-- No native SysML relationship has yet been parser-certified for this trace.
+- Native relationship declarations exist in their owning notes; independent SysML parser certification and runtime canvas acceptance remain open.
+
+## Modeled incoming relationships
+
+[[Relationship Query Engine]] (within [[MDSE Workbench]]) carries the typed `perform action` usage for this function. Multi-hop and shared-connection use cases refer to this same definition.
+
+Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
 ## SysML v2
 
