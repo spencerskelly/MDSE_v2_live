@@ -347,7 +347,136 @@
       "y": -410,
       "width": 1390,
       "height": 245,
-      "text": "# MDSE Knowledge Base — modeled dependencies\n\nEach line corresponds to a draft SysML v2 `dependency` in its owning use-case note. **Left:** stakeholder need, **center:** use case, **right:** logical function. The six earlier UC-00007 dependencies annotated `refines` are displayed as general dependencies pending semantic review. Model notes carry authority; this saved Canvas is a navigable projection, not an independent relationship store."
+      "text": "# MDSE Knowledge Base — modeled dependencies\n\nEach line corresponds to a draft SysML v2 `dependency` in its owning use-case note. **Left:** stakeholder need, **center:** use case, **right:** logical function. The six earlier UC-00007 dependencies annotated `refines` are displayed as general dependencies pending semantic review. Model notes carry authority; this saved Canvas is a navigable projection, not an independent relationship store.\n\n**Twelve additional stakeholder needs are visible at the bottom of the first column as unconnected modeling gaps.**"
+    },
+    {
+      "id": "n34",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/One Trustworthy Model.md",
+      "x": 0,
+      "y": 2350,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n35",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Offline Accessible Operation.md",
+      "x": 0,
+      "y": 2505,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n36",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Protect Engineering Data.md",
+      "x": 0,
+      "y": 2660,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n37",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Deploy Consistent Toolsets.md",
+      "x": 0,
+      "y": 2815,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n38",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Engineer MDSE with MDSE.md",
+      "x": 0,
+      "y": 2970,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n39",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Prove Behavior Against Real Data.md",
+      "x": 0,
+      "y": 3125,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n40",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Product Discovery Aide.md",
+      "x": 0,
+      "y": 3280,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n41",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Concept Analysis.md",
+      "x": 0,
+      "y": 3435,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n42",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Customer Documentation Builder.md",
+      "x": 0,
+      "y": 3590,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n43",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Supplier Documentation Builder.md",
+      "x": 0,
+      "y": 3745,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n44",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Regulatory Impact Analysis.md",
+      "x": 0,
+      "y": 3900,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "n45",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Change Management Tool.md",
+      "x": 0,
+      "y": 4055,
+      "width": 310,
+      "height": 108,
+      "color": "1"
+    },
+    {
+      "id": "unlinked-needs-header",
+      "type": "text",
+      "x": 0,
+      "y": 1990,
+      "width": 530,
+      "height": 290,
+      "text": "## Open stakeholder-need modeling gaps\n\nThe 12 need notes below are present in MDSE, but none of the 16 current Knowledge Base use cases has a justified native dependency to them. They are shown **without invented edges**. Review each need and add a matching use case and function before modeling an implementation trace."
     }
   ],
   "edges": [
