@@ -58,6 +58,10 @@ Obsidian embeds are native Markdown behavior; end-to-end MDSE-controlled composi
 
 These are draft use-case/function relations only. Formal SysML links, requirements, implementation allocation and test evidence remain to be established.
 
+## Modeled dependencies — draft
+
+The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+
 ## SysML v2
 
 > Draft SysML definition; this model's native syntax and relationships have not been independently parser-verified.
@@ -67,5 +71,8 @@ package MDSE_UC_00015 {
     use case def ComposeDocumentWithEmbeds {
         doc /* Assemble a new document or presentation concept by transcluding existing model notes or sections using Obsidian embedded links such as ![[xxx]]. */
     }
+    dependency from ComposeDocumentWithEmbeds to MDSE_STK_00013::EngineeringKnowledgeBase;
+    dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00003::DiscoverModelElements;
+    dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00006::ComposeEngineeringKnowledge;
 }
 ```
