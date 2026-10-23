@@ -15,14 +15,14 @@ The earlier [[Reconcile Source Records]] remains a separate existing function no
 
 ## Use-case to function coverage
 
-The [function/use-case matrix](FUNCTION_USECASE_MATRIX.csv) contains **34 proposed links** covering all 16 use cases, with multiple functions per use case where appropriate.
+The [function/use-case matrix](FUNCTION_USECASE_MATRIX.csv) records **32 owned action usages and 2 deferred historical links** covering all 16 use cases, with multiple functions per use case where appropriate.
 
-- UC-00001: [[Ingest and Reconcile Engineering Sources]], [[Maintain and Improve Model Knowledge]]
+- UC-00001: [[Ingest and Reconcile Engineering Sources]] (BEH-00007 separated as importer/workbench boundary review)
 - UC-00002: [[Discover and Resolve Model Elements]], [[Generate Engineering Model Viewpoints]]
 - UC-00007: [[Discover and Resolve Model Elements]], [[Maintain and Improve Model Knowledge]]
 - UC-00014: [[Discover and Resolve Model Elements]]
 - UC-00015: [[Discover and Resolve Model Elements]], [[Compose and Exchange Engineering Knowledge]]
-- UC-00016: [[Discover and Resolve Model Elements]], [[Generate Engineering Model Viewpoints]], [[Maintain and Improve Model Knowledge]]
+- UC-00016: [[Discover and Resolve Model Elements]], [[Generate Engineering Model Viewpoints]] (BEH-00007 deferred because display is read-only)
 - UC-00003: [[Query and Traverse Model Relationships]], [[Generate Engineering Model Viewpoints]]
 - UC-00004: [[Query and Traverse Model Relationships]], [[Generate Engineering Model Viewpoints]]
 - UC-00005: [[Query and Traverse Model Relationships]], [[Generate Engineering Model Viewpoints]]
@@ -55,7 +55,10 @@ The [function/use-case matrix](FUNCTION_USECASE_MATRIX.csv) contains **34 propos
 
 ## Native modeled connections — draft
 
-Each of the 16 existing use cases has native `dependency` statements to the logical functions represented in [FUNCTION_USECASE_MATRIX.csv](FUNCTION_USECASE_MATRIX.csv) (34 total) and to the Engineering Knowledge Base stakeholder need (16 total). The BEH-00002 definition has an owned BEH-00001 action usage. Typed importer/Workbench software roles contain five `perform action` usages. See [[MDSE Toolset Composition]] and the [model trace review](../74_Semantic_Review/MODELED_RELATIONSHIP_TRACE_REVIEW.md). Independent parser and runtime graph acceptance are still open.
+The sixteen use-case definitions now contain **32 typed `action` usages** of the six reusable function definitions, rather than 34 generic dependency statements. Two pre-existing proposed links were deferred because they conflated importer/Workbench ownership or read-only viewing with model editing. Twenty-six stakeholder connections are native `#refinement dependency` and four retain generic supporting `dependency` semantics.
+
+The function definitions remain owned here and are reused by the use-case action usages; software responsibility is modeled separately with `perform action` under Importer/Workbench. See the [revised matrix](FUNCTION_USECASE_MATRIX.csv) and [semantic review](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md). A normal Workbench scanner run is **not** independent SysML v2 parser acceptance.
+
 
 ## Next review
 
