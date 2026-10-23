@@ -24,3 +24,7 @@ Code exists ≠ a particular requirement is completely implemented. A test case 
 ### Relations still to validate
 
 Tool implementation facts are recorded here as plain documentation and source path references. Proposed function-to-tool allocations should be authored in native SysML and accepted with the pinned parser, not silently created from file ownership.
+
+## Saved structural and functional canvas
+
+[Open Software Architecture — Modeled Relationships](MDSE%20Software%20Architecture%20-%20Modeled%20Relationships.canvas). The five tool definitions now contain typed usages of thirteen separate software object definitions, with five specific `perform action` assignments. Eight additional parts are deliberately left without perform relationships until their distinct logical functions are defined.

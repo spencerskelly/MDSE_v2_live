@@ -62,3 +62,7 @@ The 16 individual use-case definitions now contain 34 standard `dependency` stat
 ## Coverage and certification
 
 Current source and tests provide partial evidence for some existing Workbench functions and QEAX/Excel import. Newly defined multi-selection, comprehensive field search, document composition and heterogeneous document/image interpretation **must not be presented as verified implementations**. Native SysML relationships, derived requirements and test cases for these user interactions remain to be developed and parser-checked.
+
+## Saved relationship canvas
+
+[Open the Knowledge Base dependency Canvas](MDSE%20Knowledge%20Base%20-%20Modeled%20Dependencies.canvas). It shows the 16 use cases, six functions and twelve stakeholder needs with explicitly modeled links. Other stakeholder needs are documented as open modeling gaps rather than given artificial connections. Native SysML `dependency` is modeled in each owning use case; views carry no model authority.
