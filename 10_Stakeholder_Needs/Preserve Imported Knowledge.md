@@ -24,13 +24,11 @@ primarySymbol: MDSE_STK_00003::StakeholderNeed03
 
 These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
-## Actual modeled use-case coverage
+## Native inbound relationship review
 
-The following use-case definitions contain draft native SysML v2 `dependency` statements referencing this stakeholder requirement. They represent **traceable reliance**, not satisfaction, complete implementation, or acceptance evidence:
+**Refined by:** [[Import an Engineering Model]]. These use cases carry a native `#refinement dependency` to this need. Refinement is increased specificity, not satisfaction.
 
-- [[Import an Engineering Model]]
-
-View the edges in [[MDSE Knowledge Base - Modeled Dependencies]]. The authoritative dependency statements reside in the owning **use-case notes**; they are not duplicated in this reusable requirement definition. The model remains Draft and parser verification is outstanding.
+Modeling authority is the source use-case SysML block; this note is the reusable stakeholder requirement definition. Review the [semantic disposition ledger](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]]. Parser acceptance and implemented coverage are not inferred.
 
 ## SysML v2
 
