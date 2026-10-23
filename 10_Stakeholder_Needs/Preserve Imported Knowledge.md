@@ -26,7 +26,7 @@ These are provisional navigational links. Formal native SysML relationships, end
 
 ## Native inbound relationship review
 
-**Refined by:** [[Import an Engineering Model]]. These use cases carry a native `#refinement dependency` to this need. Refinement is increased specificity, not satisfaction.
+**Refined by:** [[Import an Engineering Model]] and [[Account for Every Source Row]]. The use-case definition and the engineering requirement definition each own a draft native `#refinement dependency` to this need. Refinement adds detail; it is not evidence of satisfaction. Refinement is increased specificity, not satisfaction.
 
 Modeling authority is the source use-case SysML block; this note is the reusable stakeholder requirement definition. Review the [semantic disposition ledger](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]]. Parser acceptance and implemented coverage are not inferred.
 
