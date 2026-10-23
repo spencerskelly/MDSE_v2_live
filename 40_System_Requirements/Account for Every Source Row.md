@@ -19,8 +19,9 @@ primarySymbol: MDSE_REQ_00001::RecordRowDisposition
 - Referenced from (constrainedBy): [[Reconcile Source Records]]
 - allocatedTo: [[MDSE Importer]]
 - verifiedBy: [[Source Row Disposition Test]]
+- refines: [[Preserve Imported Knowledge]] — per-source-row disposition makes the no-silent-loss need more precise.
 
-These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
+The stakeholder refinement below and contextual allocation/verification in [[MDSE Toolset Composition]] are Draft native SysML relationships. Their endpoint semantics and independent parser acceptance remain to be verified; no execution result or passed verification is asserted.
 
 ## Contextual native trace — Draft
 
@@ -38,6 +39,7 @@ See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obs
 package MDSE_REQ_00001 {
     requirement def RecordRowDisposition {
         doc /* For each source package, element and connector processed, MDSE shall record exactly one disposition and retain enough source identity to reconcile the result. */
+        #refinement dependency from RecordRowDisposition to MDSE_STK_00003::StakeholderNeed03;
     }
 }
 ```
