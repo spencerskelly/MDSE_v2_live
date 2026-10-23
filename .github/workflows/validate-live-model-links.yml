@@ -1,0 +1,49 @@
+name: Validate live model relationships
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/validate-live-model-links.yml'
+      - 'scripts/check-live-workbench.mjs'
+      - '10_Stakeholder_Needs/**'
+      - '20_Use_Cases/**'
+      - '30_Functions/**'
+      - '40_System_Requirements/**'
+      - '50_Architecture/**'
+      - '55_Language/**'
+      - '60_Verification/**'
+      - '72_Derived_Requirements/**'
+      - '73_Derived_Verification/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-relationship-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-workbench-index:
+    name: Live notes through pinned Workbench scanner
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out MDSE_v2_live source notes
+        uses: actions/checkout@v4
+      - name: Check out exact MDSE_v2 tooling revision
+        uses: actions/checkout@v4
+        with:
+          repository: spencerskelly/MDSE_v2
+          ref: f918571cb3c2c416ace8eec1c4d0170a4adec788
+          path: _tool_source
+          persist-credentials: false
+      - name: Set up Node.js for TypeScript source loader
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run existing Workbench synthetic unit tests
+        working-directory: _tool_source
+        run: npm run test:workbench
+      - name: Validate live-vault links and deduplication with actual Workbench index
+        run: node --no-warnings --experimental-strip-types scripts/check-live-workbench.mjs
