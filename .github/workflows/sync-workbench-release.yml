@@ -6,35 +6,52 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: mdse-v2-live-workbench-sync
+  cancel-in-progress: false
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - name: Check out current live model
+        uses: actions/checkout@v4
+      - name: Check out current authoritative tool source
+        uses: actions/checkout@v4
         with:
           repository: spencerskelly/MDSE_v2
-          ref: 9dff350a2ea082418848616d44b1389e03885ae1
+          ref: main
           path: _tool_release
           persist-credentials: false
-      - name: Sync exact built plugin without editing any model note
+      - name: Set up Node for native TypeScript build
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test and build Workbench from authoritative source
+        working-directory: _tool_release
+        run: |
+          npm run test:workbench
+          npm run build:workbench
+      - name: Copy and verify generated Obsidian plugin
         run: |
           set -euo pipefail
           source="_tool_release/tools/workbench/dist/plugin"
           destination=".obsidian/plugins/mdse-workbench"
+          test -f "50_Architecture/MDSE Toolset Composition.md"
+          test -f "20_Use_Cases/MDSE Knowledge Base - Modeled Dependencies.canvas"
+          test -f "50_Architecture/MDSE Software Architecture - Modeled Relationships.canvas"
+          test -f "74_Semantic_Review/MDSE Rule to Requirement - Allocation and Verification.canvas"
+          mkdir -p "$destination"
           for filename in main.js manifest.json styles.css; do
             test -s "$source/$filename"
             cp "$source/$filename" "$destination/$filename"
             cmp "$source/$filename" "$destination/$filename"
           done
-          test "$(find modeling/MDSE_Toolset -type f | wc -l | xargs)" -eq 1471
-          test "$(find last-check/notes -name '*.md' | wc -l | xargs)" -eq 90
-      - name: Commit synchronized runtime to main
+      - name: Commit only generated plugin to live main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .obsidian/plugins/mdse-workbench
           if ! git diff --cached --quiet; then
-            git commit -m 'Sync Workbench built release 9dff350a to live vault'
+            git commit -m "Sync Workbench runtime from MDSE_v2 main after regression tests"
             git push origin HEAD:main
           fi
