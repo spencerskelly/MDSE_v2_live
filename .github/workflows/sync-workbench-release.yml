@@ -37,6 +37,7 @@ jobs:
           source="_tool_release/tools/workbench/dist/plugin"
           destination=".obsidian/plugins/mdse-workbench"
           test -f "50_Architecture/MDSE Toolset Composition.md"
+          test -f "74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md"
           test -f "20_Use_Cases/MDSE Knowledge Base - Modeled Dependencies.canvas"
           test -f "50_Architecture/MDSE Software Architecture - Modeled Relationships.canvas"
           test -f "74_Semantic_Review/MDSE Rule to Requirement - Allocation and Verification.canvas"
