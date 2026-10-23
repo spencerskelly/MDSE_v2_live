@@ -247,6 +247,11 @@ const KINDS                          = [["part", "part"], ["attribute", "attribu
 const KIND_RE = KINDS.map(([k]) => k).sort((a, b) => b.length - a.length).join("|");
 const KIND_ID = new Map(KINDS);
 
+/** Standard-library concepts a statement can be recognized by: the metadata tag it carries (`#derivation`, `@Rationale`). Ids are catalog ids. */
+const LIB_TAG                         = { "#derivation": "derivation-connection", "#causation": "causation-connection", "#multicausation": "multicausation-connection", "#refinement": "refinement-metadata",
+  "@Rationale": "rationale-metadata", "@Issue": "issue-metadata", "@StatusInfo": "status-info-metadata", "@VerificationMethod": "verification-method" };
+const tail = (name        )         => name.replace(/^[#@]?(?:[A-Za-z_]\w*::)*/, (m) => m.slice(0, 1) === "#" || m.slice(0, 1) === "@" ? m.slice(0, 1) : "");
+
 const DEF_RE = new RegExp(`^(${KIND_RE})\\s+def\\b`);
 const USAGE_RE = new RegExp(`^(${KIND_RE})\\b`);
 const MOD_WORDS = /^(public|private|protected|abstract|variation|variant|readonly|derived|constant|ordered|nonunique|end|all)\b\s*/;
@@ -259,12 +264,15 @@ function classify(head        )           {
   if (!h) return ids;
   let m                        ;
   // prefix metadata, then visibility and modifiers
-  while ((m = /^#[A-Za-z_][\w:]*\s*/.exec(h))) { add("prefix-metadata"); h = h.slice(m[0].length); }
+  const prefixes = ()       => { while ((m = /^#[A-Za-z_][\w:]*\s*/.exec(h))) { add("prefix-metadata"); const lib = LIB_TAG[tail(m[0].trim())]; if (lib) add(lib); h = h.slice(m[0].length); } };
+  prefixes();
   while ((m = MOD_WORDS.exec(h))) {
     if (/^(public|private|protected)$/.test(m[1] )) add("visibility"); else if (m[1] === "variation" || m[1] === "variant") add("variation"); else add("modifiers");
     h = h.slice(m[0].length);
   }
-  if (/^@[A-Za-z_]/.test(h)) { add("metadata-feature"); return ids; }
+  prefixes();
+  if (/^@[A-Za-z_]/.test(h)) { add("metadata-feature"); const lib = LIB_TAG[tail(/^@[\w:]+/.exec(h) [0])]; if (lib) add(lib); return ids; }
+  if (/^(::>>|::>|:>>|:>|:)\s*[A-Za-z_~]/.test(h)) { relations(h, add); return ids; }                  // an end with only its relation: `end #original ::> RemoteControl`
   if ((m = /^(import)\s+(.+)$/.exec(h))) { add(/::\*{1,2}$/.test(m[2] ) ? "import-namespace" : "import-membership"); return ids; }
   if (/^alias\b/.test(h)) { add("alias"); return ids; }
   if (/^filter\b/.test(h)) { add("filter"); return ids; }
@@ -287,7 +295,7 @@ function classify(head        )           {
   if (/^connect\b/.test(h)) { add("connection-usage"); return ids; }
   if (/^bind\b/.test(h)) { add("bind"); return ids; }
   if (/^succession\s+flow\b/.test(h)) { add("succession-flow-usage"); return ids; }
-  if (/^succession\b|^first\b/.test(h)) { add("succession"); return ids; }
+  if (/^succession\b|^first\b/.test(h)) { add(/\bif\b/.test(h) ? "conditional-succession" : "succession"); return ids; }
   if (/^transition\b|^then\b|^accept\b.*\bthen\b/.test(h)) { if (/^transition\b/.test(h)) add("transition-usage"); else add("succession"); return ids; }
   if (/^message\b/.test(h)) { add("message"); return ids; }
   if (/^accept\b/.test(h)) { add("accept-action-usage"); return ids; }
@@ -298,7 +306,7 @@ function classify(head        )           {
   if (/^(while|loop|for)\b/.test(h)) { add("loop-action-usage"); return ids; }
   if (/^terminate\b/.test(h)) { add("terminate-action-usage"); return ids; }
   if (/^(entry|do|exit)\b/.test(h)) { add("state-action"); return ids; }
-  if (/^return\b/.test(h)) { add("return"); relations(h, add); return ids; }
+  if (/^return\b/.test(h)) { add("return"); relations(h, add); if (/\bVerdictKind\b/.test(h)) add("verdict-kind"); return ids; }
   if (/^objective\b/.test(h)) { add("objective-usage"); return ids; }
   if (/^subject\b/.test(h)) { add("subject-usage"); relations(h, add); return ids; }
   if (/^actor\b/.test(h)) { add("actor-usage"); relations(h, add); return ids; }
@@ -306,6 +314,10 @@ function classify(head        )           {
   if (/^event\b/.test(h)) { add("event-occurrence-usage"); return ids; }
   if (/^snapshot\b/.test(h)) { add("snapshot-usage"); relations(h, add); return ids; }
   if (/^timeslice\b/.test(h)) { add("timeslice-usage"); relations(h, add); return ids; }
+  if (/\bVerdictKind\b/.test(h)) add("verdict-kind");
+  if (/\bShapeItems::/.test(h)) add("shape-items");
+  if (/^analysis\b.*:\s*(?:[\w:]*::)?TradeStudy\b/.test(h)) add("trade-study");
+  if (/=\s*-?\d[\d.]*\s*\[\s*[A-Za-z_][\w:]*\s*\]/.test(h)) add("quantity-unit");
   let dir = false;
   if ((m = /^(in|out|inout)\b\s*/.exec(h))) { add("parameter"); dir = true; h = h.slice(m[0].length); }
   if ((m = /^ref\b\s*/.exec(h))) { h = h.slice(m[0].length); if (!USAGE_RE.test(h)) { add("reference-usage"); relations(h, add); return ids; } add("reference-usage"); }
@@ -337,7 +349,7 @@ function relations(h        , add                      , isDef = false)       {
 /** Properties written inside a usage or statement body: a doc comment and `attribute name = value;` members (D-0031). */
                                               
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                    
 
@@ -378,7 +390,7 @@ function parseItems(s        , start        , close         )                   
 const DEF = /^(?:(?:abstract|variation|public|private|protected)\s+)*(part|port|action|state|item|attribute|requirement|use case|verification|constraint|occurrence|interface|connection|allocation|enum|calc|analysis|view|viewpoint|concern|metadata|flow|rendering|individual|case)\s+def\s+([A-Za-z_]\w*)\s*(?::>\s*(.+))?$/;
 const SNAME = "[A-Za-z_]\\w*", SPATH = "[A-Za-z_][\\w:.]*";
 /** [end] [dir] [ref] kind name [relations] [mult] [modifiers]. Relations: `: T`, `: ~T`, `:> a, b`, `:>> c`. */
-const USAGE = new RegExp(`^(?:(end)\\s+)?(?:(in|out|inout)\\s+)?(?:(ref)\\s+)?(part|port|action|state|item|attribute|fork|join)\\s+(${SNAME})((?:\\s*(?:::>>|:>>|:>|::>|:)\\s*~?${SPATH}(?:\\s*,\\s*${SPATH})*)*)\\s*(\\[[^\\]]*\\])?((?:\\s*(?:::>>|:>>|:>|::>|:)\\s*~?${SPATH}(?:\\s*,\\s*${SPATH})*)*)((?:\\s+(?:ordered|nonunique))*)$`);
+const USAGE = new RegExp(`^(?:(end)\\s+)?(?:(in|out|inout)\\s+)?(?:(ref)\\s+)?(part|port|action|state|item|attribute|requirement|verification|fork|join)\\s+(${SNAME})((?:\\s*(?:::>>|:>>|:>|::>|:)\\s*~?${SPATH}(?:\\s*,\\s*${SPATH})*)*)\\s*(\\[[^\\]]*\\])?((?:\\s*(?:::>>|:>>|:>|::>|:)\\s*~?${SPATH}(?:\\s*,\\s*${SPATH})*)*)((?:\\s+(?:ordered|nonunique))*)$`);
 /** `end supplier : P;` with no kind keyword, as an interface or connection definition writes its ends. */
 const END_USAGE = new RegExp(`^end\\s+(${SNAME})((?:\\s*(?:::>>|:>>|:>|::>|:)\\s*~?${SPATH}(?:\\s*,\\s*${SPATH})*)*)\\s*(\\[[^\\]]*\\])?((?:\\s*(?:::>>|:>>|:>|::>|:)\\s*~?${SPATH}(?:\\s*,\\s*${SPATH})*)*)$`);
 function relationsOf(txt        )                                                                              {
@@ -393,10 +405,11 @@ function relationsOf(txt        )                                               
 }
 const QN = "([A-Za-z_][\\w:.]*)";
 
-function interpret(it      , d            )       {
+function interpret(it      , d            , context         )       {
   const nu = d.usages.length, ns = d.stmts.length;
-  const handled = interpretOne(it, d);
+  const handled = interpretOne(it, d, context);
   if (!handled) { if (it.head) d.raw.push(it.head); return; }
+  const innerContext = d.usages.length > nu ? d.usages[d.usages.length - 1] .name : context;
   const rec                                               = d.usages.length > nu ? d.usages[d.usages.length - 1] : d.stmts.length > ns ? d.stmts[d.stmts.length - 1] : undefined;
   if (it.body && !/^objective\b/.test(it.head)) for (const c of it.body) {
     if (rec) {                                                                         // properties of a usage or statement are kept on it, not as usages of the definition (D-0031)
@@ -410,22 +423,33 @@ function interpret(it      , d            )       {
         continue;
       }
     }
-    interpret(c, d);                                                                   // nested members of any construct
+    interpret(c, d, innerContext);                                                    // nested members preserve their typed usage context
   }
 }
 
 /** The statements the importer writes get their own record; returns false only for a head nothing recognizes. */
 let DOCS           = [];
 const docText = (head        )         => (DOCS[Number(/\d+$/.exec(head) [0])] ?? "").replace(/^\s*\*?\s?/gm, "").trim();
-function interpretOne(it      , d            )          {
+function interpretOne(it      , d            , context         )          {
   const h = it.head;
   if (/^doc ~D\d+$/.test(h)) { for (const i of classify("doc")) if (!d.langs.includes(i)) d.langs.push(i); return true; }
   { const hm = /^(?:constraint|action|state|item|attribute)\s+([A-Za-z_]\w*)\b/.exec(h); const dc = hm && it.body?.find((c) => /^doc ~D\d+$/.test(c.head)); if (dc) d.notes[hm [1] ] = docText(dc.head); }
   for (const i of classify(h)) if (!d.langs.includes(i)) d.langs.push(i);
   let m                        ;
   const st = (s      )       => { d.stmts.push(s); };
+  if (it.body && /^#derivation\s+connection(?:\s+[A-Za-z_]\w*)?$/.test(h)) {          // native derivation: `end #original ::> A; end #derive ::> B;` (D-0045)
+    let orig = "";
+    const derived           = [];
+    for (const c of it.body) {
+      const e = new RegExp(`^end\\s+#(original|derive)\\s*::>\\s*${QN}$`).exec(c.head);
+      if (e) { if (e[1] === "original") orig = e[2] ; else derived.push(e[2] ); for (const i of classify(c.head)) if (!d.langs.includes(i)) d.langs.push(i); } else { for (const i of classify(c.head)) if (!d.langs.includes(i)) d.langs.push(i); if (!classify(c.head).length) d.raw.push(c.head); }
+    }
+    if (orig) for (const x of derived) st({ kind: "dependency", a: x, b: orig, tag: "derivedFrom", text: h });
+    else d.raw.push(h);
+    return true;
+  }
   if (it.body && /^objective\b/.test(h)) {
-    for (const c of it.body) { const v = new RegExp(`^verify\\s+(?:requirement\\s+)?${QN}$`).exec(c.head); if (v) { st({ kind: "verify", a: v[1] , text: c.head }); if (!d.langs.includes("verify-requirement-usage")) d.langs.push("verify-requirement-usage"); } else { for (const i of classify(c.head)) if (!d.langs.includes(i)) d.langs.push(i); if (!classify(c.head).length) d.raw.push(c.head); } }
+    for (const c of it.body) { const v = new RegExp(`^verify\\s+(?:requirement\\s+)?${QN}$`).exec(c.head); if (v) { st({ kind: "verify", a: v[1] , text: c.head, ...(context ? { context } : {}) }); if (!d.langs.includes("verify-requirement-usage")) d.langs.push("verify-requirement-usage"); } else { for (const i of classify(c.head)) if (!d.langs.includes(i)) d.langs.push(i); if (!classify(c.head).length) d.raw.push(c.head); } }
     return true;
   }
   if ((m = USAGE.exec(h))) {
@@ -441,8 +465,8 @@ function interpretOne(it      , d            )          {
   }
   if ((m = new RegExp(`^satisfy\\s+(?:requirement\\s+)?${QN}(?:\\s+by\\s+${QN})?$`).exec(h))) { st({ kind: "satisfy", a: m[1] , ...(m[2] ? { b: m[2] } : {}), text: h }); return true; }
   if ((m = new RegExp(`^allocate\\s+${QN}\\s+to\\s+${QN}$`).exec(h))) { st({ kind: "allocate", a: m[1] , b: m[2] , text: h }); return true; }
-  if ((m = new RegExp(`^perform\\s+action\\s+([A-Za-z_]\\w*)\\s*:\\s*${QN}$`).exec(h))) { st({ kind: "perform", name: m[1] , b: m[2] , text: h }); return true; }
-  if ((m = new RegExp(`^dependency\\s+from\\s+${QN}\\s+to\\s+${QN}$`).exec(h))) { st({ kind: "dependency", a: m[1] , b: m[2] , tag: it.tag || "dependsOn", text: h }); return true; }
+  if ((m = new RegExp(`^perform\\s+action\\s+([A-Za-z_]\\w*)\\s*:\\s*${QN}$`).exec(h))) { st({ kind: "perform", name: m[1] , b: m[2] , text: h, ...(context ? { context } : {}) }); return true; }
+  if ((m = new RegExp(`^(#refinement\\s+)?dependency\\s+from\\s+${QN}\\s+to\\s+${QN}$`).exec(h))) { st({ kind: "dependency", a: m[2] , b: m[3] , tag: m[1] ? "refines" : it.tag || "dependsOn", text: h }); return true; }
   if ((m = /^succession\s+first\s+([\w.]+)(?:\s+if\s+([\w.]+))?\s+then\s+([\w.]+)$/.exec(h))) { st({ kind: "succession", a: m[1] , b: m[3] , ...(m[2] ? { guard: m[2] } : {}), text: h }); return true; }
   if ((m = /^transition\s+first\s+([\w.]+)(?:\s+accept\s+([\w.]+))?(?:\s+if\s+([\w.]+))?(?:\s+do\s+([\w.]+))?\s+then\s+([\w.]+)$/.exec(h))) { st({ kind: "transition", a: m[1] , b: m[5] , ...(m[2] ? { trigger: m[2] } : {}), ...(m[3] ? { guard: m[3] } : {}), ...(m[4] ? { effect: m[4] } : {}), text: h }); return true; }
   if ((m = new RegExp(`^(?:(connection|interface)(?:\\s+(${SNAME}))?(?:\\s*:\\s*(${SPATH}))?\\s+)?connect\\s+(?:(${SNAME})\\s*::>\\s*)?([\\w.]+)\\s+to\\s+(?:(${SNAME})\\s*::>\\s*)?([\\w.]+)$`).exec(h))) {
@@ -519,7 +543,7 @@ function scanSysml(block        )             {
 const CORE_KEYS = new Set(["type", "subtype", "id", "uid", "status", "eaType", "tags", "sourceRole", "primarySymbol", "aliases", "fixture"]);
 const FLAG = /^> \[!(flag\w+)\] (.*)\n((?:>.*(?:\n|$))*)/gm;
 const baseName = (path        )         => path.split("/").pop() .replace(/\.md$/i, "");
-const SYSML_TO_KIND                         = { part: "hasPart", port: "hasPort", action: "hasAction", state: "hasState", item: "hasFlow" };
+const SYSML_TO_KIND                         = { part: "hasPart", port: "hasPort", action: "hasAction", state: "hasState", item: "hasFlow", requirement: "hasRequirement", verification: "hasVerification" };
 const DEP_KIND                         = { derivedFrom: "derivedFrom", refines: "refines", trace: "trace", dependsOn: "dependsOn", uses: "uses" };
 
 function readNote(path        , text        , o              )              {
@@ -557,6 +581,14 @@ function resolveAll(ix            )       {
   for (const n of ix.notes.values()) {
     const d = n.def;
     if (d) {
+      // A note owns one definition, but its nested usages can be the endpoints of
+      // allocations, verification objectives and performed actions. Resolve local
+      // usage names through their typed definitions so the canvas draws real notes
+      // instead of orphaned "importer" / "repeatImport" ghost cards.
+      const local = new Map(d.usages.filter((u) => u.type).map((u) => [u.name, u.type ]         ));
+      const endpoint = (name        )                =>
+        sym(name) ?? (name === d.name || name === d.symbol ? n.path : null) ??
+        (local.has(name) ? sym(local.get(name) ) : null);
       let ref                     ;
       const E = (kind        , target               , symbol        , label = "", detail = "", from = n.path)       =>
         link(ix, { from, to: target, toSymbol: symbol, kind, label, via: "sysml", detail, ...(ref ? { ref } : {}) });
@@ -564,14 +596,14 @@ function resolveAll(ix            )       {
       for (const u of d.usages) if (u.type) { ref = { owner: n.path, kind: "member", key: u.head }; E(SYSML_TO_KIND[u.kind] ?? "has", sym(u.type), u.type, `${u.dir ? u.dir + " " : ""}${u.name}${u.mult ?? ""}`, (u.props ?? []).map((q) => `${q.name}=${q.value.replace(/^"|"$/g, "")}`).join("; ")); }
       for (const s of d.stmts) {
         ref = { owner: n.path, kind: s.kind === "verify" ? "verify" : "member", key: s.kind === "verify" ? s.a  : s.text };
-        if (s.kind === "satisfy") E("satisfies", sym(s.a ), s.a );
-        else if (s.kind === "verify") E("verifies", sym(s.a ), s.a );
-        else if (s.kind === "perform") E("performs", sym(s.b ), s.b , s.name ?? "");
+        if (s.kind === "satisfy") E("satisfies", endpoint(s.a ), s.a );
+        else if (s.kind === "verify") E("verifies", endpoint(s.a ), s.a , "", "", (s.context && endpoint(s.context)) || n.path);
+        else if (s.kind === "perform") E("performs", endpoint(s.b ), s.b , s.name ?? "", "", (s.context && endpoint(s.context)) || n.path);
         else if (s.kind === "include") E("includes", sym(s.b ), s.b , s.name ?? "");
         else if (s.kind === "optionalUseCase") E("extendedBy", sym(s.b ), s.b , s.name ?? "", s.tag ?? "");
         else if (s.kind === "nestedUseCase") E("has", sym(s.b ), s.b , s.name ?? "", s.tag ?? "");
         else if (s.kind === "allocate" || s.kind === "dependency") {
-          const kind = s.kind === "allocate" ? "allocatedTo" : DEP_KIND[s.tag ?? ""] ?? "dependsOn", a = sym(s.a ), b = sym(s.b );
+          const kind = s.kind === "allocate" ? "allocatedTo" : DEP_KIND[s.tag ?? ""] ?? "dependsOn", a = endpoint(s.a ), b = endpoint(s.b );
           if (a) E(kind, b, s.b , "", "", a);                                              // source known: normal edge, target may dangle
           else if (b) link(ix, { from: b, to: null, toSymbol: s.a , kind, label: "", via: "sysml", detail: "", reverse: true, ref });   // source missing: never a self-loop
           else E(kind, null, s.b , "", "", n.path);
@@ -1432,9 +1464,9 @@ const ED_RELS          = [
     from: anyDef, to: (n, f) => !!n.def && n.path !== f.path, inputs: [] },
   { id: "perform", label: "performs action", help: "`perform action <name> : <action>;` inside a part definition.",
     from: (n) => kw(n) === "part def", to: (n) => kw(n) === "action def", inputs: ["name"] },
-  { id: "derivedFrom", label: "derived from", help: "`dependency from <this> to <target>; // derivedFrom` between two requirements.",
+  { id: "derivedFrom", label: "derived from", help: "`#derivation connection` with `#original` the target and `#derive` this requirement, between two requirements.",
     from: (n) => kw(n) === "requirement def", to: (n, f) => kw(n) === "requirement def" && n.path !== f.path, inputs: [] },
-  { id: "refines", label: "refines", help: "`dependency … // refines`: this adds precision to the target.",
+  { id: "refines", label: "refines", help: "`#refinement dependency from <this> to <target>;`: this adds precision to the target.",
     from: anyDef, to: (n, f) => !!n.def && n.path !== f.path, inputs: [] },
   { id: "trace", label: "traces to", help: "`dependency … // trace`: related, relationship not chosen yet.",
     from: anyDef, to: (n, f) => !!n.def && n.path !== f.path, inputs: [] },
@@ -1466,6 +1498,7 @@ function planAddRelationship(ix            , files                     , o      
   const uniq = (want        )         => { let n = 1, nm = want; while (used.has(nm)) { n++; nm = `${want}${n}`; } return nm; };
   const dupKind                         = { perform: "perform", include: "include", extend: "optionalUseCase" };
   if (dupKind[rel.id] && A.stmts.some((x) => x.kind === dupKind[rel.id] && x.b === B.symbol)) return bad("Nothing to change: that relationship is already written.");
+  if ((rel.id === "derivedFrom" || rel.id === "refines") && A.stmts.some((x) => x.kind === "dependency" && x.tag === rel.id && x.a === A.symbol && x.b === B.symbol)) return bad("Nothing to change: that relationship is already written.");
   let stmt = "";
   let headEdit                                            = null;
   switch (rel.id) {
@@ -1481,7 +1514,13 @@ function planAddRelationship(ix            , files                     , o      
     case "satisfy": stmt = `satisfy ${B.symbol};`; break;
     case "allocate": stmt = `allocate ${A.symbol} to ${B.symbol};`; break;
     case "perform": stmt = `perform action ${uniq(edUsageIdent(o.name?.trim() || to.title, "action"))} : ${B.symbol};`; break;
-    case "derivedFrom": case "refines": case "trace": case "dependsOn": stmt = `dependency from ${A.symbol} to ${B.symbol}; // ${rel.id}`; break;
+    case "refines": stmt = `#refinement dependency from ${A.symbol} to ${B.symbol};`; break;
+    case "derivedFrom": {                                                                    // native library form (D-0045): this requirement is the derived end
+      const nm = (n        )         => `derive_${n.replace(/[^A-Za-z0-9_]/g, "_")}`, taken = new Set(A.stmts.map((x) => /^#derivation connection (\w+)$/.exec(x.text ?? "")?.[1] ?? ""));
+      let n = 1, name = nm(B.symbol); while (taken.has(name) || used.has(name)) { n++; name = `${nm(B.symbol)}${n}`; }
+      stmt = `#derivation connection ${name} {\n    end #original ::> ${B.symbol};\n    end #derive ::> ${A.symbol};\n}`; break;
+    }
+    case "trace": case "dependsOn": stmt = `dependency from ${A.symbol} to ${B.symbol}; // ${rel.id}`; break;
     case "include": stmt = `include use case ${uniq(edUsageIdent(o.name?.trim() || to.title, "include"))} : ${B.symbol};`; break;
     case "extend": stmt = `use case ${uniq(edUsageIdent(o.name?.trim() || to.title, "extension"))} : ${B.symbol}[0..1];`; break;
     case "verify": {
@@ -1712,7 +1751,7 @@ function edRelInfo(ix            , ref         )                 {
   if (s.kind === "perform") return mk("perform", { ...base, name: s.name ?? "", target: path(s.b ) });
   if (s.kind === "include") return mk("include", { ...base, name: s.name ?? "", target: path(s.b ) });
   if (s.kind === "optionalUseCase") return mk("extend", { ...base, name: s.name ?? "", target: path(s.b ) });
-  if (s.kind === "dependency") { const first = s.a === d.symbol; return mk(s.tag && ED_DEP_KINDS.includes(s.tag) ? s.tag : "dependsOn", { ...base, depKind: s.tag && ED_DEP_KINDS.includes(s.tag) ? s.tag : "dependsOn", ownerFirst: first, target: path(first ? s.b  : s.a ) }); }
+  if (s.kind === "dependency") { const first = s.a === d.symbol; const dn = /^#derivation connection (\w+)$/.exec(s.text ?? "")?.[1] ?? ""; return mk(s.tag && ED_DEP_KINDS.includes(s.tag) ? s.tag : "dependsOn", { ...base, depKind: s.tag && ED_DEP_KINDS.includes(s.tag) ? s.tag : "dependsOn", name: dn, ownerFirst: first, target: path(first ? s.b  : s.a ) }); }
   return mk("", base, "This kind of statement is not edited here.");
 }
 
@@ -1724,7 +1763,8 @@ function edPropsFor(rel        , usageKind = "")                                
     case "owns": return { options: ["name", "mult", ...(usageKind === "item" ? ["dir"          ] : []), "ordered", "nonunique", "doc"], custom: true };
     case "perform": case "include": return { options: ["name", "doc"], custom: true };
     case "extend": return { options: ["name", "doc"], custom: true };
-    case "satisfy": case "allocate": case "derivedFrom": case "refines": case "trace": case "dependsOn": return { options: ["doc"], custom: true };
+    case "derivedFrom": return { options: [], custom: false };                              // the two ends are the whole relationship
+    case "satisfy": case "allocate": case "refines": case "trace": case "dependsOn": return { options: ["doc"], custom: true };
     default: return { options: [], custom: false };                                    // specializes, verify: the head is the whole relationship
   }
 }
@@ -1749,9 +1789,14 @@ function edRenderMember(f         , ownerSym        , targetSym        , pad    
     case "perform": head = `perform action ${f.name} : ${targetSym}`; break;
     case "include": head = `include use case ${f.name} : ${targetSym}`; break;
     case "extend": head = `use case ${f.name} : ${targetSym}[0..1]`; break;
+    case "refines": head = f.ownerFirst ? `#refinement dependency from ${ownerSym} to ${targetSym}` : `#refinement dependency from ${targetSym} to ${ownerSym}`; break;
+    case "derivedFrom": {                                                                      // native: the connection is named, its two ends carry the roles (D-0045)
+      const [orig, der] = f.ownerFirst ? [targetSym, ownerSym] : [ownerSym, targetSym];
+      return `#derivation connection ${f.name || "derive_" + orig.replace(/[^A-Za-z0-9_]/g, "_")} {\n${pad}    end #original ::> ${orig};\n${pad}    end #derive ::> ${der};\n${pad}}`;
+    }
     default: head = f.ownerFirst ? `dependency from ${ownerSym} to ${targetSym}` : `dependency from ${targetSym} to ${ownerSym}`;
   }
-  const dep = ED_DEP_KINDS.includes(f.rel) ? ` // ${f.depKind || f.rel}` : "";
+  const dep = f.rel === "trace" || f.rel === "dependsOn" ? ` // ${f.depKind || f.rel}` : "";
   const inner = [...(f.doc.trim() ? [edDocComment(f.doc, pad + "    ")] : []), ...f.attrs.map((a) => attrLine(a, pad + "    "))];
   if (!inner.length) return `${head};${dep}`;
   return `${head} {\n${inner.map((l) => `${pad}    ${l}`).join("\n")}\n${pad}}${dep}`;
