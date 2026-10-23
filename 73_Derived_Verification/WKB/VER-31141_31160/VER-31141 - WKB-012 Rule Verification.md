@@ -57,6 +57,12 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[WKB-012 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Native contextual verification trace — Draft
+
+The same reusable verification definition is used by `verification relationshipPropertyCheck : MDSE_VER_31141::TestVER31141` within [[MDSE Toolset Composition]]. Its objective now references [[REQ-31286]], [[REQ-31287]], [[REQ-31288]] using native `verify` statements; **no actual test execution or pass result** is asserted.
+
+Each generated clause still needs an independently assessable fixture and expected outcome before acceptance.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

@@ -55,6 +55,12 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[WKB-020 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Native contextual verification trace — Draft
+
+The same reusable verification definition is used by `verification relationshipDeduplicationCheck : MDSE_VER_31149::TestVER31149` within [[MDSE Toolset Composition]]. Its objective now references [[REQ-31306]] using native `verify` statements; **no actual test execution or pass result** is asserted.
+
+Historical generated [[REQ-31307 - WKB-020 Statement 2]] and its checklist wording describe the prior double-counting **defect**, not a desired functional requirement. The future regression must demonstrate one semantic link and undoubled rolled-up quantity. REQ-31307 is not a verification target.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

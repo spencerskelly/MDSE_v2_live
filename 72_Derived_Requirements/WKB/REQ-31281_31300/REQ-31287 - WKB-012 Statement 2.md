@@ -54,6 +54,12 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Native contextual trace — Draft
+
+[[MDSE Toolset Composition]] contains a typed `requirement relationshipOptionEligibility : MDSE_REQ_31287::RuleREQ31287` usage allocated to the `workbench` part usage. The existing [[VER-31141 - WKB-012 Rule Verification]] case is reused through a contextual verification objective. Its use-case dependency is owned by [[Correct or Complete Knowledge]].
+
+Only eligible metadata options are exposed for the selected relationship kind. This remains a **Draft candidate** and is not evidence of a passed test, `satisfy`, or independently certified SysML syntax.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

@@ -53,6 +53,12 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Native contextual trace — Draft
+
+[[MDSE Toolset Composition]] contains a typed `requirement preserveOwnedUsageModifiers : MDSE_REQ_31297::RuleREQ31297` usage allocated to the `workbench` part usage. The existing [[VER-31145 - WKB-016 Rule Verification]] case is reused through a contextual verification objective. Its use-case dependency is owned by [[Correct or Complete Knowledge]].
+
+An edit preserves existing modifiers and feature typing, rather than silently changing the meaning of a usage. This remains a **Draft candidate** and is not evidence of a passed test, `satisfy`, or independently certified SysML syntax.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

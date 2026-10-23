@@ -54,6 +54,12 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Native contextual trace — Draft
+
+[[MDSE Toolset Composition]] contains a typed `requirement safeUsageRename : MDSE_REQ_31288::RuleREQ31288` usage allocated to the `workbench` part usage. The existing [[VER-31141 - WKB-012 Rule Verification]] case is reused through a contextual verification objective. Its use-case dependency is owned by [[Correct or Complete Knowledge]].
+
+A rename is refused where another reference in the same authoritative block uses that name. This remains a **Draft candidate** and is not evidence of a passed test, `satisfy`, or independently certified SysML syntax.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
