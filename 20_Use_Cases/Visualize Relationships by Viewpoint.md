@@ -70,9 +70,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00010 {
     use case def VisualizeLinkedElements {
         doc /* Display elements related to a selected element in a visual form, with selectable engineering viewpoints. */
+        dependency from VisualizeLinkedElements to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from VisualizeLinkedElements to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from VisualizeLinkedElements to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from VisualizeLinkedElements to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from VisualizeLinkedElements to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from VisualizeLinkedElements to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

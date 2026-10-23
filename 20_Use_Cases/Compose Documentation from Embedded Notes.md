@@ -70,9 +70,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00015 {
     use case def ComposeDocumentWithEmbeds {
         doc /* Assemble a new document or presentation concept by transcluding existing model notes or sections using Obsidian embedded links such as ![[xxx]]. */
+        dependency from ComposeDocumentWithEmbeds to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00003::DiscoverModelElements;
+        dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00006::ComposeEngineeringKnowledge;
     }
-    dependency from ComposeDocumentWithEmbeds to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00003::DiscoverModelElements;
-    dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00006::ComposeEngineeringKnowledge;
 }
 ```

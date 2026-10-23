@@ -70,9 +70,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00012 {
     use case def ExploreMultipleHops {
         doc /* Display relationships across multiple hops from the selected element rather than only directly attached elements. */
+        dependency from ExploreMultipleHops to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ExploreMultipleHops to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from ExploreMultipleHops to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from ExploreMultipleHops to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ExploreMultipleHops to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from ExploreMultipleHops to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

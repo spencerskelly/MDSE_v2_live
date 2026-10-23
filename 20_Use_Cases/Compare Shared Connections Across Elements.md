@@ -70,9 +70,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00013 {
     use case def CompareCommonLinkedElements {
         doc /* Select two or more elements and display the elements or paths that are connected to multiple selections. */
+        dependency from CompareCommonLinkedElements to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from CompareCommonLinkedElements to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from CompareCommonLinkedElements to MDSE_BEH_00005::GenerateModelViewpoints;
     }
-    dependency from CompareCommonLinkedElements to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from CompareCommonLinkedElements to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from CompareCommonLinkedElements to MDSE_BEH_00005::GenerateModelViewpoints;
 }
 ```

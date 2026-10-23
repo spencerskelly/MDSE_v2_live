@@ -71,10 +71,10 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00011 {
     use case def DocumentViewOfLinks {
         doc /* Display the same linked engineering content as a navigable document or structured report with different viewpoints. */
+        dependency from DocumentViewOfLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from DocumentViewOfLinks to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from DocumentViewOfLinks to MDSE_BEH_00005::GenerateModelViewpoints;
+        dependency from DocumentViewOfLinks to MDSE_BEH_00006::ComposeEngineeringKnowledge;
     }
-    dependency from DocumentViewOfLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from DocumentViewOfLinks to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from DocumentViewOfLinks to MDSE_BEH_00005::GenerateModelViewpoints;
-    dependency from DocumentViewOfLinks to MDSE_BEH_00006::ComposeEngineeringKnowledge;
 }
 ```

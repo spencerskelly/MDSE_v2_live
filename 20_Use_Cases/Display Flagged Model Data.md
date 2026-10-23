@@ -71,10 +71,10 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00016 {
     use case def DisplayFlaggedData {
         doc /* Display flagged notes, relationships and records with their type, context, source and unresolved status. */
+        dependency from DisplayFlaggedData to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from DisplayFlaggedData to MDSE_BEH_00003::DiscoverModelElements;
+        dependency from DisplayFlaggedData to MDSE_BEH_00005::GenerateModelViewpoints;
+        dependency from DisplayFlaggedData to MDSE_BEH_00007::MaintainModelKnowledge;
     }
-    dependency from DisplayFlaggedData to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from DisplayFlaggedData to MDSE_BEH_00003::DiscoverModelElements;
-    dependency from DisplayFlaggedData to MDSE_BEH_00005::GenerateModelViewpoints;
-    dependency from DisplayFlaggedData to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```

@@ -69,8 +69,8 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00014 {
     use case def SearchModelTextAndProperties {
         doc /* Search within SysML v2 textual model definitions, YAML properties and other searchable note fields. */
+        dependency from SearchModelTextAndProperties to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from SearchModelTextAndProperties to MDSE_BEH_00003::DiscoverModelElements;
     }
-    dependency from SearchModelTextAndProperties to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from SearchModelTextAndProperties to MDSE_BEH_00003::DiscoverModelElements;
 }
 ```

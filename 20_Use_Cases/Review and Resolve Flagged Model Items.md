@@ -72,10 +72,10 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00009 {
     use case def ReviewFlaggedItems {
         doc /* Review flagged elements to improve model accuracy. */
+        dependency from ReviewFlaggedItems to MDSE_STK_00013::EngineeringKnowledgeBase;
+        dependency from ReviewFlaggedItems to MDSE_BEH_00004::TraverseModelRelationships;
+        dependency from ReviewFlaggedItems to MDSE_BEH_00005::GenerateModelViewpoints;
+        dependency from ReviewFlaggedItems to MDSE_BEH_00007::MaintainModelKnowledge;
     }
-    dependency from ReviewFlaggedItems to MDSE_STK_00013::EngineeringKnowledgeBase;
-    dependency from ReviewFlaggedItems to MDSE_BEH_00004::TraverseModelRelationships;
-    dependency from ReviewFlaggedItems to MDSE_BEH_00005::GenerateModelViewpoints;
-    dependency from ReviewFlaggedItems to MDSE_BEH_00007::MaintainModelKnowledge;
 }
 ```
