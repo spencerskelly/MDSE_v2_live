@@ -52,6 +52,11 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Contextual native trace — Draft
+
+[[MDSE Toolset Composition]] now owns a typed usage `editLensCapabilities` of this requirement, allocated to its `workbench` usage and included in the existing [[VER-31137 - WKB-008 Rule Verification]] objective. [[Add Engineering Knowledge]] and [[Correct or Complete Knowledge]] own native dependencies to this requirement.
+
+This candidate elaborates the contribution/editing aspect of [[Engineering Knowledge Base]], using the native refinement below. Clause 1 still groups element creation, relationship editing, and requirement-text editing: independent acceptance criteria and possible decomposition remain open. Neither allocation nor refinement establishes implementation satisfaction.
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
@@ -60,6 +65,7 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 package MDSE_REQ_31278 {
     requirement def RuleREQ31278 {
         doc /* The Edit lens adds relationships, elements and requirement text. */
+        #refinement dependency from RuleREQ31278 to MDSE_STK_00013::EngineeringKnowledgeBase;
     }
 }
 ```

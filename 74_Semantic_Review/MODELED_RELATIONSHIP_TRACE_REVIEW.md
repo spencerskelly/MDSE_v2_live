@@ -12,10 +12,12 @@
 | Previous unsupported UC-function/discipline mappings withheld | No invented relation; logged for review | **8** |
 | Software function performed by typed child role | `perform action` in owning software part | **5** |
 | Existing tool and child software structure | Typed `part` usages | **5 tools, 13 child roles** |
-| Requirement allocation | `allocate` usage-to-usage | **4** |
-| Verification objective | `verify` within case objective | **4** |
+| Use case → candidate requirement obligation | `dependency` from UC definition to requirement definition | **10** (1 in pass 1, 5 in pass 2, 4 in pass 3) |
+| Requirement → stakeholder need elaborated | `#refinement dependency` owned in requirement definition | **6** (1 in pass 1, 3 in pass 2, 2 in pass 3) |
+| Requirement allocation | `allocate` usage-to-usage | **7** (4 initial, 1 in pass 2, 2 in pass 3) |
+| Verification objective | `verify` within case objective | **7** (4 initial, 1 in pass 2, 2 in pass 3) |
 
-See the [content-based semantic review](USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) for each of the sixteen use cases, reasons for retained general dependencies, and the eight explicitly deferred historical links.
+See the [content-based semantic review](USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) for each of the sixteen use cases, reasons for retained general dependencies, and the eight explicitly deferred historical links. This rollup incorporates [linking pass 1](REQUIREMENT_LINKING_PASS_2026-10-23.md), [pass 2](REQUIREMENT_LINKING_PASS_02_2026-10-23.md), and [pass 3](REQUIREMENT_LINKING_PASS_03_2026-10-23.md). The saved canvases described below have **not** been regenerated for these new requirement traces.
 
 ## Original-rule trace and scope
 

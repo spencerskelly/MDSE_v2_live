@@ -89,7 +89,9 @@ Users can locate engineering elements, navigate explicit relationships, review r
 
 **Refined by:** [[Import an Engineering Model]], [[Search for a Part, Function or Design]], [[Explore Element Relationships]], [[Review Requirements for a Design]], [[Explore Complete Product Context]], [[View and Export Engineering Information]], [[Add Engineering Knowledge]], [[Correct or Complete Knowledge]], [[Review and Resolve Flagged Model Items]], [[Visualize Relationships by Viewpoint]], [[Display Linked Elements in Document Viewpoints]], [[Explore Multiple Relationship Hops]], [[Compare Shared Connections Across Elements]], [[Search SysML Syntax and Model Properties]], [[Compose Documentation from Embedded Notes]], [[Display Flagged Model Data]]. These use cases elaborate aspects of this stakeholder requirement via native `#refinement dependency`; none is evidence of verified satisfaction.
 
-The **owning use-case SysML block** carries the actual relationship; no duplicate connector is authored in this reusable requirement definition. See [semantic disposition review](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]].
+Additionally, [[REQ-31278 - WKB-008 Statement 1]] carries a new draft native refinement of this stakeholder need's knowledge-contribution capability. The requirement definition owns that relationship; it is not duplicated here.
+
+The **owning use-case SysML block** carries its actual relationship; no duplicate connector is authored in this reusable requirement definition. See [semantic disposition review](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]].
 
 ## SysML v2
 

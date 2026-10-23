@@ -38,6 +38,11 @@ Engineer-facing Obsidian plugin and offline viewer with model indexing, relation
 
 Primary search does not index aliases or scoped SysML text; no confirmed multi-seed shared-connection query; real Obsidian acceptance unverified.
 
+## Incoming candidate requirement allocations — Draft
+
+[[MDSE Toolset Composition]] now contains three typed requirements from [[WKB-008]]: [[REQ-31278 - WKB-008 Statement 1]], [[REQ-31279 - WKB-008 Statement 2]] and [[REQ-31280 - WKB-008 Statement 3]]. That owning composition allocates each requirement usage to the Workbench part usage and references them from the shared [[VER-31137 - WKB-008 Rule Verification]] objective.
+
+These are **candidate responsibilities**, not `satisfy` relationships, passing tests, or additional relationships in this standalone Workbench definition. Actual implementation behavior and syntax round-trip remain unverified.
 ## Verification and review
 
 Code and test definitions were inspected in GitHub. Dedicated suites were not executed for this baseline; runtime/engineering acceptance and native SysML connections remain unverified.

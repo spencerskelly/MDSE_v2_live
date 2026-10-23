@@ -56,10 +56,11 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Source rule: [[WKB-008]]
 - Analysis: [[WKB-008 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
+- The expanded `verify` references are authored in the owning toolset composition, not duplicated in this reusable verification definition.
 
 ## Contextual native trace — Draft
 
-A typed verification usage named `eligibleTargetsCheck` is owned by [[MDSE Toolset Composition]]. Its native `objective { verify ...; }` connects this verification case to [[REQ-31279 - WKB-008 Statement 2]]. The case is unexecuted; no pass/fail verdict is inferred.
+A typed verification usage named `eligibleTargetsCheck` is owned by [[MDSE Toolset Composition]]. Its existing `objective { verify ...; }` now references all three typed requirement usages in [[MDSE Toolset Composition]]: [[REQ-31278 - WKB-008 Statement 1]], [[REQ-31279 - WKB-008 Statement 2]] and [[REQ-31280 - WKB-008 Statement 3]]. One case covers three candidate clauses, but each clause still needs independent assertions and fixtures. The case is unexecuted; no pass/fail verdict is inferred.
 
 The original rule is [[WKB-008]]. Its generated reference records exact source wording/status/revision; the current normative authority remains MDSE_v2 governance.
 

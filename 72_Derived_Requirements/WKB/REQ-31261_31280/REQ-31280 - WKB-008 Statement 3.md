@@ -52,6 +52,11 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Contextual native trace — Draft
+
+[[MDSE Toolset Composition]] now owns the typed usage `authoritativeSysmlWrite`, allocated to the `workbench` usage and included in the existing [[VER-31137 - WKB-008 Rule Verification]] objective. [[Add Engineering Knowledge]] and [[Correct or Complete Knowledge]] own draft dependencies to this requirement.
+
+This candidate elaborates [[One Trustworthy Model]] by specifying that native structure and links are persisted in the note's single authoritative SysML v2 block. The requirement is not a proof that every graph-edit transaction round-trips correctly. Parser, persistence, undo and runtime validation remain open.
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
@@ -60,6 +65,7 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 package MDSE_REQ_31280 {
     requirement def RuleREQ31280 {
         doc /* Structure and links are written into the source note's `## SysML v2` block */
+        #refinement dependency from RuleREQ31280 to MDSE_STK_00002::StakeholderNeed02;
     }
 }
 ```

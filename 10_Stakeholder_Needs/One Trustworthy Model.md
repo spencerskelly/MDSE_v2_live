@@ -20,7 +20,7 @@ primarySymbol: MDSE_STK_00002::StakeholderNeed02
 
 ## Proposed trace links
 
-- No trace established yet — an explicit review gap.
+- Draft incoming refinement: [[REQ-31280 - WKB-008 Statement 3]] (authoritative SysML write location). No dedicated directly refining use case has yet been established.
 
 These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
@@ -28,7 +28,7 @@ These are provisional navigational links. Formal native SysML relationships, end
 
 **Open modeling gap.** None of the sixteen currently defined Engineering Knowledge Base use cases directly depends on this stakeholder need in native SysML. The need remains a reusable Draft requirement, **not** an automatically satisfied capability.
 
-Source-note candidate context: No dedicated use-case definition has yet been established for this stakeholder need.
+Source-note candidate context: No dedicated use-case definition has yet been established for this stakeholder need. The clause-3 requirement definition now owns a draft `#refinement dependency` to this need; a requirement-level refinement does not close the missing use-case or implementation trace.
 
 The correct follow-up is to review this need and create or reuse a suitable use-case definition and logical function before writing a native dependency or allocation. No connection has been fabricated solely to make a canvas visually complete. See [[MDSE Knowledge Base - Modeled Dependencies]] for relationships that are actually present.
 

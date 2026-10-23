@@ -22,7 +22,7 @@ The original-rule references below are provenance for **Draft requirement candid
 |---|---|---|---|
 | [[IMP-075]] — change log per import | [[REQ-31137 - IMP-075 Statement 1]]; [[REQ-31138 - IMP-075 Statement 2]] | importer ([[MDSE Importer]]) | [[VER-31071 - IMP-075 Rule Verification]] (both clauses) |
 | [[IMP-076]] — repeated import idempotence | [[REQ-31139 - IMP-076 Statement 1]] | importer ([[MDSE Importer]]) | [[VER-31072 - IMP-076 Rule Verification]] |
-| [[WKB-008]] — eligible model edit targets | [[REQ-31279 - WKB-008 Statement 2]] | workbench ([[MDSE Workbench]]) | [[VER-31137 - WKB-008 Rule Verification]] |
+| [[WKB-008]] — Edit lens functionality, eligible model edit targets, and authoritative SysML writes | [[REQ-31278 - WKB-008 Statement 1]]; [[REQ-31279 - WKB-008 Statement 2]]; [[REQ-31280 - WKB-008 Statement 3]] | workbench ([[MDSE Workbench]]) | [[VER-31137 - WKB-008 Rule Verification]] (all three candidate clauses) |
 | Early self-model pilot (not equated to a particular rule) | [[Account for Every Source Row]] | importer | [[Source Row Disposition Test]] |
 
 Additional software responsibility rules: [[GOV-012]] (tool boundaries); [[IMP-074]] (mechanical translation), [[MOD-018]] (source identity); [[BAS-001]] and [[BOO-001]] (vault/release and plugin dependencies). The source rules' original IDs, statuses and exact historical revisions remain in their `70_Rule_References` notes. The **normative current wording** is [MDSE_v2 RULESET](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/RULESET.md).
@@ -33,7 +33,7 @@ The pre-existing generated candidate requirement notes already contain `sourceRu
 
 - Tool ownership is `part` composition, not GitHub repository or Obsidian folder hierarchy.
 - Requirement responsibility is `allocate requirementUsage to toolUsage`. It does not assert `satisfy`.
-- Verification intent is a `verification` usage containing an `objective` and `verify` references to requirement usages. The existing IMP-075 case now references both source clauses in one verification context; this does not assert that either clause has been tested.
+- Verification intent is a `verification` usage containing an `objective` and `verify` references to requirement usages. The IMP-075 case references both clauses, and the WKB-008 case now references its three clause usages. These are intended checks, not evidence of execution. Individual verification criteria still need review.
 - Tool role → function relationships are `perform action` usages within the associated tool definition.
 - Stakeholder need and use-case-to-function links use generic `dependency` inside each use-case definition. There is no invented `motivates` or `requiresFunction` connector.
 - This SysML block is an integration **candidate**. Qualified references, objective binding, and runtime graph indexing still require independent parser and Obsidian checks. No run results are asserted.
@@ -53,13 +53,17 @@ package MDSE_OBJ_00006 {
         requirement importChangeLog : MDSE_REQ_31137::RuleREQ31137;
         requirement importChangeLogEntry : MDSE_REQ_31138::RuleREQ31138;
         requirement repeatImport : MDSE_REQ_31139::RuleREQ31139;
+        requirement editLensCapabilities : MDSE_REQ_31278::RuleREQ31278;
         requirement eligibleEditTargets : MDSE_REQ_31279::RuleREQ31279;
+        requirement authoritativeSysmlWrite : MDSE_REQ_31280::RuleREQ31280;
 
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
         allocate repeatImport to importer;
+        allocate editLensCapabilities to workbench;
         allocate eligibleEditTargets to workbench;
+        allocate authoritativeSysmlWrite to workbench;
 
         verification sourceDispositionCheck : MDSE_VER_00001::SourceDispositionTest {
             objective sourceDispositionObjective {
@@ -79,7 +83,9 @@ package MDSE_OBJ_00006 {
         }
         verification eligibleTargetsCheck : MDSE_VER_31137::TestVER31137 {
             objective eligibleEditTargetsObjective {
+                verify editLensCapabilities;
                 verify eligibleEditTargets;
+                verify authoritativeSysmlWrite;
             }
         }
     }

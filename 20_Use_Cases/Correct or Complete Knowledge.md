@@ -44,7 +44,7 @@ Preview edits; assess impacts; apply controlled changes; track history.
 ## Traceability
 
 - Stakeholder need: [[Engineering Knowledge Base]]
-- Engineering requirement candidate: [[REQ-31279 - WKB-008 Statement 2]] (eligibility of edited relationships and targets; Draft)
+- Engineering requirement candidates: [[REQ-31278 - WKB-008 Statement 1]] (Edit lens capabilities), [[REQ-31279 - WKB-008 Statement 2]] (eligible kinds and targets), and [[REQ-31280 - WKB-008 Statement 3]] (write authoritative SysML). All remain Draft.
 - Test case and executed evidence: not yet established
 - Formal SysML link to stakeholder need: pending independent parser validation
 
@@ -61,6 +61,8 @@ The modeled relationships below now distinguish native actions, refinements, and
 - 1 `#refinement dependency`(ies) elaborate the corresponding stakeholder requirement; this does not claim satisfaction.
 - 1 generic `dependency` remains because this need is a supporting prerequisite, not a refinement of its intent.
 
+This scenario also has three draft requirement dependencies for WKB-008 clauses 1–3. These are dependencies on required behavior and persistence, not claims of satisfaction or test completion.
+
 Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
 ## SysML v2
@@ -75,7 +77,9 @@ package MDSE_UC_00008 {
         action maintainModelKnowledge : MDSE_BEH_00007::MaintainModelKnowledge;
         #refinement dependency from CorrectOrCompleteKnowledge to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from CorrectOrCompleteKnowledge to MDSE_STK_00004::StakeholderNeed04;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31278::RuleREQ31278;
         dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31279::RuleREQ31279;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31280::RuleREQ31280;
     }
 }
 ```
