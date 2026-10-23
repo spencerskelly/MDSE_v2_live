@@ -44,14 +44,11 @@ Requirement translation and traceability exist in parts; end-to-end management n
 - Which outputs or decisions are in scope, and which are not?
 - What existing functions, rules, implementations and tests should be reused?
 
-## Actual modeled use-case coverage
+## Native inbound relationship review
 
-The following use-case definitions contain draft native SysML v2 `dependency` statements referencing this stakeholder requirement. They represent **traceable reliance**, not satisfaction, complete implementation, or acceptance evidence:
+**Refined by:** [[Review Requirements for a Design]]. These use cases elaborate aspects of this stakeholder requirement via native `#refinement dependency`; none is evidence of verified satisfaction.
 
-- [[Review Requirements for a Design]]
-- [[Add Engineering Knowledge]]
-
-View the edges in [[MDSE Knowledge Base - Modeled Dependencies]]. The authoritative dependency statements reside in the owning **use-case notes**; they are not duplicated in this reusable requirement definition. The model remains Draft and parser verification is outstanding.
+The **owning use-case SysML block** carries the actual relationship; no duplicate connector is authored in this reusable requirement definition. See [semantic disposition review](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) and [[MDSE Knowledge Base - Modeled Dependencies]].
 
 ## SysML v2
 
