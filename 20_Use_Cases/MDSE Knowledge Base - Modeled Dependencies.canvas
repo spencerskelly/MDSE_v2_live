@@ -1,0 +1,985 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Accessible Engineering Knowledge.md",
+      "x": 0,
+      "y": 0,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Preserve Imported Knowledge.md",
+      "x": 0,
+      "y": 150,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Protect Engineer Changes.md",
+      "x": 0,
+      "y": 300,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Trace Needs to Evidence.md",
+      "x": 0,
+      "y": 450,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Understand Model Impacts.md",
+      "x": 0,
+      "y": 600,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Understand Decisions and Changes.md",
+      "x": 0,
+      "y": 750,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n6",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Engineering Knowledge Base.md",
+      "x": 0,
+      "y": 900,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n7",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Requirements Management.md",
+      "x": 0,
+      "y": 1050,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n8",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Failure Mode and Effect Analysis.md",
+      "x": 0,
+      "y": 1200,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n9",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Design Definition.md",
+      "x": 0,
+      "y": 1350,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n10",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Architecture Definition.md",
+      "x": 0,
+      "y": 1500,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n11",
+      "type": "file",
+      "file": "10_Stakeholder_Needs/Validation definition.md",
+      "x": 0,
+      "y": 1650,
+      "width": 310,
+      "height": 108,
+      "color": "2"
+    },
+    {
+      "id": "n12",
+      "type": "file",
+      "file": "20_Use_Cases/Import an Engineering Model.md",
+      "x": 690,
+      "y": 0,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n13",
+      "type": "file",
+      "file": "20_Use_Cases/Search for a Part, Function or Design.md",
+      "x": 690,
+      "y": 172,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n14",
+      "type": "file",
+      "file": "20_Use_Cases/Explore Element Relationships.md",
+      "x": 690,
+      "y": 344,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n15",
+      "type": "file",
+      "file": "20_Use_Cases/Review Requirements for a Design.md",
+      "x": 690,
+      "y": 516,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n16",
+      "type": "file",
+      "file": "20_Use_Cases/Explore Complete Product Context.md",
+      "x": 690,
+      "y": 688,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n17",
+      "type": "file",
+      "file": "20_Use_Cases/View and Export Engineering Information.md",
+      "x": 690,
+      "y": 860,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n18",
+      "type": "file",
+      "file": "20_Use_Cases/Add Engineering Knowledge.md",
+      "x": 690,
+      "y": 1032,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n19",
+      "type": "file",
+      "file": "20_Use_Cases/Correct or Complete Knowledge.md",
+      "x": 690,
+      "y": 1204,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n20",
+      "type": "file",
+      "file": "20_Use_Cases/Review and Resolve Flagged Model Items.md",
+      "x": 690,
+      "y": 1376,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n21",
+      "type": "file",
+      "file": "20_Use_Cases/Visualize Relationships by Viewpoint.md",
+      "x": 690,
+      "y": 1548,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n22",
+      "type": "file",
+      "file": "20_Use_Cases/Display Linked Elements in Document Viewpoints.md",
+      "x": 690,
+      "y": 1720,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n23",
+      "type": "file",
+      "file": "20_Use_Cases/Explore Multiple Relationship Hops.md",
+      "x": 690,
+      "y": 1892,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n24",
+      "type": "file",
+      "file": "20_Use_Cases/Compare Shared Connections Across Elements.md",
+      "x": 690,
+      "y": 2064,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n25",
+      "type": "file",
+      "file": "20_Use_Cases/Search SysML Syntax and Model Properties.md",
+      "x": 690,
+      "y": 2236,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n26",
+      "type": "file",
+      "file": "20_Use_Cases/Compose Documentation from Embedded Notes.md",
+      "x": 690,
+      "y": 2408,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n27",
+      "type": "file",
+      "file": "20_Use_Cases/Display Flagged Model Data.md",
+      "x": 690,
+      "y": 2580,
+      "width": 310,
+      "height": 108,
+      "color": "5"
+    },
+    {
+      "id": "n28",
+      "type": "file",
+      "file": "30_Functions/Ingest and Reconcile Engineering Sources.md",
+      "x": 1380,
+      "y": 300,
+      "width": 310,
+      "height": 108,
+      "color": "4"
+    },
+    {
+      "id": "n29",
+      "type": "file",
+      "file": "30_Functions/Discover and Resolve Model Elements.md",
+      "x": 1380,
+      "y": 560,
+      "width": 310,
+      "height": 108,
+      "color": "4"
+    },
+    {
+      "id": "n30",
+      "type": "file",
+      "file": "30_Functions/Query and Traverse Model Relationships.md",
+      "x": 1380,
+      "y": 820,
+      "width": 310,
+      "height": 108,
+      "color": "4"
+    },
+    {
+      "id": "n31",
+      "type": "file",
+      "file": "30_Functions/Generate Engineering Model Viewpoints.md",
+      "x": 1380,
+      "y": 1080,
+      "width": 310,
+      "height": 108,
+      "color": "4"
+    },
+    {
+      "id": "n32",
+      "type": "file",
+      "file": "30_Functions/Compose and Exchange Engineering Knowledge.md",
+      "x": 1380,
+      "y": 1340,
+      "width": 310,
+      "height": 108,
+      "color": "4"
+    },
+    {
+      "id": "n33",
+      "type": "file",
+      "file": "30_Functions/Maintain and Improve Model Knowledge.md",
+      "x": 1380,
+      "y": 1600,
+      "width": 310,
+      "height": 108,
+      "color": "4"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "x": 0,
+      "y": -410,
+      "width": 1390,
+      "height": 245,
+      "text": "# MDSE Knowledge Base — modeled dependencies\n\nEach line corresponds to a draft SysML v2 `dependency` in its owning use-case note. **Left:** stakeholder need, **center:** use case, **right:** logical function. The six earlier UC-00007 dependencies annotated `refines` are displayed as general dependencies pending semantic review. Model notes carry authority; this saved Canvas is a navigable projection, not an independent relationship store."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "n12",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e1",
+      "fromNode": "n12",
+      "toNode": "n1",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n12",
+      "toNode": "n2",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n12",
+      "toNode": "n28",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n12",
+      "toNode": "n33",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n13",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n13",
+      "toNode": "n0",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n13",
+      "toNode": "n29",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e8",
+      "fromNode": "n13",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e9",
+      "fromNode": "n14",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e10",
+      "fromNode": "n14",
+      "toNode": "n4",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e11",
+      "fromNode": "n14",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e12",
+      "fromNode": "n14",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e13",
+      "fromNode": "n15",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e14",
+      "fromNode": "n15",
+      "toNode": "n7",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e15",
+      "fromNode": "n15",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e16",
+      "fromNode": "n15",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e17",
+      "fromNode": "n16",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e18",
+      "fromNode": "n16",
+      "toNode": "n10",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e19",
+      "fromNode": "n16",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e20",
+      "fromNode": "n16",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e21",
+      "fromNode": "n17",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e22",
+      "fromNode": "n17",
+      "toNode": "n0",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e23",
+      "fromNode": "n17",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e24",
+      "fromNode": "n17",
+      "toNode": "n32",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e25",
+      "fromNode": "n18",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e26",
+      "fromNode": "n18",
+      "toNode": "n10",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e27",
+      "fromNode": "n18",
+      "toNode": "n9",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e28",
+      "fromNode": "n18",
+      "toNode": "n8",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e29",
+      "fromNode": "n18",
+      "toNode": "n7",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e30",
+      "fromNode": "n18",
+      "toNode": "n3",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e31",
+      "fromNode": "n18",
+      "toNode": "n11",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e32",
+      "fromNode": "n18",
+      "toNode": "n29",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e33",
+      "fromNode": "n18",
+      "toNode": "n33",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e34",
+      "fromNode": "n19",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e35",
+      "fromNode": "n19",
+      "toNode": "n2",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e36",
+      "fromNode": "n19",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e37",
+      "fromNode": "n19",
+      "toNode": "n33",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e38",
+      "fromNode": "n20",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e39",
+      "fromNode": "n20",
+      "toNode": "n5",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e40",
+      "fromNode": "n20",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e41",
+      "fromNode": "n20",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e42",
+      "fromNode": "n20",
+      "toNode": "n33",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e43",
+      "fromNode": "n21",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e44",
+      "fromNode": "n21",
+      "toNode": "n4",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e45",
+      "fromNode": "n21",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e46",
+      "fromNode": "n21",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e47",
+      "fromNode": "n22",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e48",
+      "fromNode": "n22",
+      "toNode": "n4",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e49",
+      "fromNode": "n22",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e50",
+      "fromNode": "n22",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e51",
+      "fromNode": "n22",
+      "toNode": "n32",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e52",
+      "fromNode": "n23",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e53",
+      "fromNode": "n23",
+      "toNode": "n4",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e54",
+      "fromNode": "n23",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e55",
+      "fromNode": "n23",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e56",
+      "fromNode": "n24",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e57",
+      "fromNode": "n24",
+      "toNode": "n4",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e58",
+      "fromNode": "n24",
+      "toNode": "n30",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e59",
+      "fromNode": "n24",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e60",
+      "fromNode": "n25",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e61",
+      "fromNode": "n25",
+      "toNode": "n0",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e62",
+      "fromNode": "n25",
+      "toNode": "n29",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e63",
+      "fromNode": "n26",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e64",
+      "fromNode": "n26",
+      "toNode": "n29",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e65",
+      "fromNode": "n26",
+      "toNode": "n32",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e66",
+      "fromNode": "n27",
+      "toNode": "n6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · need"
+    },
+    {
+      "id": "e67",
+      "fromNode": "n27",
+      "toNode": "n29",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e68",
+      "fromNode": "n27",
+      "toNode": "n31",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    },
+    {
+      "id": "e69",
+      "fromNode": "n27",
+      "toNode": "n33",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "dependency · function"
+    }
+  ]
+}
