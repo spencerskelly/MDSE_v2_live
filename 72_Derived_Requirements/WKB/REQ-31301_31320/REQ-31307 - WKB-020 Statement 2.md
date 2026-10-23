@@ -54,6 +54,9 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+> [!flagNote] Historical defect description, not intended behavior
+> This text reports that duplicate representations once doubled the quantity roll-up. It must not become a `verify` target or be allocated as a functional requirement that demands doubling. Keep provenance and Draft status until engineer review. Use [[REQ-31306 - WKB-020 Statement 1]] for the normative one-relationship invariant and check WKB-020 with a negative double-counting regression.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

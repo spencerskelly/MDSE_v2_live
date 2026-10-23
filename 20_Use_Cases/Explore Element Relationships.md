@@ -71,6 +71,10 @@ The modeled relationships below now distinguish native actions, refinements, and
 
 Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
+## Additional source-backed requirement dependencies — Draft
+
+This use case depends on [[REQ-31306]] as candidate behavior needed for the scenario. The owning SysML block holds these relationships. Dependency does not mean satisfaction, completed testing or requirement approval.
+
 ## SysML v2
 
 > Draft use-case definition only; do not treat Markdown navigation as certified native SysML relationship semantics.
@@ -83,6 +87,7 @@ package MDSE_UC_00003 {
         action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;
         #refinement dependency from ExploreElementLinks to MDSE_STK_00013::EngineeringKnowledgeBase;
         #refinement dependency from ExploreElementLinks to MDSE_STK_00007::StakeholderNeed07;
+        dependency from ExploreElementLinks to MDSE_REQ_31306::RuleREQ31306;
     }
 }
 ```

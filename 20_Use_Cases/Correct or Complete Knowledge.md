@@ -65,6 +65,10 @@ This scenario also has three draft requirement dependencies for WKB-008 clauses 
 
 Semantic decisions are based on this note's described scenario. All additions remain Draft until model parsing and runtime verification.
 
+## Additional source-backed requirement dependencies — Draft
+
+This use case depends on [[REQ-31286]], [[REQ-31287]], [[REQ-31288]], [[REQ-31297]], [[REQ-31298]] as candidate behavior needed for the scenario. The owning SysML block holds these relationships. Dependency does not mean satisfaction, completed testing or requirement approval.
+
 ## SysML v2
 
 > Draft use-case definition only; do not treat Markdown navigation as certified native SysML relationship semantics.
@@ -80,6 +84,11 @@ package MDSE_UC_00008 {
         dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31278::RuleREQ31278;
         dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31279::RuleREQ31279;
         dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31280::RuleREQ31280;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31286::RuleREQ31286;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31287::RuleREQ31287;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31288::RuleREQ31288;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31297::RuleREQ31297;
+        dependency from CorrectOrCompleteKnowledge to MDSE_REQ_31298::RuleREQ31298;
     }
 }
 ```

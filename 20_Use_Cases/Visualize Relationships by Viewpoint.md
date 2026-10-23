@@ -65,6 +65,10 @@ The model now distinguishes native action usages, need refinements, and limited 
 
 The reclassification reflects the actual use-case scenario, not an automatic type conversion. The SysML block remains the single authored source; parser acceptance and system verification remain open.
 
+## Additional source-backed requirement dependencies — Draft
+
+This use case depends on [[REQ-31306]] as candidate behavior needed for the scenario. The owning SysML block holds these relationships. Dependency does not mean satisfaction, completed testing or requirement approval.
+
 ## SysML v2
 
 > Draft SysML definition; this model's native syntax and relationships have not been independently parser-verified.
@@ -77,6 +81,7 @@ package MDSE_UC_00010 {
         action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;
         #refinement dependency from VisualizeLinkedElements to MDSE_STK_00013::EngineeringKnowledgeBase;
         #refinement dependency from VisualizeLinkedElements to MDSE_STK_00007::StakeholderNeed07;
+        dependency from VisualizeLinkedElements to MDSE_REQ_31306::RuleREQ31306;
     }
 }
 ```

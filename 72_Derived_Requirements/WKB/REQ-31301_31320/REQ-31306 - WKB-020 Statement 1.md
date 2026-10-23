@@ -54,6 +54,10 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Contextual native trace — Draft
+
+The canonical single-relationship interpretation refines [[One Trustworthy Model]]. [[MDSE Toolset Composition]] now contains a typed usage allocated to Workbench and an objective referring to the existing [[VER-31149 - WKB-020 Rule Verification]] case. The native refinement is owned below, not duplicated in YAML. A regression must show a duplicated YAML/SysML link does not inflate relationship or quantity counts.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
@@ -62,6 +66,7 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 package MDSE_REQ_31306 {
     requirement def RuleREQ31306 {
         doc /* A YAML link that repeats a relationship the SysML block already states (the BOM importer lists `hasPart` in both) is one relationship. */
+        #refinement dependency from RuleREQ31306 to MDSE_STK_00002::StakeholderNeed02;
     }
 }
 ```
