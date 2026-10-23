@@ -24,6 +24,14 @@ primarySymbol: MDSE_STK_00008::StakeholderNeed08
 
 These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
+## Modeling coverage and next trace
+
+**Open modeling gap.** None of the sixteen currently defined Engineering Knowledge Base use cases directly depends on this stakeholder need in native SysML. The need remains a reusable Draft requirement, **not** an automatically satisfied capability.
+
+Source-note candidate context: No dedicated use-case definition has yet been established for this stakeholder need.
+
+The correct follow-up is to review this need and create or reuse a suitable use-case definition and logical function before writing a native dependency or allocation. No connection has been fabricated solely to make a canvas visually complete. See [[MDSE Knowledge Base - Modeled Dependencies]] for relationships that are actually present.
+
 ## SysML v2
 
 > Draft definition, not yet parser-certified. Keep this SysML section last.

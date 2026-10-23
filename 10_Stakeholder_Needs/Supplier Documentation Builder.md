@@ -44,6 +44,14 @@ Supplier-specific document generation not verified.
 - Which outputs or decisions are in scope, and which are not?
 - What existing functions, rules, implementations and tests should be reused?
 
+## Modeling coverage and next trace
+
+**Open modeling gap.** None of the sixteen currently defined Engineering Knowledge Base use cases directly depends on this stakeholder need in native SysML. The need remains a reusable Draft requirement, **not** an automatically satisfied capability.
+
+Source-note candidate context: Prepare a controlled supplier technical package
+
+The correct follow-up is to review this need and create or reuse a suitable use-case definition and logical function before writing a native dependency or allocation. No connection has been fabricated solely to make a canvas visually complete. See [[MDSE Knowledge Base - Modeled Dependencies]] for relationships that are actually present.
+
 ## SysML v2
 
 > Draft SysML definition, not parser-certified. Formal cross-element relationships will be added after native syntax/endpoint review; this note is not a release requirement.
