@@ -56,11 +56,14 @@ Obsidian embeds are native Markdown behavior; end-to-end MDSE-controlled composi
 - [[Discover and Resolve Model Elements]]
 - [[Compose and Exchange Engineering Knowledge]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The model now distinguishes native action usages, need refinements, and limited supporting dependencies. Parser and runtime acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 2 owned typed `action` usage(s) express behavior appearing in the described user scenario, without implying the selected software performer has been verified.
+- 1 `#refinement dependency` statement(s) detail stakeholder needs rather than asserting successful implementation.
+
+The reclassification reflects the actual use-case scenario, not an automatic type conversion. The SysML block remains the single authored source; parser acceptance and system verification remain open.
 
 ## SysML v2
 
@@ -70,10 +73,9 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00015 {
     use case def ComposeDocumentWithEmbeds {
         doc /* Assemble a new document or presentation concept by transcluding existing model notes or sections using Obsidian embedded links such as ![[xxx]]. */
-        dependency from ComposeDocumentWithEmbeds to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00003::DiscoverModelElements;
-        dependency from ComposeDocumentWithEmbeds to MDSE_BEH_00006::ComposeEngineeringKnowledge;
-
+        action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;
+        action composeEngineeringKnowledge : MDSE_BEH_00006::ComposeEngineeringKnowledge;
+        #refinement dependency from ComposeDocumentWithEmbeds to MDSE_STK_00013::EngineeringKnowledgeBase;
     }
 }
 ```

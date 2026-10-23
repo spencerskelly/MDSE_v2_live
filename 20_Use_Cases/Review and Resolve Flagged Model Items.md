@@ -58,11 +58,15 @@ Collect and filter flags; capture resolution; validate corrective action.
 - [[Generate Engineering Model Viewpoints]]
 - [[Maintain and Improve Model Knowledge]]
 
-The use-case/function links are now recorded as draft native SysML dependencies. Their qualified endpoints and intended meaning remain subject to independent parser and Workbench checks; implementation and test evidence are not established.
+The model now distinguishes native action usages, need refinements, and limited supporting dependencies. Parser and runtime acceptance remain under review.
 
-## Modeled dependencies — draft
+## Native relationship semantics — draft
 
-The SysML block contains generic `dependency` statements from this use-case definition to the stakeholder need and the logical functions in the existing use-case/function matrix. These are *proposed functional dependencies*, not a native `motivates` or `requiresFunction` keyword, not verified implementation, and not independently parser-certified.
+- 3 owned typed `action` usage(s) express behavior appearing in the described user scenario, without implying the selected software performer has been verified.
+- 1 `#refinement dependency` statement(s) detail stakeholder needs rather than asserting successful implementation.
+- 1 generic `dependency` remains for a supporting concern that is not directly refined by this scenario.
+
+The reclassification reflects the actual use-case scenario, not an automatic type conversion. The SysML block remains the single authored source; parser acceptance and system verification remain open.
 
 ## SysML v2
 
@@ -72,10 +76,10 @@ The SysML block contains generic `dependency` statements from this use-case defi
 package MDSE_UC_00009 {
     use case def ReviewFlaggedItems {
         doc /* Review flagged elements to improve model accuracy. */
-        dependency from ReviewFlaggedItems to MDSE_STK_00013::EngineeringKnowledgeBase;
-        dependency from ReviewFlaggedItems to MDSE_BEH_00004::TraverseModelRelationships;
-        dependency from ReviewFlaggedItems to MDSE_BEH_00005::GenerateModelViewpoints;
-        dependency from ReviewFlaggedItems to MDSE_BEH_00007::MaintainModelKnowledge;
+        action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;
+        action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;
+        action maintainModelKnowledge : MDSE_BEH_00007::MaintainModelKnowledge;
+        #refinement dependency from ReviewFlaggedItems to MDSE_STK_00013::EngineeringKnowledgeBase;
         dependency from ReviewFlaggedItems to MDSE_STK_00010::StakeholderNeed10;
     }
 }
