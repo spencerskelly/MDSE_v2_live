@@ -1,0 +1,253 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "file",
+      "file": "70_Rule_References/IMP/IMP-061_080/IMP-075.md",
+      "x": 0,
+      "y": 80,
+      "width": 345,
+      "height": 106,
+      "color": "1"
+    },
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "72_Derived_Requirements/IMP/REQ-31121_31140/REQ-31137 - IMP-075 Statement 1.md",
+      "x": 480,
+      "y": 80,
+      "width": 345,
+      "height": 106,
+      "color": "2"
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "50_Architecture/MDSE Importer/MDSE Importer.md",
+      "x": 1070,
+      "y": 580,
+      "width": 345,
+      "height": 106,
+      "color": "3"
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "73_Derived_Verification/IMP/VER-31061_31080/VER-31071 - IMP-075 Rule Verification.md",
+      "x": 1640,
+      "y": 80,
+      "width": 345,
+      "height": 106,
+      "color": "4"
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "70_Rule_References/IMP/IMP-061_080/IMP-076.md",
+      "x": 0,
+      "y": 420,
+      "width": 345,
+      "height": 106,
+      "color": "1"
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "72_Derived_Requirements/IMP/REQ-31121_31140/REQ-31139 - IMP-076 Statement 1.md",
+      "x": 480,
+      "y": 420,
+      "width": 345,
+      "height": 106,
+      "color": "2"
+    },
+    {
+      "id": "n6",
+      "type": "file",
+      "file": "73_Derived_Verification/IMP/VER-31061_31080/VER-31072 - IMP-076 Rule Verification.md",
+      "x": 1640,
+      "y": 420,
+      "width": 345,
+      "height": 106,
+      "color": "4"
+    },
+    {
+      "id": "n7",
+      "type": "file",
+      "file": "70_Rule_References/WKB/WKB-001_020/WKB-008.md",
+      "x": 0,
+      "y": 760,
+      "width": 345,
+      "height": 106,
+      "color": "1"
+    },
+    {
+      "id": "n8",
+      "type": "file",
+      "file": "72_Derived_Requirements/WKB/REQ-31261_31280/REQ-31279 - WKB-008 Statement 2.md",
+      "x": 480,
+      "y": 760,
+      "width": 345,
+      "height": 106,
+      "color": "2"
+    },
+    {
+      "id": "n9",
+      "type": "file",
+      "file": "50_Architecture/MDSE Workbench/MDSE Workbench.md",
+      "x": 1070,
+      "y": 760,
+      "width": 345,
+      "height": 106,
+      "color": "3"
+    },
+    {
+      "id": "n10",
+      "type": "file",
+      "file": "73_Derived_Verification/WKB/VER-31121_31140/VER-31137 - WKB-008 Rule Verification.md",
+      "x": 1640,
+      "y": 760,
+      "width": 345,
+      "height": 106,
+      "color": "4"
+    },
+    {
+      "id": "n11",
+      "type": "file",
+      "file": "40_System_Requirements/Account for Every Source Row.md",
+      "x": 480,
+      "y": 1100,
+      "width": 345,
+      "height": 106,
+      "color": "2"
+    },
+    {
+      "id": "n12",
+      "type": "file",
+      "file": "60_Verification/Source Row Disposition Test.md",
+      "x": 1640,
+      "y": 1100,
+      "width": 345,
+      "height": 106,
+      "color": "4"
+    },
+    {
+      "id": "header",
+      "type": "text",
+      "x": 0,
+      "y": -310,
+      "width": 1650,
+      "height": 260,
+      "text": "# MDSE original-rule trace: provenance, allocation, verification\n\n**Rule to requirement**: `sourceRule` metadata preserved from original governance reference (NOT a native SysML relationship). **Requirement to tool**: SysML v2 `allocate` via typed usages in [[50_Architecture/MDSE Toolset Composition]]. **Verification case to requirement**: SysML v2 `verify` in a case objective. No `satisfy` assertion or executed test evidence is implied. The fourth row is an earlier pilot requirement with no one-to-one governing rule assigned."
+    },
+    {
+      "id": "gap",
+      "type": "text",
+      "x": 0,
+      "y": 1420,
+      "width": 950,
+      "height": 190,
+      "text": "**Model coverage boundary**\n\nOnly four specifically modeled allocations and four objectives are shown. Other candidate requirements in `72_Derived_Requirements` are still draft and have not been wholesale promoted. Original rule texts remain normative in `MDSE_v2/governance/RULESET.md`."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "n0",
+      "toNode": "n1",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "sourceRule · provenance only"
+    },
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "toNode": "n2",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "allocate · SysML v2"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n3",
+      "toNode": "n1",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "verify · SysML v2"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n4",
+      "toNode": "n5",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "sourceRule · provenance only"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n5",
+      "toNode": "n2",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "allocate · SysML v2"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n6",
+      "toNode": "n5",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "verify · SysML v2"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n7",
+      "toNode": "n8",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "sourceRule · provenance only"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n8",
+      "toNode": "n9",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "allocate · SysML v2"
+    },
+    {
+      "id": "e8",
+      "fromNode": "n10",
+      "toNode": "n8",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "verify · SysML v2"
+    },
+    {
+      "id": "e9",
+      "fromNode": "n11",
+      "toNode": "n2",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "allocate · SysML v2"
+    },
+    {
+      "id": "e10",
+      "fromNode": "n12",
+      "toNode": "n11",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "verify · SysML v2"
+    }
+  ]
+}
