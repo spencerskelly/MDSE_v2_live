@@ -45,6 +45,13 @@ The SysML text must be assembled into a namespace-consistent model and checked b
 
 Workbench view categories should distinguish `hasAction`, `refines`, `dependsOn`, `performs`, `allocatedTo`, and `verifies`. Canvas edge labels must be regenerated from the authoritative notes after any future changes.
 
+## Completed consistency checks
+
+- **16/16 use-case notes**: the last and sole SysML v2 block is preserved; all 32 typed `action` usages, 26 `#refinement` relationships, and 4 general dependencies are reflected in the current Canvas (62/62 modeled edges).
+- **3/3 saved Canvas files**: valid file-backed node paths and no dangling Canvas edge endpoint IDs; current Knowledge Base canvas has 48 cards (24 needs, 16 use cases, 6 functions, plus 2 annotations), 62 edges.
+- **Workbench regression**: the newly added `MDSE_v2` test distinguishes `hasAction`, `refines` and `dependsOn` in the index and preview Canvas. The [live plugin build and test workflow](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40031206186) passed after this change, including `npm run test:workbench` and `npm run build:workbench`. The latest built plugin is synchronized in the vault.
+- These results validate **static syntax recognition and generated projection consistency**, not independent SysML grammar/semantic acceptance, human-in-the-loop Obsidian use, or executed engineering verification.
+
 ## Acceptance checklist
 
 - [ ] Independent parser accepts compiled, fully qualified definitions and action usages with refinement metadata.
