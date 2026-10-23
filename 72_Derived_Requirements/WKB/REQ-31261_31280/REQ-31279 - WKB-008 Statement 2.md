@@ -52,6 +52,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Contextual native trace — Draft
+
+A typed requirement usage named `eligibleEditTargets` is owned by [[MDSE Toolset Composition]]. Its SysML v2 `allocate eligibleEditTargets to ...;` identifies proposed responsibility in [[MDSE Workbench]], not satisfaction.
+
+The original rule is [[WKB-008]]. Its generated reference records exact source wording/status/revision; the current normative authority remains MDSE_v2 governance.
+
+See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obsidian Canvas. The reusable **definition** below is not duplicated or replaced; the context owns its relationships. Exact grammar validity and runtime Workbench edge resolution remain subject to acceptance testing.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

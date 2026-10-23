@@ -22,6 +22,14 @@ primarySymbol: MDSE_REQ_00001::RecordRowDisposition
 
 These are provisional navigational links. Formal native SysML relationships, endpoint typing, and independent parser acceptance remain to be verified. Do not treat a link or verification declaration as passed evidence.
 
+## Contextual native trace — Draft
+
+A typed requirement usage named `sourceRowDisposition` is owned by [[MDSE Toolset Composition]]. Its SysML v2 `allocate sourceRowDisposition to ...;` identifies proposed responsibility in [[MDSE Importer]], not satisfaction.
+
+No one-to-one original governance rule has been established for this earlier pilot requirement or test.
+
+See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obsidian Canvas. The reusable **definition** below is not duplicated or replaced; the context owns its relationships. Exact grammar validity and runtime Workbench edge resolution remain subject to acceptance testing.
+
 ## SysML v2
 
 > Draft definition, not yet parser-certified. Keep this SysML section last.

@@ -52,6 +52,14 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[IMP-076 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Contextual native trace — Draft
+
+A typed verification usage named `repeatedImportCheck` is owned by [[MDSE Toolset Composition]]. Its native `objective { verify ...; }` connects this verification case to [[REQ-31139 - IMP-076 Statement 1]]. The case is unexecuted; no pass/fail verdict is inferred.
+
+The original rule is [[IMP-076]]. Its generated reference records exact source wording/status/revision; the current normative authority remains MDSE_v2 governance.
+
+See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obsidian Canvas. The reusable **definition** below is not duplicated or replaced; the context owns its relationships. Exact grammar validity and runtime Workbench edge resolution remain subject to acceptance testing.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.
