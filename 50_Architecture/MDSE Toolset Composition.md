@@ -128,6 +128,14 @@ package MDSE_OBJ_00006 {
         requirement bom31258 : MDSE_REQ_31258::RuleREQ31258;
         requirement bom31259 : MDSE_REQ_31259::RuleREQ31259;
 
+        requirement boo31271 : MDSE_REQ_31271::RuleREQ31271;
+        requirement boo31272 : MDSE_REQ_31272::RuleREQ31272;
+        requirement boo31273 : MDSE_REQ_31273::RuleREQ31273;
+        requirement boo31274 : MDSE_REQ_31274::RuleREQ31274;
+        requirement boo31275 : MDSE_REQ_31275::RuleREQ31275;
+        requirement boo31276 : MDSE_REQ_31276::RuleREQ31276;
+        requirement boo31277 : MDSE_REQ_31277::RuleREQ31277;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -305,6 +313,26 @@ package MDSE_OBJ_00006 {
                 verify bom31257;
                 verify bom31258;
                 verify bom31259;
+            }
+        }
+
+        verification booCheck1 : MDSE_VER_31134::TestVER31134 {
+            objective booObjective1 {
+                verify boo31271;
+            }
+        }
+        verification booCheck7 : MDSE_VER_31135::TestVER31135 {
+            objective booObjective7 {
+                verify boo31272;
+                verify boo31273;
+                verify boo31274;
+                verify boo31275;
+            }
+        }
+        verification booCheck8 : MDSE_VER_31136::TestVER31136 {
+            objective booObjective8 {
+                verify boo31276;
+                verify boo31277;
             }
         }
 
