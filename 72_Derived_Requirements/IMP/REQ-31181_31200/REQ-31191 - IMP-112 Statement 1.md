@@ -55,6 +55,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Importer source-to-model trace — Draft
+
+- Origin: [[IMP-112]]; interpretation: [[IMP-112 - Analysis]].
+- Operational context: [[Import an Engineering Model]], [[Ingest and Reconcile Engineering Sources]].
+- Tool context: [[MDSE Importer]], [[Source Reconciliation Engine]], [[Managed Vault Update]].
+- Planned case: [[VER-31101 - IMP-112 Rule Verification]].
+- Typed requirement usage `imp31191` in [[MDSE Toolset Composition]]; independent test, grammar and satisfaction remain unproven.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
