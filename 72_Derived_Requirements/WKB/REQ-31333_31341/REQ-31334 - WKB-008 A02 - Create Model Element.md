@@ -22,7 +22,8 @@ The MDSE Workbench shall allow an engineer to create a model element of a suppor
 
 - Governing rule: [[WKB-008]]
 - Analysis identifier: `WKB-008-A02` from [[WKB-008 - Analysis]]
-- Initial broad source candidate: REQ-31278
+- Initial broad source candidate (provenance/navigation only): [[REQ-31278 - WKB-008 Statement 1]]
+- Native requirement derivation is **not asserted**: the source candidate is a compound, unapproved preliminary interpretation.
 - Proposed responsible tool: [[MDSE Workbench]]
 - Requirement identity and definition: authoritative in this note, **Draft pending engineering review**. No `satisfy` relationship or parser certification is asserted.
 
