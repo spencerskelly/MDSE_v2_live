@@ -47,7 +47,7 @@ Establish verifiable evidence for the governed outcomes of [[WKB-008]] and its p
 | WKB-008-A08 | Apply a typed link update and reload source file | The only authoritative relationship write occurs in the source note's SysML section |
 | WKB-008-A09 | Create a governed note through Edit lens | type/subtype/id/uid/status and one terminal SysML block; no unintended semantic duplicates |
 
-These criteria are **draft test designs**, not executed cases. Include negative attempts, an Apply/Undo cycle, and observed before/after file bytes in real test evidence. A09 exposes a currently missing derived requirement candidate, so a `verify` relation must not be claimed until its requirement is modeled and approved for that trace.
+These criteria are **draft test designs**, not executed cases. Include negative attempts, an Apply/Undo cycle, and observed before/after file bytes in real test evidence. A09 was absent from the initial broad candidate segmentation but is now modeled as Draft [[REQ-31341 - WKB-008 A09 - Create Governed Minimal Note]]. The toolset includes a proposed native `verify` objective for it; this does not imply requirement approval or test execution.
 
 ## Proposed test procedure
 
