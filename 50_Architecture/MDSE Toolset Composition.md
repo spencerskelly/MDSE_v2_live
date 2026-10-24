@@ -41,6 +41,10 @@ The WKB-020 clause-2 note [[REQ-31307 - WKB-020 Statement 2]] describes a histor
 - Stakeholder need and use-case-to-function links use generic `dependency` inside each use-case definition. There is no invented `motivates` or `requiresFunction` connector.
 - This SysML block is an integration **candidate**. Qualified references, objective binding, and runtime graph indexing still require independent parser and Obsidian checks. No run results are asserted.
 
+## AIP process-governance trace — Draft
+
+Seven distinct policy requirement definitions are used here for cross-note navigation. Six normative checks have native objective-level `verify` references to their pre-existing cases. The seventh, REQ-31326, is an optional permission and is deliberately not made a required positive test. No AI policy requirement was allocated to a product tool: the responsible system component is not established in these source rules. See [[AIP Requirement Trace Review]].
+
 ## SysML v2
 
 ```sysml
@@ -75,6 +79,14 @@ package MDSE_OBJ_00006 {
         requirement preserveOwnedUsageModifiers : MDSE_REQ_31297::RuleREQ31297;
         requirement refreshEditIndex : MDSE_REQ_31298::RuleREQ31298;
         requirement deduplicateModeledRelationship : MDSE_REQ_31306::RuleREQ31306;
+
+        requirement aiPolicy31321 : MDSE_REQ_31321::RuleREQ31321;
+        requirement aiPolicy31322 : MDSE_REQ_31322::RuleREQ31322;
+        requirement aiPolicy31323 : MDSE_REQ_31323::RuleREQ31323;
+        requirement aiPolicy31324 : MDSE_REQ_31324::RuleREQ31324;
+        requirement aiPolicy31325 : MDSE_REQ_31325::RuleREQ31325;
+        requirement aiPolicy31326 : MDSE_REQ_31326::RuleREQ31326;
+        requirement aiPolicy31327 : MDSE_REQ_31327::RuleREQ31327;
 
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
@@ -130,6 +142,29 @@ package MDSE_OBJ_00006 {
                 verify a07;
                 verify a08;
                 verify a09;
+            }
+        }
+
+        verification aiPolicyCheck1 : MDSE_VER_31153::TestVER31153 {
+            objective aiPolicyObjective1 {
+                verify aiPolicy31321;
+                verify aiPolicy31322;
+            }
+        }
+        verification aiPolicyCheck2 : MDSE_VER_31154::TestVER31154 {
+            objective aiPolicyObjective2 {
+                verify aiPolicy31323;
+                verify aiPolicy31324;
+            }
+        }
+        verification aiPolicyCheck3 : MDSE_VER_31155::TestVER31155 {
+            objective aiPolicyObjective3 {
+                verify aiPolicy31325;
+            }
+        }
+        verification aiPolicyCheck4 : MDSE_VER_31156::TestVER31156 {
+            objective aiPolicyObjective4 {
+                verify aiPolicy31327;
             }
         }
 

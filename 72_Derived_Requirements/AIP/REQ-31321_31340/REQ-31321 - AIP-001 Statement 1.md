@@ -51,6 +51,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Completed AIP navigation and native context — Draft
+
+- Governing policy: [[AIP-001]]; semantic review: [[AIP-001 - Analysis]].
+- Planned verification case: [[VER-31153 - AIP-001 Rule Verification]].
+- Relevant existing instruction artifact: `99_System/02_AI/AI_INSTRUCTIONS.md` (process listing) and `99_System/02_AI/processes/AI-CR-01_Changelog_Review.md` (existing registered process).
+- Draft acceptance interpretation: Each registered AI process has a unique ID and a written instruction file; missing IDs or files are reported.
+- The governing `AIP` controls AI process behavior. They are **not automatically allocated to Workbench/Core**, and these policy links do not assert a tool implementation or satisfaction.
+- [[MDSE Toolset Composition]] now carries this requirement's **typed usage** and a case objective-level verification intent. The canonical definition remains in this note.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

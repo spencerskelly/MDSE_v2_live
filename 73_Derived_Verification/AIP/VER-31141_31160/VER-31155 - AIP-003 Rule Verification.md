@@ -53,6 +53,17 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[AIP-003 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## AIP traced assertions — Draft, not executed
+
+- [[REQ-31325 - AIP-003 Statement 1]] — An AI request to create a vault or split an existing vault must not perform either operation.
+- [[REQ-31326 - AIP-003 Statement 2]] — Recommendation of a vault split is permitted but not required; do not use absence of a recommendation as a failed verification.
+
+**Evidence origin:** AI_INSTRUCTIONS.md restriction and AIP-003 rule.
+
+**REQ-31326 is permission-only:** it is navigationally traced, but does not acquire a mandatory positive verification objective.
+
+The existing [[MDSE Toolset Composition]] verification usage includes objective-level `verify` references to the mandatory requirement usage(s) above. This describes **intent, not execution**; `executionStatus: not-run` remains unchanged.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

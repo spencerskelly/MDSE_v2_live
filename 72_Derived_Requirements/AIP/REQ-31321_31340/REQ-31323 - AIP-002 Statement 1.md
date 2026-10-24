@@ -51,6 +51,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Completed AIP navigation and native context — Draft
+
+- Governing policy: [[AIP-002]]; semantic review: [[AIP-002 - Analysis]].
+- Planned verification case: [[VER-31154 - AIP-002 Rule Verification]].
+- Relevant existing instruction artifact: `99_System/02_AI/AI_INSTRUCTIONS.md` (AI restrictions) and the source policy AIP-002.
+- Draft acceptance interpretation: A non-note-creation AI process must not modify model files; test a prohibited modification attempt separately from an allowed note-creation flow.
+- The governing `AIP` controls AI process behavior. They are **not automatically allocated to Workbench/Core**, and these policy links do not assert a tool implementation or satisfaction.
+- [[MDSE Toolset Composition]] now carries this requirement's **typed usage** and a case objective-level verification intent. The canonical definition remains in this note.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

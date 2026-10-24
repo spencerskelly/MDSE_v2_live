@@ -51,6 +51,16 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[AIP-004 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## AIP traced assertions — Draft, not executed
+
+- [[REQ-31327 - AIP-004 Statement 1]] — Output facts must be supported by supplied source evidence; an unsupported fabricated source assertion is rejected or explicitly identified as unsupported.
+
+**Evidence origin:** AI_INSTRUCTIONS.md policy plus supplied source-material fixtures.
+
+
+
+The existing [[MDSE Toolset Composition]] verification usage includes objective-level `verify` references to the mandatory requirement usage(s) above. This describes **intent, not execution**; `executionStatus: not-run` remains unchanged.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

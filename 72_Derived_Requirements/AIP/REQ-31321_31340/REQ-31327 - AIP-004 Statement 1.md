@@ -51,6 +51,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Completed AIP navigation and native context — Draft
+
+- Governing policy: [[AIP-004]]; semantic review: [[AIP-004 - Analysis]].
+- Planned verification case: [[VER-31156 - AIP-004 Rule Verification]].
+- Relevant existing instruction artifact: `99_System/02_AI/AI_INSTRUCTIONS.md` (no invented source facts).
+- Draft acceptance interpretation: Output facts must be supported by supplied source evidence; an unsupported fabricated source assertion is rejected or explicitly identified as unsupported.
+- The governing `AIP` controls AI process behavior. They are **not automatically allocated to Workbench/Core**, and these policy links do not assert a tool implementation or satisfaction.
+- [[MDSE Toolset Composition]] now carries this requirement's **typed usage** and a case objective-level verification intent. The canonical definition remains in this note.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

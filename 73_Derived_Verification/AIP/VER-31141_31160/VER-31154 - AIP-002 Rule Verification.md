@@ -53,6 +53,17 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[AIP-002 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## AIP traced assertions — Draft, not executed
+
+- [[REQ-31323 - AIP-002 Statement 1]] — A non-note-creation AI process must not modify model files; test a prohibited modification attempt separately from an allowed note-creation flow.
+- [[REQ-31324 - AIP-002 Statement 2]] — AI-CR-01 must emit only its review/report output and must leave source model files unchanged.
+
+**Evidence origin:** AI_INSTRUCTIONS.md policy and AI-CR-01 process file.
+
+
+
+The existing [[MDSE Toolset Composition]] verification usage includes objective-level `verify` references to the mandatory requirement usage(s) above. This describes **intent, not execution**; `executionStatus: not-run` remains unchanged.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

@@ -51,6 +51,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Completed AIP navigation and native context — Draft
+
+- Governing policy: [[AIP-003]]; semantic review: [[AIP-003 - Analysis]].
+- Planned verification case: [[VER-31155 - AIP-003 Rule Verification]].
+- Relevant existing instruction artifact: AIP-003 original rule: permission only; no missing tool part or action inferred.
+- Draft acceptance interpretation: Recommendation of a vault split is permitted but not required; do not use absence of a recommendation as a failed verification.
+- The governing `AIP` controls AI process behavior. They are **not automatically allocated to Workbench/Core**, and these policy links do not assert a tool implementation or satisfaction.
+- [[MDSE Toolset Composition]] now carries this requirement's **typed usage** and keeps the permission outside mandatory verification objectives. The canonical definition remains in this note.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
