@@ -57,6 +57,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD source-to-model trace — Draft
+
+- Governing [[MOD-117]] and [[MOD-117 - Analysis]].
+- User scenarios [[Import an Engineering Model]], [[Correct or Complete Knowledge]]; function [[Maintain and Improve Model Knowledge]].
+- Tool context [[MDSE Core]], [[MDSE Importer]], [[MDSE Workbench]], [[Note and SysML Codec]].
+- Planned case [[VER-31057 - MOD-117 Rule Verification]].
+- Canonical definition remains in this note; typed usage `mod31109` in [[MDSE Toolset Composition]].
+- Draft verification objective planned; no observed result or independent parser acceptance.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
