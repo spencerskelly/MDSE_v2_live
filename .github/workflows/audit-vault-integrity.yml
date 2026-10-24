@@ -1,0 +1,50 @@
+name: Audit live vault integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-derived-lineage.mjs'
+      - 'scripts/audit-model-integrity.mjs'
+      - '.github/workflows/audit-vault-integrity.yml'
+      - '10_Stakeholder_Needs/**'
+      - '20_Use_Cases/**'
+      - '30_Functions/**'
+      - '40_System_Requirements/**'
+      - '50_Architecture/**'
+      - '55_Language/**'
+      - '60_Verification/**'
+      - '70_Rule_References/**'
+      - '71_Rule_Analysis/**'
+      - '72_Derived_Requirements/**'
+      - '73_Derived_Verification/**'
+      - '74_Semantic_Review/**'
+      - '80_Issues/**'
+      - '99_System/04_Language/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-vault-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run derived note lineage audit
+        run: node scripts/audit-derived-lineage.mjs > lineage-audit.json
+      - name: Run model and navigation integrity audit
+        run: node scripts/audit-model-integrity.mjs > model-integrity-audit.json
+      - name: Publish summary to workflow log
+        run: |
+          node -e 'for (const f of ["lineage-audit.json","model-integrity-audit.json"]){const x=require("./"+f);console.log(JSON.stringify({file:f,status:x.status,examined:x.examined||null,issueCounts:x.issues??null,groups:Object.fromEntries(Object.entries(x.groups||{}).map(([k,v])=>[k,v.count]))},null,2))}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mdse-live-integrity-reports
+          path: |
+            lineage-audit.json
+            model-integrity-audit.json
