@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31104::RuleREQ31104
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] Step 03 — historical candidate, semantic scope changed
+> The old statement discusses persisted inverse YAML fields without distinguishing native SysML from MDSE-only links. Native relationships require reverse projection from SysML; only MDSE-only inverse maintenance may apply after OD-01 review. This candidate remains Draft at its original ID; its sourceRuleStatus describes the pinned source snapshot. Its existing native SysML definition and typed usage are retained only as reviewed historical/provisional content, not an independently approved new obligation or executed test. See [[STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 The forward field wins when they disagree.

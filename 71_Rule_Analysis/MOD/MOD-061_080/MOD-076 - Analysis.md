@@ -17,6 +17,9 @@ modelRoleCandidate: "Model Semantic Requirement"
 > [!important] Rule analysis, not another source of authority
 > Binding source rule; every derived requirement remains a **Draft interpretation** until its meaning and clause boundaries are reviewed. Original text and decision provenance remain in [[MOD-076]] and the linked ruleset.
 
+> [!flagNote] Step 03 relationship-authority scope correction
+> Current rule forbids persisted YAML inverses of SysML relationships; Workbench derives reverse native links from parsed SysML. Only an OD-01-approved MDSE-only field may retain a derived inverse whose forward field governs. This analysis preserves the original D-0003-era rule segmentation; current scope is recorded in D-0069. No original statement or candidate below is an automatically approved current requirement.
+
 ## Rule and provenance
 
 - Original rule: [[MOD-076]]

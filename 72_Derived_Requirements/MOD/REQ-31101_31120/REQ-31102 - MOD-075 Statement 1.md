@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31102::RuleREQ31102
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] Step 03 — historical candidate, semantic scope changed
+> The legacy statement is overbroad: it must not be used as a verification objective for native SysML endpoints. Its applicable MDSE-only portion requires OD-01 field classification. This candidate remains Draft at its original ID; its sourceRuleStatus describes the pinned source snapshot. Its existing native SysML definition and typed usage are retained only as reviewed historical/provisional content, not an independently approved new obligation or executed test. See [[STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 Relationship endpoint rules (allowed source and target classes) live on each relationship in relationships.yaml.

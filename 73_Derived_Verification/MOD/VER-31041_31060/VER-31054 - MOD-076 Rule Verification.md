@@ -26,6 +26,9 @@ Establish verifiable evidence for the governed outcomes of [[MOD-076]] and its p
 - [[REQ-31103 - MOD-076 Statement 1]]
 - [[REQ-31104 - MOD-076 Statement 2]]
 
+> [!flagNote] Step 03 — verification checklist requires re-scope
+> Current rule forbids persisted YAML inverses of SysML relationships; Workbench derives reverse native links from parsed SysML. Only an OD-01-approved MDSE-only field may retain a derived inverse whose forward field governs. The original checklist below is preserved as a historical proposal. Its `executionStatus: not-run` remains unchanged and it must not be interpreted as an executable pass criterion without new scope-correct assertions. See [[STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24]].
+
 ## Acceptance checklist — source statements requiring verification
 
 - [ ] Clause 1: Inverse relationship fields are written by the translator and Workbench, not Nodian.

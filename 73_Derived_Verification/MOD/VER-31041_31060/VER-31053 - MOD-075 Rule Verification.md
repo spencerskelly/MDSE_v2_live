@@ -25,6 +25,9 @@ Establish verifiable evidence for the governed outcomes of [[MOD-075]] and its p
 
 - [[REQ-31102 - MOD-075 Statement 1]]
 
+> [!flagNote] Step 03 — verification checklist requires re-scope
+> Current rule only permits YAML endpoint restrictions for explicitly MDSE-only relationships; native SysML endpoint legality follows typed SysML constructs, never the old YAML relation inventory. The original checklist below is preserved as a historical proposal. Its `executionStatus: not-run` remains unchanged and it must not be interpreted as an executable pass criterion without new scope-correct assertions. See [[STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24]].
+
 ## Acceptance checklist — source statements requiring verification
 
 - [ ] Clause 1: Relationship endpoint rules (allowed source and target classes) live on each relationship in relationships.yaml.
