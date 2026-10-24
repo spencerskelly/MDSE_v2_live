@@ -107,6 +107,35 @@ const noBrokenNative = critical.flatMap(id => {
 });
 ok(noBrokenNative.length === 0, 'Critical model references unresolved: ' + noBrokenNative.map(e=> e.from + ':' + e.kind + ':' + e.toSymbol).join(', '));
 
+// MDSE dogfood check: the actual Workbench index must resolve every native
+// child-action usage in the reusable functional definition, not just source text.
+const ownedFunctionPairs = [
+  ['BEH-00002', 8, 'ResolveSourceIdentity'],
+  ['BEH-00003', 9, 'SearchModelProperties'],
+  ['BEH-00004', 10, 'TraverseTypedRelationshipPaths'],
+  ['BEH-00004', 11, 'CompareSharedModelConnections'],
+  ['BEH-00007', 12, 'ValidateModelChangeTransaction'],
+  ['BEH-00005', 13, 'SelectModelViewpoint'],
+  ['BEH-00005', 14, 'RenderVisualRelationshipView'],
+  ['BEH-00005', 15, 'RenderDocumentRelationshipView'],
+  ['BEH-00005', 16, 'DisplayModelReviewOverlays'],
+  ['BEH-00005', 17, 'NavigateViewpointModelSources'],
+  ['BEH-00006', 18, 'SelectDocumentationSources'],
+  ['BEH-00006', 19, 'ComposeEmbeddedEngineeringContent'],
+  ['BEH-00006', 20, 'ResolveDocumentEmbeds'],
+  ['BEH-00006', 21, 'PrepareGovernedEngineeringExport']
+];
+for (const [parentId, number, name] of ownedFunctionPairs) {
+  const childId = 'BEH-' + String(number).padStart(5,'0');
+  const parent = p(parentId);
+  const child = p(childId);
+  if (!parent || !child) continue;
+  const symbol = 'MDSE_BEH_' + String(number).padStart(5,'0') + '::' + name;
+  const uses = (ix.notes.get(parent)?.def?.usages ?? []).filter(u => u.kind === 'action' && u.type === symbol);
+  ok(uses.length === 1, parentId + ' must have exactly one Workbench-recognized typed action usage for ' + childId + '; found ' + uses.length);
+  checks++;
+}
+
 const front = (name, id, symbol, line = '') => `---
 type: Object
 subtype: software
