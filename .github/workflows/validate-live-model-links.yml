@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/validate-live-model-links.yml'
       - 'scripts/check-live-workbench.mjs'
+      - 'scripts/check-functional-model.mjs'
       - '10_Stakeholder_Needs/**'
       - '20_Use_Cases/**'
       - '30_Functions/**'
@@ -45,5 +46,7 @@ jobs:
       - name: Run existing Workbench synthetic unit tests
         working-directory: _tool_source
         run: npm run test:workbench
+      - name: Validate reusable function declarations and typed owned actions
+        run: node scripts/check-functional-model.mjs
       - name: Validate live-vault links and deduplication with actual Workbench index
         run: node --no-warnings --experimental-strip-types scripts/check-live-workbench.mjs
