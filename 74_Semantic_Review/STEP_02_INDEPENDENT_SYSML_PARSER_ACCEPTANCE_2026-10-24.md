@@ -39,6 +39,13 @@
 
 The model may legitimately retain Draft requirements and verification cases even when the assembled **syntax and reference resolution** are parser-accepted. Graph/index acceptance likewise does not prove every native statement's intended system meaning or observable implementation.
 
+## Blocking parser gate — completed
+
+- [CI run 40117753196](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40117753196): **SUCCESS** at commit `2cb21c1f637837639fe570d64ef8f1b34490a047` with the unchanged 583-note model SHA-256 `fbdb471e91d692dc56a404ca86295c3ac76816a72124267c4d33b675ac1957b3`.
+- Positive and negative parser controls succeeded; whole live model independently returned exit **0**. The final workflow step explicitly checked the saved parser result and would have failed on a missing result or nonzero exit. GitHub job conclusion **success** confirms the blocking step ran successfully.
+- Captured evidence: [run 40117753196 parser artifact](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40117753196/artifacts/12569372452). The 256 nonfatal inherited-member warnings remain an open review concern, not parser errors.
+- Future edits to native model folders now trigger the workflow. Its parser result is blocking; reports are still uploaded before the blocking check, so failure evidence is retained.
+
 ## Explicitly remaining
 
 1. Investigate the 256 inherited \`this\` warnings in the toolset composition; determine whether they arise from valid verification usages, tooling diagnostics or invalid presentation patterns. Preserve objective-level \`verify\` semantics unless a standards-backed replacement is demonstrated.
