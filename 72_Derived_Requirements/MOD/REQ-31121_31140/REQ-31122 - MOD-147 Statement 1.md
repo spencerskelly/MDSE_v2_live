@@ -53,6 +53,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD trace integration — Draft
+
+- Governing [[MOD-147]] and [[MOD-147 - Analysis]].
+- Operational context [[Import an Engineering Model]], [[Add Engineering Knowledge]] and [[Maintain and Improve Model Knowledge]].
+- Architecture [[MDSE Core]], [[MDSE Importer]], [[MDSE Workbench]], [[Note and SysML Codec]].
+- Verification [[VER-31064 - MOD-147 Rule Verification]].
+- Native typed usage `mod31122` in [[MDSE Toolset Composition]]; draft objective intent only, without an executed test verdict.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
