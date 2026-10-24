@@ -6,6 +6,7 @@ uid: 20261021212000087skellyspencer
 status: Draft
 tags:
   - last-check
+primarySymbol: LastCheck::AClaimTakenFromAnOutsideSourceLinksToASourceRecordWithItsIdentityRevisionAccessDateAndExtractionStatusAndSourcesThatConflictAreBothKept
 ---
 # A claim taken from an outside source links to a source record with its identity, revision, access date and extraction status, and sources that conflict are both kept
 
