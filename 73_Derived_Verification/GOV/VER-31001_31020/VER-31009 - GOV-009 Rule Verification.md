@@ -52,6 +52,13 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[GOV-009 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Governance clause trace — Draft, unexecuted
+
+- [[REQ-31018]] — verify the governance contract using explicit decision, artifact and negative control evidence.
+
+
+Native `verify` usage is owned by [[MDSE Toolset Composition]] only for the relevant positive obligations. The reusable case remains not-run.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

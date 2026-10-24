@@ -54,6 +54,13 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[GOV-018 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Governance clause trace — Draft, unexecuted
+
+- GOV-018 EA-package placement source conflicts with current vault-independent v2 placement. REQ-31029 and REQ-31030 are retained for provenance but do not receive positive objectives.
+
+
+Native `verify` usage is owned by [[MDSE Toolset Composition]] only for the relevant positive obligations. The reusable case remains not-run.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.
