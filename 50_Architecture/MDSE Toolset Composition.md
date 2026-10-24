@@ -143,6 +143,37 @@ package MDSE_OBJ_00006 {
         requirement dat31035 : MDSE_REQ_31035::RuleREQ31035;
         requirement dat31036 : MDSE_REQ_31036::RuleREQ31036;
 
+        requirement gov31001 : MDSE_REQ_31001::RuleREQ31001;
+        requirement gov31002 : MDSE_REQ_31002::RuleREQ31002;
+        requirement gov31003 : MDSE_REQ_31003::RuleREQ31003;
+        requirement gov31004 : MDSE_REQ_31004::RuleREQ31004;
+        requirement gov31005 : MDSE_REQ_31005::RuleREQ31005;
+        requirement gov31006 : MDSE_REQ_31006::RuleREQ31006;
+        requirement gov31007 : MDSE_REQ_31007::RuleREQ31007;
+        requirement gov31008 : MDSE_REQ_31008::RuleREQ31008;
+        requirement gov31009 : MDSE_REQ_31009::RuleREQ31009;
+        requirement gov31010 : MDSE_REQ_31010::RuleREQ31010;
+        requirement gov31011 : MDSE_REQ_31011::RuleREQ31011;
+        requirement gov31012 : MDSE_REQ_31012::RuleREQ31012;
+        requirement gov31013 : MDSE_REQ_31013::RuleREQ31013;
+        requirement gov31014 : MDSE_REQ_31014::RuleREQ31014;
+        requirement gov31015 : MDSE_REQ_31015::RuleREQ31015;
+        requirement gov31016 : MDSE_REQ_31016::RuleREQ31016;
+        requirement gov31017 : MDSE_REQ_31017::RuleREQ31017;
+        requirement gov31018 : MDSE_REQ_31018::RuleREQ31018;
+        requirement gov31019 : MDSE_REQ_31019::RuleREQ31019;
+        requirement gov31020 : MDSE_REQ_31020::RuleREQ31020;
+        requirement gov31021 : MDSE_REQ_31021::RuleREQ31021;
+        requirement gov31022 : MDSE_REQ_31022::RuleREQ31022;
+        requirement gov31023 : MDSE_REQ_31023::RuleREQ31023;
+        requirement gov31024 : MDSE_REQ_31024::RuleREQ31024;
+        requirement gov31025 : MDSE_REQ_31025::RuleREQ31025;
+        requirement gov31026 : MDSE_REQ_31026::RuleREQ31026;
+        requirement gov31027 : MDSE_REQ_31027::RuleREQ31027;
+        requirement gov31028 : MDSE_REQ_31028::RuleREQ31028;
+        requirement gov31029 : MDSE_REQ_31029::RuleREQ31029;
+        requirement gov31030 : MDSE_REQ_31030::RuleREQ31030;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -354,6 +385,72 @@ package MDSE_OBJ_00006 {
                 verify dat31033;
                 verify dat31034;
                 verify dat31035;
+            }
+        }
+
+        verification govCase1 : MDSE_VER_31001::TestVER31001 {
+            objective govObjective1 {
+                verify gov31001;
+                verify gov31002;
+            }
+        }
+        verification govCase2 : MDSE_VER_31002::TestVER31002 {
+            objective govObjective2 {
+                verify gov31003;
+                verify gov31004;
+            }
+        }
+        verification govCase3 : MDSE_VER_31003::TestVER31003 {
+            objective govObjective3 {
+                verify gov31005;
+                verify gov31006;
+            }
+        }
+        verification govCase4 : MDSE_VER_31004::TestVER31004 {
+            objective govObjective4 {
+                verify gov31007;
+                verify gov31008;
+            }
+        }
+        verification govCase5 : MDSE_VER_31005::TestVER31005 {
+            objective govObjective5 {
+                verify gov31009;
+                verify gov31010;
+            }
+        }
+        verification govCase7 : MDSE_VER_31007::TestVER31007 {
+            objective govObjective7 {
+                verify gov31013;
+                verify gov31014;
+            }
+        }
+        verification govCase8 : MDSE_VER_31008::TestVER31008 {
+            objective govObjective8 {
+                verify gov31015;
+                verify gov31016;
+                verify gov31017;
+            }
+        }
+        verification govCase9 : MDSE_VER_31009::TestVER31009 {
+            objective govObjective9 {
+                verify gov31018;
+            }
+        }
+        verification govCase12 : MDSE_VER_31010::TestVER31010 {
+            objective govObjective12 {
+                verify gov31019;
+                verify gov31020;
+                verify gov31021;
+                verify gov31022;
+                verify gov31023;
+            }
+        }
+        verification govCase17 : MDSE_VER_31011::TestVER31011 {
+            objective govObjective17 {
+                verify gov31024;
+                verify gov31025;
+                verify gov31026;
+                verify gov31027;
             }
         }
 
