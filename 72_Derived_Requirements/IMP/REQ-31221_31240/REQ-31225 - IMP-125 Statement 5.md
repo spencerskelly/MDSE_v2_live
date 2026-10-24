@@ -58,6 +58,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Source and verification links — Draft
+
+- [[IMP-125]]; [[IMP-125 - Analysis]].
+- [[Import an Engineering Model]]; [[Ingest and Reconcile Engineering Sources]].
+- [[MDSE Importer]]; [[Source Reconciliation Engine]]; [[Managed Vault Update]].
+- [[VER-31114 - IMP-125 Rule Verification]].
+- Typed usage `imp31225` in [[MDSE Toolset Composition]]. Original clause 5 remains Draft and needs objective-specific acceptance.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
