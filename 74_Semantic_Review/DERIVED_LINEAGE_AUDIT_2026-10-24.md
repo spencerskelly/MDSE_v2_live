@@ -30,6 +30,15 @@ Eight WKB-008 atomic requirements `REQ-31333` through `REQ-31340` now include an
 
 `REQ-31341` (A09) has no compound precursor because it restores an omitted clause of the *original* WKB-008 rule; its direct WKB-008 and analysis links are retained. No identities, existing SysML definitions, allocations, case results or candidate approvals were changed.
 
+## Native verification ownership correction
+
+A direct inspection of `50_Architecture/MDSE Toolset Composition.md` detected two duplicate named verification usages:
+
+- `modCase13 : MDSE_VER_31026::TestVER31026`, originally declared twice with separate `verify mod31056` and `verify mod31057` objectives.
+- `modCase139 : MDSE_VER_31061::TestVER31061`, originally declared twice with `verify mod31116` and `verify mod31117/mod31118`.
+
+Both were consolidated into **one named usage each**, preserving all five original `verify` targets, the original requirement usages and the reusable verification definitions. The lineage audit now checks for repeated named requirement/verification usage declarations in the toolset composition. This is a structural repair, **not** independent SysML parser certification or test execution.
+
 ## Explicitly still open
 
 - Latest recorded family-level modeling progress is MOD 60/98 and IMP 20/98; their remaining native typed requirement/verification integration has not been certified complete by these notes. Other family trace reviews likewise remain Draft.
