@@ -58,6 +58,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Testing traceability — Draft
+
+- Governing rule [[TST-002]] and source analysis [[TST-002 - Analysis]].
+- Relevant engineering workflow: [[Explore Element Relationships]] and [[Correct or Complete Knowledge]].
+- Tool responsibilities: [[MDSE Workbench]], [[MDSE Core]] and [[MDSE Toolset Composition]]. This is a scale/memory completion gate, explicitly not a timing benchmark.
+- Existing verification definition: [[VER-31158 - TST-002 Rule Verification]].
+- Model integration: `tst31330` is a native typed requirement usage in [[MDSE Toolset Composition]], with a Draft objective-level `verify` reference.
+- This records intent, not actual test execution, parser certification or `satisfy` evidence.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

@@ -58,6 +58,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Testing traceability — Draft
+
+- Governing rule [[TST-003]] and source analysis [[TST-003 - Analysis]].
+- Relevant engineering workflow: [[Explore Element Relationships]] and [[Correct or Complete Knowledge]].
+- Tool responsibilities: [[MDSE Workbench]], [[MDSE Core]] and [[MDSE Toolset Composition]]. Canvas geometry must not create or change the authoritative native SysML v2 relationships.
+- Existing verification definition: [[VER-31159 - TST-003 Rule Verification]].
+- Model integration: `tst31332` is a native typed requirement usage in [[MDSE Toolset Composition]], with a Draft objective-level `verify` reference.
+- This records intent, not actual test execution, parser certification or `satisfy` evidence.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
