@@ -58,6 +58,15 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[DAT-002 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## DAT-002 clause-level checks — Draft
+
+- [[REQ-31033 - DAT-002 Statement 1]] — public repository publication must be synthetic-only.
+- [[REQ-31034 - DAT-002 Statement 2]] — prohibited actual customer/product/drawing/source datasets must be absent from public releases; this is a control plus manual review, never a guaranteed exhaustive scan.
+- [[REQ-31035 - DAT-002 Statement 3]] — real source imports run privately, not through public CI, and scan effectiveness limits remain documented.
+- [[REQ-31036 - DAT-002 Statement 4]] — **held as obsolete repository-authority text**, not verified as an intended requirement. MDSE_v2 is the current tool authority.
+
+The first three are draft `verify` objective targets in [[MDSE Toolset Composition]]; REQ-31036 is contextual provenance only. All remain not-run.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

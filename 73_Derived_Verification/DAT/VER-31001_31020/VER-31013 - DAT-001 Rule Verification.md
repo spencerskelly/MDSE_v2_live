@@ -54,6 +54,13 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[DAT-001 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## DAT-001 clause-level checks — Draft
+
+- [[REQ-31031 - DAT-001 Statement 1]] — scan a synthetic public-build fixture and verify prohibited original QEAX, BOM sources, private ledgers and real engineering model evidence are absent. A scan cannot establish absence of all sensitive content.
+- [[REQ-31032 - DAT-001 Statement 2]] — inspect public conformance reports and confirm they do not claim native certification from normalization or syntax parsing alone.
+
+Both checks require independently captured source revision, scan policy, expected and observed outcome. No executed result is recorded.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

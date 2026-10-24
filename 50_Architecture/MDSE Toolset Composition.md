@@ -136,6 +136,13 @@ package MDSE_OBJ_00006 {
         requirement boo31276 : MDSE_REQ_31276::RuleREQ31276;
         requirement boo31277 : MDSE_REQ_31277::RuleREQ31277;
 
+        requirement dat31031 : MDSE_REQ_31031::RuleREQ31031;
+        requirement dat31032 : MDSE_REQ_31032::RuleREQ31032;
+        requirement dat31033 : MDSE_REQ_31033::RuleREQ31033;
+        requirement dat31034 : MDSE_REQ_31034::RuleREQ31034;
+        requirement dat31035 : MDSE_REQ_31035::RuleREQ31035;
+        requirement dat31036 : MDSE_REQ_31036::RuleREQ31036;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -333,6 +340,20 @@ package MDSE_OBJ_00006 {
             objective booObjective8 {
                 verify boo31276;
                 verify boo31277;
+            }
+        }
+
+        verification datPolicyCheck1 : MDSE_VER_31013::TestVER31013 {
+            objective datPolicyObjective1 {
+                verify dat31031;
+                verify dat31032;
+            }
+        }
+        verification datPolicyCheck2 : MDSE_VER_31014::TestVER31014 {
+            objective datPolicyObjective2 {
+                verify dat31033;
+                verify dat31034;
+                verify dat31035;
             }
         }
 
