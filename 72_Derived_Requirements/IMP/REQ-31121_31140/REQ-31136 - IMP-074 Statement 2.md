@@ -62,7 +62,7 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Use case: [[Import an Engineering Model]]; function: [[Ingest and Reconcile Engineering Sources]].
 - Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]] and [[Managed Vault Update]].
 - Verification: [[VER-31070 - IMP-074 Rule Verification]].
-- Native typed integration: `imp31121` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 2 remains Draft.
+- Native typed integration: `imp31136` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 2 remains Draft.
 - No independent parser/verification or satisfaction assertion.
 
 ## SysML v2

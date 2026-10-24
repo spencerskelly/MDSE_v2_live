@@ -81,7 +81,7 @@ Acceptance must check the changelog identity/date separately from completeness o
 - Use case: [[Import an Engineering Model]]; function: [[Ingest and Reconcile Engineering Sources]].
 - Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]] and [[Managed Vault Update]].
 - Verification: [[VER-31071 - IMP-075 Rule Verification]].
-- Native typed integration: `imp31121` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 1 remains Draft.
+- Native typed integration: `importChangeLog` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 1 remains Draft.
 - No independent parser/verification or satisfaction assertion.
 
 ## SysML v2

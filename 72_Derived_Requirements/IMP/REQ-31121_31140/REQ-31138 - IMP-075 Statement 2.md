@@ -74,7 +74,7 @@ Acceptance must separately check link resolution, meaningful change description 
 - Use case: [[Import an Engineering Model]]; function: [[Ingest and Reconcile Engineering Sources]].
 - Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]] and [[Managed Vault Update]].
 - Verification: [[VER-31071 - IMP-075 Rule Verification]].
-- Native typed integration: `imp31121` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 2 remains Draft.
+- Native typed integration: `importChangeLogEntry` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 2 remains Draft.
 - No independent parser/verification or satisfaction assertion.
 
 ## SysML v2
