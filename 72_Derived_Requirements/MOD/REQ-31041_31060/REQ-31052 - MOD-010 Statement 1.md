@@ -54,6 +54,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Cross-note model trace — Draft
+
+- Source: [[MOD-010]] and [[MOD-010 - Analysis]].
+- Architecture: [[MDSE Core]], [[Note and SysML Codec]], [[Model Identity Lookup]].
+- Relevant use case [[Add Engineering Knowledge]] and function [[Maintain and Improve Model Knowledge]].
+- Verification case [[VER-31023 - MOD-010 Rule Verification]].
+- Typed model usage `mod31052` is recorded in [[MDSE Toolset Composition]]; original `requirement def` here remains authoritative.
+- Source statement remains Draft pending explicit acceptance and execution.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
