@@ -174,6 +174,27 @@ package MDSE_OBJ_00006 {
         requirement gov31029 : MDSE_REQ_31029::RuleREQ31029;
         requirement gov31030 : MDSE_REQ_31030::RuleREQ31030;
 
+        requirement imp31135 : MDSE_REQ_31135::RuleREQ31135;
+        requirement imp31136 : MDSE_REQ_31136::RuleREQ31136;
+        requirement imp31137 : MDSE_REQ_31137::RuleREQ31137;
+        requirement imp31138 : MDSE_REQ_31138::RuleREQ31138;
+        requirement imp31139 : MDSE_REQ_31139::RuleREQ31139;
+        requirement imp31140 : MDSE_REQ_31140::RuleREQ31140;
+        requirement imp31141 : MDSE_REQ_31141::RuleREQ31141;
+        requirement imp31142 : MDSE_REQ_31142::RuleREQ31142;
+        requirement imp31143 : MDSE_REQ_31143::RuleREQ31143;
+        requirement imp31144 : MDSE_REQ_31144::RuleREQ31144;
+        requirement imp31145 : MDSE_REQ_31145::RuleREQ31145;
+        requirement imp31146 : MDSE_REQ_31146::RuleREQ31146;
+        requirement imp31147 : MDSE_REQ_31147::RuleREQ31147;
+        requirement imp31148 : MDSE_REQ_31148::RuleREQ31148;
+        requirement imp31149 : MDSE_REQ_31149::RuleREQ31149;
+        requirement imp31150 : MDSE_REQ_31150::RuleREQ31150;
+        requirement imp31151 : MDSE_REQ_31151::RuleREQ31151;
+        requirement imp31152 : MDSE_REQ_31152::RuleREQ31152;
+        requirement imp31153 : MDSE_REQ_31153::RuleREQ31153;
+        requirement imp31154 : MDSE_REQ_31154::RuleREQ31154;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -451,6 +472,75 @@ package MDSE_OBJ_00006 {
                 verify gov31025;
                 verify gov31026;
                 verify gov31027;
+            }
+        }
+
+        verification impCase74 : MDSE_VER_31070::TestVER31070 {
+            objective impObjective74 {
+                verify imp31135;
+                verify imp31136;
+            }
+        }
+        verification impCase75 : MDSE_VER_31071::TestVER31071 {
+            objective impObjective75 {
+                verify imp31137;
+                verify imp31138;
+            }
+        }
+        verification impCase76 : MDSE_VER_31072::TestVER31072 {
+            objective impObjective76 {
+                verify imp31139;
+            }
+        }
+        verification impCase78 : MDSE_VER_31073::TestVER31073 {
+            objective impObjective78 {
+                verify imp31140;
+                verify imp31141;
+            }
+        }
+        verification impCase79 : MDSE_VER_31074::TestVER31074 {
+            objective impObjective79 {
+                verify imp31142;
+            }
+        }
+        verification impCase80 : MDSE_VER_31075::TestVER31075 {
+            objective impObjective80 {
+                verify imp31143;
+            }
+        }
+        verification impCase81 : MDSE_VER_31076::TestVER31076 {
+            objective impObjective81 {
+                verify imp31144;
+                verify imp31145;
+            }
+        }
+        verification impCase82 : MDSE_VER_31077::TestVER31077 {
+            objective impObjective82 {
+                verify imp31146;
+            }
+        }
+        verification impCase83 : MDSE_VER_31078::TestVER31078 {
+            objective impObjective83 {
+                verify imp31147;
+                verify imp31148;
+                verify imp31149;
+            }
+        }
+        verification impCase84 : MDSE_VER_31079::TestVER31079 {
+            objective impObjective84 {
+                verify imp31150;
+            }
+        }
+        verification impCase85 : MDSE_VER_31080::TestVER31080 {
+            objective impObjective85 {
+                verify imp31151;
+                verify imp31152;
+                verify imp31153;
+            }
+        }
+        verification impCase86 : MDSE_VER_31081::TestVER31081 {
+            objective impObjective86 {
+                verify imp31154;
             }
         }
 
