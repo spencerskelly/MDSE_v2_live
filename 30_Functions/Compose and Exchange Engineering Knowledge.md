@@ -72,6 +72,10 @@ Function definitions remain reusable in this note; relationships are authored as
 ```sysml
 package MDSE_BEH_00006 {
     action def ComposeEngineeringKnowledge {
+        action selectSources : MDSE_BEH_00018::SelectDocumentationSources;
+        action composeEmbeds : MDSE_BEH_00019::ComposeEmbeddedEngineeringContent;
+        action resolveEmbeds : MDSE_BEH_00020::ResolveDocumentEmbeds;
+        action prepareExport : MDSE_BEH_00021::PrepareGovernedEngineeringExport;
         doc /* Assemble existing notes and sections into documents or presentations with native Obsidian ![[...]] transclusion and produce governed exports. */
     }
 }
