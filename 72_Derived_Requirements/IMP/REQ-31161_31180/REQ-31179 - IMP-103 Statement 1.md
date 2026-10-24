@@ -55,6 +55,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Importer source-to-model trace — Draft
+
+- [[IMP-103]] and [[IMP-103 - Analysis]] preserve source and interpretation.
+- [[Import an Engineering Model]] and [[Ingest and Reconcile Engineering Sources]] identify intended scenario and function.
+- [[MDSE Importer]], [[Source Reconciliation Engine]], and [[Managed Vault Update]] provide architecture context.
+- [[VER-31093 - IMP-103 Rule Verification]] defines planned verification; `imp31179` is typed in [[MDSE Toolset Composition]].
+- Draft modeling intent only; no satisfaction, parser acceptance or executed verification.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
