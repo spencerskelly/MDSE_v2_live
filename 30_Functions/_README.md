@@ -67,3 +67,7 @@ The first five distinct subfunctions are now modeled as reusable action definiti
 ## Next review
 
 Approve the functional boundaries and missing subfunctions. Then derive testable requirements, map existing governance rules as their authoritative origin, assign component responsibilities, and create verification cases. Formal relations must be expressed in native SysML and accepted by the pinned parser. The CSV and Markdown links are provisional review views only.
+
+## Viewpoint decomposition — BEH-00013–00017
+
+[[Generate Engineering Model Viewpoints]] now includes five typed nested action usages: [[Select Model Viewpoint]], [[Render Visual Relationship View]], [[Render Document Relationship View]], [[Display Model Review Overlays]] and [[Navigate Viewpoint Model Sources]]. These are reusable Draft function definitions. They share authoritative graph identities; viewport geometry and display filters do not create semantic links. Independent SysML parser acceptance, runtime verification and requirement/test derivation remain open.
