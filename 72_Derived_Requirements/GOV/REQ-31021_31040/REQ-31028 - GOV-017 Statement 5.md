@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31028::RuleREQ31028
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] Step 03 — governance reconciliation (D-0066)
+> GOV-017 was rewritten; its P1 vault boundary remains but the Test_Vault_ context changed. This particular candidate is **historical only**, not a current binding requirement or active verification objective. `sourceRuleStatus: Active` describes the pinned source snapshot. The original requirement definition and its Draft status are preserved; no new `verify`, `satisfy` or `allocate` relation is asserted. See [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 Test_Vault_ is a workspace, not the built vault.

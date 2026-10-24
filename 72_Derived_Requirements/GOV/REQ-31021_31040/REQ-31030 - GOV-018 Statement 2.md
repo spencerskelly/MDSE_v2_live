@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31030::RuleREQ31030
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] Step 03 — governance reconciliation (D-0066)
+> GOV-018 was retired; old EA package-folder mandates no longer bind current v2 model. This particular candidate is **historical only**, not a current binding requirement or active verification objective. `sourceRuleStatus: Active` describes the pinned source snapshot. The original requirement definition and its Draft status are preserved; no new `verify`, `satisfy` or `allocate` relation is asserted. See [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 Legacy empty model folders were removed.
