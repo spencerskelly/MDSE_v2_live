@@ -334,6 +334,27 @@ package MDSE_OBJ_00006 {
         requirement mod31095 : MDSE_REQ_31095::RuleREQ31095;
         requirement mod31096 : MDSE_REQ_31096::RuleREQ31096;
 
+        requirement mod31097 : MDSE_REQ_31097::RuleREQ31097;
+        requirement mod31098 : MDSE_REQ_31098::RuleREQ31098;
+        requirement mod31099 : MDSE_REQ_31099::RuleREQ31099;
+        requirement mod31100 : MDSE_REQ_31100::RuleREQ31100;
+        requirement mod31101 : MDSE_REQ_31101::RuleREQ31101;
+        requirement mod31102 : MDSE_REQ_31102::RuleREQ31102;
+        requirement mod31103 : MDSE_REQ_31103::RuleREQ31103;
+        requirement mod31104 : MDSE_REQ_31104::RuleREQ31104;
+        requirement mod31105 : MDSE_REQ_31105::RuleREQ31105;
+        requirement mod31106 : MDSE_REQ_31106::RuleREQ31106;
+        requirement mod31107 : MDSE_REQ_31107::RuleREQ31107;
+        requirement mod31108 : MDSE_REQ_31108::RuleREQ31108;
+        requirement mod31109 : MDSE_REQ_31109::RuleREQ31109;
+        requirement mod31110 : MDSE_REQ_31110::RuleREQ31110;
+        requirement mod31111 : MDSE_REQ_31111::RuleREQ31111;
+        requirement mod31112 : MDSE_REQ_31112::RuleREQ31112;
+        requirement mod31113 : MDSE_REQ_31113::RuleREQ31113;
+        requirement mod31114 : MDSE_REQ_31114::RuleREQ31114;
+        requirement mod31115 : MDSE_REQ_31115::RuleREQ31115;
+        requirement mod31116 : MDSE_REQ_31116::RuleREQ31116;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -1010,6 +1031,39 @@ package MDSE_OBJ_00006 {
         verification modCase48 : MDSE_VER_31048::TestVER31048 {
             objective modObjective48 {
                 verify mod31093;
+            }
+        }
+
+        verification modCase73 : MDSE_VER_31051::TestVER31051 {
+            objective modObjective73 {
+                verify mod31099;
+            }
+        }
+        verification modCase75 : MDSE_VER_31053::TestVER31053 {
+            objective modObjective75 {
+                verify mod31102;
+            }
+        }
+        verification modCase95 : MDSE_VER_31056::TestVER31056 {
+            objective modObjective95 {
+                verify mod31107;
+            }
+        }
+        verification modCase117 : MDSE_VER_31057::TestVER31057 {
+            objective modObjective117 {
+                verify mod31108;
+                verify mod31109;
+                verify mod31110;
+            }
+        }
+        verification modCase120 : MDSE_VER_31060::TestVER31060 {
+            objective modObjective120 {
+                verify mod31115;
+            }
+        }
+        verification modCase139 : MDSE_VER_31061::TestVER31061 {
+            objective modObjective139 {
+                verify mod31116;
             }
         }
 
