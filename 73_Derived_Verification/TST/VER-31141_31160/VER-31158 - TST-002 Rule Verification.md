@@ -52,6 +52,12 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[TST-002 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## TST objective-level verification plan — Draft
+
+- REQ-31330: execute the existing 10,000-note semantic-cache workload; check for completion and memory regression. No fixed duration acceptance or performance timing claim is inferred.
+
+Execution evidence must identify the test revision, fixture/scale, observed output, pass/fail outcome and associated CI run. No case has been executed by this traceability update.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

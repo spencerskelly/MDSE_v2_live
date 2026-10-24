@@ -54,6 +54,13 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[TST-001 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## TST objective-level verification plan — Draft
+
+- REQ-31328: a candidate source-code change must have CI-executable tests before entering the governed repository; inspect workflow policy and actual PR/commit evidence.
+- REQ-31329: migrated/carried code retains existing tests and they still execute in CI; negative fixture removes a retained test and should fail the control.
+
+Execution evidence must identify the test revision, fixture/scale, observed output, pass/fail outcome and associated CI run. No case has been executed by this traceability update.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.
