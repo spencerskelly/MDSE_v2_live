@@ -52,6 +52,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Governance source-to-model trace — Draft
+
+- Original rule: [[GOV-012]]; semantic analysis: [[GOV-012 - Analysis]].
+- Model responsibility context: [[MDSE Workbench]], [[MDSE Bootstrap]], [[MDSE Importer]], [[MDSE Base Vault]].
+- Reusable verification case: [[VER-31010 - GOV-012 Rule Verification]].
+- Typed usage `gov31019` in [[MDSE Toolset Composition]]; Draft objective-level verification intent, not execution.
+- Clause 1 is preserved verbatim in the original definition.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

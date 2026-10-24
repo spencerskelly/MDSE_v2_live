@@ -50,6 +50,17 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Governance source-to-model trace — Draft
+
+- Original rule: [[GOV-006]]; semantic analysis: [[GOV-006 - Analysis]].
+- Model responsibility context: [[MDSE Toolset Composition]].
+- Reusable verification case: [[VER-31006 - GOV-006 Rule Verification]].
+- Typed usage `gov31012` in [[MDSE Toolset Composition]]; no normative objective pending historical-policy retirement.
+- Clause 2 is preserved verbatim in the original definition.
+
+> [!flagNote] Obsolete governance provenance
+> GOV-006 describes direct changes to the archived Test_Vault_ repository. GOV-001 and GOV-005 govern the current MDSE_v2 tool repository. Do not assert GOV-006 as a current implementation requirement.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
