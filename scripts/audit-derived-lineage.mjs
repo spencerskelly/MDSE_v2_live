@@ -139,6 +139,23 @@ for(const [id,note] of cases){
 }
 for(const id of reqRows.keys()) if(!requirements.has(id)) report('Missing original requirement candidate '+id);
 for(const id of caseRows.keys()) if(!cases.has(id)) report('Missing verification candidate '+id);
+// Catch repeated named requirement/verification usages in the one toolset
+// composition context. A past edit split two case objectives into duplicate
+// named usages; native SysML requires one usage with all verify targets.
+const compositionPath=join(fsroot,'50_Architecture/MDSE Toolset Composition.md');
+if(existsSync(compositionPath)) {
+  const composition=readFileSync(compositionPath,'utf8');
+  const block=composition.split(fence+'sysml')[1]?.split(fence)[0] ?? '';
+  for(const kind of ['verification','requirement']){
+    const seen=new Map();
+    const rx=new RegExp('^\\s*'+kind+'\\s+([A-Za-z_]\\w*)\\s*:', 'gm');
+    for(const match of block.matchAll(rx)){
+      const name=match[1];
+      if(seen.has(name)) report('MDSE Toolset Composition: duplicate named '+kind+' usage '+name);
+      else seen.set(name,true);
+    }
+  }
+} else report('Missing MDSE Toolset Composition note');
 const summary={
   status:issues.length?'FINDINGS':'PASS',
   scope:'Provenance, Obsidian link presence, candidate-register integrity, native definition shape (NOT SysML parser certification)',
