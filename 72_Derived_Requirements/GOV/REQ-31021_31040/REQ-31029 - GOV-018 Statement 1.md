@@ -50,6 +50,16 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Governance integration trace — Draft
+
+- Governing rule [[GOV-018]] and [[GOV-018 - Analysis]].
+- Architecture context: [[MDSE Toolset Composition]].
+- Verification case: [[VER-31012 - GOV-018 Rule Verification]].
+- Typed model usage: `gov31029` in [[MDSE Toolset Composition]]. **Held** from mandatory objective pending source-policy reconciliation.
+
+> [!flagNote] Legacy repository / EA placement claim
+> This candidate describes archived Test_Vault_ status or EA-package placement which must be reconciled with current single-vault v2 governance. Preserve the source and do not certify the old policy as current.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
