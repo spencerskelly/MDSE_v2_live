@@ -7,8 +7,9 @@
 - **Inspected repository:** `spencerskelly/MDSE_v2_live`, `main`.
 - **Final independent static-audit CI run:** [40116026790](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40116026790) at commit `a021de97b46907bbcd59c428b86568d1da7f7d65`: **SUCCESS**.
 - **Download full machine-readable findings:** [mdse-live-integrity-reports.zip](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40116026790/artifacts/12568636379); includes `lineage-audit.json` and `model-integrity-audit.json` with every finding and source path.
-- **Prior validated graph-index run:** [40108612054](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40108612054) at commit `10c925a5`: **SUCCESS**, with 82 selected native-edge assertions passing. That run reported 837 indexed native SysML-derived edges and zero unresolved **critical** endpoints; independent parser `not-run`.
-- **Commands:** `node scripts/audit-derived-lineage.mjs` and `node scripts/audit-model-integrity.mjs`. Automated via `.github/workflows/audit-vault-integrity.yml`. The original `validate-live-model-links.yml` also includes the checks, but its most recent full Workbench run had **not** been confirmed complete at this audit closing point.
+- **Previous measured graph-index run:** [40108612054](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40108612054) at commit `10c925a5`: **SUCCESS**, with 82 selected native-edge assertions, 837 indexed native edges and zero unresolved **critical** endpoints; independent parser `not-run`.
+- **Current extended model relationship workflow:** [40116026734](https://github.com/spencerskelly/MDSE_v2_live/actions/runs/40116026734) at commit `a021de97`: **SUCCESS**. Includes the expanded static audit plus the pinned Workbench regression and graph-index steps.
+- **Commands:** `node scripts/audit-derived-lineage.mjs` and `node scripts/audit-model-integrity.mjs`. Automated via `.github/workflows/audit-vault-integrity.yml`; full Workbench indexing and regression through `.github/workflows/validate-live-model-links.yml` also completed successfully at the same inspected model revision.
 
 ## Scope and findings
 
