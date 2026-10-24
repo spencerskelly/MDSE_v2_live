@@ -60,6 +60,10 @@ The sixteen use-case definitions now contain **32 typed `action` usages** of the
 The function definitions remain owned here and are reused by the use-case action usages; software responsibility is modeled separately with `perform action` under Importer/Workbench. See the [revised matrix](FUNCTION_USECASE_MATRIX.csv) and [semantic review](../74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md). A normal Workbench scanner run is **not** independent SysML v2 parser acceptance.
 
 
+## Detailed functional decomposition
+
+The first five distinct subfunctions are now modeled as reusable action definitions, owned by their parents: [[Resolve Source Identity]], [[Search Model Properties]], [[Traverse Typed Relationship Paths]], [[Compare Shared Model Connections]], and [[Validate Model Change Transaction]]. See [[FUNCTIONAL_DEFINITION_GAP_AUDIT_2026-10-24]] for the coverage and remaining candidates. These are Draft modeling constructs, not certified software functionality.
+
 ## Next review
 
 Approve the functional boundaries and missing subfunctions. Then derive testable requirements, map existing governance rules as their authoritative origin, assign component responsibilities, and create verification cases. Formal relations must be expressed in native SysML and accepted by the pinned parser. The CSV and Markdown links are provisional review views only.
