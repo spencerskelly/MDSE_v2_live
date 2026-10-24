@@ -22,7 +22,8 @@ The MDSE Workbench shall write structural and relationship changes to the source
 
 - Governing rule: [[WKB-008]]
 - Analysis identifier: `WKB-008-A08` from [[WKB-008 - Analysis]]
-- Initial broad source candidate: REQ-31280
+- Initial broad source candidate (provenance/navigation only): [[REQ-31280 - WKB-008 Statement 3]]
+- Native requirement derivation is **not asserted**: the source candidate is a compound, unapproved preliminary interpretation.
 - Proposed responsible tool: [[MDSE Workbench]]
 - Requirement identity and definition: authoritative in this note, **Draft pending engineering review**. No `satisfy` relationship or parser certification is asserted.
 
