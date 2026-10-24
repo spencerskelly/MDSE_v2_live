@@ -88,6 +88,18 @@ package MDSE_OBJ_00006 {
         requirement aiPolicy31326 : MDSE_REQ_31326::RuleREQ31326;
         requirement aiPolicy31327 : MDSE_REQ_31327::RuleREQ31327;
 
+        requirement bas31260 : MDSE_REQ_31260::RuleREQ31260;
+        requirement bas31261 : MDSE_REQ_31261::RuleREQ31261;
+        requirement bas31262 : MDSE_REQ_31262::RuleREQ31262;
+        requirement bas31263 : MDSE_REQ_31263::RuleREQ31263;
+        requirement bas31264 : MDSE_REQ_31264::RuleREQ31264;
+        requirement bas31265 : MDSE_REQ_31265::RuleREQ31265;
+        requirement bas31266 : MDSE_REQ_31266::RuleREQ31266;
+        requirement bas31267 : MDSE_REQ_31267::RuleREQ31267;
+        requirement bas31268 : MDSE_REQ_31268::RuleREQ31268;
+        requirement bas31269 : MDSE_REQ_31269::RuleREQ31269;
+        requirement bas31270 : MDSE_REQ_31270::RuleREQ31270;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -165,6 +177,30 @@ package MDSE_OBJ_00006 {
         verification aiPolicyCheck4 : MDSE_VER_31156::TestVER31156 {
             objective aiPolicyObjective4 {
                 verify aiPolicy31327;
+            }
+        }
+
+        verification basCase1 : MDSE_VER_31129::TestVER31129 {
+            objective basObjective1 {
+                verify bas31260;
+            }
+        }
+        verification basCase2 : MDSE_VER_31130::TestVER31130 {
+            objective basObjective2 {
+                verify bas31261;
+            }
+        }
+        verification basCase3 : MDSE_VER_31131::TestVER31131 {
+            objective basObjective3 {
+                verify bas31262;
+            }
+        }
+        verification basCase12 : MDSE_VER_31133::TestVER31133 {
+            objective basObjective12 {
+                verify bas31267;
+                verify bas31268;
+                verify bas31269;
+                verify bas31270;
             }
         }
 
