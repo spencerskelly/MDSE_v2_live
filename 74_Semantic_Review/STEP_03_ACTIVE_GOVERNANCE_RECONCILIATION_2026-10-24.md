@@ -13,7 +13,7 @@
 | Rule | Former Active conflict | Current disposition | Current authority |
 |---|---|---|---|
 | GOV-006 | Authorized pushes on archived Test_Vault_ | **Retired** | GOV-001 (main/CI), GOV-005 (MDSE_v2 tool source) |
-| GOV-018 | Required folders to follow EA package hierarchy and cited legacy cleanup | **Retired** | GOV-017 supports managed `99_System`; exact folder depth remains *Proposed* in MOD-174 |
+| GOV-018 | Required folders to follow EA package hierarchy and cited legacy cleanup | **Retired** | GOV-017 supports managed `99_System`; D-0067 subsequently activated MOD-174 with a 6-folder cap |
 | GOV-017 | Valid single-vault P1 scope mixed with old Test_Vault_ workspace positioning | **Rewritten, Active** | One vault at a time; cross-vault deferred; live self-model separate from tool authority |
 | DAT-001 | Restricted protected data specifically in Test_Vault_ | **Rewritten, Active** | Private data excluded from current public repos; parser-only passes do not prove engineering acceptance |
 | DAT-002 | Valid protected-data rule mixed with obsolete Test_Vault_ method/tool authority | **Rewritten, Active** | Public MDSE self-model and synthetic fixtures allowed; private real data prohibited; MDSE_v2 remains tool authority |
@@ -31,7 +31,7 @@
 1. Source-level preservation: the five pinned quotations and all fifteen final SysML sections were left intact; inspect resulting GitHub commits for the documentary-only delta. **A fresh post-edit independent parser CI pass is required to extend the Step 02 acceptance claim to the new live commit.**
 2. Run/read the lineage and link-integrity audit on the updated vault. Original snapshot rule-status fields intentionally remain historical while normative source status has changed; audit should distinguish those meanings.
 3. Review the historical typed requirement usages and held objectives in `50_Architecture/MDSE Toolset Composition.md`. They remain in the parser-accepted graph as evidence of how candidates were modeled; they are not approved current requirements. Do not delete or rewire them without a separate impact/semantic review.
-4. Audit other contradictory **Active** v1 model-contract rules separately, especially MOD-075 and MOD-076 (YAML relationship endpoints/inverses) against D-0003 and open OD-01. The present Step 03 pass intentionally focused on the explicit GOV/DAT scope in the Step 02 handoff.
+4. Audit other contradictory **Active** v1 model-contract rules separately, especially MOD-075 and MOD-076 (YAML relationship endpoints/inverses) against D-0003 and open OD-01. The present Step 03 pass intentionally focused on the explicit GOV/DAT scope in the Step 02 handoff. D-0067 independently resolves the former folder-cap proposal: MOD-174 is now Active with cap 6. This does not reinstate GOV-018's old EA-package-as-authority rule.
 5. Step 01 navigation defects, Step 02's 256 inherited-member warnings, real Obsidian interaction testing, and private EA/BOM semantic acceptance are still open and unrelated to this governance reconciliation.
 
-No folder-depth cap, user approval of candidate requirements, successful verification execution, new semantic SysML relationship, or implementation completion is inferred here.
+No folder-depth cap is set **by D-0066**; the subsequently approved D-0067 cap is 6. No user approval of candidate requirements, successful verification execution, new semantic SysML relationship, or implementation completion is inferred here.
