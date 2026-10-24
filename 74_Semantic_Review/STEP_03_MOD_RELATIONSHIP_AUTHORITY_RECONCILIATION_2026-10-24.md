@@ -48,3 +48,7 @@ These are **review candidates, not approved replacements**. OD-01 should be hand
 2. Run live integrity/lineage, Workbench native-edge checks and independent SysML parser CI after this documentation change. Its final native SysML bytes should be unchanged, but a fresh gate is needed to make a new-commit acceptance claim.
 3. For OD-01, classify every `relationships.yaml` entry by native SysML availability and MDSE-only reason, specify canonical owner, inverse/disposition behavior, navigation and round trip; test actual importer and Workbench instances.
 4. Revisit historical typed usages and verification objectives only under a separate semantic/impact decision. The existing model and earlier evidence are deliberately preserved for comparison.
+
+## OD-01 field-by-field triage (not approved)
+
+A complete 29-field candidate inventory now exists at [[OD_01_LEGACY_RELATIONSHIP_FIELD_TRIAGE_2026-10-24]]. It isolates native candidates, MDSE-only candidates and ambiguous mappings, including the D-0010/D-0045 `tracesTo` conflict. No fields are removed from the shared schema or implemented by this worksheet.

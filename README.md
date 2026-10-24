@@ -18,6 +18,7 @@ Markdown Systems Engineering vault (release 0.9.0). SysML v2 text in the last `#
 - Independent SysML 2.0 parser: [Step 02 assembled-model acceptance and remaining warnings](74_Semantic_Review/STEP_02_INDEPENDENT_SYSML_PARSER_ACCEPTANCE_2026-10-24.md), with [blocking GitHub CI](https://github.com/spencerskelly/MDSE_v2_live/actions/workflows/validate-live-sysml-parser.yml). The assembly and parser check do not approve Draft requirements or execute verification cases.
 - **Step 03 recorded:** [obsolete Active governance rules reconciled to D-0066](74_Semantic_Review/STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24.md). Five source rules reviewed; historical Info/analysis notes and fifteen Draft candidates remain traceable without newly asserting SysML relationships.
 - **Step 03 continuation:** [MOD-075/076 native SysML versus MDSE-only YAML relationship authority](74_Semantic_Review/STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24.md) — D-0069, historical source and derived-candidate links, OD-01 still open.
+- **OD-01 decision-support:** [29 legacy relationship fields triaged for native SysML, MDSE-only or semantic review](74_Semantic_Review/OD_01_LEGACY_RELATIONSHIP_FIELD_TRIAGE_2026-10-24.md); no approval implied.
 - First-class WKB-008 requirement definitions: [granular requirements](72_Derived_Requirements/WKB/REQ-31333_31341/README.md).
 
 ## Open modeled relationships in Obsidian Canvas
