@@ -49,6 +49,18 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## BAS trace — Draft
+
+- Governing rule: [[BAS-003]]; interpretation: [[BAS-003 - Analysis]].
+- Architecture: [[MDSE Base Vault]]; release compatibility also relates to [[MDSE Importer]].
+- Verification intent: [[VER-31131 - BAS-003 Rule Verification]].
+- Review criterion: Fragment of same replacement rule; not independently verifiable.
+- Native typed requirement usage will be owned by [[MDSE Toolset Composition]]. No `satisfy`, result, or approval is claimed.
+
+> [!flagNote] Compound or nonnormative candidate
+> Fragment of same replacement rule; not independently verifiable. Hold from independent mandatory `verify` objectives pending reconciliation.
+
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

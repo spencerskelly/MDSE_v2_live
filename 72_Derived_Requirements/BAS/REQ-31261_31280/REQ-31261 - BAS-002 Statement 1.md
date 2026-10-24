@@ -49,6 +49,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## BAS trace — Draft
+
+- Governing rule: [[BAS-002]]; interpretation: [[BAS-002 - Analysis]].
+- Architecture: [[MDSE Base Vault]]; release compatibility also relates to [[MDSE Importer]].
+- Verification intent: [[VER-31130 - BAS-002 Rule Verification]].
+- Review criterion: Released Workbench pin and newer candidateVersion are distinguished.
+- Native typed requirement usage will be owned by [[MDSE Toolset Composition]]. No `satisfy`, result, or approval is claimed.
+
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
