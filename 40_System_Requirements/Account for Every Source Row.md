@@ -37,6 +37,7 @@ See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obs
 
 ```sysml
 package MDSE_REQ_00001 {
+    private import ModelingMetadata::Refinement;
     requirement def RecordRowDisposition {
         doc /* For each source package, element and connector processed, MDSE shall record exactly one disposition and retain enough source identity to reconcile the result. */
         #refinement dependency from RecordRowDisposition to MDSE_STK_00003::StakeholderNeed03;

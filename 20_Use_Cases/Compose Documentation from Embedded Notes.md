@@ -71,6 +71,7 @@ The reclassification reflects the actual use-case scenario, not an automatic typ
 
 ```sysml
 package MDSE_UC_00015 {
+    private import ModelingMetadata::Refinement;
     use case def ComposeDocumentWithEmbeds {
         doc /* Assemble a new document or presentation concept by transcluding existing model notes or sections using Obsidian embedded links such as ![[xxx]]. */
         action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;

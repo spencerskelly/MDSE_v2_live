@@ -83,6 +83,7 @@ No-op repeated import is a narrow safeguard within [[Protect Engineer Changes]] 
 
 ```sysml
 package MDSE_REQ_31139 {
+    private import ModelingMetadata::Refinement;
     requirement def RuleREQ31139 {
         doc /* Importing the same input again produces no changes and no changelog entries. */
         #refinement dependency from RuleREQ31139 to MDSE_STK_00004::StakeholderNeed04;

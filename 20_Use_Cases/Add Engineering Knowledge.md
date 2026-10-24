@@ -68,6 +68,7 @@ Semantic decisions are based on this note's described scenario. All additions re
 
 ```sysml
 package MDSE_UC_00007 {
+    private import ModelingMetadata::Refinement;
     use case def AddEngineeringKnowledge {
         doc /* Document additions to engineering knowledge from different vantage points. */
         action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;

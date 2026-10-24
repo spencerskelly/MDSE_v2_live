@@ -73,6 +73,7 @@ The reclassification reflects the actual use-case scenario, not an automatic typ
 
 ```sysml
 package MDSE_UC_00016 {
+    private import ModelingMetadata::Refinement;
     use case def DisplayFlaggedData {
         doc /* Display flagged notes, relationships and records with their type, context, source and unresolved status. */
         action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;

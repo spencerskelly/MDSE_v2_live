@@ -71,6 +71,7 @@ The reclassification reflects the actual use-case scenario, not an automatic typ
 
 ```sysml
 package MDSE_UC_00012 {
+    private import ModelingMetadata::Refinement;
     use case def ExploreMultipleHops {
         doc /* Display relationships across multiple hops from the selected element rather than only directly attached elements. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

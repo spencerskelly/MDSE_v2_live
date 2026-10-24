@@ -64,6 +64,7 @@ The canonical single-relationship interpretation refines [[One Trustworthy Model
 
 ```sysml
 package MDSE_REQ_31306 {
+    private import ModelingMetadata::Refinement;
     requirement def RuleREQ31306 {
         doc /* A YAML link that repeats a relationship the SysML block already states (the BOM importer lists `hasPart` in both) is one relationship. */
         #refinement dependency from RuleREQ31306 to MDSE_STK_00002::StakeholderNeed02;

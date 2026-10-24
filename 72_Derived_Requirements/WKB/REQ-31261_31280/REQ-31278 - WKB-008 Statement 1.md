@@ -75,6 +75,7 @@ These should become individually tracked requirements only after semantic review
 
 ```sysml
 package MDSE_REQ_31278 {
+    private import ModelingMetadata::Refinement;
     requirement def RuleREQ31278 {
         doc /* The Edit lens adds relationships, elements and requirement text. */
         #refinement dependency from RuleREQ31278 to MDSE_STK_00013::EngineeringKnowledgeBase;

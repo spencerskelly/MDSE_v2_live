@@ -78,6 +78,7 @@ Semantic decisions are based on this note's described scenario. All additions re
 
 ```sysml
 package MDSE_UC_00002 {
+    private import ModelingMetadata::Refinement;
     use case def FindEngineeringElement {
         doc /* Search for a part, function, or design. */
         action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;

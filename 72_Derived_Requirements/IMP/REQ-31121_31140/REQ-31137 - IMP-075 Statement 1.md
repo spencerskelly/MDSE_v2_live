@@ -90,6 +90,7 @@ Acceptance must check the changelog identity/date separately from completeness o
 
 ```sysml
 package MDSE_REQ_31137 {
+    private import ModelingMetadata::Refinement;
     requirement def RuleREQ31137 {
         doc /* Every change to an existing file is listed in one dated changelog per import run. */
         #refinement dependency from RuleREQ31137 to MDSE_STK_00010::StakeholderNeed10;

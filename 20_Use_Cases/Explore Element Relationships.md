@@ -81,6 +81,7 @@ This use case depends on [[REQ-31306]] as candidate behavior needed for the scen
 
 ```sysml
 package MDSE_UC_00003 {
+    private import ModelingMetadata::Refinement;
     use case def ExploreElementLinks {
         doc /* View how an element is linked to other elements. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

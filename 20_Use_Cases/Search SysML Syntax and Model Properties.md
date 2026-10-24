@@ -70,6 +70,7 @@ The reclassification reflects the actual use-case scenario, not an automatic typ
 
 ```sysml
 package MDSE_UC_00014 {
+    private import ModelingMetadata::Refinement;
     use case def SearchModelTextAndProperties {
         doc /* Search within SysML v2 textual model definitions, YAML properties and other searchable note fields. */
         action discoverModelElements : MDSE_BEH_00003::DiscoverModelElements;

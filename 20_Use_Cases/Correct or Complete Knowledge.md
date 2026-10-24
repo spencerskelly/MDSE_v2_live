@@ -75,6 +75,7 @@ This use case depends on [[REQ-31286]], [[REQ-31287]], [[REQ-31288]], [[REQ-3129
 
 ```sysml
 package MDSE_UC_00008 {
+    private import ModelingMetadata::Refinement;
     use case def CorrectOrCompleteKnowledge {
         doc /* Modify information to make the knowledge base correct or complete. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

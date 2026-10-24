@@ -71,6 +71,7 @@ The reclassification reflects the actual use-case scenario, not an automatic typ
 
 ```sysml
 package MDSE_UC_00013 {
+    private import ModelingMetadata::Refinement;
     use case def CompareCommonLinkedElements {
         doc /* Select two or more elements and display the elements or paths that are connected to multiple selections. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

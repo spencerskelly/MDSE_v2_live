@@ -83,6 +83,7 @@ Acceptance must separately check link resolution, meaningful change description 
 
 ```sysml
 package MDSE_REQ_31138 {
+    private import ModelingMetadata::Refinement;
     requirement def RuleREQ31138 {
         doc /* Each entry links the changed file, describes the change, and flags any conflict. */
         #refinement dependency from RuleREQ31138 to MDSE_STK_00010::StakeholderNeed10;

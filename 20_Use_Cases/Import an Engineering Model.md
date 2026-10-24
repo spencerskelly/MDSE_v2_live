@@ -87,6 +87,7 @@ Semantic decisions are based on this note's described scenario. All additions re
 
 ```sysml
 package MDSE_UC_00001 {
+    private import ModelingMetadata::Refinement;
     use case def ImportEngineeringModel {
         doc /* A user imports engineering knowledge from multiple source formats, retaining provenance and reviewable disposition of every processed source record. */
         action ingestEngineeringSources : MDSE_BEH_00002::IngestEngineeringSources;

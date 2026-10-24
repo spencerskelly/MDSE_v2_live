@@ -76,6 +76,7 @@ Semantic decisions are based on this note's described scenario. All additions re
 
 ```sysml
 package MDSE_UC_00006 {
+    private import ModelingMetadata::Refinement;
     use case def ViewAndExportInformation {
         doc /* View model data and export it for communication to others. */
         action generateModelViewpoints : MDSE_BEH_00005::GenerateModelViewpoints;

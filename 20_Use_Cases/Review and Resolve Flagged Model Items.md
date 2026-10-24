@@ -74,6 +74,7 @@ The reclassification reflects the actual use-case scenario, not an automatic typ
 
 ```sysml
 package MDSE_UC_00009 {
+    private import ModelingMetadata::Refinement;
     use case def ReviewFlaggedItems {
         doc /* Review flagged elements to improve model accuracy. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

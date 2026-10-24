@@ -75,6 +75,7 @@ This use case depends on [[REQ-31306]] as candidate behavior needed for the scen
 
 ```sysml
 package MDSE_UC_00010 {
+    private import ModelingMetadata::Refinement;
     use case def VisualizeLinkedElements {
         doc /* Display elements related to a selected element in a visual form, with selectable engineering viewpoints. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

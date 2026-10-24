@@ -76,6 +76,7 @@ This use case depends on [[REQ-31306]] as candidate behavior needed for the scen
 
 ```sysml
 package MDSE_UC_00011 {
+    private import ModelingMetadata::Refinement;
     use case def DocumentViewOfLinks {
         doc /* Display the same linked engineering content as a navigable document or structured report with different viewpoints. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

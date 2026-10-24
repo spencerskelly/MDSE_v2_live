@@ -70,6 +70,7 @@ A08 requires persistent edit/reload verification; A09 requires a separate create
 
 ```sysml
 package MDSE_REQ_31280 {
+    private import ModelingMetadata::Refinement;
     requirement def RuleREQ31280 {
         doc /* Structure and links are written into the source note's `## SysML v2` block */
         #refinement dependency from RuleREQ31280 to MDSE_STK_00002::StakeholderNeed02;

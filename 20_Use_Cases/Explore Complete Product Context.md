@@ -73,6 +73,7 @@ This use case depends on [[REQ-31296]], [[REQ-31306]] as candidate behavior need
 
 ```sysml
 package MDSE_UC_00005 {
+    private import ModelingMetadata::Refinement;
     use case def ExploreProductContext {
         doc /* View all aspects of a product and its context including external systems and actors. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;

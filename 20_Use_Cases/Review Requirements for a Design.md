@@ -68,6 +68,7 @@ Semantic decisions are based on this note's described scenario. All additions re
 
 ```sysml
 package MDSE_UC_00004 {
+    private import ModelingMetadata::Refinement;
     use case def ReviewDesignRequirements {
         doc /* Check which requirements are identified for a design. */
         action traverseModelRelationships : MDSE_BEH_00004::TraverseModelRelationships;
