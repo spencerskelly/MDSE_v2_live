@@ -56,6 +56,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Cross-model trace — Importer (Draft)
+
+- Source: [[IMP-085]] and [[IMP-085 - Analysis]].
+- Use case: [[Import an Engineering Model]]; function: [[Ingest and Reconcile Engineering Sources]].
+- Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]] and [[Managed Vault Update]].
+- Verification: [[VER-31080 - IMP-085 Rule Verification]].
+- Native typed integration: `imp31141` in [[MDSE Toolset Composition]], draft objective intent; original definition remains here. Source clause 3.
+- No executed verification, satisfaction or independent parser certification is asserted.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
