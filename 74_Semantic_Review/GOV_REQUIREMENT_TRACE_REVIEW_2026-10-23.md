@@ -18,3 +18,7 @@ GOV-002 TypeScript-only mandate may conflict with existing runtime JavaScript pa
 **No new model notes were needed** because rule, analysis, architecture and case endpoints already existed. No governance rule edits, repo release policy changes, runtime tool edits, inferred satisfaction, or test execution were made. `status: Draft` and `executionStatus: not-run` remain.
 
 **Next family:** IMP, after checking Workbench graph validation for this commit.
+
+## Step 03 reconciliation addendum — 2026-10-24
+
+The governing source was updated by [D-0066](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/DECISIONS.md): GOV-006 and GOV-018 are retired; GOV-017, DAT-001 and DAT-002 are rewritten. Earlier candidate counts, original extracted statements, verification-intent exclusions and pinned source references above remain valid **as historical snapshots**, not a list of present-tense binding requirements. None is promoted. The live model's Info/analysis and Draft candidate note dispositions are in [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].

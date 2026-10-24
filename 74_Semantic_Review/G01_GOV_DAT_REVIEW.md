@@ -39,3 +39,7 @@ These findings were derived by inspecting governance/DECISIONS.md, governance/OP
 ## Next work
 
 Review the MOD identity and note-format contracts. When the owner approves changes, edit governance/DECISIONS.md and governance/RULESET.md together and regenerate dependent model records. Until then, derived requirements remain Draft.
+
+## Step 03 reconciliation addendum — 2026-10-24
+
+The governing source was updated by [D-0066](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/DECISIONS.md): GOV-006 and GOV-018 are retired; GOV-017, DAT-001 and DAT-002 are rewritten. Earlier candidate counts, original extracted statements, verification-intent exclusions and pinned source references above remain valid **as historical snapshots**, not a list of present-tense binding requirements. None is promoted. The live model's Info/analysis and Draft candidate note dispositions are in [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].

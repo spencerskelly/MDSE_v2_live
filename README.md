@@ -16,6 +16,7 @@ Markdown Systems Engineering vault (release 0.9.0). SysML v2 text in the last `#
 - **Step 01 complete, navigation findings open:** [active-vault integrity baseline and handoff](74_Semantic_Review/STEP_01_VAULT_INTEGRITY_BASELINE_2026-10-24.md), with verified CI counts and categorized next actions.
 - Whole-vault rule/analysis/requirement/verification provenance audit: [derived lineage audit and remaining gates](74_Semantic_Review/DERIVED_LINEAGE_AUDIT_2026-10-24.md); executable check: `scripts/audit-derived-lineage.mjs`.
 - Independent SysML 2.0 parser: [Step 02 assembled-model acceptance and remaining warnings](74_Semantic_Review/STEP_02_INDEPENDENT_SYSML_PARSER_ACCEPTANCE_2026-10-24.md), with [blocking GitHub CI](https://github.com/spencerskelly/MDSE_v2_live/actions/workflows/validate-live-sysml-parser.yml). The assembly and parser check do not approve Draft requirements or execute verification cases.
+- **Step 03 recorded:** [obsolete Active governance rules reconciled to D-0066](74_Semantic_Review/STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24.md). Five source rules reviewed; historical Info/analysis notes and fifteen Draft candidates remain traceable without newly asserting SysML relationships.
 - First-class WKB-008 requirement definitions: [granular requirements](72_Derived_Requirements/WKB/REQ-31333_31341/README.md).
 
 ## Open modeled relationships in Obsidian Canvas

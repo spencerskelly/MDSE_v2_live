@@ -18,3 +18,7 @@ All six are linked to their source rule, `71_Rule_Analysis`, [[Protect Engineeri
 **Open gates:** actual privacy/policy fixture executions, release publication review, source-vs-published model scans, independent assembled SysML v2 parser validation, and engineer approval. Requirements remain Draft, cases remain not-run. This establishes traceability, not guaranteed confidentiality.
 
 **Next:** GOV folder, one folder at a time.
+
+## Step 03 reconciliation addendum — 2026-10-24
+
+The governing source was updated by [D-0066](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/DECISIONS.md): GOV-006 and GOV-018 are retired; GOV-017, DAT-001 and DAT-002 are rewritten. Earlier candidate counts, original extracted statements, verification-intent exclusions and pinned source references above remain valid **as historical snapshots**, not a list of present-tense binding requirements. None is promoted. The live model's Info/analysis and Draft candidate note dispositions are in [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].

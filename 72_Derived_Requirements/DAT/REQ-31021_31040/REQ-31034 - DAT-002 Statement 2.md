@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31034::RuleREQ31034
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] Step 03 — governance reconciliation (D-0066)
+> The original privacy/parser clause remains potentially relevant, but current DAT-001/DAT-002 wording differs; review before promoting this Draft interpretation. `sourceRuleStatus: Active` records the historical source revision. The candidate definition is not approved and its verification case has not been executed. No native semantic relationship is added. See [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 No real product names, BOMs, drawings, customers, revision histories or source exports.
