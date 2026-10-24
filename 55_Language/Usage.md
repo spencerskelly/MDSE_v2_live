@@ -118,6 +118,10 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 
 ![[99_System/04_Language/Timeslice]]
 
+## Trade study
+
+![[99_System/04_Language/Trade study]]
+
 ## Use case usage
 
 ![[99_System/04_Language/Use case usage]]

@@ -14,6 +14,14 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 
 ![[99_System/04_Language/Binding connector]]
 
+## Causation
+
+![[99_System/04_Language/Causation]]
+
+## Conditional succession
+
+![[99_System/04_Language/Conditional succession]]
+
 ## Conjugation
 
 ![[99_System/04_Language/Conjugation]]
@@ -66,6 +74,10 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 
 ![[99_System/04_Language/Message]]
 
+## Multicausation
+
+![[99_System/04_Language/Multicausation]]
+
 ## Perform
 
 ![[99_System/04_Language/Perform]]
@@ -77,6 +89,14 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 ## Reference subsetting
 
 ![[99_System/04_Language/Reference subsetting]]
+
+## Refinement
+
+![[99_System/04_Language/Refinement]]
+
+## Requirement derivation
+
+![[99_System/04_Language/Requirement derivation]]
 
 ## Satisfy
 

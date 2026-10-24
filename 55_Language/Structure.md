@@ -18,6 +18,10 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 
 ![[99_System/04_Language/Multiplicity]]
 
+## Ownership and reference
+
+![[99_System/04_Language/Ownership and reference]]
+
 ## Package
 
 ![[99_System/04_Language/Package]]
@@ -25,6 +29,10 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 ## Parameter direction
 
 ![[99_System/04_Language/Parameter direction]]
+
+## Requirement decomposition
+
+![[99_System/04_Language/Requirement decomposition]]
 
 ## Return
 

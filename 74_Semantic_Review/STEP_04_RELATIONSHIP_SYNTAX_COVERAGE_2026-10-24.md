@@ -72,3 +72,9 @@ These are a **historical engineering taxonomy**. Not all are valid current YAML 
 - Any ambiguous connection remains a review marker and the original evidence remains recoverable. No Draft derived requirement is promoted and no verification execution is implied by this review.
 
 **Status:** inventory audited and categorized; OD-01 and the named implementation/parser/view acceptance gates remain open. No native model source was changed by this report.
+
+## Canonical language reference sync — 2026-10-24
+
+Comparison with `MDSE_v2/governance/language/sysml-v2` found **15 missing canonical Markdown notes** in the live `99_System/04_Language` (109 present vs 124 current). All 15 missing files were copied **unchanged** from the current tool-source canonical notes. The read-only category views now embed these additions: five in Relationship, seven in Annotation, two in Structure and one in Usage. The `55_Language/Relationship` assembled view therefore contains the 31 documented relationship-kind notes in the source catalog, up from 26.
+
+This sync updates language documentation/managed vault files. It does **not** change the native SysML model definitions, approve an unverified syntax example, establish semantic equivalence or close OD-01.

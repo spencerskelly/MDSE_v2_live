@@ -10,6 +10,10 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 
 ![[99_System/04_Language/Documentation]]
 
+## Issue
+
+![[99_System/04_Language/Issue]]
+
 ## Metadata annotation
 
 ![[99_System/04_Language/Metadata annotation]]
@@ -18,6 +22,31 @@ This is a read-only engineering-facing assembled view. **Edit the source notes u
 
 ![[99_System/04_Language/Prefix metadata]]
 
+## Quantity and unit
+
+![[99_System/04_Language/Quantity and unit]]
+
+## Rationale
+
+![[99_System/04_Language/Rationale]]
+
+## Shape items
+
+![[99_System/04_Language/Shape items]]
+
+## Status information
+
+![[99_System/04_Language/Status information]]
+
 ## Textual representation
 
 ![[99_System/04_Language/Textual representation]]
+
+## Verdict
+
+![[99_System/04_Language/Verdict]]
+
+## Verification method
+
+![[99_System/04_Language/Verification method]]
+
