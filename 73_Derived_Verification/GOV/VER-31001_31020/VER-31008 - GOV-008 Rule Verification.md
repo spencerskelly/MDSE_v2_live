@@ -56,6 +56,14 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[GOV-008 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## GOV requirement trace — Draft
+
+- [[REQ-31015]] — independently assess this source clause against governing decision and actual tool/release evidence.
+- [[REQ-31016]] — independently assess this source clause against governing decision and actual tool/release evidence.
+- [[REQ-31017]] — independently assess this source clause against governing decision and actual tool/release evidence.
+
+Planned verification must include revision/fixture, expected artifact or behavior, observed result, and approval status. The native objective (when applicable) is owned by [[MDSE Toolset Composition]]. `executionStatus: not-run` remains unchanged.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

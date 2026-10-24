@@ -54,6 +54,12 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[GOV-006 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## GOV requirement trace — Draft
+
+- **No positive objective:** GOV-006 points to the archived Test_Vault_ operating rule; review and retire its source-derived candidates rather than require archived repository writes.
+
+Planned verification must include revision/fixture, expected artifact or behavior, observed result, and approval status. The native objective (when applicable) is owned by [[MDSE Toolset Composition]]. `executionStatus: not-run` remains unchanged.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.
