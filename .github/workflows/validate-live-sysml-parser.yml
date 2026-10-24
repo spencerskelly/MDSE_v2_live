@@ -1,0 +1,107 @@
+name: Diagnose independent SysML v2 parser against live model
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/assemble-live-sysml.mjs'
+      - '.github/workflows/validate-live-sysml-parser.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  independent-parser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out current live vault
+        uses: actions/checkout@v4
+      - name: Check out pinned MDSE parser provisioning contract
+        uses: actions/checkout@v4
+        with:
+          repository: spencerskelly/MDSE_v2
+          ref: 05e7875de9e289583f0f515145147961e82e5228
+          path: _tool_source
+          persist-credentials: false
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Assemble authoritative SysML blocks
+        run: |
+          node scripts/assemble-live-sysml.mjs --output "$RUNNER_TEMP/mdse-live.sysml" --manifest "$RUNNER_TEMP/mdse-live-sources.json"
+      - name: Provision independently pinned SysML 2.0 validator
+        run: bash _tool_source/testing/fixtures/golden-charger/provision_parser.sh "$RUNNER_TEMP/sysml-parser"
+      - name: Positive control — Golden Charger must parse
+        working-directory: ${{ runner.temp }}/sysml-parser/sysmlv2-validator
+        run: |
+          python3 "$GITHUB_WORKSPACE/_tool_source/testing/fixtures/golden-charger/external_parser_gate.py" --output "$RUNNER_TEMP/golden-charger.sysml"
+          ./validate-sysml "$RUNNER_TEMP/golden-charger.sysml"
+      - name: Negative controls — unresolved type and malformed syntax must fail
+        working-directory: ${{ runner.temp }}/sysml-parser/sysmlv2-validator
+        run: |
+          python3 "$GITHUB_WORKSPACE/_tool_source/testing/fixtures/golden-charger/semantic_regression.py" --source "$RUNNER_TEMP/golden-charger.sysml" --validator "./validate-sysml {model}"
+      - name: Independent full-model parser diagnosis (report-only)
+        working-directory: ${{ runner.temp }}/sysml-parser/sysmlv2-validator
+        run: |
+          set +e
+          ./validate-sysml "$RUNNER_TEMP/mdse-live.sysml" > "$RUNNER_TEMP/live-parser.stdout.txt" 2> "$RUNNER_TEMP/live-parser.stderr.txt"
+          code=$?
+          set -e
+          echo "$code" > "$RUNNER_TEMP/live-parser-exit.txt"
+          echo "Live parser exit code: $code (0 is selected-implementation acceptance, not full SysML certification)"
+          tail -n 45 "$RUNNER_TEMP/live-parser.stdout.txt" || true
+          tail -n 45 "$RUNNER_TEMP/live-parser.stderr.txt" || true
+      - name: Record provenance and parsing status
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib
+          tmp=pathlib.Path(os.environ['RUNNER_TEMP'])
+          sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
+          source=tmp/'mdse-live-sources.json'; status=tmp/'live-parser-exit.txt'
+          code=int(status.read_text().strip()) if status.exists() else None
+          stdout=tmp/'live-parser.stdout.txt'; stderr=tmp/'live-parser.stderr.txt'
+          provenance=tmp/'sysml-parser/parser-provenance.txt'
+          hashes=tmp/'sysml-parser/parser-sha256.txt'
+          report={
+            'schema':'mdse-live-independent-parser-report/1',
+            'liveCommit':os.environ.get('GITHUB_SHA'),
+            'toolCommit':'05e7875de9e289583f0f515145147961e82e5228',
+            'validator':'DeciSym/sysmlv2-validator@63abbd9fbc7851dc437d01b2dc07836b919770b8',
+            'pilot':'Systems-Modeling/SysML-v2-Pilot-Implementation 2026-04 / 0.59.0',
+            'status':'PARSER_ACCEPTED' if code==0 else ('PARSER_REJECTED' if code is not None else 'NOT_EXECUTED'),
+            'validatorExitCode':code,
+            'assembly':json.loads(source.read_text()) if source.exists() else None,
+            'modelFileSha256':sha(tmp/'mdse-live.sysml'),
+            'stdoutTail':stdout.read_text(errors='replace')[-10000:] if stdout.exists() else None,
+            'stderrTail':stderr.read_text(errors='replace')[-10000:] if stderr.exists() else None,
+            'parserProvenance':provenance.read_text() if provenance.exists() else None,
+            'parserBinaryHashes':hashes.read_text() if hashes.exists() else None,
+            'scope':'All active authoritative model notes assembled in one file; focused parser controls. Not model-intent or Obsidian runtime acceptance.'
+          }
+          (tmp/'live-parser-report.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps({k:v for k,v in report.items() if k not in ('assembly','stdoutTail','stderrTail')},indent=2))
+          PY
+      - name: Upload assembled model, source line map, and independent parser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdse-live-sysml-parser-diagnostic
+          path: |
+            ${{ runner.temp }}/mdse-live.sysml
+            ${{ runner.temp }}/mdse-live-sources.json
+            ${{ runner.temp }}/live-parser-report.json
+            ${{ runner.temp }}/live-parser.stdout.txt
+            ${{ runner.temp }}/live-parser.stderr.txt
+            ${{ runner.temp }}/live-parser-exit.txt
+            ${{ runner.temp }}/sysml-parser/parser-provenance.txt
+            ${{ runner.temp }}/sysml-parser/parser-sha256.txt
+          if-no-files-found: warn
+          retention-days: 30
