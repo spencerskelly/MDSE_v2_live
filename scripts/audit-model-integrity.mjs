@@ -21,8 +21,15 @@ scan(base,false);
 for(const r of roots)scan(join(base,r),true);
 for(const n of rootNotes)if(all.has(n))records.push({path:n,body:readFileSync(join(base,n),'utf8')});
 const notes=records.filter(r=>r.path.endsWith('.md')),canvases=records.filter(r=>r.path.endsWith('.canvas'));
-const byStem=new Map();
-for(const r of notes){const stem=posix.basename(r.path,'.md');byStem.set(stem,[...(byStem.get(stem)||[]),r.path]);}
+const byStem=new Map(), bySuffix=new Map();
+for(const r of notes){
+ const stem=posix.basename(r.path,'.md');byStem.set(stem,[...(byStem.get(stem)||[]),r.path]);
+ const segments=r.path.split('/');
+ for(let i=1;i<segments.length;i++){
+  const suffix=segments.slice(i).join('/');
+  bySuffix.set(suffix,(bySuffix.get(suffix)||0)+1);
+ }
+}
 function field(s,k){const f=s.match(/^---\r?\n([\s\S]*?)\r?\n---/);if(!f)return '';const v=f[1].match(new RegExp('^'+k+':\\s*(.*?)\\s*$','m'));return v?v[1].trim().replace(/^['"]|['"]$/g,''):'';}
 function resolve(file,text,wiki){
  let t=text.trim();
@@ -36,7 +43,7 @@ function resolve(file,text,wiki){
   const matches=byStem.get(posix.basename(t,'.md'))||[];
   if(matches.length===1)return'ok';
   if(matches.length>1)return'ambiguous';
-  const tail=notes.filter(n=>options.some(p=>n.path.endsWith('/'+p))).length;
+  const tail=Math.max(...options.map(p=>bySuffix.get(p)||0));
   return tail===1?'ok':tail>1?'ambiguous':'missing';
  }
  if(options.some(p=>all.has(posix.normalize(posix.join(posix.dirname(file),p)))))return'ok';
@@ -53,7 +60,12 @@ for(const note of notes){
   if(seen[key].has(val))add('DUPLICATE_'+key.toUpperCase(),note.path,val+' also '+seen[key].get(val));
   else seen[key].set(val,note.path);
  }
- const prose=note.body.replace(new RegExp('^[ \\t]*\\x60{3,}[^\\n]*\\n[\\s\\S]*?^[ \\t]*\\x60{3,}[ \\t]*$','gm'),'');
+ let insideFence=false;
+ const fenceMark=String.fromCharCode(96).repeat(3);
+ const prose=note.body.split(/\r?\n/).filter(line=>{
+  if(line.trimStart().startsWith(fenceMark)){insideFence=!insideFence;return false;}
+  return !insideFence;
+ }).join('\n');
  for(const m of prose.matchAll(/!?\[\[([^\]\n]+)\]\]/g)){
   wikiLinks++;const result=resolve(note.path,m[1],true);
   if(result==='missing')add('WIKI_UNRESOLVED',note.path,m[1]);
