@@ -82,6 +82,20 @@ The original rule is [[WKB-008]]. Its generated reference records exact source w
 
 See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obsidian Canvas. The reusable **definition** below is not duplicated or replaced; the context owns its relationships. Exact grammar validity and runtime Workbench edge resolution remain subject to acceptance testing.
 
+## Native requirement objectives — nine atomic Draft definitions
+
+The existing verification objective in [[MDSE Toolset Composition]] now targets all nine distinct requirement usages, in addition to the three transitional generated broad candidate usages. Each requires a separate fixture and observed result; this formal verification case has **not** been executed.
+
+- [[REQ-31333 - WKB-008 A01 - Add Eligible Relationship]]: Add an eligible relationship and assert native source text and indexed link match.
+- [[REQ-31334 - WKB-008 A02 - Create Model Element]]: Create an eligible element and assert a native definition is indexed.
+- [[REQ-31335 - WKB-008 A03 - Edit Requirement Text]]: Edit, save and reload a requirement; assert its authoritative text changes.
+- [[REQ-31336 - WKB-008 A04 - Filter Eligible Relationship Kinds]]: Test two source kinds; assert incompatible relationship kinds are excluded.
+- [[REQ-31337 - WKB-008 A05 - Restrict Relationship Target Choices]]: Provide eligible and incompatible targets; assert only eligible notes are selectable.
+- [[REQ-31338 - WKB-008 A06 - Search Eligible Relationship Targets]]: Search known eligible target names and assert expected notes are returned.
+- [[REQ-31339 - WKB-008 A07 - Group Relationship Targets by Folder]]: Provide target notes in two folders and assert correct browser grouping.
+- [[REQ-31340 - WKB-008 A08 - Persist Edits in Authoritative SysML]]: Apply an edit, reload and assert the authoritative block and graph agree.
+- [[REQ-31341 - WKB-008 A09 - Create Governed Minimal Note]]: Create a note and assert identity properties and one final SysML block.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

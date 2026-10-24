@@ -59,6 +59,15 @@ package MDSE_OBJ_00006 {
         requirement editLensCapabilities : MDSE_REQ_31278::RuleREQ31278;
         requirement eligibleEditTargets : MDSE_REQ_31279::RuleREQ31279;
         requirement authoritativeSysmlWrite : MDSE_REQ_31280::RuleREQ31280;
+        requirement a01 : MDSE_REQ_31333::RuleREQ31333;
+        requirement a02 : MDSE_REQ_31334::RuleREQ31334;
+        requirement a03 : MDSE_REQ_31335::RuleREQ31335;
+        requirement a04 : MDSE_REQ_31336::RuleREQ31336;
+        requirement a05 : MDSE_REQ_31337::RuleREQ31337;
+        requirement a06 : MDSE_REQ_31338::RuleREQ31338;
+        requirement a07 : MDSE_REQ_31339::RuleREQ31339;
+        requirement a08 : MDSE_REQ_31340::RuleREQ31340;
+        requirement a09 : MDSE_REQ_31341::RuleREQ31341;
         requirement relationshipProperties : MDSE_REQ_31286::RuleREQ31286;
         requirement relationshipOptionEligibility : MDSE_REQ_31287::RuleREQ31287;
         requirement safeUsageRename : MDSE_REQ_31288::RuleREQ31288;
@@ -74,6 +83,15 @@ package MDSE_OBJ_00006 {
         allocate editLensCapabilities to workbench;
         allocate eligibleEditTargets to workbench;
         allocate authoritativeSysmlWrite to workbench;
+        allocate a01 to workbench;
+        allocate a02 to workbench;
+        allocate a03 to workbench;
+        allocate a04 to workbench;
+        allocate a05 to workbench;
+        allocate a06 to workbench;
+        allocate a07 to workbench;
+        allocate a08 to workbench;
+        allocate a09 to workbench;
         allocate relationshipProperties to workbench;
         allocate relationshipOptionEligibility to workbench;
         allocate safeUsageRename to workbench;
@@ -103,6 +121,15 @@ package MDSE_OBJ_00006 {
                 verify editLensCapabilities;
                 verify eligibleEditTargets;
                 verify authoritativeSysmlWrite;
+                verify a01;
+                verify a02;
+                verify a03;
+                verify a04;
+                verify a05;
+                verify a06;
+                verify a07;
+                verify a08;
+                verify a09;
             }
         }
 
@@ -124,6 +151,7 @@ package MDSE_OBJ_00006 {
             objective relationshipDeduplicationCheckObjective {
                 verify deduplicateModeledRelationship;
             }
-        }    }
+        }
+    }
 }
 ```
