@@ -53,6 +53,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD source and model trace — Draft
+
+- Source [[MOD-165]] and semantic analysis [[MOD-165 - Analysis]].
+- Context [[Add Engineering Knowledge]], [[Correct or Complete Knowledge]], [[Maintain and Improve Model Knowledge]].
+- Architecture [[MDSE Core]], [[MDSE Workbench]], [[Note and SysML Codec]].
+- Verification [[VER-31068 - MOD-165 Rule Verification]].
+- Typed requirement usage `mod31132` in [[MDSE Toolset Composition]].
+- Language catalog location and generated syntax examples need review against current 55_Language vault layout. No test execution asserted.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

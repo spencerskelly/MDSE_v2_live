@@ -53,6 +53,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD source and model trace — Draft
+
+- Source [[MOD-166]] and semantic analysis [[MOD-166 - Analysis]].
+- Context [[Add Engineering Knowledge]], [[Correct or Complete Knowledge]], [[Maintain and Improve Model Knowledge]].
+- Architecture [[MDSE Core]], [[MDSE Workbench]], [[Note and SysML Codec]].
+- Verification [[VER-31069 - MOD-166 Rule Verification]].
+- Typed requirement usage `mod31134` in [[MDSE Toolset Composition]].
+- Scanner coverage is a proposed acceptance check, not proof of recognition. No test execution asserted.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
