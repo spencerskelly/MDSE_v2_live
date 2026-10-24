@@ -991,11 +991,6 @@ package MDSE_OBJ_00006 {
         verification modCase13 : MDSE_VER_31026::TestVER31026 {
             objective modObjective13 {
                 verify mod31056;
-            }
-        }
-
-        verification modCase13 : MDSE_VER_31026::TestVER31026 {
-            objective modObjective13 {
                 verify mod31057;
             }
         }
@@ -1089,11 +1084,6 @@ package MDSE_OBJ_00006 {
         verification modCase139 : MDSE_VER_31061::TestVER31061 {
             objective modObjective139 {
                 verify mod31116;
-            }
-        }
-
-        verification modCase139 : MDSE_VER_31061::TestVER31061 {
-            objective modObjective139 {
                 verify mod31117;
                 verify mod31118;
             }
