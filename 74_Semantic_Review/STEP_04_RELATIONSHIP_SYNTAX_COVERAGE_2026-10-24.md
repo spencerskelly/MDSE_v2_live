@@ -78,3 +78,9 @@ These are a **historical engineering taxonomy**. Not all are valid current YAML 
 Comparison with `MDSE_v2/governance/language/sysml-v2` found **15 missing canonical Markdown notes** in the live `99_System/04_Language` (109 present vs 124 current). All 15 missing files were copied **unchanged** from the current tool-source canonical notes. The read-only category views now embed these additions: five in Relationship, seven in Annotation, two in Structure and one in Usage. The `55_Language/Relationship` assembled view therefore contains the 31 documented relationship-kind notes in the source catalog, up from 26.
 
 This sync updates language documentation/managed vault files. It does **not** change the native SysML model definitions, approve an unverified syntax example, establish semantic equivalence or close OD-01.
+
+### Source equality check (qualification)
+
+A Git blob comparison after the 15-file sync found **124/124 canonical filenames present**, **15 freshly added notes byte-identical** to current MDSE_v2 source, and **109 pre-existing notes differing** from current source. Sample differences include missing `category` metadata and shorter older support-status explanations in `Redefinition`, `Satisfy`, `Dependency` and `Part usage`. Those 109 files were deliberately **not overwritten** in this review to avoid an unreviewed wholesale managed-vault rewrite. Their content is still stale relative to the current authoritative tool repository.
+
+The category view now discovers all 31 relationship-kind note names, but **full current-text conformance of existing language notes is not yet established**. Next task: controlled Base Vault/Importer toolset-update synchronization, diff review and post-update integrity tests. Do not call the managed language content wholly synchronized until this is done.
