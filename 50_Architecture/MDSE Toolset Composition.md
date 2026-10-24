@@ -176,9 +176,6 @@ package MDSE_OBJ_00006 {
 
         requirement imp31135 : MDSE_REQ_31135::RuleREQ31135;
         requirement imp31136 : MDSE_REQ_31136::RuleREQ31136;
-        requirement imp31137 : MDSE_REQ_31137::RuleREQ31137;
-        requirement imp31138 : MDSE_REQ_31138::RuleREQ31138;
-        requirement imp31139 : MDSE_REQ_31139::RuleREQ31139;
         requirement imp31140 : MDSE_REQ_31140::RuleREQ31140;
         requirement imp31141 : MDSE_REQ_31141::RuleREQ31141;
         requirement imp31142 : MDSE_REQ_31142::RuleREQ31142;
@@ -558,17 +555,6 @@ package MDSE_OBJ_00006 {
             objective impObjective74 {
                 verify imp31135;
                 verify imp31136;
-            }
-        }
-        verification impCase75 : MDSE_VER_31071::TestVER31071 {
-            objective impObjective75 {
-                verify imp31137;
-                verify imp31138;
-            }
-        }
-        verification impCase76 : MDSE_VER_31072::TestVER31072 {
-            objective impObjective76 {
-                verify imp31139;
             }
         }
         verification impCase78 : MDSE_VER_31073::TestVER31073 {
