@@ -374,6 +374,12 @@ package MDSE_OBJ_00006 {
         requirement mod31133 : MDSE_REQ_31133::RuleREQ31133;
         requirement mod31134 : MDSE_REQ_31134::RuleREQ31134;
 
+        requirement tst31328 : MDSE_REQ_31328::RuleREQ31328;
+        requirement tst31329 : MDSE_REQ_31329::RuleREQ31329;
+        requirement tst31330 : MDSE_REQ_31330::RuleREQ31330;
+        requirement tst31331 : MDSE_REQ_31331::RuleREQ31331;
+        requirement tst31332 : MDSE_REQ_31332::RuleREQ31332;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -1125,6 +1131,24 @@ package MDSE_OBJ_00006 {
         verification modCase166 : MDSE_VER_31069::TestVER31069 {
             objective modObjective166 {
                 verify mod31134;
+            }
+        }
+
+        verification tstCase1 : MDSE_VER_31157::TestVER31157 {
+            objective tstObjective1 {
+                verify tst31328;
+                verify tst31329;
+            }
+        }
+        verification tstCase2 : MDSE_VER_31158::TestVER31158 {
+            objective tstObjective2 {
+                verify tst31330;
+            }
+        }
+        verification tstCase3 : MDSE_VER_31159::TestVER31159 {
+            objective tstObjective3 {
+                verify tst31331;
+                verify tst31332;
             }
         }
 
