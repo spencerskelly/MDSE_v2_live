@@ -22,7 +22,8 @@ The MDSE Workbench shall offer relationship kinds applicable to the selected sou
 
 - Governing rule: [[WKB-008]]
 - Analysis identifier: `WKB-008-A04` from [[WKB-008 - Analysis]]
-- Initial broad source candidate: REQ-31279
+- Initial broad source candidate (provenance/navigation only): [[REQ-31279 - WKB-008 Statement 2]]
+- Native requirement derivation is **not asserted**: the source candidate is a compound, unapproved preliminary interpretation.
 - Proposed responsible tool: [[MDSE Workbench]]
 - Requirement identity and definition: authoritative in this note, **Draft pending engineering review**. No `satisfy` relationship or parser certification is asserted.
 
