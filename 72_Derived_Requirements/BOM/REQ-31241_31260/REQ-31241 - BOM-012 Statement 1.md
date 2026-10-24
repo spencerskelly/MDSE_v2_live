@@ -53,6 +53,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## BOM traceability — Draft
+
+- Governing source: [[BOM-012]]; source interpretation: [[BOM-012 - Analysis]].
+- Engineering use case: [[Import an Engineering Model]]; related logical function: [[Ingest and Reconcile Engineering Sources]].
+- Responsible component candidate: [[MDSE Importer]]; related source handling: [[Source Reconciliation Engine]].
+- Existing case: [[VER-31123 - BOM-012 Rule Verification]].
+- Model integration: typed requirement usage `bom31241` in [[MDSE Toolset Composition]], planned objective-level verification. This is an intent trace, not an implementation `satisfy` relationship.
+- Source segment 1 of BOM-012; original ID, SysML block, and Draft status are preserved pending engineering semantic review.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
