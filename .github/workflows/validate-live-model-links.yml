@@ -7,6 +7,7 @@ on:
       - 'scripts/check-live-workbench.mjs'
       - 'scripts/check-functional-model.mjs'
       - 'scripts/audit-derived-lineage.mjs'
+      - 'scripts/audit-model-integrity.mjs'
       - '10_Stakeholder_Needs/**'
       - '20_Use_Cases/**'
       - '30_Functions/**'
@@ -53,5 +54,7 @@ jobs:
         run: node scripts/check-functional-model.mjs
       - name: Audit complete derived-note lineage and native definition ownership (report mode)
         run: node scripts/audit-derived-lineage.mjs
+      - name: Audit active model note links, identity and Canvas references (report mode)
+        run: node scripts/audit-model-integrity.mjs
       - name: Validate live-vault links and deduplication with actual Workbench index
         run: node --no-warnings --experimental-strip-types scripts/check-live-workbench.mjs
