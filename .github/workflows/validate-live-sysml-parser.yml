@@ -59,7 +59,7 @@ jobs:
         working-directory: ${{ runner.temp }}/sysml-parser/sysmlv2-validator
         run: |
           python3 "$GITHUB_WORKSPACE/_tool_source/testing/fixtures/golden-charger/semantic_regression.py" --source "$RUNNER_TEMP/golden-charger.sysml" --validator "./validate-sysml {model}"
-      - name: Independent full-model parser diagnosis (report-only)
+      - name: Independent full-model parser validation
         working-directory: ${{ runner.temp }}/sysml-parser/sysmlv2-validator
         run: |
           set +e
@@ -117,3 +117,7 @@ jobs:
             ${{ runner.temp }}/sysml-parser/parser-sha256.txt
           if-no-files-found: warn
           retention-days: 30
+      - name: Block on failed or missing independent live-model parser result
+        run: |
+          test -s "$RUNNER_TEMP/live-parser-exit.txt"
+          test "$(cat "$RUNNER_TEMP/live-parser-exit.txt")" = "0"
