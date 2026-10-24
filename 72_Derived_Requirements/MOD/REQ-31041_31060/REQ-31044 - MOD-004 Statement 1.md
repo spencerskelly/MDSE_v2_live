@@ -54,6 +54,18 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Native model trace review — Draft
+
+- Governing source: [[MOD-004]] and [[MOD-004 - Analysis]].
+- Existing architecture: [[MDSE Core]], [[Note and SysML Codec]], [[Model Identity Lookup]].
+- Relevant operation: [[Add Engineering Knowledge]] and [[Maintain and Improve Model Knowledge]].
+- Planned case: [[VER-31018 - MOD-004 Rule Verification]].
+- Proposed native typed usage: `mod31044` in [[MDSE Toolset Composition]].
+- **Hold:** local-time timestamp wording conflicts with current UTC policy; do not enforce it as desired v2 behavior.
+
+> [!flagNote] UID time-base conflict
+> Source MOD-004 uses local time. The current v2 modeling policy uses UTC. Resolve source authority and preserve original provenance before approval.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
