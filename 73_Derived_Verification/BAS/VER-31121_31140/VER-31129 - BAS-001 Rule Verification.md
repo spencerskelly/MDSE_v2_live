@@ -52,6 +52,12 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[BAS-001 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## BAS clause-specific verification plan — Draft
+
+- REQ-31260 — verify importer/base version match before writing
+
+Evidence needed: pinned release identity, synthetic test fixture, exact observed manifest/files, pass/fail assertion, execution commit and reviewer. The existing verification definition is reusable; an objective-level `verify` target will be authored in [[MDSE Toolset Composition]] only for normative, independently testable clauses. **No test execution recorded.**
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.
