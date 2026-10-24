@@ -81,6 +81,11 @@ Function definitions remain reusable in this note; relationships are authored as
 ```sysml
 package MDSE_BEH_00005 {
     action def GenerateModelViewpoints {
+        action selectViewpoint : MDSE_BEH_00013::SelectModelViewpoint;
+        action renderVisualView : MDSE_BEH_00014::RenderVisualRelationshipView;
+        action renderDocumentView : MDSE_BEH_00015::RenderDocumentRelationshipView;
+        action displayReviewOverlays : MDSE_BEH_00016::DisplayModelReviewOverlays;
+        action navigateViewSources : MDSE_BEH_00017::NavigateViewpointModelSources;
         doc /* Create visual, table, document and review projections of selected model content using the same underlying model relationships. */
     }
 }
