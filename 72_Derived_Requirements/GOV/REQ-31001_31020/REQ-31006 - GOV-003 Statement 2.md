@@ -50,6 +50,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Governance trace — Draft
+
+- Source: [[GOV-003]] and [[GOV-003 - Analysis]].
+- Relevant model context: [[MDSE Toolset Composition]]. This rule constrains engineering process or tooling ownership and is not automatically an allocated runtime capability.
+- Verification case: [[VER-31003 - GOV-003 Rule Verification]].
+- Native typed integration usage: `gov31006` in [[MDSE Toolset Composition]]; normative requirement draft objective pending test execution.
+- Original source clause 2; no semantic approval, parser certification or executed test claimed.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
