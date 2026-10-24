@@ -100,6 +100,34 @@ package MDSE_OBJ_00006 {
         requirement bas31269 : MDSE_REQ_31269::RuleREQ31269;
         requirement bas31270 : MDSE_REQ_31270::RuleREQ31270;
 
+        requirement bom31233 : MDSE_REQ_31233::RuleREQ31233;
+        requirement bom31234 : MDSE_REQ_31234::RuleREQ31234;
+        requirement bom31235 : MDSE_REQ_31235::RuleREQ31235;
+        requirement bom31236 : MDSE_REQ_31236::RuleREQ31236;
+        requirement bom31237 : MDSE_REQ_31237::RuleREQ31237;
+        requirement bom31238 : MDSE_REQ_31238::RuleREQ31238;
+        requirement bom31239 : MDSE_REQ_31239::RuleREQ31239;
+        requirement bom31240 : MDSE_REQ_31240::RuleREQ31240;
+        requirement bom31241 : MDSE_REQ_31241::RuleREQ31241;
+        requirement bom31242 : MDSE_REQ_31242::RuleREQ31242;
+        requirement bom31243 : MDSE_REQ_31243::RuleREQ31243;
+        requirement bom31244 : MDSE_REQ_31244::RuleREQ31244;
+        requirement bom31245 : MDSE_REQ_31245::RuleREQ31245;
+        requirement bom31246 : MDSE_REQ_31246::RuleREQ31246;
+        requirement bom31247 : MDSE_REQ_31247::RuleREQ31247;
+        requirement bom31248 : MDSE_REQ_31248::RuleREQ31248;
+        requirement bom31249 : MDSE_REQ_31249::RuleREQ31249;
+        requirement bom31250 : MDSE_REQ_31250::RuleREQ31250;
+        requirement bom31251 : MDSE_REQ_31251::RuleREQ31251;
+        requirement bom31252 : MDSE_REQ_31252::RuleREQ31252;
+        requirement bom31253 : MDSE_REQ_31253::RuleREQ31253;
+        requirement bom31254 : MDSE_REQ_31254::RuleREQ31254;
+        requirement bom31255 : MDSE_REQ_31255::RuleREQ31255;
+        requirement bom31256 : MDSE_REQ_31256::RuleREQ31256;
+        requirement bom31257 : MDSE_REQ_31257::RuleREQ31257;
+        requirement bom31258 : MDSE_REQ_31258::RuleREQ31258;
+        requirement bom31259 : MDSE_REQ_31259::RuleREQ31259;
+
         allocate sourceRowDisposition to importer;
         allocate importChangeLog to importer;
         allocate importChangeLogEntry to importer;
@@ -201,6 +229,82 @@ package MDSE_OBJ_00006 {
                 verify bas31268;
                 verify bas31269;
                 verify bas31270;
+            }
+        }
+
+        verification bomCase6 : MDSE_VER_31117::TestVER31117 {
+            objective bomObjective6 {
+                verify bom31233;
+                verify bom31234;
+            }
+        }
+        verification bomCase7 : MDSE_VER_31118::TestVER31118 {
+            objective bomObjective7 {
+                verify bom31235;
+            }
+        }
+        verification bomCase8 : MDSE_VER_31119::TestVER31119 {
+            objective bomObjective8 {
+                verify bom31236;
+                verify bom31237;
+            }
+        }
+        verification bomCase9 : MDSE_VER_31120::TestVER31120 {
+            objective bomObjective9 {
+                verify bom31238;
+            }
+        }
+        verification bomCase10 : MDSE_VER_31121::TestVER31121 {
+            objective bomObjective10 {
+                verify bom31239;
+            }
+        }
+        verification bomCase11 : MDSE_VER_31122::TestVER31122 {
+            objective bomObjective11 {
+                verify bom31240;
+            }
+        }
+        verification bomCase12 : MDSE_VER_31123::TestVER31123 {
+            objective bomObjective12 {
+                verify bom31241;
+            }
+        }
+        verification bomCase13 : MDSE_VER_31124::TestVER31124 {
+            objective bomObjective13 {
+                verify bom31242;
+                verify bom31243;
+            }
+        }
+        verification bomCase14 : MDSE_VER_31125::TestVER31125 {
+            objective bomObjective14 {
+                verify bom31244;
+            }
+        }
+        verification bomCase15 : MDSE_VER_31126::TestVER31126 {
+            objective bomObjective15 {
+                verify bom31245;
+                verify bom31246;
+                verify bom31247;
+                verify bom31248;
+                verify bom31249;
+            }
+        }
+        verification bomCase16 : MDSE_VER_31127::TestVER31127 {
+            objective bomObjective16 {
+                verify bom31250;
+                verify bom31251;
+                verify bom31252;
+                verify bom31253;
+                verify bom31254;
+            }
+        }
+        verification bomCase17 : MDSE_VER_31128::TestVER31128 {
+            objective bomObjective17 {
+                verify bom31255;
+                verify bom31256;
+                verify bom31257;
+                verify bom31258;
+                verify bom31259;
             }
         }
 
