@@ -52,6 +52,19 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Data governance trace — Draft
+
+- Governing rule: [[DAT-002]]; semantic analysis: [[DAT-002 - Analysis]].
+- Stakeholder: [[Protect Engineering Data]]; supporting use case: [[Import an Engineering Model]].
+- Responsible review context: [[MDSE Importer]], [[MDSE Core]]. Repository publication restrictions also govern developer release processes, not necessarily runtime implementation allocations.
+- Reusable case: [[VER-31014 - DAT-002 Rule Verification]].
+- Native typed usage: `dat31036` in [[MDSE Toolset Composition]]. **Held** from normative objective-level verification due to obsolete repo-authority claim.
+- Acceptance interpretation: Obsolete source-authority declaration contradicts current MDSE_v2 tool-authority governance; no positive acceptance criterion.
+- Preserve source, definition and Draft status; no satisfaction, executed result, or parser certification is asserted.
+
+> [!flagNote] Conflict: current MDSE_v2 authority
+> The historic statement that Test_Vault_ remains tooling authority conflicts with current MDSE_v2 governance. Do not enforce or approve as a current requirement until its disposition is recorded.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

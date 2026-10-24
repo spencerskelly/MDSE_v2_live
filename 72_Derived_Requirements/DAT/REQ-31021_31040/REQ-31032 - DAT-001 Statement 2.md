@@ -52,6 +52,16 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Data governance trace — Draft
+
+- Governing rule: [[DAT-001]]; semantic analysis: [[DAT-001 - Analysis]].
+- Stakeholder: [[Protect Engineering Data]]; supporting use case: [[Import an Engineering Model]].
+- Responsible review context: [[MDSE Importer]], [[MDSE Core]]. Repository publication restrictions also govern developer release processes, not necessarily runtime implementation allocations.
+- Reusable case: [[VER-31013 - DAT-001 Rule Verification]].
+- Native typed usage: `dat31032` in [[MDSE Toolset Composition]]. Draft objective-level verification intent.
+- Acceptance interpretation: Native language certification claims must distinguish source normalization, syntax parsing, complete semantic validation, and actual test execution.
+- Preserve source, definition and Draft status; no satisfaction, executed result, or parser certification is asserted.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

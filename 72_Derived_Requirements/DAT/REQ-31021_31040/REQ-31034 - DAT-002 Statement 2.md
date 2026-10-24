@@ -52,6 +52,16 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## Data governance trace — Draft
+
+- Governing rule: [[DAT-002]]; semantic analysis: [[DAT-002 - Analysis]].
+- Stakeholder: [[Protect Engineering Data]]; supporting use case: [[Import an Engineering Model]].
+- Responsible review context: [[MDSE Importer]], [[MDSE Core]]. Repository publication restrictions also govern developer release processes, not necessarily runtime implementation allocations.
+- Reusable case: [[VER-31014 - DAT-002 Rule Verification]].
+- Native typed usage: `dat31034` in [[MDSE Toolset Composition]]. Draft objective-level verification intent.
+- Acceptance interpretation: No named real product/customer/drawing/revision/source exports appear in public repo content.
+- Preserve source, definition and Draft status; no satisfaction, executed result, or parser certification is asserted.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
