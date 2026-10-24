@@ -51,6 +51,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## BOM cross-model trace — Draft
+
+- Source rule: [[BOM-015]]; analysis: [[BOM-015 - Analysis]].
+- User scenario: [[Import an Engineering Model]]; related function: [[Ingest and Reconcile Engineering Sources]].
+- Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]].
+- Planned verification: [[VER-31126 - BOM-015 Rule Verification]].
+- Integration identity: `bom31246` typed usage in [[MDSE Toolset Composition]]; this is verification intent only, not actual execution.
+- Segment 2 of BOM-015; semantic atomization and acceptance remain pending. The source rule is compound; this fragment must be reconciled before owner approval.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
