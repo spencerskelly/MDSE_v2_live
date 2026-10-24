@@ -55,6 +55,16 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD source and model trace — Draft
+
+- Source rule: [[MOD-017]]; interpretation: [[MOD-017 - Analysis]].
+- Use cases: [[Import an Engineering Model]] and [[Add Engineering Knowledge]].
+- Functions: [[Ingest and Reconcile Engineering Sources]] and [[Maintain and Improve Model Knowledge]].
+- Architecture: [[MDSE Core]], [[Model Identity Lookup]], [[Note and SysML Codec]]; author registration may involve [[MDSE Bootstrap]].
+- Intended case: [[VER-31030 - MOD-017 Rule Verification]].
+- Native typed usage: `mod31063` in [[MDSE Toolset Composition]]; responsibility and verification remain Draft.
+- Source statement is Draft; no verified implementation is inferred.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

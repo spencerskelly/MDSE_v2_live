@@ -57,6 +57,16 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD source and model trace — Draft
+
+- Source rule: [[MOD-018]]; interpretation: [[MOD-018 - Analysis]].
+- Use cases: [[Import an Engineering Model]] and [[Add Engineering Knowledge]].
+- Functions: [[Ingest and Reconcile Engineering Sources]] and [[Maintain and Improve Model Knowledge]].
+- Architecture: [[MDSE Core]], [[Model Identity Lookup]], [[Note and SysML Codec]]; author registration may involve [[MDSE Bootstrap]].
+- Intended case: [[VER-31031 - MOD-018 Rule Verification]].
+- Native typed usage: `mod31066` in [[MDSE Toolset Composition]]; responsibility and verification remain Draft.
+- EA provenance time-base needs review against current UTC UID creation and preservation policies.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
