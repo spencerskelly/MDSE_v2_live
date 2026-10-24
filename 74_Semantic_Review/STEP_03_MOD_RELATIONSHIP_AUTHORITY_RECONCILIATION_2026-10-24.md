@@ -52,3 +52,7 @@ These are **review candidates, not approved replacements**. OD-01 should be hand
 ## OD-01 field-by-field triage (not approved)
 
 A complete 29-field candidate inventory now exists at [[OD_01_LEGACY_RELATIONSHIP_FIELD_TRIAGE_2026-10-24]]. It isolates native candidates, MDSE-only candidates and ambiguous mappings, including the D-0010/D-0045 `tracesTo` conflict. No fields are removed from the shared schema or implemented by this worksheet.
+
+## Step 03 extension — D-0070
+
+The follow-up importer/source-governance conflict is reconciled by [D-0070](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/DECISIONS.md): no new provisional `tracesTo` links are written; unresolved MDSE-note connectors become `flagLink` and `deferred_review` evidence. MOD-028 now scopes YAML relationship-field ordering only to approved MDSE-only relationships. Earlier decisions and original derived notes remain historical. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]]. OD-01 stays open for complete migration of legacy fields.

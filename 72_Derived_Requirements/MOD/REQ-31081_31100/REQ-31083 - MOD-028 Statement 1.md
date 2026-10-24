@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31083::RuleREQ31083
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] D-0070 — historical Draft candidate, not approved implementation criteria
+> D-0070 restricts relationship-YAML field ordering to approved MDSE-only fields; native SysML relationships are not YAML fields. OD-01's classification remains open. Retain the original clause, ID, `sourceRuleStatus`, and SysML definition as prior modeling evidence. Reevaluate clause-level acceptance criteria against current governance; no `verify`, `satisfy` or `#derivation` has been added. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 Relationship fields follow tags in the order of relationships.yaml and may hold lists.

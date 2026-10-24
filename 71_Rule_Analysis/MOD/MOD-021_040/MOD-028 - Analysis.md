@@ -17,6 +17,9 @@ modelRoleCandidate: "Model Representation Constraint"
 > [!important] Rule analysis, not another source of authority
 > Binding source rule; every derived requirement remains a **Draft interpretation** until its meaning and clause boundaries are reviewed. Original text and decision provenance remain in [[MOD-028]] and the linked ruleset.
 
+> [!flagNote] Step 03 — historical analysis requires re-scope
+> D-0070 restricts relationship-YAML field ordering to approved MDSE-only fields; native SysML relationships are not YAML fields. OD-01's classification remains open. The source clause interpretation below is preserved for audit; it does not automatically inherit the current normative wording. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]].
+
 ## Rule and provenance
 
 - Original rule: [[MOD-028]]

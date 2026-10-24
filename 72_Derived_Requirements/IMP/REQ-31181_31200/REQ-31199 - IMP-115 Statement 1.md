@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31199::RuleREQ31199
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] D-0070 — historical Draft candidate, not approved implementation criteria
+> D-0070 implements D-0010: an unresolved MDSE-note connector gets a `flagLink` and `deferred_review` ledger row with original GUID and endpoints, not a new `tracesTo` YAML link. Existing approved descriptive YAML fields are unchanged. Retain the original clause, ID, `sourceRuleStatus`, and SysML definition as prior modeling evidence. Reevaluate clause-level acceptance criteria against current governance; no `verify`, `satisfy` or `#derivation` has been added. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]].
+
 ## Candidate obligation
 
 A relationship end that is an MDSE note (Issue, Change, Info, Artifact, Decision) has no SysML form and becomes a YAML link on the source note: `describes` when the note is Info, Artifact or Document, `dependsOn` for Dependency and Usage, `hasChild` for Aggregation, and otherwise the provisional `tracesTo` with PROVISIONAL_LINK.

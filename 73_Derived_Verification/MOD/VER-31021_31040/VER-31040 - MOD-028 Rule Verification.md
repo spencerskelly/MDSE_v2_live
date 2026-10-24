@@ -25,6 +25,9 @@ Establish verifiable evidence for the governed outcomes of [[MOD-028]] and its p
 
 - [[REQ-31083 - MOD-028 Statement 1]]
 
+> [!flagNote] D-0070 — draft verification procedure needs new acceptance conditions
+> D-0070 restricts relationship-YAML field ordering to approved MDSE-only fields; native SysML relationships are not YAML fields. OD-01's classification remains open. This original checklist is historical; future tests must check that unresolved links are flagged and that no provisional YAML semantic link is emitted. `executionStatus: not-run` is unchanged. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]].
+
 ## Acceptance checklist — source statements requiring verification
 
 - [ ] Clause 1: Relationship fields follow tags in the order of relationships.yaml and may hold lists.

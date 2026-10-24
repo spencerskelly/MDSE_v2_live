@@ -26,6 +26,9 @@ Establish verifiable evidence for the governed outcomes of [[IMP-115]] and its p
 - [[REQ-31199 - IMP-115 Statement 1]]
 - [[REQ-31200 - IMP-115 Statement 2]]
 
+> [!flagNote] D-0070 — draft verification procedure needs new acceptance conditions
+> D-0070 implements D-0010: an unresolved MDSE-note connector gets a `flagLink` and `deferred_review` ledger row with original GUID and endpoints, not a new `tracesTo` YAML link. Existing approved descriptive YAML fields are unchanged. This original checklist is historical; future tests must check that unresolved links are flagged and that no provisional YAML semantic link is emitted. `executionStatus: not-run` is unchanged. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]].
+
 ## Acceptance checklist — source statements requiring verification
 
 - [ ] Clause 1: A relationship end that is an MDSE note (Issue, Change, Info, Artifact, Decision) has no SysML form and becomes a YAML link on the source note: `describes` when the note is Info, Artifact or Document, `dependsOn` for Dependency and Usage, `hasChild` for Aggregation, and otherwise the provisional `tracesTo` with PROVISIONAL_LINK.

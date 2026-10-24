@@ -1,6 +1,8 @@
 # OD-01 — Complete legacy relationship-field triage for review (2026-10-24)
 
-**Disposition: PROPOSED CANDIDATE MATRIX; NO FIELD IS PROMOTED BY THIS DOCUMENT.** The source catalog is [governance/schemas/relationships.yaml](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/schemas/relationships.yaml); its header explicitly warns that it is a V1 inventory under revision. This matrix is a human review aid to implement open [OD-01](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/OPEN_DECISIONS.md) under accepted D-0003/D-0061/D-0069.
+**Disposition: PROPOSED CANDIDATE MATRIX; NO FIELD IS PROMOTED BY THIS DOCUMENT.**
+
+**D-0070 update:** The one `tracesTo` decision conflict is resolved **for new importer writes**: the field is prohibited as a provisional semantic assertion and replaced by `flagLink` plus deferred ledger evidence. Legacy `tracesTo` values still need migration under OD-01; the original 29-field counts below remain a snapshot of pre-D-0070 triage. The source catalog is [governance/schemas/relationships.yaml](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/schemas/relationships.yaml); its header explicitly warns that it is a V1 inventory under revision. This matrix is a human review aid to implement open [OD-01](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/OPEN_DECISIONS.md) under accepted D-0003/D-0061/D-0069.
 
 ## Scope and classification
 
@@ -25,7 +27,7 @@
 | `triggeredBy` | Native candidate | transition triggers/accepts as appropriate, not generic YAML pair |
 | `supersedes` | MDSE-only candidate | administrative note replacement/provenance unless native element semantics proven |
 | `describes` | MDSE-only candidate | informational note/document describes target, outside native model |
-| `tracesTo` | Decision conflict | D-0010 says flagLink replaces provisional relationship; D-0045 lists tracesTo as exception; owner decision required |
+| `tracesTo` | Resolved for new writes (D-0070); legacy migration open | New imports produce `flagLink` and `deferred_review` instead of `tracesTo`. Existing values remain historical; OD-01 must still classify/remove the old schema entry. |
 | `performs` | Native candidate | perform action usage / owning behavior in SysML |
 | `hasDesign` | Review | legacy design/condition mapping must reconcile with native exhibit/state/satisfaction |
 | `appliesTo` | Native candidate | requirement subject/objective appropriately typed |

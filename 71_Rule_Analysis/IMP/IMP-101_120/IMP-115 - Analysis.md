@@ -17,6 +17,9 @@ modelRoleCandidate: "Import Functional Requirement"
 > [!important] Rule analysis, not another source of authority
 > Binding source rule; every derived requirement remains a **Draft interpretation** until its meaning and clause boundaries are reviewed. Original text and decision provenance remain in [[IMP-115]] and the linked ruleset.
 
+> [!flagNote] Step 03 — historical analysis requires re-scope
+> D-0070 implements D-0010: an unresolved MDSE-note connector gets a `flagLink` and `deferred_review` ledger row with original GUID and endpoints, not a new `tracesTo` YAML link. Existing approved descriptive YAML fields are unchanged. The source clause interpretation below is preserved for audit; it does not automatically inherit the current normative wording. See [[STEP_03_PROVISIONAL_LINK_RECONCILIATION_2026-10-24]].
+
 ## Rule and provenance
 
 - Original rule: [[IMP-115]]
