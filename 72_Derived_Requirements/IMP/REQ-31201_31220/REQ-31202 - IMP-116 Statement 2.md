@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31202::RuleREQ31202
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] D-0073 — historical only; not a current enforceable requirement
+> The original Draft clause requiring YAML `precedes` between ownerless notes is superseded by D-0073 and native-v2 authority D-0003. No new YAML temporal assertion is allowed; retain connector GUID and endpoints in a flagged deferred ledger record and original guard/trigger/effect as source evidence. **The existing typed usage and SysML requirement definition are preserved as history, not approved normative behavior.**
+
 ## Candidate obligation
 
 Between notes that share no owner they are the `precedes` link on the step before, with trigger, guard and effect as a Source line (V1 W-174, W-175).

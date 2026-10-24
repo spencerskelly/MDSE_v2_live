@@ -17,6 +17,9 @@ primarySymbol: MDSE_REQ_31201::RuleREQ31201
 > [!warning] Unapproved model interpretation
 > The source rule is **Active**, but this is a **Draft candidate statement**, not an independent approved requirement. Its segmentation, wording, duplication and applicability must be reviewed before promotion or new implementation work.
 
+> [!flagNote] D-0073 — native case remains conditional on proven ownership
+> The original Draft clause is consistent only for typed action/state usages in one valid owner. Parser, round-trip and Workbench visual acceptance are not inferred; existing SysML source remains unchanged.
+
 ## Candidate obligation
 
 ControlFlow and StateFlow between usages, or between definitions nested in one owner, are a `succession` or `transition` in that owner.

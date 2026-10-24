@@ -17,6 +17,9 @@ modelRoleCandidate: "Import Functional Requirement"
 > [!important] Rule analysis, not another source of authority
 > Binding source rule; every derived requirement remains a **Draft interpretation** until its meaning and clause boundaries are reviewed. Original text and decision provenance remain in [[IMP-116]] and the linked ruleset.
 
+> [!flagNote] D-0073: historical clause decomposition
+> Original statement 2 (cross-owner `precedes`) is now superseded. The current importer defers such connectors with `flagLink` and retained trigger/guard/effect. Native same-owner sequence remains the accepted direction. See [[STEP_05_TYPED_RELATIONSHIP_ENDPOINT_MAPPING_2026-10-24]].
+
 ## Rule and provenance
 
 - Original rule: [[IMP-116]]

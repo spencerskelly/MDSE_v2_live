@@ -26,6 +26,9 @@ Establish verifiable evidence for the governed outcomes of [[IMP-116]] and its p
 - [[REQ-31201 - IMP-116 Statement 1]]
 - [[REQ-31202 - IMP-116 Statement 2]]
 
+> [!flagNote] D-0073 — original checklist needs revised acceptance criteria
+> Clause 1 requires compatible typed usages and common native owner; clause 2 (`precedes` YAML fallback) is superseded. Future criteria: no new `precedes` YAML; flagLink + deferred ledger with GUID, source/target, guard, trigger and effect retained. This verification case remains Draft and unexecuted. See [[STEP_05_TYPED_RELATIONSHIP_ENDPOINT_MAPPING_2026-10-24]].
+
 ## Acceptance checklist — source statements requiring verification
 
 - [ ] Clause 1: ControlFlow and StateFlow between usages, or between definitions nested in one owner, are a `succession` or `transition` in that owner.

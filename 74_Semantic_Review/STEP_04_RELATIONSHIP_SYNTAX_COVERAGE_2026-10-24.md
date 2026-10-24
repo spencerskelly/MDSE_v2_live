@@ -52,6 +52,10 @@ These are a **historical engineering taxonomy**. Not all are valid current YAML 
 5. **Requirements and verification:** derivation, refinement, containment/decomposition, satisfaction, verification and allocation are distinct. Verify belongs to a verification objective/case, not test execution results. Never synthesize `satisfy` from a folder or documentation link.
 6. **MDSE descriptive evidence:** `describes`, `affects`, historical aliases, source identity and `flagLink` stay outside native SysML when no equivalent semantics exist. Do not invent SysML relationship keywords or persist a YAML inverse of a native edge.
 
+## Step 05 continuation — typed routing under D-0073
+
+[D-0073](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/DECISIONS.md) prohibits the importer from creating ownerless YAML `precedes` on ControlFlow/StateFlow and blocks creation of new provisional trace dependencies in the Workbench. Existing evidence is preserved and the full endpoint-specific review matrix is at [[STEP_05_TYPED_RELATIONSHIP_ENDPOINT_MAPPING_2026-10-24]]. The broad list of gaps below is a historical Step 04 snapshot; Step 05 supplies code/test status. OD-01 remains open for `hasChild`, `dependsOn`, and `participants` interpretation.
+
 ## Verified gaps in current code, requiring dedicated fixes/tests
 
 | Priority | Source | Problem / acceptance criterion |
