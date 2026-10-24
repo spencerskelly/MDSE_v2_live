@@ -54,6 +54,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD model trace — Draft
+
+- Original rule [[MOD-032]] and [[MOD-032 - Analysis]].
+- [[Add Engineering Knowledge]], [[Import an Engineering Model]]; [[Maintain and Improve Model Knowledge]], [[Ingest and Reconcile Engineering Sources]].
+- [[MDSE Core]], [[Note and SysML Codec]], [[Model Identity Lookup]].
+- Existing case [[VER-31044 - MOD-032 Rule Verification]].
+- Typed native usage `mod31087` in [[MDSE Toolset Composition]]; **hold from positive verification** pending current-v2 semantic reconciliation.
+- Source preserved and execution unproven.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
