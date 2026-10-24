@@ -50,6 +50,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## BOO source-to-model trace — Draft
+
+- Governing rule: [[BOO-007]]; analysis: [[BOO-007 - Analysis]].
+- Architecture: [[MDSE Bootstrap]], [[MDSE Base Vault]]; applicable components include [[Runtime Integrity Check]], [[Activation Repair]] and [[Author Registration]].
+- Use case context: [[Add Engineering Knowledge]] and [[Correct or Complete Knowledge]] describe related operation, **not** a dedicated vault onboarding scenario.
+- Existing verification definition: [[VER-31135 - BOO-007 Rule Verification]].
+- Native typed usage: `boo31272` within [[MDSE Toolset Composition]]; objective-level verification planned.
+- This is source clause 1 of BOO-007; `status: Draft` and the original SysML definition remain unchanged. 
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
