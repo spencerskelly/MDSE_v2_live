@@ -5,10 +5,22 @@ on:
     paths:
       - 'scripts/assemble-live-sysml.mjs'
       - '.github/workflows/validate-live-sysml-parser.yml'
+      - '10_Stakeholder_Needs/**'
+      - '20_Use_Cases/**'
+      - '30_Functions/**'
+      - '40_System_Requirements/**'
+      - '50_Architecture/**'
+      - '60_Verification/**'
+      - '72_Derived_Requirements/**'
+      - '73_Derived_Verification/**'
   workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: independent-sysml-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   independent-parser:
