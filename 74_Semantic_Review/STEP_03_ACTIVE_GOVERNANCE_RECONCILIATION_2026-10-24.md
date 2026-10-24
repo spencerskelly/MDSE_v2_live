@@ -35,3 +35,7 @@
 5. Step 01 navigation defects, Step 02's 256 inherited-member warnings, real Obsidian interaction testing, and private EA/BOM semantic acceptance are still open and unrelated to this governance reconciliation.
 
 No folder-depth cap is set **by D-0066**; the subsequently approved D-0067 cap is 6. No user approval of candidate requirements, successful verification execution, new semantic SysML relationship, or implementation completion is inferred here.
+
+## Continuation — MOD relationship authority (D-0069)
+
+After this original GOV/DAT disposition, [D-0069](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/DECISIONS.md) clarified Active MOD-075 and MOD-076. Native SysML relationship endpoint rules and reverse links come from authoritative SysML semantics, not legacy `relationships.yaml`. OD-01 remains open for MDSE-only field classification. Two historical rule reference notes, two analyses, three Draft requirement notes (`REQ-31102`–`REQ-31104`) and two Draft verification cases (`VER-31053`, `VER-31054`) were annotated, preserving their SysML source. See [[STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24]] for the continuation and follow-up rule inventory.

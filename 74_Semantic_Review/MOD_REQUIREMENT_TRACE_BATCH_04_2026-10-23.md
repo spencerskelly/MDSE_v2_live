@@ -9,3 +9,7 @@ Twelve requirements have no positive verification objective pending semantic rev
 No missing endpoint notes were identified in this batch. All source identities, original SysML blocks and Draft status remain unchanged. Parser certification and executed tests are still open.
 
 Next MOD requirement: REQ-31117.
+
+## Step 03 correction — 2026-10-24
+
+D-0069 now explicitly scopes MOD-075 and MOD-076 to avoid governing SysML-native relationships using legacy YAML from/to and inverse fields. REQ-31102 to REQ-31104 are historical Draft clause interpretations requiring new acceptance criteria; any previously modeled objective-level verify usage is an unexecuted historical intent, **not current normative acceptance**. No SysML edits or verification results were introduced. See [[STEP_03_MOD_RELATIONSHIP_AUTHORITY_RECONCILIATION_2026-10-24]].
