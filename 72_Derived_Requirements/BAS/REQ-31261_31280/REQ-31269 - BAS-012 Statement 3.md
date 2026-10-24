@@ -49,6 +49,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## BAS source and verification trace — Draft
+
+- Source: [[BAS-012]] and [[BAS-012 - Analysis]].
+- Architecture: [[MDSE Base Vault]], with related importer compatibility responsibility in [[MDSE Importer]].
+- Existing case: [[VER-31133 - BAS-012 Rule Verification]].
+- Required assessment: Core-plugin settings conform to the source-described V1 set with Templates disabled; check later policy conflicts.
+- Native trace: `bas31269` typed requirement usage in [[MDSE Toolset Composition]]. Verification intent is drafted, not executed.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
