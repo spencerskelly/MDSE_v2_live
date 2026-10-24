@@ -68,6 +68,15 @@ See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obs
 
 No-op repeated import is a narrow safeguard within [[Protect Engineer Changes]] (STK-00004). It does **not** establish that arbitrary changed-source re-imports preserve accepted edits, and it is not evidence of successful merge protection.
 
+## Cross-model trace — Importer (Draft)
+
+- Source: [[IMP-076]] and [[IMP-076 - Analysis]].
+- Use case: [[Import an Engineering Model]]; function: [[Ingest and Reconcile Engineering Sources]].
+- Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]] and [[Managed Vault Update]].
+- Verification: [[VER-31072 - IMP-076 Rule Verification]].
+- Native typed integration: `imp31121` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 1 remains Draft.
+- No independent parser/verification or satisfaction assertion.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

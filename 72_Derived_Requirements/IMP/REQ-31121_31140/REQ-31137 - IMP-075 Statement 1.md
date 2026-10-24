@@ -75,6 +75,15 @@ This source-backed import-changelog requirement elaborates the change-record asp
 
 Acceptance must check the changelog identity/date separately from completeness of changed-file coverage. Newly created files are outside this source statement's explicit scope.
 
+## Cross-model trace — Importer (Draft)
+
+- Source: [[IMP-075]] and [[IMP-075 - Analysis]].
+- Use case: [[Import an Engineering Model]]; function: [[Ingest and Reconcile Engineering Sources]].
+- Architecture: [[MDSE Importer]], [[Source Reconciliation Engine]] and [[Managed Vault Update]].
+- Verification: [[VER-31071 - IMP-075 Rule Verification]].
+- Native typed integration: `imp31121` in [[MDSE Toolset Composition]], draft objective intent; original definition in this note. Source clause 1 remains Draft.
+- No independent parser/verification or satisfaction assertion.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
