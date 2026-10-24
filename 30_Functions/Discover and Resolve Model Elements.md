@@ -66,6 +66,12 @@ Partial: tools/workbench/src/index.ts and search/views; alias-first and scoped S
 
 Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
+## Decomposed reusable subfunctions — Draft
+
+- [[Search Model Properties]] — Search YAML properties, authoritative SysML text, aliases and note bodies with scoped field criteria while returning the owning note identity.
+
+These native typed action usages express functional composition, not software allocations or implementation evidence. Each child is a single reusable definition.
+
 ## SysML v2
 
 > Draft standalone action definition; parser acceptance and typed relationship declarations remain to be verified.
@@ -73,6 +79,7 @@ Function definitions remain reusable in this note; relationships are authored as
 ```sysml
 package MDSE_BEH_00003 {
     action def DiscoverModelElements {
+        action searchModelProperties : MDSE_BEH_00009::SearchModelProperties;
         doc /* Find the note owning an engineering name, alias or ID, and perform scoped search of SysML text, YAML properties, source metadata and notes. */
     }
 }

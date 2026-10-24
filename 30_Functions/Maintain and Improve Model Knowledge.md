@@ -69,6 +69,12 @@ Partial: tools/workbench/src/edit.ts and edit_rel.ts; tools/importer/src/merge.t
 
 Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
+## Decomposed reusable subfunctions — Draft
+
+- [[Validate Model Change Transaction]] — Validate proposed model edits against identity, native relationship semantics, ownership and approval policy before applying them transactionally.
+
+These native typed action usages express functional composition, not software allocations or implementation evidence. Each child is a single reusable definition.
+
 ## SysML v2
 
 > Draft standalone action definition; parser acceptance and typed relationship declarations remain to be verified.
@@ -76,6 +82,7 @@ Function definitions remain reusable in this note; relationships are authored as
 ```sysml
 package MDSE_BEH_00007 {
     action def MaintainModelKnowledge {
+        action validateModelChange : MDSE_BEH_00012::ValidateModelChangeTransaction;
         doc /* Create and correct engineering knowledge, review flags and conflicting changes, and preserve identity, approval, provenance and model integrity. */
     }
 }

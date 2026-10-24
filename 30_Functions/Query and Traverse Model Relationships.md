@@ -72,6 +72,13 @@ Partial: tools/workbench/src/index.ts, views.ts and workbench.test.ts; shared-co
 
 Function definitions remain reusable in this note; relationships are authored as native SysML usages or dependencies **in their owning notes**, not duplicated here. See [[MDSE Toolset Composition]] and [[Engineering Knowledge Base]] for navigation. All of these links remain Draft pending independent parser and runtime acceptance.
 
+## Decomposed reusable subfunctions — Draft
+
+- [[Traverse Typed Relationship Paths]] — Traverse explicit directed and typed model relationships from selected seeds with configurable hop bounds, cycle prevention and disclosed missing endpoints.
+- [[Compare Shared Model Connections]] — Find common neighbors or typed paths shared by two or more selected model elements rather than returning their union.
+
+These native typed action usages express functional composition, not software allocations or implementation evidence. Each child is a single reusable definition.
+
 ## SysML v2
 
 > Draft standalone action definition; parser acceptance and typed relationship declarations remain to be verified.
@@ -79,6 +86,8 @@ Function definitions remain reusable in this note; relationships are authored as
 ```sysml
 package MDSE_BEH_00004 {
     action def TraverseModelRelationships {
+        action traverseTypedPaths : MDSE_BEH_00010::TraverseTypedRelationshipPaths;
+        action compareSharedConnections : MDSE_BEH_00011::CompareSharedModelConnections;
         doc /* Answer queries on typed model relationships for one or several elements, including direction, types, hop depth, paths and shared connections. */
     }
 }
