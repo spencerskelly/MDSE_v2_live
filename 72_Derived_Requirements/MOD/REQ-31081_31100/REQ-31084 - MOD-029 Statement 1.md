@@ -54,6 +54,15 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 - Executed result: none established
 - Rule conflict / supersession review: required before making this an enforceable acceptance criterion
 
+## MOD model trace — Draft
+
+- Governing rule [[MOD-029]]; analysis [[MOD-029 - Analysis]].
+- Use cases [[Add Engineering Knowledge]] and [[Import an Engineering Model]]; functions [[Maintain and Improve Model Knowledge]] and [[Ingest and Reconcile Engineering Sources]].
+- Architecture context [[MDSE Core]], [[Note and SysML Codec]], [[Model Identity Lookup]].
+- Existing verification [[VER-31041 - MOD-029 Rule Verification]].
+- Native usage `mod31084` in [[MDSE Toolset Composition]]; **semantic hold**: legacy note/schema/EA format requires v2 reconciliation before mandatory verification.
+- No satisfaction, executed result, or independent parser certification is asserted.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
