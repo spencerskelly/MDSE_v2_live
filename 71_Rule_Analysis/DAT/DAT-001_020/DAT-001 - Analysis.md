@@ -17,6 +17,9 @@ modelRoleCandidate: "Data Protection Constraint"
 > [!important] Rule analysis, not another source of authority
 > Binding source rule; every derived requirement remains a **Draft interpretation** until its meaning and clause boundaries are reviewed. Original text and decision provenance remain in [[DAT-001]] and the linked ruleset.
 
+> [!warning] Step 03 — original analysis, not current authority
+> Active but rewritten by D-0066: protect real engineering data across today's public repos, not Test_Vault_ alone; parser validation does not certify engineering requirements. The original `sourceRuleStatus: Active` and clause segmentation below describe the pinned history; they do not authorize promotion of derived candidates. See [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].
+
 ## Rule and provenance
 
 - Original rule: [[DAT-001]]

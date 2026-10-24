@@ -17,6 +17,9 @@ modelRoleCandidate: "Governance / Process Constraint"
 > [!important] Rule analysis, not another source of authority
 > Binding source rule; every derived requirement remains a **Draft interpretation** until its meaning and clause boundaries are reviewed. Original text and decision provenance remain in [[GOV-018]] and the linked ruleset.
 
+> [!warning] Step 03 — original analysis, not current authority
+> Retired by D-0066. EA package layout/old cleanup is not the current v2 placement contract. Managed 99_System support is preserved in revised GOV-017; MOD-174 depth remains Proposed. The original `sourceRuleStatus: Active` and clause segmentation below describe the pinned history; they do not authorize promotion of derived candidates. See [[STEP_03_ACTIVE_GOVERNANCE_RECONCILIATION_2026-10-24]].
+
 ## Rule and provenance
 
 - Original rule: [[GOV-018]]
