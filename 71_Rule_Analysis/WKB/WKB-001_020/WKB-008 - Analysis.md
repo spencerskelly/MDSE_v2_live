@@ -63,6 +63,26 @@ modelRoleCandidate: "User Interaction Requirement"
 - Executed result: **none linked**
 - Test source and CI evidence: **individual reconciliation pending**
 
+## Atomic interpretation proposed for review
+
+The three punctuation-derived segments above are **not** three atomic requirements. Preserve their source anchors but review these independent obligations before creating additional definition notes:
+
+| Proposed clause ID | Candidate required outcome | Existing source segment | Possible verification |
+|---|---|---|---|
+| WKB-008-A01 | The Edit lens permits adding an eligible relationship | 1 | Create eligible relation, persist and resolve |
+| WKB-008-A02 | The Edit lens permits adding an eligible element | 1 | New note, governed fields, usable definition |
+| WKB-008-A03 | The Edit lens permits editing requirement text | 1 | Apply, reload, check authoritative text |
+| WKB-008-A04 | Offered relationship kinds depend on selected SysML definition | 2 | Compare valid and invalid kinds for two source types |
+| WKB-008-A05 | Target choices include only eligible notes | 2 | Attempt eligible and ineligible targets |
+| WKB-008-A06 | Eligible targets are searchable | 2 | Search by modeled identity/name |
+| WKB-008-A07 | Eligible targets are grouped by folder | 2 | Verify grouping and selection |
+| WKB-008-A08 | Structural/relationship edits persist to the source note's authoritative SysML block | 3 | Apply, reload, inspect text and index |
+| WKB-008-A09 | New notes carry type, subtype, id, uid, status and one SysML block only | **Unmodeled source-rule tail** | Create element; inspect fields and sections |
+
+A09 is in the current **Active source rule** but absent from the existing three candidate requirement statements. This is a specific coverage gap, not an inferred feature request. A01–A09 are trace handles for analysis, **not new approved requirement IDs**. Existing REQ-31278/31279/31280 remain Draft parent interpretations until review and approved split.
+
+**Modeling disposition:** functional/user interaction requirements for A01–A08; A09 is a governed new-note format constraint whose responsibility may be shared between Workbench and Core. Do not invent satisfaction or test results.
+
 ## Decomposition review checklist
 
 - Is this a stakeholder need, system requirement, design constraint, procedure, architectural decision, or explanatory definition?

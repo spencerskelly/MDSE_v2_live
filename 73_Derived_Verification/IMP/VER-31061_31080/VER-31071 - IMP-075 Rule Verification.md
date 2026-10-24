@@ -31,6 +31,20 @@ Establish verifiable evidence for the governed outcomes of [[IMP-075]] and its p
 - [ ] Clause 1: Every change to an existing file is listed in one dated changelog per import run.
 - [ ] Clause 2: Each entry links the changed file, describes the change, and flags any conflict.
 
+## Candidate clause-level acceptance plan (not executed)
+
+| Review ID | Fixture and action | Observable pass criterion |
+|---|---|---|
+| IMP-075-A01 | One import changes two existing files | Exactly one changelog for that import run, carrying a date |
+| IMP-075-A02 | Compare import changed-file set to changelog entries | Every changed existing file represented |
+| IMP-075-A03 | Inspect each entry's file reference | Link resolves to its actual changed file |
+| IMP-075-A04 | Inspect changed-file entry | Describes what changed, not merely a filename |
+| IMP-075-A05 | Fixture contains a change conflict | Its entry flags the conflict; no silent clean disposition |
+
+Negative fixtures: no changed files, one conflict, two changed existing files and an added new file. Do not prescribe unapproved no-change log creation behavior; reconcile with IMP-076's no-op/no-entry rule.
+
+Acceptance needs fixture ID, expected artifact, assertion, observed output, tool commit, run environment and reviewer disposition per subclause. None has been executed.
+
 ## Proposed test procedure
 
 **Given:** Synthetic EA/QEAX source rows covering the specified element, connector, field or failure category.

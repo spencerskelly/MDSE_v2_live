@@ -65,6 +65,22 @@ modelRoleCandidate: "Import Functional Requirement"
 - Executed result: **none linked**
 - Test source and CI evidence: **individual reconciliation pending**
 
+## Atomic interpretation proposed for review
+
+The existing two source segments are compound. Review them as:
+
+| Proposed clause ID | Single assessable outcome | Parent |
+|---|---|---|
+| IMP-075-A01 | An import run with changes produces one dated changelog | REQ-31137 |
+| IMP-075-A02 | Every changed existing file has a corresponding changelog entry | REQ-31137 |
+| IMP-075-A03 | Each entry identifies or links the changed file | REQ-31138 |
+| IMP-075-A04 | Each entry describes the change | REQ-31138 |
+| IMP-075-A05 | Each entry identifies a conflict when one exists | REQ-31138 |
+
+The source **does not expressly require** a conflict field value for changes without a conflict; that case must be resolved by acceptance design, not silently inferred. Distinguish files changed by an import from newly added files (the rule says *existing* files). Date format and location remain unspecified; do not invent them.
+
+These IDs are analytical subclauses, not approved additional requirement notes. Candidate responsibility is Importer, with any shared changelog conventions reviewed separately.
+
 ## Decomposition review checklist
 
 - Is this a stakeholder need, system requirement, design constraint, procedure, architectural decision, or explanatory definition?

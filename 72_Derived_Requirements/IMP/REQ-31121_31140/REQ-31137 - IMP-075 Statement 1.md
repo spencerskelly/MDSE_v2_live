@@ -68,6 +68,13 @@ See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obs
 
 This source-backed import-changelog requirement elaborates the change-record aspect of [[Understand Decisions and Changes]] (STK-00010). Its native `#refinement` expresses increased specificity, not satisfaction, approval, or completed testing.
 
+## Granular obligation candidates — not approved
+
+- **IMP-075-A01:** For an import run that changes existing files, produce one dated changelog for the run.
+- **IMP-075-A02:** Represent every changed existing file in that run's changelog.
+
+Acceptance must check the changelog identity/date separately from completeness of changed-file coverage. Newly created files are outside this source statement's explicit scope.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

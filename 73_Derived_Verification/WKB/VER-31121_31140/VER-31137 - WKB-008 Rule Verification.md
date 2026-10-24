@@ -33,6 +33,22 @@ Establish verifiable evidence for the governed outcomes of [[WKB-008]] and its p
 - [ ] Clause 2: Relationship kinds offered depend on the selected note's SysML definition; targets come from a searchable, folder-grouped browser limited to eligible notes.
 - [ ] Clause 3: Structure and links are written into the source note's `## SysML v2` block
 
+## Candidate clause-level acceptance plan (not executed)
+
+| Review ID | Fixture and action | Observable pass criterion |
+|---|---|---|
+| WKB-008-A01 | Eligible two-note relationship, add through Edit | Native SysML relationship is saved and reindexed once |
+| WKB-008-A02 | Add element from supported kind | A note exists with an indexed definition and new identity |
+| WKB-008-A03 | Edit requirement wording, save and reload | New authoritative requirement text matches submission |
+| WKB-008-A04 | Two source definition kinds with disjoint allowed relations | UI offers permitted kinds only for each definition |
+| WKB-008-A05 | Eligible and incompatible target notes | Incompatible target is not selectable/applicable |
+| WKB-008-A06 | Multiple eligible notes with searchable names and aliases | Query locates the intended eligible note |
+| WKB-008-A07 | Eligible notes under two folders | Browser groups notes under their correct folders |
+| WKB-008-A08 | Apply a typed link update and reload source file | The only authoritative relationship write occurs in the source note's SysML section |
+| WKB-008-A09 | Create a governed note through Edit lens | type/subtype/id/uid/status and one terminal SysML block; no unintended semantic duplicates |
+
+These criteria are **draft test designs**, not executed cases. Include negative attempts, an Apply/Undo cycle, and observed before/after file bytes in real test evidence. A09 exposes a currently missing derived requirement candidate, so a `verify` relation must not be claimed until its requirement is modeled and approved for that trace.
+
 ## Proposed test procedure
 
 **Given:** A synthetic vault with known elements, graph links, flags and edit scenarios.

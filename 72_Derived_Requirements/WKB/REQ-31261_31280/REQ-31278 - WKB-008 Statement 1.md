@@ -57,6 +57,18 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 [[MDSE Toolset Composition]] now owns a typed usage `editLensCapabilities` of this requirement, allocated to its `workbench` usage and included in the existing [[VER-31137 - WKB-008 Rule Verification]] objective. [[Add Engineering Knowledge]] and [[Correct or Complete Knowledge]] own native dependencies to this requirement.
 
 This candidate elaborates the contribution/editing aspect of [[Engineering Knowledge Base]], using the native refinement below. Clause 1 still groups element creation, relationship editing, and requirement-text editing: independent acceptance criteria and possible decomposition remain open. Neither allocation nor refinement establishes implementation satisfaction.
+## Granular obligation candidates — not approved
+
+This clause combines **three independently testable editing capabilities**, not one atomic outcome.
+
+| Atomic review ID | Proposed obligation | Verification focus |
+|---|---|---|
+| WKB-008-A01 | Permit the user to add an eligible relationship through Edit lens | Persist one valid typed relationship |
+| WKB-008-A02 | Permit the user to add an eligible model element | Inspect created note and model definition |
+| WKB-008-A03 | Permit the user to change requirement text | Reload the note and compare authoritative wording |
+
+These should become individually tracked requirements only after semantic review. No new UID, ID or SysML definition has been introduced in this pass.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

@@ -63,6 +63,17 @@ modelRoleCandidate: "User Interaction Requirement"
 - Executed result: **none linked**
 - Test source and CI evidence: **individual reconciliation pending**
 
+## Semantic correction required
+
+Source segment 1 is normative: a YAML link repeating an existing SysML relationship is **one semantic relationship**. Source segment 2 is an explanation of a previous failure: double counting inflated rolled-up quantities. It must **not** become a positive `shall` requirement to double quantities.
+
+| Review ID | Disposition | Verification intent |
+|---|---|---|
+| WKB-020-A01 | Keep as Draft normative relationship-deduplication requirement (REQ-31306) | Same semantic edge appears only once when represented twice |
+| WKB-020-E01 | Treat REQ-31307 as defect/regression evidence, not an implementable requirement | BOM rolled-up quantity must not increase because of repeated representation |
+
+Do not delete or rewrite the original imported source text. Owner approval is required to retire/reclassify the generated candidate note; meanwhile it remains flagged.
+
 ## Decomposition review checklist
 
 - Is this a stakeholder need, system requirement, design constraint, procedure, architectural decision, or explanatory definition?

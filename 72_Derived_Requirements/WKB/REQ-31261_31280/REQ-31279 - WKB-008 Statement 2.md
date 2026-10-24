@@ -64,6 +64,19 @@ See [[MDSE Rule to Requirement - Allocation and Verification]] for the saved Obs
 
 [[Add Engineering Knowledge]] and [[Correct or Complete Knowledge]] now carry native scenario `dependency` references to this reusable requirement definition, based on their relationship-edit and target-selection steps. The owning use-case blocks contain the actual dependencies. The requirement remains `Draft` / `semanticReview: pending` and its existing [[VER-31137 - WKB-008 Rule Verification]] coverage has not been executed.
 
+## Granular obligation candidates — not approved
+
+This clause combines relationship-kind eligibility and three independent target-selection capabilities.
+
+| Atomic review ID | Proposed obligation | Verification focus |
+|---|---|---|
+| WKB-008-A04 | Filter offered relation kinds by the selected SysML definition | Positive and negative kind/type pairs |
+| WKB-008-A05 | Limit selectable targets to eligible model notes | Eligible and ineligible targets |
+| WKB-008-A06 | Search eligible targets | Query by known name/identity |
+| WKB-008-A07 | Group eligible target results by folder | Multi-folder target fixture |
+
+All four remain Draft interpretations of REQ-31279 pending separate requirement identities and owner approval.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.

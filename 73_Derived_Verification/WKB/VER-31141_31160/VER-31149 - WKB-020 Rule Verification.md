@@ -31,6 +31,15 @@ Establish verifiable evidence for the governed outcomes of [[WKB-020]] and its p
 - [ ] Clause 1: A YAML link that repeats a relationship the SysML block already states (the BOM importer lists `hasPart` in both) is one relationship.
 - [ ] Clause 2: Counting both doubled every quantity in the rolled-up parts list.
 
+## Normative outcome versus historical failure
+
+The source's second sentence describes a known **defect**, not a second desired requirement. Future regression assertions should include:
+
+- **WKB-020-A01:** one SysML `hasPart` plus a matching YAML `hasPart` resolves to one semantic relationship in Workbench indexing.
+- **WKB-020-E01:** the same duplicate representation does not increase rolled-up BOM quantity. Include a nonduplicate control parent for comparison.
+
+The existing passing synthetic Workbench graph-index regression is **evidence of a narrow implementation smoke check**, not execution or approval of this formal VER-31149 case. Retain `executionStatus: not-run` until case-specific results and review are attached.
+
 ## Proposed test procedure
 
 **Given:** A synthetic vault with known elements, graph links, flags and edit scenarios.

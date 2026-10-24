@@ -60,6 +60,14 @@ This is an analysis of responsibilities, **not an approved SysML allocation**.
 
 A reviewable import changelog entry must identify the changed file, describe the change, and flag conflicts. This requirement elaborates the same [[Understand Decisions and Changes]] need as IMP-075 clause 1, but remains a distinct candidate for clause-level verification.
 
+## Granular obligation candidates — not approved
+
+- **IMP-075-A03:** Each change entry identifies/links the changed file.
+- **IMP-075-A04:** Each change entry describes the change.
+- **IMP-075-A05:** Each change entry flags a conflict when a conflict occurs.
+
+Acceptance must separately check link resolution, meaningful change description and a conflicting change. Whether an explicit no-conflict marker is needed is an open design choice, not an existing source requirement.
+
 ## SysML v2
 
 > Candidate SysML definition. Parser acceptance and full native relationship semantics have not been established for this pilot.
