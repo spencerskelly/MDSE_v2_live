@@ -57,6 +57,15 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[BOO-007 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Source-specific verification assertions — Draft, not run
+
+- REQ-31272: establish trust and layout initialization before delayed Bootstrap activation, then measure actual trigger.
+- REQ-31273: verify successful hash match enables only locked plugins; missing/hash-mismatched plugin remains disabled; merge governed data.json without deleting personal keys; set required/prohibited core plugins; provide one result notice.
+- REQ-31274: block outbound binary download attempts, and confirm missing payload is reported rather than fetched.
+- REQ-31275: execute 'Check and repair this vault' twice and verify repeatable safe results.
+
+The [[MDSE Toolset Composition]] owns the native typed case usage and objective references. These are planned assertions, not evidence of execution. Record test environment, input fixture, observed file or UI state, expected outcome, tool commit and result before changing `executionStatus: not-run`.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.

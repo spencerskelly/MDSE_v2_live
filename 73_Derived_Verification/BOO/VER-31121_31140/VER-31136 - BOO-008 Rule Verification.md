@@ -53,6 +53,13 @@ Each checklist item needs a precise fixture, expected outcome, pass/fail asserti
 - Analysis: [[BOO-008 - Analysis]]
 - No SysML parser certification or actual component acceptance is implied.
 
+## Source-specific verification assertions — Draft, not run
+
+- REQ-31276: with an unset vault author, enter name once, derive/persist author code and create the person note; rerun without duplicate prompt/note.
+- REQ-31277: prior to user's Obsidian trust choice, do not activate plugins or assume vault files can set Obsidian's external trust state.
+
+The [[MDSE Toolset Composition]] owns the native typed case usage and objective references. These are planned assertions, not evidence of execution. Record test environment, input fixture, observed file or UI state, expected outcome, tool commit and result before changing `executionStatus: not-run`.
+
 ## SysML v2
 
 > Draft verification definition; native requirement-verification relationship and independent parser validation remain pending.
