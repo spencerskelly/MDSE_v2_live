@@ -32,3 +32,19 @@ Markdown Systems Engineering vault (release 0.9.0). SysML v2 text in the last `#
 These are saved **views**, not independent semantic authorities. The last `## SysML v2` block in each model note remains authoritative. Changing the notes requires regeneration of saved views; the Workbench plugin can generate fresh preview canvases after its release is synchronized.
 
 - [Native semantic disposition of existing use-case links](74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md) — 16 reviewed notes, original associations, reasons for deferred connections and validation limits.
+
+## Mandatory session-start synchronization with MDSE_v2
+
+**Every new MDSE working chat must begin by inspecting the current `spencerskelly/MDSE_v2` default branch before editing the live model or making tool-behavior claims.** The live vault is the engineering definition and integration test environment; the toolchain repository is the implementation and governing source. Neither previous-chat observations nor local copies replace a fresh comparison.
+
+1. Read the latest `MDSE_v2/governance/DECISIONS.md` (newest applicable decisions), `RULESET.md` (current rule status and wording), `OPEN_DECISIONS.md`, and `ARCHITECTURE.md`. Check the governing register for `live`-tagged rules and changed/retired IDs. Record the inspected commit/ref or file version.
+2. Inspect the **relevant** current `tools/core`, `tools/importer`, `tools/workbench`, `tools/base-vault`, or `tools/bootstrap` source/README/contracts, plus schemas and actual build/test evidence, whenever work touches that capability. A README alone does not certify a tool's behavior.
+3. Read the current live vault's own `README.md`, `99_System/02_AI/AI_INSTRUCTIONS.md`, schema/language references, model files and traceability matrix. Compare live modeled behavior with governing rules and actual tool behavior; distinguish source-version skew and draft work.
+4. Before adding/updating model relationships, identify the **current** native SysML syntax and ownership from the governing decisions and language references. SysML v2 remains authoritative; administrative provenance, MDSE-only YAML fields and generated readable relationship projections must not become independent semantic authorities.
+5. Keep each trace distinguished as **existing native relation**, **navigation/provenance**, **proposed association**, **owner-approved modeling direction**, or **validated executable evidence**. Do not infer valid chains just to fill empty cells. Preserve UID/ID and source provenance.
+6. Record new decisions and gaps in live review notes; do not silently change `MDSE_v2` implementation governance from the live model. Update the model when implementation changes, then verify assembled SysML, Workbench indexing, UI behavior, and actual execution evidence separately.
+
+**Important current contract example:** D-0108 (2026-10-25) permits readable forward YAML link projections of SysML relationships for Obsidian display, while the SysML block remains authoritative. These projections can become stale after editing and are ignored as independent edges by the Workbench when a SysML block exists. D-0069/OD-01 must be interpreted with this later decision and its unresolved synchronization work; do not treat YAML projections as independent native model facts.
+
+**Chat startup report:** Before substantial new work, briefly state the inspected MDSE_v2 baseline, any changed rules/contracts affecting the requested task, and relevant unresolved compatibility or validation gates. If access to the latest repository fails, explicitly disclose that the baseline is unverified and avoid presenting historical information as current.
+
