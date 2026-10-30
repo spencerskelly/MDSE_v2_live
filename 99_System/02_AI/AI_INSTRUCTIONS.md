@@ -1,5 +1,14 @@
 # MDSE AI Instructions
 
+
+## New-chat baseline check — mandatory
+
+At the start of every new MDSE modeling, traceability or tool-review chat, read the **current** `spencerskelly/MDSE_v2` default branch before changing live model content. Start with `governance/DECISIONS.md` (newest accepted decisions), `RULESET.md`, `OPEN_DECISIONS.md` and `ARCHITECTURE.md`. Review affected tool source/README, schemas and test/build evidence. Record what source revision you inspected; identify relevant `live`-tagged, retired or superseded rules and any mismatch with this vault. Then read this vault's current model notes and `RULE_TO_MODEL_TRACEABILITY_MATRIX.md`.
+
+SysML v2 model text owns SysML semantics. D-0108 authorizes **readable forward YAML projections** of SysML relationships for Obsidian navigation, but these are not independent authorities and can be stale; do not count projected YAML as a second edge. Consult later accepted decisions when earlier rules conflict. Keep source provenance, provisional candidates, approved owner decisions, native relationships and actual verification evidence distinct. Report repository access failures rather than assuming a historical baseline is current.
+
+For the full startup checklist, see the root `README.md`, **Mandatory session-start synchronization with MDSE_v2**.
+
 Status: updated 2026-10-19 for D-0003, D-0009 and D-0010; owner review requested. Ships into every vault as `99_System/02_AI/AI_INSTRUCTIONS.md`.
 
 For every AI tool that creates, edits or reviews notes in an MDSE vault (Claude, ChatGPT, Rovo, Gemini or any other). AI tools cannot run Templater, so you do by hand exactly what the template snippets do. The result must look the same as a note created from a template.
