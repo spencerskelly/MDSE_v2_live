@@ -2,6 +2,8 @@
 
 Markdown Systems Engineering vault (release 0.9.0). SysML v2 text in the last `## SysML v2` block of a note is authoritative; everything else is YAML and Markdown.
 
+**Start with the simplified [Tool Definitions folder](00_Tool_Definitions/README.md)** for one detailed readable specification each for Core, Importer, Workbench, Base Vault and Bootstrap, plus interfaces and the legacy-definition review. These pages do not create new model identities; the canonical software definitions remain in [50_Architecture](50_Architecture/_README.md). Current tool source has advanced beyond the old installed-vault release banner; verify release status before assuming the plugin here is current.
+
 - AI tools: start at `99_System/02_AI/AI_INSTRUCTIONS.md`.
 - Schemas: `99_System/03_Schemas`.
 - Imports: `99_System/11_Import`.
