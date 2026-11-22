@@ -29,6 +29,7 @@ A GSE engineer investigates an intermittent output fault. Search by charger mode
 
 - Name/alias/part/symbol/property search with clear exact and fuzzy matches.
 - Stable note opening/focusing; no new Workbench tool tabs.
+- Search-result checkboxes and **+ Canvas** add-one/add-many into the named open Canvas; **Pick notes** offers the same existing-Canvas action separately from New canvas. Selections can survive query refinements.
 - One-hop and multi-hop relationship traversal with profile, direction, depth and product-line filters.
 - Part where-used with pinned child revision and alternate BOM membership.
 - Explicit port, interface, connection, bind/flow and signal inspector.
@@ -48,6 +49,9 @@ The engineer can identify **one configuration-specific answer or an explicit unc
 - **INV-05:** Switch Workbench lenses and open two notes/two canvases; every artifact remains independently accessible.
 - **INV-06:** Export includes all relevant where-used rows rather than only the visible sidebar page.
 - **INV-07:** Source absence or ambiguous revision is shown as a blocker, not an invented answer.
+- **INV-08:** From global Search, select individual and multiple notes across successive queries, add to an existing saved Canvas and verify no new Canvas, card duplicates, moved cards or inferred relationships.
+- **INV-09:** In Pick notes, **Add selected to current Canvas** modifies only the named open Canvas; **New canvas** creates a separate artifact tab.
+- **INV-10:** Switch between two Canvas tabs before or during addition. The Workbench updates the destination label, and an outdated target refuses the write. No Canvas open disables addition.
 
 **Current support:** source has governed search, some aliases, traversals, structure, comparison, port/member views and Canvas. Production-specific revision/effectivity integrity and real vault runtime acceptance are still required. **Owner:** System Engineering / engineer investigating; data custodians validate source-specific claims.
 
