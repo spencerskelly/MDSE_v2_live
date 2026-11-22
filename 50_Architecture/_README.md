@@ -2,7 +2,9 @@
 
 **Status:** Source-backed as-built notes, not verified release acceptance or formal SysML allocation.
 
-Start with [As-built Capability Baseline](AS_BUILT_CAPABILITY_BASELINE.md), then inspect the tool notes and the [16-use-case evidence register](../AS_BUILT_USE_CASE_EVIDENCE.csv).
+**Current readable tool specifications:** [00_Tool_Definitions](../00_Tool_Definitions/README.md) — five detailed specifications, cross-tool workflows and a safe historical-cleanup plan. These model notes remain the **only** native part definitions; no duplicate SysML concepts were added.
+
+Start with [As-built Capability Baseline](../AS_BUILT_CAPABILITY_BASELINE.md), then inspect the tool notes and the [16-use-case evidence register](../MDSE_Toolset/AS_BUILT_USE_CASE_EVIDENCE.csv).
 
 - [[MDSE Importer]] — engineering source intake, translation, disposition and vault update
 - [[MDSE Core]] — shared parsing/model contract, with legacy merge conflict
