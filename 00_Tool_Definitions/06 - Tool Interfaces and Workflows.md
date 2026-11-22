@@ -91,3 +91,12 @@ Professional engineering source data: controlled product vault/repository, not t
 New feature decisions: govern through current rule/decision registry, update one existing tool model and tests, then this readable definition. Do **not** use an explanatory page to bypass a governed modeling decision.
 
 This cross-tool description intentionally includes **no new native SysML declaration**. See [[00_Tool_Definitions/README|Tool Definitions index]].
+
+
+## Version identification and release progression (2026-11-21)
+
+Every distributable tool change must have a visible, monotonically increasing semantic version. **Importer** owns an independent version in `MDSE_v2/tools/importer/version.json`; **Workbench** and **Bootstrap** own their plugin `manifest.json` versions; the **combined toolset** uses root `package.json`. Source changes to an embedded component change the Importer HTML and must advance **both** the Importer and toolset version (plus the modified component's version). CI checks this across changes against the branch base, and each released version must have a changelog and traceable compiled artifact build hash.
+
+Engineers must be able to compare: the **currently opened offline Importer** version and build hash; the **bundled toolset** version; and the **installed vault** toolset/Workbench/Bootstrap versions. The Importer includes a local version-history panel, but an offline file **cannot detect** the latest approved online release. A selected vault with a newer release than an older Importer must be flagged as a downgrade risk; never silently install the old bundled configuration.
+
+**Observed source/version gap:** as of 2026-11-21, the tracked `MDSE_v2_live` vault still declares `mdse_release: 0.9.0` and `mdse-workbench: 0.9.0`, while the source release candidate is Importer/toolset 0.11.0 (Workbench source 0.10.0, Bootstrap 0.1.0). This is a **candidate**, not permission to deploy. Upgrading this live vault requires an approved paired-build, plugin lock/backup, staged runtime and independent parser/real-vault acceptance. See [MDSE_v2 versioning policy](https://github.com/spencerskelly/MDSE_v2/blob/main/docs/VERSIONING.md) and [PR #12](https://github.com/spencerskelly/MDSE_v2/pull/12).
