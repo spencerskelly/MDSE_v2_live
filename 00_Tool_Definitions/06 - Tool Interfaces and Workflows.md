@@ -95,6 +95,10 @@ This cross-tool description intentionally includes **no new native SysML declara
 
 ## Version identification and release progression (2026-11-21)
 
+**Development release decision:** The next target is `0.11.0`, still **internal development/testing**, not approved for use. For routine improvements increment PATCH (`0.11.1`, `0.11.2`); for meaningful new functionality increment MINOR (`0.12.0`); significant breaking architecture changes within `0.x` require a clear migration warning and still do not constitute a released product. Reserve `1.0.0` for the first separately approved release for use. Do not tag a development build as released-for-use, promote a local installed plugin or deploy to `MDSE_v2_live` merely because version or CI changed. Source: [version policy update PR #13](https://github.com/spencerskelly/MDSE_v2/pull/13).
+
+
+
 Every distributable tool change must have a visible, monotonically increasing semantic version. **Importer** owns an independent version in `MDSE_v2/tools/importer/version.json`; **Workbench** and **Bootstrap** own their plugin `manifest.json` versions; the **combined toolset** uses root `package.json`. Source changes to an embedded component change the Importer HTML and must advance **both** the Importer and toolset version (plus the modified component's version). CI checks this across changes against the branch base, and each released version must have a changelog and traceable compiled artifact build hash.
 
 Engineers must be able to compare: the **currently opened offline Importer** version and build hash; the **bundled toolset** version; and the **installed vault** toolset/Workbench/Bootstrap versions. The Importer includes a local version-history panel, but an offline file **cannot detect** the latest approved online release. A selected vault with a newer release than an older Importer must be flagged as a downgrade risk; never silently install the old bundled configuration.
