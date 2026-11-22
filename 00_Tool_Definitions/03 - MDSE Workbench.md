@@ -4,7 +4,7 @@
 
 **Authoritative model:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/MDSE Workbench|MDSE Workbench]] (OBJ-00003). Canonical subcomponents: [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Model Discovery Index|Model Discovery Index]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Relationship Query Engine|Relationship Query Engine]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Viewpoint Projection Engine|Viewpoint Projection Engine]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Model Editing Service|Model Editing Service]].
 
-**Source:** [tools/workbench](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/workbench), [Workbench README](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/workbench/README.md). PR #8 merged the single-Workbench workflow behavior and subsequent Workbench features to source; PR #9 preserved the paired importer delivery. **Repository runtime synchronized 2026-11-22:** Workbench 0.10.1 generated plugin and SHA-256 plugin lock now match reviewed MDSE_v2 commit `138f3e84686b2e0c1f19f68830cec725c7fec787`. **Still not accepted:** an actual Obsidian installation/session, saved Canvas behavior on local systems, and end-to-end engineering workflow certification.
+**Source:** [tools/workbench](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/workbench), [Workbench README](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/workbench/README.md). PR #8 merged the single-Workbench workflow behavior and subsequent Workbench features to source; PR #9 preserved the paired importer delivery. **Repository runtime synchronized 2026-11-22:** Workbench 0.10.2 generated plugin and SHA-256 plugin lock now match reviewed MDSE_v2 commit `1aff02b681028189db3ffe7ab369018c854637d2` (PR #15). **Still not accepted:** an actual Obsidian installation/session, saved Canvas behavior on local systems, and end-to-end engineering workflow certification.
 
 ## 1. Product goal
 
@@ -88,7 +88,7 @@ These are software responsibilities under one existing modeled Workbench, not fi
 - Search and Pick notes may query the entire vault to find a concept with no existing relationship. The engineer must explicitly add one or several results to the named existing Canvas. No relationship is inferred, and creating a model link remains a separate, governed edit.
 - **All relationship types** means every permitted type of *real link* connecting selected/reachable items, not all notes. Global Review findings and registry diagnostics remain dedicated administrative actions, not an engineering workflow scope choice.
 
-See [context-scoped Workbench contract](https://github.com/spencerskelly/MDSE_v2/blob/main/docs/CONTEXT_SCOPED_WORKFLOWS.md). **Source change:** Workbench 0.10.2 candidate, toolset 0.11.2; automated test evidence and live runtime synchronization to be recorded separately from this requirement.
+See [context-scoped Workbench contract](https://github.com/spencerskelly/MDSE_v2/blob/main/docs/CONTEXT_SCOPED_WORKFLOWS.md). **Implementation and repository checkpoint:** Workbench 0.10.2 / toolset 0.11.2 (development candidate), PR #15 merged; automated CI passed and the live plugin/lock were synchronized from the pinned merge commit. Real Obsidian acceptance remains outstanding.
 
 ### Search result placement in an existing Canvas
 
@@ -100,7 +100,7 @@ See [context-scoped Workbench contract](https://github.com/spencerskelly/MDSE_v2
 - Every addition pins the expected destination path and rechecks it after asynchronous index preparation. A tab switch or closed destination must refuse the write rather than send cards to another Canvas.
 - Additions deduplicate existing note cards, keep existing coordinates and user-authored edges, and may visualize only **already-modelled native relationships**. Search-term overlap never implies a SysML relationship.
 - The target may be a saved or temporary Canvas; note and Canvas artifacts retain independent Obsidian editor tabs. Normal Canvas save behavior applies.
-- **Implementation baseline:** MDSE_v2 Workbench 0.10.1 source and generated plugin, delivered with toolset 0.11.1. Automated tests cover routing and target pinning. **Real Obsidian saved-Canvas acceptance remains unverified** and must be recorded separately from GitHub CI.
+- **Implementation baseline:** MDSE_v2 Workbench 0.10.2 source and generated plugin, delivered with toolset 0.11.2. Automated tests cover routing and target pinning. **Real Obsidian saved-Canvas acceptance remains unverified** and must be recorded separately from GitHub CI.
 
 Evidence: [search/Canvas acceptance matrix](https://github.com/spencerskelly/MDSE_v2/blob/main/docs/SEARCH_TO_ACTIVE_CANVAS.md); source: `tools/workbench/src/panel.ts`, `src/plugin.ts`; tests: `test/navigation_shell.test.ts`.
 
