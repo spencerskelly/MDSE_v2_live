@@ -1,8 +1,8 @@
-// MDSE self-model structural gate. Not an independent SysML v2 parser.
+// Archived MDSE self-model structural gate. Not an independent SysML v2 parser.
 import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-const files = new Map(readdirSync('30_Functions').filter(f => f.endsWith('.md') && !f.startsWith('_')).map(f => [f, readFileSync(join('30_Functions',f),'utf8')]));
+const files = new Map(readdirSync('90_Archive/Legacy_Model_2026-11-21/30_Functions').filter(f => f.endsWith('.md') && !f.startsWith('_')).map(f => [f, readFileSync(join('90_Archive/Legacy_Model_2026-11-21/30_Functions',f),'utf8')]));
 const field = (s,n) => s.match(new RegExp('^' + n + ':\\s*(.+)$','m'))?.[1]?.trim();
 const body = s => s.match(/\x60{3}sysml\s*\n([\s\S]*?)\n\x60{3}/)?.[1] ?? '';
 function audit(notes) {

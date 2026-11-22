@@ -2,7 +2,7 @@
 
 **Tool boundary:** Obsidian startup and maintenance plugin that verifies the controlled vault runtime, enables compatible tools and establishes the engineer's author identity. It does **not** translate model data, fix engineering mistakes or download unapproved releases.
 
-**Authoritative model:** [[50_Architecture/MDSE Bootstrap/MDSE Bootstrap|MDSE Bootstrap]] (OBJ-00005), with [[50_Architecture/MDSE Bootstrap/Runtime Integrity Check|Runtime Integrity Check]], [[50_Architecture/MDSE Bootstrap/Activation Repair|Activation Repair]] and [[50_Architecture/MDSE Bootstrap/Author Registration|Author Registration]].
+**Authoritative model:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Bootstrap/MDSE Bootstrap|MDSE Bootstrap]] (OBJ-00005), with [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Bootstrap/Runtime Integrity Check|Runtime Integrity Check]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Bootstrap/Activation Repair|Activation Repair]] and [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Bootstrap/Author Registration|Author Registration]].
 
 **Implementation:** [tools/bootstrap](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/bootstrap) and [main.js](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/bootstrap/src/main.js). **Governance:** BOO, BAS and controlled author/identity rules. **State:** JavaScript plugin with tests against a simulated Obsidian interface; staged startup, full author registry and real first-open acceptance remain open in the source documentation.
 
@@ -90,4 +90,4 @@ Bootstrap is **not** the importer, plugin package builder, source-control client
 - The current README describes a future authors.yaml registration path and startup quiet-window that are not fully delivered.
 - Release hash and user trust must be verified together with **Base Vault + Importer + Workbench**, not per tool in isolation.
 
-**Model owner:** [[50_Architecture/MDSE Bootstrap/MDSE Bootstrap]]. This page documents existing and planned responsibilities without declaring a second tool model.
+**Model owner:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Bootstrap/MDSE Bootstrap]]. This page documents existing and planned responsibilities without declaring a second tool model.

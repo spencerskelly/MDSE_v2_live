@@ -1,6 +1,6 @@
 # 06 — Tool Interfaces and End-to-End Workflows
 
-**Purpose:** Explain the five-tool architecture without redefining any tool or adding native SysML associations. The canonical modeled composition is [[50_Architecture/MDSE Toolset Composition|MDSE Toolset Composition]] (OBJ-00006). Current architectural software source: [MDSE_v2 governance/ARCHITECTURE.md](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/ARCHITECTURE.md).
+**Purpose:** Explain the five-tool architecture without redefining any tool or adding native SysML associations. The canonical modeled composition is [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Toolset Composition|MDSE Toolset Composition]] (OBJ-00006). Current architectural software source: [MDSE_v2 governance/ARCHITECTURE.md](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/ARCHITECTURE.md).
 
 ## 1. System boundary and toolset decomposition
 
@@ -86,7 +86,7 @@ A **redline** is an approved temporary deviation against a released drawing/part
 ## 7. Ownership and change control
 
 Tool source and normative rules: MDSE_v2/main.  
-Software self-model and integration definitions: MDSE_v2_live/main.  
+Active human-readable tool/engineer workflow definition: MDSE_v2_live/main; original native SysML self-model frozen in 90_Archive/Legacy_Model_2026-11-21/50_Architecture.  
 Professional engineering source data: controlled product vault/repository, not the public tools repo.  
 New feature decisions: govern through current rule/decision registry, update one existing tool model and tests, then this readable definition. Do **not** use an explanatory page to bypass a governed modeling decision.
 

@@ -1,5 +1,5 @@
 /**
- * Assemble authoritative SysML v2 fenced blocks from active MDSE live notes.
+ * Assemble authoritative SysML v2 fenced blocks from the frozen historical MDSE self-model archive.
  *
  * This is a source-to-parser-input extraction and identity check only:
  * it is NOT a SysML language parser. Does not modify source files.
@@ -16,7 +16,7 @@ const ROOTS = [
   '40_System_Requirements','60_Verification',
   '72_Derived_Requirements','73_Derived_Verification',
   '50_Architecture',
-];
+].map(folder => '90_Archive/Legacy_Model_2026-11-21/' + folder);
 const digest = text => createHash('sha256').update(text).digest('hex');
 const root = process.cwd();
 const flag = key => { const i=process.argv.indexOf(key); return i<0?null:process.argv[i+1]??null; };
@@ -77,7 +77,7 @@ for(const folder of ROOTS){
   sources.push({path,id:fm.id||null,primarySymbol:fm.primarySymbol,body,sha256:digest(body)});
  }
 }
-if(sources.length<100)errors.push('Unexpectedly few native source notes: '+sources.length);
+if(sources.length<100)errors.push('Unexpectedly few archived native source notes: '+sources.length);
 let assembled='', cursor=1;
 for(const s of sources){
  const boundary='// MDSE source: '+s.path+'\n';

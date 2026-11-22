@@ -1,4 +1,4 @@
-name: Audit live vault integrity
+name: Audit archived MDSE model integrity
 on:
   push:
     branches: [main]
@@ -20,6 +20,7 @@ on:
       - '74_Semantic_Review/**'
       - '80_Issues/**'
       - '99_System/04_Language/**'
+      - '90_Archive/**'
   workflow_dispatch:
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
           node-version: '22'
       - name: Run derived note lineage audit
         run: node scripts/audit-derived-lineage.mjs > lineage-audit.json
-      - name: Run model and navigation integrity audit
+      - name: Audit archived model links and identity
         run: node scripts/audit-model-integrity.mjs > model-integrity-audit.json
       - name: Publish summary to workflow log
         run: |

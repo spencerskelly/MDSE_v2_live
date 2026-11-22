@@ -1,8 +1,8 @@
 /** Active MDSE vault link/identity/view audit. Diagnostic; not a SysML parser. */
 import {readdirSync,readFileSync,existsSync} from 'node:fs';
 import {join,posix} from 'node:path';
-const roots=['10_Stakeholder_Needs','20_Use_Cases','30_Functions','40_System_Requirements','50_Architecture','55_Language','60_Verification','70_Rule_References','71_Rule_Analysis','72_Derived_Requirements','73_Derived_Verification','74_Semantic_Review','80_Issues','99_System/04_Language'];
-const rootNotes=['README.md','README 1.md','NEEDS_BASELINE.md','AS_BUILT_CAPABILITY_BASELINE.md','SEMANTIC_REVIEW_FINDINGS.md','LIVE_BASELINE.md'];
+const roots=['10_Stakeholder_Needs','20_Use_Cases','30_Functions','40_System_Requirements','50_Architecture','55_Language','60_Verification','70_Rule_References','71_Rule_Analysis','72_Derived_Requirements','73_Derived_Verification','74_Semantic_Review','80_Issues','99_System/04_Language'].map(folder => folder.startsWith('99_System/') ? folder : '90_Archive/Legacy_Model_2026-11-21/' + folder);
+const rootNotes=['README 1.md','NEEDS_BASELINE.md','AS_BUILT_CAPABILITY_BASELINE.md','SEMANTIC_REVIEW_FINDINGS.md','LIVE_BASELINE.md'].map(name => '90_Archive/Legacy_Model_2026-11-21/' + name);
 const base=process.cwd(), records=[], all=new Set(), allDirs=new Set(), issues=new Map();
 function add(kind,file,detail){if(!issues.has(kind))issues.set(kind,[]);issues.get(kind).push({file,detail});}
 function scan(dir,collect=false){
@@ -58,7 +58,7 @@ function resolve(file,text,wiki){
 const seen={id:new Map(),uid:new Map(),primarySymbol:new Map()};
 let wikiLinks=0,markdownLinks=0,governed=0;
 for(const note of notes){
- const model=/^(10_|20_|30_|40_|50_|60_|70_|71_|72_|73_|80_)/.test(note.path);
+ const model=/^(10_|20_|30_|40_|50_|60_|70_|71_|72_|73_|80_)/.test(note.path.replace(/^90_Archive\/Legacy_Model_2026-11-21\//, ''));
  if(model && field(note.body,'id'))governed++;
  if(model)for(const key of Object.keys(seen)){
   const val=field(note.body,key);if(!val)continue;
@@ -90,6 +90,6 @@ for(const c of canvases){
  for(const e of data.edges||[])if(!ids.has(e.fromNode)||!ids.has(e.toNode))add('CANVAS_BROKEN_EDGE',c.path,e.id||'unnamed');
 }
 const groups=Object.fromEntries([...issues].sort(([a],[b])=>a.localeCompare(b)).map(([k,rows])=>[k,{count:rows.length,samples:rows}]));
-const report={status:issues.size?'FINDINGS_FOR_REVIEW':'NO_STATIC_FINDINGS',scope:'Active model, governance-reference, derived, language and view files (historical last-check excluded)',examined:{markdown:notes.length,governed,canvases:canvases.length,wikilinks:wikiLinks,markdownLinks},groups,limitations:['Static link heuristics are not Obsidian navigation or independent SysML validation','Historical/documentation links may be intentional and require disposition','Semantic holds are not repaired by inventing SysML edges']};
+const report={status:issues.size?'FINDINGS_FOR_REVIEW':'NO_STATIC_FINDINGS',scope:'Frozen 2026-11-21 archive of modeled and derived notes; original Canvas file paths may need remapping (historical last-check excluded)',examined:{markdown:notes.length,governed,canvases:canvases.length,wikilinks:wikiLinks,markdownLinks},groups,limitations:['Static link heuristics are not Obsidian navigation or independent SysML validation','Historical/documentation links may be intentional and require disposition','Semantic holds are not repaired by inventing SysML edges']};
 console.log(JSON.stringify(report,null,2));
 if(process.env.MDSE_MODEL_AUDIT_STRICT==='1'&&[...issues.keys()].some(k=>k.startsWith('DUPLICATE_')||k==='CANVAS_INVALID_JSON'||k==='CANVAS_BROKEN_EDGE'))process.exitCode=1;

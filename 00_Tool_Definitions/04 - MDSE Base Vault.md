@@ -2,7 +2,7 @@
 
 **Tool boundary:** Deterministic builder of the folder, template, schema, plugin and configuration package an engineer receives. Base Vault defines a **software release environment**, not the meaning or content of an engineering product model.
 
-**Authoritative model:** [[50_Architecture/MDSE Base Vault/MDSE Base Vault|MDSE Base Vault]] (OBJ-00004), with [[50_Architecture/MDSE Base Vault/Governed Configuration|Governed Configuration]] and [[50_Architecture/MDSE Base Vault/Pinned Plugin Payload|Pinned Plugin Payload]].
+**Authoritative model:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Base Vault/MDSE Base Vault|MDSE Base Vault]] (OBJ-00004), with [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Base Vault/Governed Configuration|Governed Configuration]] and [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Base Vault/Pinned Plugin Payload|Pinned Plugin Payload]].
 
 **Implementation:** [tools/base-vault](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/base-vault), especially [base_vault.ts](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/base-vault/src/base_vault.ts). **Governing rules:** BAS, BOO, MOD-146, plugin configuration decisions. **Status:** vault skeleton and managed payload-generation code exist; README's historical “not yet built” text is inconsistent with current code and must not be used as acceptance evidence. Runtime integration still requires real Obsidian testing.
 
@@ -95,4 +95,4 @@ Supply governed class templates and reusable documentation templates. An ordinar
 - Confirm first-open/repair and multi-OS update acceptance, including governed-vs-personal settings.
 - Establish explicit release approval, version recording and rollback procedure before updating MDSE_v2_live.
 
-**Model owner:** [[50_Architecture/MDSE Base Vault/MDSE Base Vault]]. No duplicate SysML declaration is introduced in this specification.
+**Model owner:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Base Vault/MDSE Base Vault]]. No duplicate SysML declaration is introduced in this specification.

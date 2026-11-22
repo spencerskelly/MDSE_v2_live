@@ -2,7 +2,7 @@
 
 **Tool boundary:** Engineer-facing Obsidian plugin, with a related offline HTML viewer, for discovering, understanding, comparing, creating, reviewing and carefully changing model knowledge. All workflows stay in **one persistent Workbench right sidebar or optional pop-out**.
 
-**Authoritative model:** [[50_Architecture/MDSE Workbench/MDSE Workbench|MDSE Workbench]] (OBJ-00003). Canonical subcomponents: [[50_Architecture/MDSE Workbench/Model Discovery Index|Model Discovery Index]], [[50_Architecture/MDSE Workbench/Relationship Query Engine|Relationship Query Engine]], [[50_Architecture/MDSE Workbench/Viewpoint Projection Engine|Viewpoint Projection Engine]], [[50_Architecture/MDSE Workbench/Model Editing Service|Model Editing Service]].
+**Authoritative model:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/MDSE Workbench|MDSE Workbench]] (OBJ-00003). Canonical subcomponents: [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Model Discovery Index|Model Discovery Index]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Relationship Query Engine|Relationship Query Engine]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Viewpoint Projection Engine|Viewpoint Projection Engine]], [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/Model Editing Service|Model Editing Service]].
 
 **Source:** [tools/workbench](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/workbench), [Workbench README](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/workbench/README.md). PR #8 merged the single-Workbench workflow behavior and subsequent Workbench features to source; PR #9 preserved the paired importer delivery. **Not yet accepted:** installation of those current bits and full workflow behavior inside the real live vault.
 
@@ -133,4 +133,4 @@ These are software responsibilities under one existing modeled Workbench, not fi
 - Complete Document publishing and Verify execution/evidence as separate workflows without changing the persistent-Workbench contract.
 - Independent parser verification and source-to-installed-plugin SHA/manifest parity.
 
-**Model owner:** [[50_Architecture/MDSE Workbench/MDSE Workbench]]. This is the human-readable software specification, not a new SysML part definition.
+**Model owner:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/MDSE Workbench]]. This is the human-readable software specification, not a new SysML part definition.

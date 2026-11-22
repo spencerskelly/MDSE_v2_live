@@ -1,8 +1,8 @@
 # MDSE Tool Definitions — Start Here
 
-**Purpose:** One straightforward root-level location explaining the five existing MDSE tools and the interfaces between them. This is the recommended human-readable review entry point for the toolset.
+**Purpose:** One straightforward root-level location explaining the five existing MDSE tools and the interfaces between them. The active engineer journey is in [[01_Engineering_Workflows/README|01_Engineering_Workflows]]. This is the recommended human-readable review entry point for the toolset.
 
-**Authority:** These are explanatory software specifications, **not a second SysML v2 model**. The existing notes under 50_Architecture own the single reusable tool definitions, identifiers and native SysML relationships. The latest normative rules and executable implementation live in [MDSE_v2](https://github.com/spencerskelly/MDSE_v2). If text here conflicts with the live native SysML or the current governing rules, reconcile the difference explicitly; never silently duplicate a tool definition.
+**Authority:** These are explanatory software specifications, **not a second SysML v2 model**. The historical notes under 90_Archive/Legacy_Model_2026-11-21/50_Architecture retain the original native SysML and UIDs **as a frozen historical model**, not the new active requirements baseline. New native modeling requires a separately reviewed reactivation or migration. The latest normative rules and executable implementation live in [MDSE_v2](https://github.com/spencerskelly/MDSE_v2). If text here conflicts with the live native SysML or the current governing rules, reconcile the difference explicitly; never silently duplicate a tool definition.
 
 **Baseline reviewed:** MDSE_v2/main at fae74cd58c4ef2582bc484148531795bcfdc72ad; MDSE_v2_live/main at ad5e9425276ebaaf4c82f25666461bcd7d1bce08 before these files were added. Recheck both main branches before treating any capability as current. **Source merged** does not equal **installed and accepted**: the live vault baseline lists an older Workbench, while PRs #8 and #9 changed the tool source.
 
@@ -30,17 +30,17 @@
 
 - It does **not** create new tool UIDs, object IDs, part definitions or duplicative allocation/satisfaction statements.
 - It does **not** reclassify the existing many Draft requirements as approved.
-- It does **not** move, rename or delete existing 50_Architecture, 55_Language, 70–74 trace/review or other modeled notes.
+- Historical 50_Architecture, 55_Language and 70–74 model/review folders have been **moved intact** to 90_Archive/Legacy_Model_2026-11-21/; their content, UIDs and source provenance remain preserved.
 - It does **not** deploy newly merged code into this vault or declare the installed plugin current.
 
-## Existing authoritative model
+## Archived native model reference (historical)
 
-- [[50_Architecture/MDSE Toolset Composition|Toolset composition — one typed usage of each tool]]
-- [[50_Architecture/MDSE Core/MDSE Core|Core definition]]
-- [[50_Architecture/MDSE Importer/MDSE Importer|Importer definition]]
-- [[50_Architecture/MDSE Workbench/MDSE Workbench|Workbench definition]]
-- [[50_Architecture/MDSE Base Vault/MDSE Base Vault|Base Vault definition]]
-- [[50_Architecture/MDSE Bootstrap/MDSE Bootstrap|Bootstrap definition]]
+- [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Toolset Composition|Toolset composition — one typed usage of each tool]]
+- [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/MDSE Core|Core definition]]
+- [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Importer/MDSE Importer|Importer definition]]
+- [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Workbench/MDSE Workbench|Workbench definition]]
+- [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Base Vault/MDSE Base Vault|Base Vault definition]]
+- [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Bootstrap/MDSE Bootstrap|Bootstrap definition]]
 - [Implementation architecture](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/ARCHITECTURE.md)
 - [Governing rules](https://github.com/spencerskelly/MDSE_v2/blob/main/governance/RULESET.md)
 - [Accepted source consolidation and outstanding runtime tests](https://github.com/spencerskelly/MDSE_v2/blob/main/testing/WORKBENCH_IMPORTER_ACCEPTANCE.md)

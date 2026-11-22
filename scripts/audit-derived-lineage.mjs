@@ -1,5 +1,5 @@
 /**
- * MDSE live derived-note lineage audit (diagnostic until strict gate is approved).
+ * Archived MDSE derived-note lineage audit (diagnostic until strict gate is approved).
  * Checks source-note navigation and SysML definition ownership; it does NOT
  * infer requirement derivations or certify language grammar.
  * Run: node scripts/audit-derived-lineage.mjs
@@ -12,7 +12,7 @@ const issues = [];
 const caution = [];
 const fsroot = process.cwd();
 const report = (msg) => issues.push(msg);
-const roots = ['70_Rule_References','71_Rule_Analysis','72_Derived_Requirements','73_Derived_Verification'];
+const roots = ['70_Rule_References','71_Rule_Analysis','72_Derived_Requirements','73_Derived_Verification'].map(folder => '90_Archive/Legacy_Model_2026-11-21/' + folder);
 function walk(dir, out=[]) {
   if (!existsSync(dir)) { report('Missing directory: '+dir); return out; }
   for (const item of readdirSync(dir,{withFileTypes:true})) {
@@ -68,8 +68,8 @@ function csv(path) {
   const keys=lines.shift();
   return lines.map(v=>Object.fromEntries(keys.map((k,i)=>[k,v[i]??''])));
 }
-const reqRows=new Map(csv('72_Derived_Requirements/REQUIREMENT_CANDIDATES.csv').map(x=>[x.requirement_id,x]));
-const caseRows=new Map(csv('73_Derived_Verification/VERIFICATION_CANDIDATES.csv').map(x=>[x.verification_id,x]));
+const reqRows=new Map(csv('90_Archive/Legacy_Model_2026-11-21/72_Derived_Requirements/REQUIREMENT_CANDIDATES.csv').map(x=>[x.requirement_id,x]));
+const caseRows=new Map(csv('90_Archive/Legacy_Model_2026-11-21/73_Derived_Verification/VERIFICATION_CANDIDATES.csv').map(x=>[x.verification_id,x]));
 const wiki=(body,stem)=>body.includes('[['+stem+']]')||body.includes('[['+stem+'|');
 function trace(note,rule) {
   if(!rule) {report(note.path+': missing source rule');return;}
@@ -142,7 +142,7 @@ for(const id of caseRows.keys()) if(!cases.has(id)) report('Missing verification
 // Catch repeated named requirement/verification usages in the one toolset
 // composition context. A past edit split two case objectives into duplicate
 // named usages; native SysML requires one usage with all verify targets.
-const compositionPath=join(fsroot,'50_Architecture/MDSE Toolset Composition.md');
+const compositionPath=join(fsroot,'90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Toolset Composition.md');
 if(existsSync(compositionPath)) {
   const composition=readFileSync(compositionPath,'utf8');
   const block=composition.split(fence+'sysml')[1]?.split(fence)[0] ?? '';

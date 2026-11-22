@@ -1,5 +1,5 @@
 /**
- * Live MDSE relationship smoke test using the Workbench indexer from an
+ * Historical archived MDSE relationship regression using the Workbench indexer from an
  * exact, separately checked-out MDSE_v2 commit.
  *
  * Scope: real-vault graph index + synthetic duplicate-link regression.
@@ -16,7 +16,7 @@ const roots = [
   '60_Verification', '70_Rule_References', '71_Rule_Analysis',
   '72_Derived_Requirements', '73_Derived_Verification',
   '74_Semantic_Review', '80_Issues'
-];
+].map(folder => '90_Archive/Legacy_Model_2026-11-21/' + folder);
 const repo = process.cwd();
 const toolRoot = resolve(process.env.MDSE_TOOLS_ROOT || '_tool_source');
 const { buildIndex } = await import(pathToFileURL(join(toolRoot, 'tools/workbench/src/index.ts')).href);

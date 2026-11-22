@@ -2,13 +2,13 @@
 
 **Purpose:** Provide a practical route out of the current large, fragmented self-model without destroying traceability or making a second set of SysML definitions. The readable current-tool entry point is [[00_Tool_Definitions/README|00_Tool_Definitions]].
 
-**Action completed in this pass:** new detailed *documentation* for five existing tools plus a cross-tool workflow contract. **No previous model notes, IDs, UIDs, relationships, schemas, saved Canvases or imported engineering records have been moved or deleted.**
+**Action completed:** new detailed *documentation* for five existing tools and the engineer workflows; historical model folders moved into 90_Archive/Legacy_Model_2026-11-21/ by exact Git tree references. Source note bytes, IDs, UIDs and native SysML remain unchanged, but old path-qualified links/Canvas card paths require review before reuse.
 
 ## 1. Observed starting point
 
-The live vault already contains five top-level software part definitions in 50_Architecture, one for each implemented tool. Their modeled composition is in [[50_Architecture/MDSE Toolset Composition]]. Each tool is decomposed into several reusable software subpart definitions. Many additional folders contain needs, use cases, functions, rules, derived requirements, Draft verification cases and relationship/semantic review evidence.
+The live vault already contains five top-level software part definitions in 90_Archive/Legacy_Model_2026-11-21/50_Architecture, one for each implemented tool. Their modeled composition is in [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Toolset Composition]]. Each tool is decomposed into several reusable software subpart definitions. Many additional folders contain needs, use cases, functions, rules, derived requirements, Draft verification cases and relationship/semantic review evidence.
 
-The root also contains historical baseline snapshots, a very large rule-to-model traceability matrix and an MDSE_Toolset directory with CSV evidence registers. The earlier [[AS_BUILT_CAPABILITY_BASELINE]] represents an October 2026 assessment, **not** proof that all later tool changes were modeled and installed.
+The root also contains historical baseline snapshots, a very large rule-to-model traceability matrix and an MDSE_Toolset directory with CSV evidence registers. The earlier [[90_Archive/Legacy_Model_2026-11-21/AS_BUILT_CAPABILITY_BASELINE|AS_BUILT_CAPABILITY_BASELINE]] represents an October 2026 assessment, **not** proof that all later tool changes were modeled and installed.
 
 The current MDSE_v2 source already contains the merged persistent Workbench (PR #8) and importer transaction hardening (PR #9). Some live model descriptions still characterize those as missing or proposed. This mismatch is why the new simple specifications explicitly identify the source/version checked.
 
@@ -17,23 +17,23 @@ The current MDSE_v2 source already contains the merged persistent Workbench (PR 
 | Existing location | Current role | Proposed disposition |
 |---|---|---|
 | **00_Tool_Definitions/** | Concise current tool documentation and handoff | **Keep as primary human review entry point** |
-| **50_Architecture/** | Native modeled composition and tool/subtool definitions with UIDs and qualified SysML symbols | **Keep authoritative**; reconcile capabilities with source only after review |
-| **10_Stakeholder_Needs/** | Stakeholder rationale | Keep; review obsolete duplicates rather than deleting by date |
-| **20_Use_Cases/** | User goals and modeled dependencies | Keep valid use cases; map to current four workflows and flag gaps |
-| **30_Functions/** | Reusable engineering system functions | Keep; reconcile duplicated/mixed functions with actual tool behavior |
-| **40_System_Requirements/** | System-level requirements | Keep; check requirement coverage and approval status |
-| **55_Language/** | SysML v2 language definitions and examples | Keep a separate language authority/reference, not a sixth software tool |
-| **60_Verification/** | Top-level cases | Keep, clearly distinguish test definition from execution evidence |
+| **50_Architecture/** | Native modeled composition and tool/subtool definitions with UIDs and qualified SysML symbols | **Keep as archived native source**; not the active model baseline until separately reactivated |
+| **10_Stakeholder_Needs/** | Stakeholder rationale | Preserved in dated archive; review obsolete duplicates rather than deleting by date |
+| **20_Use_Cases/** | User goals and modeled dependencies | Archived; map useful cases to current workflow documents and flag gaps |
+| **30_Functions/** | Reusable engineering system functions | Archived; reconcile useful functions with actual tool behavior |
+| **40_System_Requirements/** | System-level requirements | Archived; check requirement coverage and approval status before reactivation |
+| **55_Language/** | SysML v2 language definitions and examples | Archived language reference; no longer an active sixth software tool |
+| **60_Verification/** | Top-level cases | Archived; distinguish test definition from execution evidence |
 | **70_Rule_References/** | Imported historical rule wording/provenance | **Do not delete** until current rule IDs/revisions and source lineage are preserved |
 | **71_Rule_Analysis/** | Historical semantic decomposition and review | Candidate for later archive after approval, with references retained |
-| **72_Derived_Requirements/** | Generated requirement candidates with source IDs | **Do not bulk delete**; review status and links before promote/archive |
+| **72_Derived_Requirements/** | Generated requirement candidates with source IDs | **Do not delete**; review status and links before promote/archive |
 | **73_Derived_Verification/** | Generated verification candidates | Do not bulk delete until requirement/test traces and statuses are reconciled |
-| **74_Semantic_Review/** | Parser, lineage, unresolved semantic links and acceptance evidence | Keep as audit evidence; archive obsolete snapshots only after replacement is verified |
-| **80_Issues/** | Outstanding problems/review records | Keep until resolved and closure recorded |
+| **74_Semantic_Review/** | Parser, lineage, unresolved semantic links and acceptance evidence | Archived as audit evidence; retire obsolete snapshots only after replacement is verified |
+| **80_Issues/** | Outstanding problems/review records | Archived legacy issues; re-open current blockers explicitly in the active workflow |
 | **86_Reference_Data/** | External SysML reference PDFs | Keep separate from tool descriptions |
 | **99_System/** | Runtime AI, schema, templates, imports and views | Controlled system folder; **do not manually reorganize for aesthetics** |
-| **MDSE_Toolset/** | Evidence/CSV registers | Preserve as provenance or relocate only with a separately reviewed plan |
-| **last-check/** | Earlier model notes/evidence | Preserve until compared against active model, avoiding duplicate UIDs |
+| **MDSE_Toolset/** | Evidence/CSV registers | Moved intact to dated archive as provenance |
+| **last-check/** | Earlier model notes/evidence | Moved intact into archive; compare before any new active model copy |
 
 ## 3. What may be redundant, and what is not
 

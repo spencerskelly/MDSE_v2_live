@@ -2,7 +2,7 @@
 
 **Tool boundary:** One offline HTML application for bringing engineering source data into a governed MDSE vault and for updating the vault's managed toolset/configuration. It creates and reconciles model data; it is **not** the day-to-day engineering editor.
 
-**Authoritative model:** [[50_Architecture/MDSE Importer/MDSE Importer|MDSE Importer]] (OBJ-00001), with [[50_Architecture/MDSE Importer/Source Reconciliation Engine|Source Reconciliation Engine]] and [[50_Architecture/MDSE Importer/Managed Vault Update|Managed Vault Update]].
+**Authoritative model:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Importer/MDSE Importer|MDSE Importer]] (OBJ-00001), with [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Importer/Source Reconciliation Engine|Source Reconciliation Engine]] and [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Importer/Managed Vault Update|Managed Vault Update]].
 
 **Implementation:** [tools/importer](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/importer), [Importer specification](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/importer/SPEC.md) and [current importer README](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/importer/README.md). **Governance:** IMP, BOM and MOD. **Source state:** code and automated tests merged; full production QEAX/BOM, native SysML and live-vault acceptance still require proof.
 
@@ -116,4 +116,4 @@ Sources: vault_update.ts and importer.template.html; merged PR #9. Rollback is b
 
 A production document/drawing repository intake adapter, wire-list/schematic extractor, redline/change-deviation import and broader PDF/DOCX/image intake are desired engineering workflows, but **do not assume the current importer performs them**. A redline may require impact queries, temporary effectivity and controlled release managed by Workbench/PLM processes rather than automatically importing a new parent revision.
 
-**Model owner:** [[50_Architecture/MDSE Importer/MDSE Importer]]. This specification is a readable index; it introduces no new modeled parts, requirements or native links.
+**Model owner:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Importer/MDSE Importer]]. This specification is a readable index; it introduces no new modeled parts, requirements or native links.

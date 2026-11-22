@@ -2,7 +2,7 @@
 
 **Tool boundary:** Shared library for model-note syntax, identity-related helpers and byte-preserving edits. It is not an Obsidian screen, importer, file repository or release manager.
 
-**Authoritative model:** [[50_Architecture/MDSE Core/MDSE Core|MDSE Core]] (OBJ-00002; one reusable tool definition); its child definitions are [[50_Architecture/MDSE Core/Note and SysML Codec|Note and SysML Codec]] and [[50_Architecture/MDSE Core/Model Identity Lookup|Model Identity Lookup]].
+**Authoritative model:** [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/MDSE Core|MDSE Core]] (OBJ-00002; one reusable tool definition); its child definitions are [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/Note and SysML Codec|Note and SysML Codec]] and [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/Model Identity Lookup|Model Identity Lookup]].
 
 **Source:** [tools/core](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/core), notably [mdse_core.js](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/core/src/mdse_core.js) and [bom_own.ts](https://github.com/spencerskelly/MDSE_v2/blob/main/tools/core/src/bom_own.ts). **Governing rules:** MOD and the shared architecture contract. **Source status:** usable JavaScript helpers with tests; the older Core README acknowledges uncompleted TypeScript/merge-policy reconciliation. Treat those as unresolved, not silently fixed.
 
@@ -37,11 +37,11 @@ Core accepts text/bytes and returns text/bytes or structured results. Folder sel
 
 ### A. Note and SysML Codec
 
-The code exposes parse, section extraction, SysML extraction, validation, replaceSysmlBlock, frontmatter patching, flag removal and ZIP helpers. It must avoid a regenerated entire note if only a controlled region changed. See [[50_Architecture/MDSE Core/Note and SysML Codec]].
+The code exposes parse, section extraction, SysML extraction, validation, replaceSysmlBlock, frontmatter patching, flag removal and ZIP helpers. It must avoid a regenerated entire note if only a controlled region changed. See [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/Note and SysML Codec]].
 
 ### B. Model Identity Lookup
 
-The model definition assigns identity lookup here. In practice, duplicate/legacy identity, EA GUID matching and BOM PN matching also involve Importer planning and Workbench indexing. Core should own stable identity semantics, while the caller owns any specific source registry and filesystem search. The final split remains subject to source review. See [[50_Architecture/MDSE Core/Model Identity Lookup]].
+The model definition assigns identity lookup here. In practice, duplicate/legacy identity, EA GUID matching and BOM PN matching also involve Importer planning and Workbench indexing. Core should own stable identity semantics, while the caller owns any specific source registry and filesystem search. The final split remains subject to source review. See [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/Model Identity Lookup]].
 
 ### C. BOM-owned member utilities
 
@@ -84,4 +84,4 @@ The newer bom_own.ts carries BOM usage/member inspection and owned hashing utili
 
 ## 9. Trace and change management
 
-Canonical model: [[50_Architecture/MDSE Core/MDSE Core]]. Reusable software subparts stay there; this page is a readable consolidated specification, **not another part def**. When a current MOD decision or Core source behavior changes, update this specification, add appropriate tests and reconcile the canonical model explicitly.
+Canonical model: [[90_Archive/Legacy_Model_2026-11-21/50_Architecture/MDSE Core/MDSE Core]]. Reusable software subparts stay there; this page is a readable consolidated specification, **not another part def**. When a current MOD decision or Core source behavior changes, update this specification, add appropriate tests and reconcile the canonical model explicitly.
