@@ -20,7 +20,7 @@ jobs:
         with:
           repository: spencerskelly/MDSE_v2
           # Immutable reviewed toolset revision, not moving main
-          ref: 138f3e84686b2e0c1f19f68830cec725c7fec787
+          ref: 1aff02b681028189db3ffe7ab369018c854637d2
           path: _tool_release
           persist-credentials: false
       - name: Set up Node for native TypeScript build
@@ -41,7 +41,7 @@ jobs:
           test -f "01_Engineering_Workflows/01 - Find and Investigate Engineering Information.md"
           test -f ".obsidian/plugin-lock.yaml"
           test -f "99_System/04_Language/SysML v2 Language.md"
-          test "$(node -p 'require("./_tool_release/tools/workbench/manifest.json").version')" = "0.10.1"
+          test "$(node -p 'require("./_tool_release/tools/workbench/manifest.json").version')" = "0.10.2"
           mkdir -p "$destination"
           for filename in main.js manifest.json styles.css; do
             test -s "$source/$filename"
@@ -54,9 +54,9 @@ jobs:
           import hashlib, json, pathlib, re
           root = pathlib.Path(".obsidian/plugins/mdse-workbench")
           lock = pathlib.Path(".obsidian/plugin-lock.yaml")
-          expected_commit = "138f3e84686b2e0c1f19f68830cec725c7fec787"
+          expected_commit = "1aff02b681028189db3ffe7ab369018c854637d2"
           version = json.loads((root / "manifest.json").read_text())["version"]
-          if version != "0.10.1":
+          if version != "0.10.2":
               raise SystemExit(f"Unexpected Workbench version: {version}")
           text = lock.read_text()
           start = text.index("  mdse-workbench:\n")
@@ -95,6 +95,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .obsidian/plugins/mdse-workbench .obsidian/plugin-lock.yaml
           if ! git diff --cached --quiet; then
-            git commit -m "Sync Workbench 0.10.1 and verified plugin lock from MDSE_v2 #14"
+            git commit -m "Sync Workbench 0.10.2 and verified plugin lock from MDSE_v2 #15"
             git push origin HEAD:main
           fi
