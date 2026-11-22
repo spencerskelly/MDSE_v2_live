@@ -19,7 +19,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: spencerskelly/MDSE_v2
-          ref: main
+          # Immutable reviewed toolset commit, not moving main
+          ref: 138f3e84686b2e0c1f19f68830cec725c7fec787
           path: _tool_release
           persist-credentials: false
       - name: Set up Node for native TypeScript build
@@ -36,17 +37,85 @@ jobs:
           set -euo pipefail
           source="_tool_release/tools/workbench/dist/plugin"
           destination=".obsidian/plugins/mdse-workbench"
-          test -f "50_Architecture/MDSE Toolset Composition.md"
-          test -f "74_Semantic_Review/USE_CASE_SEMANTIC_REVIEW_2026-10-23.md"
-          test -f "20_Use_Cases/MDSE Knowledge Base - Modeled Dependencies.canvas"
-          test -f "50_Architecture/MDSE Software Architecture - Modeled Relationships.canvas"
-          test -f "74_Semantic_Review/MDSE Rule to Requirement - Allocation and Verification.canvas"
+          test -f "00_Tool_Definitions/03 - MDSE Workbench.md"
+          test -f "01_Engineering_Workflows/01 - Find and Investigate Engineering Information.md"
+          test -f ".obsidian/plugin-lock.yaml"
+          test -f "99_System/04_Language/SysML v2 Language.md"
+          test "$(node -p 'require("./_tool_release/tools/workbench/manifest.json").version')" = "0.10.1"
           mkdir -p "$destination"
           for filename in main.js manifest.json styles.css; do
             test -s "$source/$filename"
             cp "$source/$filename" "$destination/$filename"
             cmp "$source/$filename" "$destination/$filename"
           done
+      - name: Synchronize controlled Workbench lock and check hashes
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, re
+          root = pathlib.Path(".obsidian/plugins/mdse-workbench")
+          lock = pathlib.Path(".obsidian/plugin-lock.yaml")
+          expected_commit = "138f3e84686b2e0c1f19f68830cec725c7fec787"
+          version = json.loads((root / "manifest.json").read_text())["version"]
+          if version != "0.10.1":
+              raise SystemExit(f"Unexpected Workbench version: {version}")
+          text = lock.read_text()
+          start = text.index("  mdse-workbench:\n")
+          end = text.index("  templater-obsidian:\n", start)
+          block = text[start:end]
+          def change(pattern, new):
+              global block
+              updated, count = re.subn(pattern, new, block, flags=re.M)
+              if count != 1:
+                  raise SystemExit(f"Expected exactly one lock field for {pattern}, found {count}")
+              block = updated
+          change(r'^    version: .+
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .obsidian/plugins/mdse-workbench .obsidian/plugin-lock.yaml
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync Workbench 0.10.1 and verified plugin lock from MDSE_v2 #14"
+            git push origin HEAD:main
+          fi
+, '    version: "' + version + '"')
+          change(r'^    source: .+
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .obsidian/plugins/mdse-workbench
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync Workbench runtime from MDSE_v2 main after regression tests"
+            git push origin HEAD:main
+          fi
+, '    source: "spencerskelly/MDSE_v2@' + expected_commit + '"')
+          for name in ("main.js", "manifest.json", "styles.css"):
+              digest = hashlib.sha256((root / name).read_bytes()).hexdigest()
+              change(r'^      ' + re.escape(name) + r': [0-9a-f]{64}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .obsidian/plugins/mdse-workbench
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync Workbench runtime from MDSE_v2 main after regression tests"
+            git push origin HEAD:main
+          fi
+, '      ' + name + ': ' + digest)
+          lock.write_text(text[:start] + block + text[end:])
+          print(f"Locked mdse-workbench {version} from {expected_commit}")
+          PY
+      - name: Validate synchronized Workbench lock against plugin payload
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, re
+          root=pathlib.Path(".obsidian/plugins/mdse-workbench")
+          lock=pathlib.Path(".obsidian/plugin-lock.yaml").read_text()
+          block=lock.split("  mdse-workbench:\n",1)[1].split("\n  templater-obsidian:\n",1)[0]
+          for file in ("main.js","manifest.json","styles.css"):
+              match=re.search(r"^      "+re.escape(file)+r": ([0-9a-f]{64})$",block,re.M)
+              if not match or hashlib.sha256((root/file).read_bytes()).hexdigest()!=match.group(1):
+                  raise SystemExit(f"Invalid lock for {file}")
+          print("Workbench payload hashes match plugin-lock.yaml")
+          PY
       - name: Commit only generated plugin to live main
         run: |
           git config user.name "github-actions[bot]"
