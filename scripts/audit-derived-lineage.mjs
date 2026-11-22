@@ -12,7 +12,7 @@ const issues = [];
 const caution = [];
 const fsroot = process.cwd();
 const report = (msg) => issues.push(msg);
-const roots = ['70_Rule_References','71_Rule_Analysis','72_Derived_Requirements','73_Derived_Verification'].map(folder => '90_Archive/Legacy_Model_2026-11-21/' + folder);
+const roots = ['70_Rule_References','71_Rule_Analysis','72_Derived_Requirements','73_Derived_Verification'];
 function walk(dir, out=[]) {
   if (!existsSync(dir)) { report('Missing directory: '+dir); return out; }
   for (const item of readdirSync(dir,{withFileTypes:true})) {
@@ -30,7 +30,7 @@ function field(body,key) {
   return line ? line.slice(key.length+1).trim().replace(/^["']|["']$/g,'') : '';
 }
 const stemIndex=new Map();
-const noteLists=new Map(roots.map(r=>[r,walk(join(fsroot,r))]));
+const noteLists=new Map(roots.map(r=>[r,walk(join(fsroot,'90_Archive/Legacy_Model_2026-11-21',r))]));
 for(const [role,notes] of noteLists) for(const note of notes) {
   note.role=role;
   if(stemIndex.has(note.stem)) caution.push('Repeated basename: '+note.stem);
