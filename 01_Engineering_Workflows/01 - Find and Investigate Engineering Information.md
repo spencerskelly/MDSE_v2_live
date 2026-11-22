@@ -31,6 +31,7 @@ A GSE engineer investigates an intermittent output fault. Search by charger mode
 - Stable note opening/focusing; no new Workbench tool tabs.
 - Search-result checkboxes and **+ Canvas** add-one/add-many into the named open Canvas; **Pick notes** offers the same existing-Canvas action separately from New canvas. Selections can survive query refinements.
 - One-hop and multi-hop relationship traversal with profile, direction, depth and product-line filters.
+- No **all elements in vault** workflow scope: Function, Requirements, Tables and Structure remain anchored to the selected note and its explicit modeled relationships. Search is the deliberate discovery mechanism for unrelated records, which may be added to Canvas without claiming a SysML link.
 - Part where-used with pinned child revision and alternate BOM membership.
 - Explicit port, interface, connection, bind/flow and signal inspector.
 - Revision/variant comparison, saved investigation view, complete CSV export and traceable source links.
@@ -52,6 +53,9 @@ The engineer can identify **one configuration-specific answer or an explicit unc
 - **INV-08:** From global Search, select individual and multiple notes across successive queries, add to an existing saved Canvas and verify no new Canvas, card duplicates, moved cards or inferred relationships.
 - **INV-09:** In Pick notes, **Add selected to current Canvas** modifies only the named open Canvas; **New canvas** creates a separate artifact tab.
 - **INV-10:** Switch between two Canvas tabs before or during addition. The Workbench updates the destination label, and an outdated target refuses the write. No Canvas open disables addition.
+- **INV-11:** Function, Requirements and Tables have no vault-wide scope option; without an element selected, show a contextual empty state.
+- **INV-12:** Structure omits an unrelated full-vault parts registry, while retaining actual BOM/where-used and selected-element lifecycle filtering.
+- **INV-13:** Search for an unrelated note and add it to the current Canvas; confirm no implicit SysML relationship was authored.
 
 **Current support:** source has governed search, some aliases, traversals, structure, comparison, port/member views and Canvas. Production-specific revision/effectivity integrity and real vault runtime acceptance are still required. **Owner:** System Engineering / engineer investigating; data custodians validate source-specific claims.
 
