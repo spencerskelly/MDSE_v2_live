@@ -4,6 +4,9 @@
 
 **Workbench:** Define for function/interface decisions; Structure for architecture, BOM and connections; Document for design evidence; Verify for design constraints. All modes remain inside one panel or pop-out.
 
+
+**Workflow scope:** Structure and related Define views must be rooted in the selected model element. "Full tree" follows real ownership/typing relationships; it is not an option to list the full vault. When the required concept is not connected, search by name/alias/ID/part number and deliberately add the result to the active Canvas. A visual card without a native relationship does not make it a modeled child or interface.
+
 ## Inputs
 
 G1 approved needs/requirements and operating scenarios; previous architectures, released part/drawing revisions, supplier capabilities, cost and schedule constraints, safety/risk analysis and compliance markets.
