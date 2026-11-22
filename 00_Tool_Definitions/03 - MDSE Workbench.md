@@ -75,6 +75,21 @@ These are software responsibilities under one existing modeled Workbench, not fi
 
 **Member inspection:** display owner-local usage declarations, multiplicity, typing, reference/end/conjugation modifiers, subsets/redefines, ports, connect/bind/flow statements and missing endpoints. Distinct native statements remain distinct.
 
+
+### Search result placement in an existing Canvas
+
+**Engineer intent:** search once, inspect results, and add one or several governed model notes to the already-open Canvas while retaining the same Workbench panel or pop-out. This is a **view operation**, not a model edit.
+
+- The global **Search engineering information** field lists hits with a note-opening title, per-hit **+ Canvas**, and a checkbox. **Select shown**, **Clear selection**, and **Add N selected to Canvas** support accumulating a selection across query refinements.
+- The **Pick notes** lens uses **Add selected to current Canvas** for the same existing-Canvas operation. Its separate **New canvas** action creates a distinct Canvas; no add action may silently create or replace a Canvas.
+- The destination is named explicitly in the Workbench and updates when Canvas editor tabs change. Where there is no open Canvas, add actions are disabled and explain why; the user may still create a new Canvas explicitly.
+- Every addition pins the expected destination path and rechecks it after asynchronous index preparation. A tab switch or closed destination must refuse the write rather than send cards to another Canvas.
+- Additions deduplicate existing note cards, keep existing coordinates and user-authored edges, and may visualize only **already-modelled native relationships**. Search-term overlap never implies a SysML relationship.
+- The target may be a saved or temporary Canvas; note and Canvas artifacts retain independent Obsidian editor tabs. Normal Canvas save behavior applies.
+- **Implementation baseline:** MDSE_v2 Workbench 0.10.1 source and generated plugin, delivered with toolset 0.11.1. Automated tests cover routing and target pinning. **Real Obsidian saved-Canvas acceptance remains unverified** and must be recorded separately from GitHub CI.
+
+Evidence: [search/Canvas acceptance matrix](https://github.com/spencerskelly/MDSE_v2/blob/main/docs/SEARCH_TO_ACTIVE_CANVAS.md); source: `tools/workbench/src/panel.ts`, `src/plugin.ts`; tests: `test/navigation_shell.test.ts`.
+
 ## 6. Structural and visual output
 
 **Structure:** hierarchical assemblies with member quantity and revision-pinned usage where available, direct children, inverse where-used, quantities through the tree and CSV of the complete result.
@@ -123,6 +138,10 @@ These are software responsibilities under one existing modeled Workbench, not fi
 | WB-10 | ECO candidate list reports affected parent paths, does not auto-assign CL1/CL2 or claim actual release |
 | WB-11 | Generated Canvas graph and saved Canvas remain independent of model semantics and resist accidental overwrite |
 | WB-12 | Real Obsidian sidebar and pop-out behavior matches source tests and survives plugin reload |
+| WB-13 | Global search adds one hit and a multi-query batch to the same named existing Canvas; unchanged cards remain in place |
+| WB-14 | Pick notes distinguishes Add selected to current Canvas from New canvas; adding never creates a new Canvas implicitly |
+| WB-15 | Change among two Canvas tabs during Search, including during asynchronous preparation; UI shows current target and stale additions refuse without write |
+| WB-16 | Verify actual Obsidian plugin version/hash matches toolset and locked payload; test saved Canvas reload, deduplication, custom lines, and independent artifact tabs |
 
 **Detailed carried-forward navigation/CI script:** [Workbench and Importer Acceptance](https://github.com/spencerskelly/MDSE_v2/blob/main/testing/WORKBENCH_IMPORTER_ACCEPTANCE.md). Additional source tests: [Workbench test suite](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/workbench/test) and [browser oracle](https://github.com/spencerskelly/MDSE_v2/blob/main/testing/oracles/test_workbench_plugin.py).
 
