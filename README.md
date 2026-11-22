@@ -33,4 +33,4 @@ Keep 00 and 01 lean. Every new tool behavior should be described as: engineer's 
 - [Historical semantic review and independent parser notes](90_Archive/Legacy_Model_2026-11-21/74_Semantic_Review).
 - [Archive manifest](90_Archive/Legacy_Model_2026-11-21/README.md).
 
-**No source plugin installation is implied by this documentation change.** The installed Obsidian Workbench can still lag the merged MDSE_v2 tool source, and may index archived folders until archive filtering is implemented and deployed.
+**Runtime repository checkpoint (2026-11-22):** The tracked Workbench plugin in this vault has been synchronized to **0.10.1** from reviewed MDSE_v2 commit `138f3e84686b2e0c1f19f68830cec725c7fec787`. Its `.obsidian/plugin-lock.yaml` version and file hashes were regenerated and verified by GitHub Actions. This updates the **GitHub vault**, not an already-open local Obsidian instance: pull the latest `main`, verify the plugin manifest and reload/restart the plugin. Validate global Search, Pick notes, two Canvas tabs and a saved Canvas in a copied staging vault before asserting real-Obsidian acceptance. Archive indexing limitations remain independent work.
