@@ -54,6 +54,14 @@ The controlled package must include a matching Workbench, Importer-produced vaul
 - **Live repository:** `.obsidian/plugins/mdse-workbench` synchronized from the pinned revision; `.obsidian/plugin-lock.yaml` records the matching Workbench version, immutable source commit and file SHA-256 hashes. The sync job changed controlled plugin files and the lock, not engineering model notes.
 - **Deployment boundary:** remote repository synchronization is not proof that a user's local Obsidian installation has pulled or reloaded the plugin. Real saved-Canvas and sidebar/pop-out acceptance still requires a local staging session and recorded outcomes.
 
+### CT-04b — Context-scoped Workbench workflow checkpoint (2026-11-22)
+
+- **Source:** MDSE_v2 toolset/Importer 0.11.2, Workbench 0.10.2, reviewed merge [1aff02b](https://github.com/spencerskelly/MDSE_v2/commit/1aff02b681028189db3ffe7ab369018c854637d2), PR #15.
+- **UI behavior:** Function, Requirements and Tables have no whole-vault scope; All notes and the unrelated global part registry are not workflow outputs. With no selected note, the views prompt for a source instead of showing every indexed element.
+- **Scoped relationship expansion:** only true connected modeled elements are shown automatically. Search/Pick notes still searches the vault for unlinked concepts and adds explicitly selected notes to the named existing Canvas without inferring native SysML relationships.
+- **Evidence:** paired generated plugin/importer outputs, Workbench regression checks, version policy, browser/oracle and native Windows/macOS CI passed. The independent SysML v2 parser was not executed on this change.
+- **Live configuration:** MDSE_v2_live plugin `0.10.2` and `.obsidian/plugin-lock.yaml` were synchronized and hashes verified by GitHub Actions against the pinned merge commit. This updates tracked repository files, **not** any already-open local plugin process. Interactive staging Obsidian acceptance is still open.
+
 ### CT-05 — Workflow/navigation isolation
 
 Document, Define, Structure, Verify and all tool-mode selections remain in one Workbench sidebar or pop-out. Notes, Canvases and intended Bases are editor artifacts, not Workbench views. Reopening an artifact should focus the existing tab. Changing the current lens must not alter the file being edited.
