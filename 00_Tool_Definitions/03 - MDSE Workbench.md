@@ -76,6 +76,20 @@ These are software responsibilities under one existing modeled Workbench, not fi
 **Member inspection:** display owner-local usage declarations, multiplicity, typing, reference/end/conjugation modifiers, subsets/redefines, ports, connect/bind/flow statements and missing endpoints. Distinct native statements remain distinct.
 
 
+### Relationship-scoped workflow rule (2026-11-22)
+
+**Engineer goal:** investigate one selected modeled element and what its real SysML relationships support. A Workbench workflow **never** resolves to "all elements in vault". The selected element determines the automatic projection boundary.
+
+- **Define / Function:** only functions related to the currently selected element.
+- **Verify / Requirements:** only requirements related to the currently selected element.
+- **Tables:** Relationships is limited to edges touching the selected note; Usages is limited to that note's owner-local usages. No **All notes** option and no vault-wide scope radio.
+- **Structure:** only the selected element's structure, rolled-up/direct BOM, where-used and connected context. Remove the separate **all/current parts in vault** registry from the Structure workflow. "Full tree" means all related descendants, and the proposed/current/obsolete filter applies only to the selected element's related BOM parts.
+- Without a valid selected modeled element, show an empty prompt to select or search; never silently fill the view with all indexed notes.
+- Search and Pick notes may query the entire vault to find a concept with no existing relationship. The engineer must explicitly add one or several results to the named existing Canvas. No relationship is inferred, and creating a model link remains a separate, governed edit.
+- **All relationship types** means every permitted type of *real link* connecting selected/reachable items, not all notes. Global Review findings and registry diagnostics remain dedicated administrative actions, not an engineering workflow scope choice.
+
+See [context-scoped Workbench contract](https://github.com/spencerskelly/MDSE_v2/blob/main/docs/CONTEXT_SCOPED_WORKFLOWS.md). **Source change:** Workbench 0.10.2 candidate, toolset 0.11.2; automated test evidence and live runtime synchronization to be recorded separately from this requirement.
+
 ### Search result placement in an existing Canvas
 
 **Engineer intent:** search once, inspect results, and add one or several governed model notes to the already-open Canvas while retaining the same Workbench panel or pop-out. This is a **view operation**, not a model edit.
@@ -142,6 +156,11 @@ Evidence: [search/Canvas acceptance matrix](https://github.com/spencerskelly/MDS
 | WB-14 | Pick notes distinguishes Add selected to current Canvas from New canvas; adding never creates a new Canvas implicitly |
 | WB-15 | Change among two Canvas tabs during Search, including during asynchronous preparation; UI shows current target and stale additions refuse without write |
 | WB-16 | Verify actual Obsidian plugin version/hash matches toolset and locked payload; test saved Canvas reload, deduplication, custom lines, and independent artifact tabs |
+| WB-17 | Function, Requirements and Tables show no all-vault scope or All notes option; each view follows selected note only |
+| WB-18 | No selected note produces an empty contextual prompt, not full-vault rows |
+| WB-19 | Structure includes only selected-element context, with no complete unrelated parts registry |
+| WB-20 | Search adds an unrelated model note to existing Canvas without adding native SysML associations |
+| WB-21 | A legacy request for all scope or all notes cannot re-enable a whole-vault workflow projection |
 
 **Detailed carried-forward navigation/CI script:** [Workbench and Importer Acceptance](https://github.com/spencerskelly/MDSE_v2/blob/main/testing/WORKBENCH_IMPORTER_ACCEPTANCE.md). Additional source tests: [Workbench test suite](https://github.com/spencerskelly/MDSE_v2/tree/main/tools/workbench/test) and [browser oracle](https://github.com/spencerskelly/MDSE_v2/blob/main/testing/oracles/test_workbench_plugin.py).
 
