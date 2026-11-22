@@ -46,6 +46,14 @@ Importer must explain each source-row disposition and distinguish existing model
 
 The controlled package must include a matching Workbench, Importer-produced vault payload, Base Vault, Bootstrap and plugin-lock. Build the Workbench first, then the bundled importer. A GitHub source merge alone does not update MDSE_v2_live's installed plugin. A staging-vault acceptance and an explicit release decision remain necessary.
 
+### CT-04a — Search-to-Canvas release checkpoint (2026-11-22)
+
+- **Toolset:** MDSE_v2 0.11.1; **Workbench:** 0.10.1. Source is the reviewed merge commit [138f3e8](https://github.com/spencerskelly/MDSE_v2/commit/138f3e84686b2e0c1f19f68830cec725c7fec787), PR #14.
+- **Implementation:** global Search and Pick notes both support add-one/add-many into the already-open named Canvas; New canvas is explicit. Switching Canvas tabs updates the target label; asynchronous additions reject a changed/closed target.
+- **Build and verification:** paired Workbench/importer generated artifacts committed; source/packaging regression and native Windows/macOS CI checks passed. Independent parser acceptance was not performed by that PR job.
+- **Live repository:** `.obsidian/plugins/mdse-workbench` synchronized from the pinned revision; `.obsidian/plugin-lock.yaml` records the matching Workbench version, immutable source commit and file SHA-256 hashes. The sync job changed controlled plugin files and the lock, not engineering model notes.
+- **Deployment boundary:** remote repository synchronization is not proof that a user's local Obsidian installation has pulled or reloaded the plugin. Real saved-Canvas and sidebar/pop-out acceptance still requires a local staging session and recorded outcomes.
+
 ### CT-05 — Workflow/navigation isolation
 
 Document, Define, Structure, Verify and all tool-mode selections remain in one Workbench sidebar or pop-out. Notes, Canvases and intended Bases are editor artifacts, not Workbench views. Reopening an artifact should focus the existing tab. Changing the current lens must not alter the file being edited.
