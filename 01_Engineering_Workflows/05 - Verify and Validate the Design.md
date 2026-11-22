@@ -4,6 +4,9 @@
 
 **Workbench:** Verify for trace/coverage and case review; Structure for unit and usage under test; Document for procedures and evidence; Define for requirement clarification. The Workbench remains in one panel/pop-out.
 
+
+**Workflow scope:** Requirements and functional/verification trace views show only records related to the selected modeled element. No "all requirements in vault" workflow option is allowed. When an unlinked verification case, requirement, design, or source is needed, locate it with Search and explicitly add it to the active Canvas for investigation; model satisfaction/verification remains a separate reviewed native SysML edit.
+
 ## Verification versus validation
 
 **Verification:** Does the design meet its defined technical requirements?  
