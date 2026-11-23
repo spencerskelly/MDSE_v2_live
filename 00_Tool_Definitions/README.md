@@ -17,6 +17,7 @@
 | [[05 - MDSE Bootstrap]] | Bootstrap | Startup integrity checks, activation/repair and author registration |
 | [[06 - Tool Interfaces and Workflows]] | Toolset integration | Cross-tool data flow, workflow ownership, release and common model contracts |
 | [[07 - Consolidation Review]] | Retirement review | Existing material, nonduplicate-model policy, outstanding requirements and proposed cleanup |
+| [[08 - Configuration Registry and Release Service]] | **Proposed service (v0.1)** | Transactional part identities, revision-controlled EBOM, exact CAD references, change/approval and immutable MDSE release authority |
 
 ## Functional view
 
