@@ -17,6 +17,7 @@ This is the active **engineer-centered operating model** for MDSE. The subject i
 | 6. Release | Can manufacturing safely make, test and service it? | [[07 - Release Design to Production]] | Controlled product definition, documentation and manufacturing handoff |
 | 7. Sustain | What do production, service and field results tell us? | [[08 - Sustain, Correct and Improve]] | Resolved nonconformances, revisions, product feedback and learning |
 | Team execution | Who owns reviews, evidence and gates? | [[09 - Roles, Gates and Workbench Interaction]] | Responsibilities, decision record, acceptance checks |
+| Structure work | How do I create or revise an assembly without losing a released baseline? | [[10 - Create and Change a Controlled Assembly]] | Numbered draft/part revision, exact usage changes, impact dispositions and governed release candidate |
 
 **The sequence is not strictly linear.** Supplier shortages, thermal findings, test failures, production redlines or customer feedback may return a team to earlier stages. Every return must retain configuration/version, cause, decision and affected requirement/test lineage.
 
