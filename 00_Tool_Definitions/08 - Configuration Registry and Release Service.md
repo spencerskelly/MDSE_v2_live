@@ -56,7 +56,7 @@ Primary keys below are stable internal IDs, not filenames or editable descriptio
 
 ### Cardinality / ownership
 
-- PartMaster 1 → N PartRevision; PartRevision 0 → 1 parent Revision and 0 → 1 BOMRevision for the EBOM view; candidate and released BOM revisions remain independently identified.
+- PartMaster 1 → N PartRevision; PartRevision 0 → 1 predecessor revision and 0 → N BOMRevisions across approved EBOM/MBOM views and **explicit variant scopes**. For a given parent revision, view and applicable variant/effectivity, released BOM rules must resolve unambiguously; candidate and released structures remain independently identified.
 - BOMRevision 1 → N BOMLine; BOMLine 1 → 1 child PartMaster, then 1 exact PartRevision **or** an approved, explicit configuration selection policy. Approved alternates are distinct eligible choices with applicability.
 - Model note UID 0 → N ModelBinding; PartMaster 0 → N ModelBinding. A usage binding may carry a revision constraint while the reusable definition remains unpinned.
 - PartRevision 0 → N RevisionArtifact (CAD, drawing, schematic, software and evidence are independent lifecycle objects).
@@ -78,7 +78,7 @@ Primary keys below are stable internal IDs, not filenames or editable descriptio
 A release candidate MUST contain a **deterministic, canonical manifest**, including:
 - exact top PartRevision, BOMRevision and recursively resolved BOMLine child PartRevision choices, quantity/unit, variant, approved alternates, effectivity and applicable markets;
 - source model vault/repo commit, note UIDs and content hashes for any model assertion relied upon;
-- exact PDM CAD/drawing native file ID + file version + PDM revision/state and independently verified SHA-256 digest (or explicit independently auditable equivalent when exact file bytes are inaccessible);
+- exact PDM CAD/drawing native file ID + file version + PDM revision/state and independently verified SHA-256 digest, plus a **protected immutable capture** of the exact approved bytes (or a documented qualified retention mechanism that guarantees retrieval for the full product-record retention period);
 - exact firmware/software build IDs and content hashes, specifications, controlled work/test instructions and any required source evidence;
 - G4 verification/validation applicability and open issues/approved waivers, ECO and parent impact dispositions;
 - target approval policy ID/version, immutable candidate digest, approvals referring to that digest, authorized release event and publication/effectivity.
@@ -91,7 +91,7 @@ A release candidate MUST contain a **deterministic, canonical manifest**, includ
 5. **Publish:** deliver the frozen manifest to controlled document/ERP/manufacturing consumers with acknowledgments. A failed delivery leaves an approved but **not acknowledged/published** release; retry idempotently, with no manufactured authorization.
 6. **Verify:** retrieve the released manifest and all referenced evidence again, audit hash parity and document downstream receipt. Recover/reconcile interrupted steps from a durable job journal.
 
-A PDM connection loss, stale CAD file version, stale note hash, changed BOM, uncovered impacted parent, missing G4 evidence or unmet approval **fails closed** for a production release. Offline engineers may edit drafts, but cannot reserve numbers, approve releases or issue new released revisions without the authoritative registry.
+A PDM connection loss during required verification, missing/changed **pinned** CAD bytes or state, stale note hash, changed BOM, uncovered impacted parent, missing G4 evidence or unmet approval **fails closed** for a production release. A newer PDM version appearing after an older approved version does not by itself invalidate the older immutable release; changing the selected approved CAD revision in a candidate does invalidate its digest. Offline engineers may edit drafts, but cannot reserve numbers, approve releases or issue new released revisions without the authoritative registry.
 
 ### Lifecycle states
 
@@ -131,13 +131,13 @@ Every imported source row is accounted for and an unchanged reimport must be ide
 | CFG-05 | No released BOM resolves a child by implicit "latest"; alternate policy and effectivity resolve reproducibly |
 | CFG-06 | Missing legacy recursive parent or unverified source flags impact coverage, never reports "no usage" |
 | CFG-07 | Both CL1 and CL2 child changes trigger per-parent fit/form/function review, without automatic parent CL1/CL2 |
-| CFG-08 | Changed PDM CAD version, failed digest, stale model commit or changed registry draft invalidates candidate approval and blocks release |
+| CFG-08 | Changed/inaccessible pinned PDM CAD bytes or state, failed digest, stale model snapshot or changed registry draft invalidates candidate approval and blocks release |
 | CFG-09 | Reviewer identity, permissions, digest/approval role and G4/G5 evidence prevent unauthorized release |
 | CFG-10 | Crash between registry commit and downstream publication yields a retryable unpublished release, not two releases or false acknowledgment |
 | CFG-11 | A legacy PN transfers issuance to MDSE only once with signed cutoff and immutable last PDM release |
 | CFG-12 | Published manifest reconstructs the exact approved assembly and associated source evidence without active PDM query |
 | CFG-13 | Global catalog search finds an unconnected part, but the Structure workflow remains selected-assembly-scoped |
-| CFG-14 | Original CAD version remains managed by PDM and its native references survive check-in/check-out while MDSE versions the engineering release |
+| CFG-14 | Original CAD version remains managed by PDM and native references survive check-in/check-out; immutable approved CAD snapshot is retained for exact engineering-release reconstruction |
 | CFG-15 | A completed staging restore reproduces registry, audit records, immutable release manifests, source crosswalk and number-allocation history |
 
 ## 8. Implementation increments, not release claims
