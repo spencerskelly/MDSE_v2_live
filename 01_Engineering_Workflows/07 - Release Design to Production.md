@@ -22,7 +22,7 @@ The release unit is a **product/variant/effectivity configuration**: top PN and 
 | 6. Firmware/software release | Pin build, bootloader, libraries, parameter files and programming/OTA procedure | FW/SW, Mfg | Reproducible signed version/configuration |
 | 7. Validate test readiness | Compare EOL and production tests against critical requirements and field failures | Test Eng, Quality | Limits, fixture revision, calibration, trace and sample report |
 | 8. Regulatory and safety signoff | Verify region, labels, documentation, certification and required product safety evidence | Quality, Regulatory, Systems | Applicable-market compliance disposition |
-| 9. Controlled release | Approve and publish drawings, BOM, software, instructions and ECO disposition | Responsible authorities | PDM/PLM approval, released effectivity, release identifier |
+| 9. Controlled release | Approve and publish the frozen engineering release manifest with EBOM, exact PDM CAD/drawing file versions, software, instructions and ECO disposition | MDSE release authority **after formal qualification**; existing PDM/PLM/QMS until cutover | Approved engineering release manifest, effectivity and release identifier; separate manufacturing acknowledgment |
 | 10. First article/pilot | Build representative units, record actual deviations/yields and run EOL/validation | Manufacturing, Test, Engineering | First article, pilot findings and correction actions |
 | 11. Production handoff | Confirm trained operators, spares, service manual, revision trace and ownership | Ops, Quality, Service | G5 acceptance and open-issue list |
 | 12. Post-release monitoring | Track initial yield, returns, service and supplier changes | Ops, Quality, Field | Production-performance baseline |
@@ -52,6 +52,8 @@ A model relationship or note status alone is never an ERP inventory release.
 The engineer selects the top product, filters its structure to the release candidate and reviews the configuration-specific tree. Opening a drawing opens its actual file in a separate tab. The same Workbench switches to Verify for unresolved tests and then Document for the handoff package; no new Workbench views/tabs are created. A reviewer sees the **same pinned release** rather than whatever part revision was most recently imported.
 
 **Proposed output:** a controlled release package that points to immutable source identifiers and selected evidence. A release button in MDSE, if developed, must require the external approval result before marking any record released.
+
+**Release authority transition (2026-11-22):** The intended authoritative engineering release is MDSE's transactional Configuration Registry and Release Service, subject to implementation, validation and company QMS approval. Native SOLIDWORKS CAD remains under PDM check-in/out and file-version authority. Legacy revisions stay under their original authority until an explicitly signed part-level cutoff. MDSE release must pin exact PDM CAD versions/approval states and checksums, not current/latest files. This target does **not** describe functioning toolset behavior today; see [[00_Tool_Definitions/08 - Configuration Registry and Release Service]] and [[10 - Create and Change a Controlled Assembly]].
 
 ## Gate G5 checklist
 
