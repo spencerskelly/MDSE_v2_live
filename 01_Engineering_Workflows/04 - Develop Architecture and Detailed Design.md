@@ -63,4 +63,6 @@ Architecture review accepts: subsystem boundaries, safety interface ownership, t
 - **DES-07:** Reviewers can return to a previous note/Canvas without losing workbench context.
 - **DES-08:** G3 records configuration identity needed for repeatable verification.
 
+**Proposed controlled Structure implementation:** [[10 - Create and Change a Controlled Assembly]] specifies new PN issuance through the MDSE registry, physical part vs conceptual model identity, revision-pinned EBOM, approved CAD references through existing PDM, and preview/impact/release gating. This is future work, not yet an active numbering or release function.
+
 **Current source support:** Structure, interface/member scans, BOM views, part lifecycle, edit previews, comparison and Canvas. Full schematic/netlist and manufacturing-variant synthesis are not proven. **Next:** [[05 - Verify and Validate the Design]], or [[06 - Manage Change, Redlines and Impact]] for a design revision.
