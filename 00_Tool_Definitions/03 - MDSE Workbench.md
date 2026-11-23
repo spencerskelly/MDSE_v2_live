@@ -44,6 +44,8 @@ Success: a question or engineering action begins with a selected item (or search
 **Outputs:** in-panel tables, CSV export, temporary/kept Canvases and proposed part/revision edits.  
 **Boundary:** the new **Replace selected part (copy definition)** creates a distinct proposed replacement, preserves predecessor identity and an explicit supersedes dependency. It **does not** automatically revise parents or approve production release. Current-vs-obsolete part lifecycle labels are distinct from Draft/Approved note review status. A full redline/effectivity/parent-FFF decision workflow is **not completed**.
 
+**Planned Structure evolution (not implemented):** the [[08 - Configuration Registry and Release Service|Configuration Registry]] will issue new physical PNs, store revisions and exact BOM usages, perform reviewed change/approval transactions and eventually issue immutable MDSE engineering release baselines. Native SOLIDWORKS CAD stays in PDM initially. The engineer's Create/Edit/Revise/Impact/Release actions remain in this same Workbench, while note/Canvas/Base artifacts open independently. Full flow: [[01_Engineering_Workflows/10 - Create and Change a Controlled Assembly|Controlled Assembly]]. No model concept requires a physical PN or vice versa. Current part-replacement text entry must be superseded by controlled registry lookup/allocation before production numbering is enabled.
+
 ### Verify — trace and review requirements and evidence
 
 **Entry:** selected requirement, verification case, design, function or unresolved model flag.  
