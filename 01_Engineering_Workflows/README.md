@@ -43,6 +43,8 @@ Product/Applications provides use context and priorities; System Engineering own
 
 **MDSE is the engineering knowledge/workflow interface, not necessarily the record system for every released artifact.** PDM/PLM or drawing vault may own released CAD/drawings/BOM; Jira or the controlled ECO system may own approvals; manufacturing systems may own routing, work instructions and serial/lot effectivity. MDSE must link the *exact version* and record status instead of silently becoming a competing release database.
 
+**Target authority transition (2026-11-22):** after the registry, controlled numbering, approvals, immutable release manifests and migration gates are built and qualified, **MDSE will issue new engineering part numbers and engineering releases**; SOLIDWORKS PDM continues to manage native CAD files during the first phase. The existing PDM/QMS remains authoritative for records not yet formally transferred. This is a proposed target, not a currently approved operating procedure. See [[00_Tool_Definitions/08 - Configuration Registry and Release Service]] and [[10 - Create and Change a Controlled Assembly]].
+
 ## Decision gates (proposed)
 
 - **G0: Opportunity/intake accepted.** Bound the problem, intended product lines and source evidence.
