@@ -71,7 +71,7 @@ The Release action may become available after G4 evidence, but it must never ski
 | **Identity** | Unique PN, authorized CL1/CL2 sequence, PartRevision and BOMRevision | Block duplicate/reused/stale records |
 | **Structure** | Complete recursive BOM, quantity/unit/alternates/effectivity, no implicit latest | Block unresolved child choice or unknown parent impact coverage |
 | **Model** | Exact committed native SysML source/UID/qualified usage bindings | Block stale source, mismatched binding or unreviewed model edit |
-| **CAD** | Exact SOLIDWORKS PDM file ID/version/revision/state and verified bytes/hash/reference integrity | Block stale/inaccessible/unapproved native CAD |
+| **CAD** | Exact SOLIDWORKS PDM file ID/version/revision/state and verified bytes/hash/reference integrity; retain protected immutable capture of approved bytes for later reconstruction | Block inaccessible/unapproved/changed **pinned** CAD bytes or source state |
 | **Change & compliance** | ECR/ECO, parent F/F/F dispositions, required safety/regulatory and supplier assessments | Block missing decisions or unsupported deviations |
 | **Verification** | As-tested configuration, results, applicable waivers and G4 outcome | Block missing critical test evidence or unauthorized waiver |
 | **G5 authorization** | Qualified reviewer roles, identity, permissions and decisions on one frozen digest | Block missing/wrong/stale approvals or role conflict |
@@ -122,11 +122,11 @@ A source record with ambiguity stays unresolved. Do not infer an engineering rel
 | STR-04 | Search an unrelated part and add its modeled note to current Canvas without changing BOM or creating a native model link |
 | STR-05 | Add selected catalog part to an assembly after preview; only intended BOMLine and optional reviewed model usage change |
 | STR-06 | Edit a draft and reject stale concurrent save; prior approved model and BOM remain intact |
-| STR-07 | Revise released assembly and reconstruct older release exactly, including original PDM CAD file version/digest |
+| STR-07 | Revise released assembly and reconstruct older release exactly, including original PDM CAD version/digest **and the archived approved bytes** |
 | STR-08 | Distinguish same-PN new revision from new-PN replacement; old parents unchanged until explicit reviewed usage updates |
 | STR-09 | Show all direct/recursive current and relevant legacy parents; flag unknown coverage instead of declaring no impact |
 | STR-10 | CL1 and CL2 child changes each trigger F/F/F decisions at every applicable parent; no automatic parent classification |
-| STR-11 | Changed SOLIDWORKS CAD version or source hash blocks final release, not an implicit newest-file upgrade |
+| STR-11 | Changed or inaccessible **pinned** SOLIDWORKS CAD bytes/state or source hash blocks final release; presence of newer CAD versions does not silently upgrade the selected one |
 | STR-12 | New release requires valid G4/G5 and digest-bound reviewers, produces immutable manifest and separate publication receipt |
 | STR-13 | Crash after registry approval but before ERP acknowledgment never creates duplicate release or false production authorization |
 | STR-14 | Offline draft editing is possible subject to model controls; number issue and release are disabled without authoritative service |
