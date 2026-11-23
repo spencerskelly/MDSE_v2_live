@@ -19,6 +19,15 @@ This vault is the **engineering definition of the MDSE toolset** and its enginee
 - **Operational tool navigation:** Document / Define / Structure / Verify change the contents of the **same Workbench panel/pop-out**; notes, canvases and supported Bases use independent editor tabs.
 - **Source control:** MDSE_v2_live remains main-only under the established repository policy. Inspect tool main, current rules, installed runtime and source/model versions before making claims about installed behavior.
 
+## Configuration management / PDM transition — proposed design v0.1 (2026-11-22)
+
+**Architecture decision:** after formal validation and quality release gates, MDSE will issue new engineering part numbers, control part revisions/EBOMs and become authoritative for engineering releases. Native SOLIDWORKS CAD stays under existing PDM file/version and check-in/out control in the first phase. Legacy records are preserved/indexed and promoted into detailed modeling only when necessary; an approved authority-transfer cutoff prevents simultaneous revision issuers.
+
+- [[00_Tool_Definitions/08 - Configuration Registry and Release Service|Configuration Registry and Release Service]] — proposed identities, CL1/CL2 revision rules, variant BOMs, exact CAD version capture, ECO/approvals, immutable release manifests, legacy crosswalks and acceptance tests.
+- [[01_Engineering_Workflows/10 - Create and Change a Controlled Assembly|Create and Change a Controlled Assembly]] — proposed Structure Create/Edit/Revise/Impact/Release journey in the persistent Workbench.
+
+**Status:** specification only. These proposals are not functioning number-allocation or release services and do not change the currently qualified PDM/QMS authority. Do not perform product numbering or release from the present Workbench implementation.
+
 ## Archive and validation status
 
 The historical folders were **moved without rewriting their file contents**, preserving original directory subtrees and Git history. The 2026-11-21 archive README records the exact pre-move revision, exclusions and known internal-link/Canvas limitations. Legacy validation scripts are now explicitly scoped to the archived model so an old parser success cannot be misreported as certification of the new active workflow definition. Manual Obsidian and real QEAX/BOM acceptance are still independent gates.
