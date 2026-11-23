@@ -26,7 +26,7 @@
 | 8. Establish containment | For temporary production change, specify authorization and manufacturing control | Start/end date, lot/serial, location, quantity, allowed rework, inspect/test, expiry | Approved deviation or production hold |
 | 9. Plan implementation | Identify revised drawings, BOM usage pins, firmware, work instructions, supplier notices, tests | Owners, review roles, schedule and dependencies | ECO release plan |
 | 10. Execute verification | Evaluate change-specific and regression tests | Confirm no newly introduced F/F/F, safety or compliance failure | Actual evidence |
-| 11. Release permanent revision | PDM/PLM issues actual new released rev and effectivity | Approval and manufacturing readiness, linked ECO | Updated controlled baseline |
+| 11. Release permanent revision | **Current:** PDM/PLM issues released revision; **target after qualified authority transfer:** MDSE issues approved part revision, EBOM and engineering release baseline while native CAD remains PDM-controlled | Approval, exact CAD version, manufacturing readiness and linked ECO | Updated controlled baseline |
 | 12. Close redline | Reconcile open inventory/serial lots and retire temporary authorization | New drawing released or explicit withdrawal; no orphan waivers | Closed deviation with trace |
 
 ## The parent fit/form/function rule
@@ -55,6 +55,8 @@ A supplier changes connector keying while a wire harness still mates by part num
 ## Record linkage
 
 Original part and released drawing; ECO/ECR/redline; affected parent usage and decisions; change requirement; risk/FFF assessment; approval; applicable serial/lot effectivity; modified documents/BOM/FW; verification evidence; new released revision and redline closure. The redline overlay remains distinct from an approved baseline.
+
+**Approved target authority (2026-11-22):** MDSE Configuration Registry will issue engineering part revisions and releases **only after implementation, validation, role authorization and a documented cutoff**. Native SOLIDWORKS files and their check-in/out remain in PDM until a separately qualified CAD migration. Do not treat this target as an operating release system today. See [[00_Tool_Definitions/08 - Configuration Registry and Release Service]] and [[10 - Create and Change a Controlled Assembly]].
 
 ## Tool implementation gap
 
