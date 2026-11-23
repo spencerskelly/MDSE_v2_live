@@ -72,6 +72,19 @@ Document, Define, Structure, Verify and all tool-mode selections remain in one W
 **Configuration update:** controlled and previewed Importer maintenance using Base Vault payload, then Bootstrap integrity/activation.  
 **Engineering release change:** ECO/redline/CL1/CL2/production effectivity process; the tool can aid analysis but cannot auto-approve the change.
 
+### CT-07 — Proposed configuration registry and engineering release service (2026-11-22)
+
+**Decision:** Preserve the current five modeled MDSE tool definitions. Add a **proposed transactional configuration/release backend service** consumed by Workbench (and by Importer for legacy catalog reconciliation); do not create another native SysML tool definition or imply a delivered capability. Source specification: [[08 - Configuration Registry and Release Service]]; engineer journey: [[01_Engineering_Workflows/10 - Create and Change a Controlled Assembly|Controlled Assembly]].
+
+- The authoritative **model** remains in a governed UID/native SysML note. The backend owns administrative part identities, CL1/CL2 revision policies, EBOM usage pins, ECO/approvals, effectivity and immutable engineering release manifests. A registry binding or Canvas edge is not automatically a SysML relationship.
+- New engineering PNs and later revisions are MDSE-issued **only after** company approval and implementation of transactional uniqueness and release gates. Previous PDM-issued records remain historically authoritative; transfer of each legacy PN's subsequent revision issuance requires a signed cutoff and source snapshot.
+- SOLIDWORKS PDM continues to own native CAD content, file-version/revision identity and check-in/out. MDSE release must bind exact PDM CAD file identities, versions and approved statuses, preserve verifiable hashes and fail closed if references are missing or stale.
+- Structure remains a context-scoped Workbench. Explicit catalog Search may find unrelated parts, but adding a modeled card to Canvas does not create a BOM usage. A BOM change and a native SysML change each require a previewed, authorized transaction.
+- A release registry transaction publishes an immutable candidate manifest only with exact G4/G5 and digest-bound approvals. Manufacturing/ERP/MES acknowledgment is a separate downstream status, not implied by engineering release.
+- The coordinated Git/registry/PDM workflow uses staged versioned inputs, durable journal, revalidation and idempotent recovery; it must not claim cross-system ACID atomicity.
+
+**Status:** design proposal only. Existing quick-create and clone helpers do not constitute a number allocator; existing partLifecycle/approval note labels do not constitute engineering release. No MDSE production release is authorized by this decision.
+
 ## 4. Engineers' high-level workflows
 
 | Workflow | Starts with | Services involved | Outputs | Current acceptance limit |
